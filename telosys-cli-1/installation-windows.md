@@ -9,7 +9,8 @@ weight: 8
 
 **Java 8 \(or +\)** must be installed, that's all.
 
-You can check it with the command `X:\> java -version`
+You can check it with the command   
+    `X:\> java -version`
 
 ## Installation
 
@@ -52,9 +53,11 @@ Now if the PATH variable is set correctly you can launch Telosys from any direct
 
 Open a command window \( open the Start Search and enter "**cmd**" \)
 
-Move to the directory where you want to use Telosys  `X:\> cd myproject`
+Move to the directory where you want to use Telosys  
+    `X:\> cd myproject`
 
-Launch Telosys-CLI with the **`tt`** command \( that is `tt.bat` \)  `X:\myproject> tt`
+Launch Telosys-CLI with the **`tt`** command \( that is `tt.bat` \)   
+   `X:\myproject> tt`
 
 ### 5\) You can also create a shortcut on your desktop
 
@@ -62,7 +65,8 @@ For more convenience you can create a shortcut on the desktop
 
 To launch Telosys in its own directory :  `X:\telosys-dir\tt.bat`
 
-To launch Telosys in a specific directory \(eg a project directory\) use '**-h**' option :  `X:\telosys-dir\tt.bat -h X:\myproject-dir`
+To launch Telosys in a specific directory \(eg a project directory\) use '**-h**' option :   
+    `X:\telosys-dir\tt.bat -h X:\myproject-dir`
 
 You can use the "telosys.ico" file as the shortcut icon.
 

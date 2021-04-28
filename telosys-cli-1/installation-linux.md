@@ -27,19 +27,24 @@ Or if you prefer to use the command line :        `wget http://www.telosys.or
 
 Copy the “zip file” in the directory where you want to install Telosys.
 
-Unzip the downloaded file :        `unzip telosys-cli-x.x.x-xxx.zip`
+Unzip the downloaded file :      
+    `unzip telosys-cli-x.x.x-xxx.zip`
 
-Make the shell script "tt" executable        `chmod 777 tt`
+Make the shell script "tt" executable      
+    `chmod 777 tt`
 
 ### 3\) Update 'PATH' environment variable
 
-To be able to launch Telosys from any location, just add its directory to the "**PATH**".       `export PATH=$PATH:/path/to/telosys`
+To be able to launch Telosys from any location, just add its directory to the "**PATH**".    
+    `export PATH=$PATH:/path/to/telosys`
 
 ### 4\) Run Telosys
 
 Now if the PATH variable is set correctly you can launch Telosys from any directory.
 
-Move to the directory where you want to use Telosys        `cd myproject`
+Move to the directory where you want to use Telosys       
+    `cd myproject`
 
-Launch Telosys-CLI with the **`tt`** command \( that is `tt` shell script \)        `tt`
+Launch Telosys-CLI with the **`tt`** command \( that is `tt` shell script \)      
+    `tt`
 
