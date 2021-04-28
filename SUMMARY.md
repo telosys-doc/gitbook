@@ -2,8 +2,18 @@
 
 * [Initial page](README.md)
 
-## Group 1
+## Telosys CLI
 
-* [G1 page 1](group-1/g1-page-1/README.md)
-  * [Sub page](group-1/g1-page-1/sub-page.md)
+* [Installation on Linux](telosys-cli/installation-linux.md)
+* [Installation on Windows](telosys-cli/installation-windows.md)
+* [Configuration](telosys-cli/configuration.md)
+* [Commands](telosys-cli/commands.md)
+
+## Telosys Eclipse
+
+* [Untitled](telosys-eclipse/untitled.md)
+
+## Telosys VS Code
+
+* [Untitled](telosys-vs-code/untitled.md)
 
