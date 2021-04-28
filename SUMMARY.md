@@ -6,12 +6,12 @@
   * [Installation on Windows](telosys-cli-1/installation-windows.md)
   * [Configuration](telosys-cli-1/configuration.md)
   * [Commands](telosys-cli-1/commands.md)
-
-## Telosys Eclipse
-
-* [Untitled](telosys-eclipse/untitled.md)
-
-## Telosys VS Code
-
-* [Untitled](telosys-vs-code/untitled.md)
+* [Telosys with Eclipse](telosys-with-eclipse.md)
+* [Telosys with VSCode](telosys-with-vscode.md)
+* [Project configuration](project-configuration.md)
+* [Project variables](project-variables.md)
+* [Models](models/README.md)
+  * [DSL model](models/dsl-model.md)
+  * [Database model](models/database-model.md)
+* [Templates](templates.md)
 
