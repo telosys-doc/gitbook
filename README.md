@@ -4,7 +4,7 @@ Welcome developer friend!
 
 Here you will find everything that can help you to boost your project with Telosys.
 
-In addition to the documentation you can also take a look at ...
+In addition to this documentation you can also take a look at ...
 
 * [Twitter](https://twitter.com/telosys) 
 * [YouTube](https://www.youtube.com/channel/UCX5-ypQygEHMCGXVTTbhfNQ) 

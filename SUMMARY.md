@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [Telosys presentations](telosys-presentations.md)
 * [Telosys CLI](telosys-cli-1/README.md)
   * [Installation on Linux](telosys-cli-1/installation-linux.md)
   * [Installation on Windows](telosys-cli-1/installation-windows.md)
