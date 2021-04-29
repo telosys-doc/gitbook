@@ -16,4 +16,7 @@
   * [Database model](models/database-model.md)
 * [Templates](templates.md)
 * [How to contribute](how-to-contribute.md)
+* [Sponsors](sponsors.md)
+* [Supporters](supporters.md)
+* [Tooling](tooling.md)
 
