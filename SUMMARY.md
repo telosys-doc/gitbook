@@ -23,6 +23,6 @@
 * [Templates](templates.md)
 * [How to contribute](how-to-contribute.md)
 * [Sponsors](sponsors.md)
-* [Supporters](supporters.md)
+* [Support the project](supporters.md)
 * [Tooling](tooling.md)
 
