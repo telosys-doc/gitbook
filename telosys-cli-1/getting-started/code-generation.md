@@ -4,7 +4,7 @@ Once you have a **valid model** and a least one **bundle of templates**, you are
 
 **`gen`** is the only command you need to generate your code.
 
-The syntax is : 
+### "gen" command syntax
 
 ```text
 > gen *|entities *|templates [-r] [-y]
@@ -19,7 +19,7 @@ The syntax is :
 You must have defined the **current model** and the **current bundle** before using the gen command, the Telosys prompt must look like this: `telosys#(model-name)[bundle-name]>`
 {% endhint %}
 
-You can use it in different ways :
+### "gen" command examples
 
 ```text
 > gen * *
