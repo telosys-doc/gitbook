@@ -74,9 +74,44 @@ Use the "**ecfg**" command to edit the configuration file
 and set the properties for "**Network proxy configuration**"
 {% endhint %}
 
+### List templates bundles available in the project
 
 
-### **Other useful commands**
+
+Example : list all bundles 
+
+```text
+telosys#(mymodel.model)>lb
+3 bundle(s) :
+ . python-persistence-sqlalchemy
+ . python-web-mvc-bottle
+ . python-web-rest-bottle
+```
+
+Example : list bundles with name containing "sql"
+
+```text
+telosys#(mymodel.model)>lb sql
+1 bundle(s) :
+ . python-persistence-sqlalchemy
+```
+
+### Select a bundle of templates
+
+Use the **`b`**command to show the current bundle or select a new one.
+
+Example : select the bundle having "sqlalch" in its name
+
+```text
+telosys#(mymodel.model)>b sqlalch
+Current bundle is now 'python-persistence-sqlalchemy'
+```
+
+{% hint style="info" %}
+Once you have defined a **current model** and a **current bundle** the Telosys prompt looks like this: `telosys#(model-name)[bundle-name]>`
+{% endhint %}
+
+### Commands summary
 
 * **`lb`** \(List Bundles\) to list all the bundles installed in your project
 * **`b`** \(Bundle\) to show or set the current bundle
