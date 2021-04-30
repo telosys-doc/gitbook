@@ -4,7 +4,7 @@ This step describe how to create a new model from an existing database.
 
 Before continuing ensure your home directory is defined and the project has been initialized.
 
-#### Configure your database
+### Configure your database
 
 Edit the **`databases.dbcfg`** XML file to define a new database configuration.
 
@@ -39,11 +39,11 @@ Define the following information used to retrieve the JDBC METADATA \( in the **
 * **`table-name-exclude`** a pattern to exclude some tables \(usually void\)
 * **`table-name-include`** a pattern to include some tables \(usually void\)
 
-#### List the defined databases
+### List the defined databases
 
 To see all databases currently defined you can use the **`ldb`** command \(**List DB**\)
 
-#### Provide the JDBC driver
+### Provide the JDBC driver
 
 Telosys needs a JDBC driver to be able to connect to the database.
 
@@ -51,7 +51,7 @@ So put the **".jar" file** containing the **JDBC driver class** in the **"lib"**
 
 For example, for a "Derby" database put the "derbylient.jar" in "TelosysTools/lib".
 
-#### Check the database connection
+### Check the database connection
 
 Once the database is defined in the **`databases.dbcfg`** file and its driver **`.jar`** file is available in the **"lib"** folder you can check the connection.
 
@@ -62,7 +62,7 @@ You can use **`cdb`** with or without the database id :
 * **`cdb`** without argument will check the default database
 * **`cdb 2`** with argument "2" will check the database with id "2"
 
-#### Generate your model
+### Create your model from the database schema
 
 Once you have validated the connection to the database you are ready to generate the model.
 
@@ -73,7 +73,7 @@ You can use **`ndbm`** with or without the database id :
 * **`ndbm`** without argument will create a model from the default database
 * **`ndbm 2`** with argument "2" will create a model from the database with id "2"
 
-#### Commands summary
+### Commands summary
 
 * **`edb`** Edit DB
 * **`ldb`** List DB
