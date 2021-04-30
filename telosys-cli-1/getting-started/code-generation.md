@@ -13,7 +13,7 @@ Once you have a **valid model** and a least one **bundle of templates**, you are
 * **`entities`** : a **list of entities** \(part of the name\) separated by a comma \(,\) or **"\*"** for all
 * **`templates`** : a **list of templates** \(part of the name\) separated by a comma \(,\) or **"\*"** for all
 * **`-r`**  \(optional\) to copy the **static resources** provided by the bundle \(if any\)
-* **`-y`**   \(optional\) to force "**yes**" answer \(to avoid confirmation\)
+* **`-y`**  \(optional\) to force "**yes**" answer \(to avoid confirmation\)
 
 {% hint style="info" %}
 You must have defined the **current model** and the **current bundle** before using the gen command, the Telosys prompt must look like this: `telosys#(model-name)[bundle-name]>`
