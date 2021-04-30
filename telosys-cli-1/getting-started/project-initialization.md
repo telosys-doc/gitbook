@@ -8,7 +8,7 @@ You can use the **`env`** command to see the current Telosys environment.
 
 With the command **`h`** you can see that the "home directory" is not yet defined.
 
-#### 1 - Set the "home directory"
+### Set the "home directory"
 
 When Telosys-CLI starts its current directory is the directory where it has been launched
 
@@ -24,11 +24,11 @@ Examples :
 
 **`h foo`** : HOME is set to the "foo" subdirectory
 
-#### 2 - Initialize the Telosys environment in your project
+### Initialize the Telosys environment 
 
 Once the "home directory" is defined, you can initialize the Telosys projet.
 
 For that just run the **`init`** command
 
-This command creates the "TelosysTools" folder containing all the Telosys files and subfolders.
+This command creates the "**TelosysTools**" folder containing all the Telosys files and subfolders.
 
