@@ -1,14 +1,12 @@
 # Templates installation
 
-
-
 Once you have a model you need at least one **bundle of templates** to generate your code.
 
 The templates are organized in "bundles". A **"bundle"** is a set of templates designed to generate a particular kind of targets.
 
 Of course you can create your own templates from scatch, but the simplest way to start is to use existing templates. 
 
-Templates bundles can be downloaded for **GitHub** \(each bundle is a "git repository"\).
+Templates bundles can be downloaded from **GitHub** \(each bundle is a "git repository"\).
 
 ### Templates catalog configuration \(GitHub account\)
 
@@ -37,6 +35,11 @@ mycatalog
 
 To list the bundles available in the current GitHub account use the **`lgh`** \(List GitHub\) command.
 
+The syntax is : 
+
+* **`lgh`** list all bundles 
+* **`lgh bundle-name-part`** list all bundles containing the given name-part in their name
+
 Example : list bundles with name containing "pyth"
 
 ```text
@@ -52,13 +55,11 @@ GitHub API rate limit : 57/60
 
 When you have found a useful bundle for your project, you can install it with the **`ib`** \(Install Bundle\) command.
 
-The syntax is : **`ib bundle-name`**
+The syntax is : **`ib bundle-name-part`**
 
-For more convenience, you can use only a part of the bundle name \(this part must be discriminant enough to identify a single bundle\).
+For more convenience, you can use only a part of the bundle name. If several bundles contain this part in their name then they will all be installed.
 
-For example **`ib jaxrs`** to install the **`java-web-rest-jaxrs1-T300`** bundle.
-
-Example : install bundles with name containing "pyth"
+Example : install all bundles with name containing "pyth"
 
 ```text
 telosys#(mymodel.model)>ib pyth
@@ -76,7 +77,12 @@ and set the properties for "**Network proxy configuration**"
 
 ### List templates bundles available in the project
 
+To list the bundles available in the current Telosys project use the **`lb`** \(List Bundles\) command.
 
+The syntax is : 
+
+* **`lb`** list all bundles 
+* **`lb bundle-name-part`** list all bundles containing the given name-part in their name
 
 Example : list all bundles 
 
