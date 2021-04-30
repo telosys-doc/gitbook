@@ -12,7 +12,7 @@ You can help Telosys in different ways ...
 
 ### Help us spread the word about Telosys 📢 
 
-* follow Teloys on Twitter and retweet the news
+* follow Telosys on [**Twitter**](https://twitter.com/telosys) and retweet the news
 * write something about Telosys on the web \(blog, article, etc\)
 
 ### **Buy a coffe \(one or more\)** ☕ 
