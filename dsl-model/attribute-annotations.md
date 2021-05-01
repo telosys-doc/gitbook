@@ -9,7 +9,7 @@ All annotations must be located in the block delimited by "**{**" and "**}**".
 ### @AutoIncremented
 
 The attribute is supposed to be auto-incremented \(for example for an auto-incremented key\)  
-Applicable with "numeric" basic types
+Applicable with "numeric" types
 
 ### @Embedded
 
@@ -18,8 +18,8 @@ Applicable with "references" to embed them in the current entity.
 
 ### @Future
 
-The attribute value must be in the future.  
-Applicable with "date" basic type.
+The attribute value must be in the future \(after current date\).  
+Applicable with "date" type.
 
 ### @Id
 
@@ -29,51 +29,65 @@ Applicable with any basic type.
 
 ### @LongText
 
-xx
+The attribute is a "long text" for example a text of several lines. This annotation can be used for HTML "text area" or database "CLOB".  
+Applicable with "string" basic type.
 
-### @Max\(int value\)
+### @Max\(value\)
 
-xx
+To set the maximum acceptable value.  
+For example for field validation rules.  
+Applicable with "numeric" types.
 
-### @Min\(int value\)
+### @Min\(value\)
 
-xx
+To set the minimum acceptable value.  
+For example for field validation rules.  
+Applicable with "numeric" types.
 
 ### @NotBlank
 
-xx
+The attribute value cannot be blank.
 
 ### @NotEmpty
 
-xx
+The attribute value cannot be empty.
 
 ### @NotNull
 
-xx
+The attribute value cannot be null.
 
 ### @ObjectType
 
-xx
+The attribute type must be converted to "object/wrapper type" in the target language \(for example for Java\).  
+No effect if not supported by the target language.  
+Applicable with any basic type.
 
 ### @Past
 
-xx
+The attribute value must be in the past \(before current date\).  
+Applicable with "date" type.
 
 ### @PrimitiveType
 
-xx
+The attribute type must be converted to "primitive type" in the target language \(for example for Java\).  
+No effect if not supported by the target language.  
+Applicable with any basic type.
 
-### @SizeMax\(int value\)
+### @SizeMax\(value\)
 
-xx
+To set the maximum acceptable size of the attribute value.  
+For example for field validation rules.
 
-### @SizeMin\(int value\)
+### @SizeMin\(value\)
 
-xx
+To set the minimum acceptable size of the attribute value.  
+For example for field validation rules.
 
 ### @UnsignedType
 
-xx
+The attribute type must be converted to "unsigned type" in the target language \(for example for C/C++\).  
+No effect if not supported by the target language.  
+Applicable with any basic type.
 
 xx
 
