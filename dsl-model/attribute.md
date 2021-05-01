@@ -7,13 +7,15 @@ An attribute structure is composed of the following elements :
 * attribute **name**
 * **":"** \(separator\)
 * attribute **type** \(basic type or reference\)
-* **annotations** \(optional\) defined between **"{"** and **"}"**
+* further information \(optional\) defined between **"{"** and **"}"**
+  * **annotations** \(optional\)  
+  * **tags** \(optional\)  
 * **";"** \(end of attribute definition\)
 
 Syntax :
 
 ```text
-attributeName : attributeType { annotations } ;
+attributeName : attributeType { annotations and tags } ;
 ```
 
 An attribute definition can span multiple lines.   
@@ -21,7 +23,8 @@ Example :
 
 ```text
 attributeName : attributeType { 
-                annotations } ;
+                annotations 
+                tags } ;
 ```
 
 ### 

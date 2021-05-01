@@ -2,7 +2,7 @@
 
 Each attribute can have **0 to N annotations**.   
 Annotations provide additional information usable during the code generation.   
-An annotation is a predefined name starting with "**@**".   
+An annotation is a **predefined name** starting with "**@**".   
 Some annotations may have **values** specified between "**\(**" and "**\)**".   
 All annotations must be located in the block delimited by "**{**" and "**}**".
 
@@ -19,6 +19,7 @@ Applicable with "references" to embed them in the current entity.
 ### @Future
 
 The attribute value must be in the future \(after current date\).  
+Usable for field validation rules.  
 Applicable with "date" type.
 
 ### @Id
@@ -29,32 +30,36 @@ Applicable with any basic type.
 
 ### @LongText
 
-The attribute is a "long text" for example a text of several lines. This annotation can be used for HTML "text area" or database "CLOB".  
+The attribute is a "long text" for example a text of several lines.   
+This annotation can be used for HTML "text area" or database "CLOB".  
 Applicable with "string" basic type.
 
 ### @Max\(value\)
 
 To set the maximum acceptable value.  
-For example for field validation rules.  
+Usable for field validation rules.  
 Applicable with "numeric" types.
 
 ### @Min\(value\)
 
 To set the minimum acceptable value.  
-For example for field validation rules.  
+Usable for field validation rules.  
 Applicable with "numeric" types.
 
 ### @NotBlank
 
-The attribute value cannot be blank.
+The attribute value cannot be blank.  
+Usable for field validation rules.
 
 ### @NotEmpty
 
-The attribute value cannot be empty.
+The attribute value cannot be empty.  
+Usable for field validation rules.
 
 ### @NotNull
 
-The attribute value cannot be null.
+The attribute value cannot be null.  
+Usable for field validation rules and SQL databases.
 
 ### @ObjectType
 
@@ -65,6 +70,7 @@ Applicable with any basic type.
 ### @Past
 
 The attribute value must be in the past \(before current date\).  
+Usable for field validation rules.  
 Applicable with "date" type.
 
 ### @PrimitiveType
@@ -76,12 +82,12 @@ Applicable with any basic type.
 ### @SizeMax\(value\)
 
 To set the maximum acceptable size of the attribute value.  
-For example for field validation rules.
+Usable for field validation rules and GUI fields definition.
 
 ### @SizeMin\(value\)
 
 To set the minimum acceptable size of the attribute value.  
-For example for field validation rules.
+Usable for field validation rules.
 
 ### @UnsignedType
 
