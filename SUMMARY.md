@@ -22,6 +22,7 @@
   * [Attribute](dsl-model/attribute.md)
   * [Attribute annotations](dsl-model/attribute-annotations.md)
   * [Tags](dsl-model/tags.md)
+  * [Examples](dsl-model/examples.md)
 * [Database model](database-model.md)
 * [Templates](templates.md)
 * [How to contribute](how-to-contribute.md)
