@@ -46,6 +46,21 @@ xxx
 The entity referenced by the attribute must be embedded \(typically for NoSQL databases\).  
 Applicable with "references" to embed them in the current entity.
 
+### @FetchTypeEager
+
+Since version 4.0.0   
+xxx
+
+### @FetchTypeLazy
+
+Since version 4.0.0   
+xxx
+
+### @FK\( string \[, string, string\] \)
+
+Since version 4.0.0  
+xxx
+
 ### @Future
 
 The attribute value must be in the future \(after current date\).  
@@ -68,9 +83,36 @@ xxx
 Since version 3.2.0   
 xxx
 
+### @Insertable\(boolean\) 
+
+Since version 4.0.0   
+Examples :  
+`@Insertable(true)  
+@Insertable(false)`
+
 ### @Label\(string\)
 
 Since version 3.2.0   
+xxx
+
+### @LinkByAttr\(string\) 
+
+Since version 4.0.0   
+xxx
+
+### @LinkByCol\(string\) 
+
+Since version 4.0.0   
+xxx
+
+### @LinkByFK\(string\) 
+
+Since version 4.0.0   
+xxx
+
+### @LinkByJoinEntity\(string\)
+
+Since version 4.0.0   
 xxx
 
 ### @LongText
@@ -78,6 +120,16 @@ xxx
 The attribute is a "long text" for example a text of several lines.   
 This annotation can be used for HTML "text area" or database "CLOB".  
 Applicable with "string" basic type.
+
+### @ManyToMany 
+
+Since version 4.0.0   
+xxx
+
+### @MappedBy\(string\)
+
+Since version 4.0.0   
+xxx
 
 ### @Max\(decimal\)
 
@@ -112,6 +164,16 @@ The attribute type must be converted to "object/wrapper type" in the target lang
 No effect if not supported by the target language.  
 Applicable with any basic type.
 
+### @OneToOne 
+
+Since version 4.0.0   
+xxx
+
+### @Optional
+
+Since version 4.0.0   
+xxx
+
 ### @Past
 
 The attribute value must be in the past \(before current date\).  
@@ -145,7 +207,16 @@ The attribute type must be converted to "unsigned type" in the target language \
 No effect if not supported by the target language.  
 Applicable with any basic type.
 
-xx
+### @Updatable\(boolean\) 
+
+Since version 4.0.0   
+Examples :  
+`@Updatable(true)  
+@Updatable(false)`
+
+
+
+xxxxx
 
 
 
