@@ -96,11 +96,11 @@ For an entity with a composite ID \(composite Primary Key\), put this annotation
 Applicable with any basic type.  
 For a composite Primary Key just put an "@Id" annotation for each attribute that is part of the key.  
 Examples :  
-`Badge { // Simple key  
+`Badge { // Simple key => single "@Id"  
   id   : int { @Id } ;  
   name : string ;   
 }  
-SubGroup { // Composite key  
+SubGroup { // Composite key => multiple "@Id"  
   groupCode : string { @Id } ;  
   sectionId : int { @Id } ;  
   name : string ;  
@@ -119,6 +119,7 @@ Defines the input type usable for the field \(for example an HTML input type\).
 ### @Insertable\(boolean\) 
 
 Since version 4.0.0   
+  
 Examples :  
 `@Insertable(true)  
 @Insertable(false)`
@@ -131,12 +132,20 @@ Defines the label usable for the field \(for example an HTML label\).
 ### @LinkByAttr\(string\) 
 
 Since version 4.0.0   
-Defines a link based on the given attribute name.
+Defines a link based on the given attribute name.  
+  
+Examples :  
+`// xx  
+xxxxx  
+-----  
+// xxx  
+xx`
 
 ### @LinkByCol\(column\[, column2 \[, columnN \] \] \) 
 
 Since version 4.0.0   
 Defines a link based on the given database column name\(s\).  
+  
 Examples :  
 `// Link with a Foreign Key based on a single column  
 country : Country { @LinkByCol(COUNTRY_CODE) } ;  
@@ -147,7 +156,11 @@ group   : Group { @LinkByCol(GROUP_FAMILY, GROUP_CODE) } ;`
 ### @LinkByFK\(string\) 
 
 Since version 4.0.0   
-Defines a link based on the given Foreign Key name.
+Defines a link based on the given Foreign Key name.  
+  
+Examples :  
+`// Link based on Foreign Key "FK_PERSON_SUBGROUP"  
+subGroup : SubGroup { @LinkByFK(FK_PERSON_SUBGROUP) } ;`
 
 ### @LinkByJoinEntity\(string\)
 
@@ -249,6 +262,7 @@ Applicable with any basic type.
 ### @Updatable\(boolean\) 
 
 Since version 4.0.0   
+  
 Examples :  
 `@Updatable(true)  
 @Updatable(false)`
