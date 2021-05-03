@@ -9,7 +9,7 @@ All annotations must be located in the block delimited by "**{**" and "**}**".
 ### @AutoIncremented
 
 The attribute is supposed to be auto-incremented \(for example for an auto-incremented key\)  
-Applicable with "numeric" types
+Applicable only with "numeric" types
 
 ### @DbComment\(string\)
 
@@ -29,7 +29,7 @@ The name in the database \(for example the column name in a relational database\
 ### @DbSize\(string\)
 
 Since version 3.2.0   
-Deprecated - Do not use
+_Deprecated - Do not use_
 
 ### @DbType\(string\)
 
@@ -56,10 +56,32 @@ Define an "Eager Loading" fetch type for a link, typically for ORM \(JPA, Doctri
 Since version 4.0.0   
 Define a "Lazy Loading" fetch type for a link, typically for ORM \(JPA, Doctrine, etc \).
 
-### @FK\( string \[, string, string\] \)
+### @FK\( \[fkName,\] referencedEntity\[.attribute\] \)
 
 Since version 4.0.0  
-xxx
+Define a Foreign Key or a Foreign Key part   
+  
+Syntax :  
+`// FK referencing an entity with a basic PK (single attribute)  
+@FK( ReferencedEntity ) // without FK name (default name)  
+@FK( ForeignKeyName, ReferencedEntity ) // with FK name  
+---  
+// FK referencing an entity with a compositePK (N attributes)  
+@FK( ForeignKeyName, ReferencedEntity.ReferencedAttribute )`  
+  
+Examples :  
+`// FK referencing "Brand" entity (with default FK name)  
+brandId : int { @FK(Brand) }; // PK inference   
+-----  
+// FK referencing "Brand" entity (with default FK name)  
+brandId : int { @FK(Brand.id) }; // explicit PK attribute  
+-----  
+// FK referencing "Group" entity (with FK name)  
+groupCode : string { @FK(FK_EMP_GRP, Group) } ;  
+-----  
+// FK referencing "SubGroup" entity (composite PK)  
+groupCode : string { @FK(FK_PER_SUBGRP, SubGroup.groupCode ) };   
+subgroupId : int   { @FK(FK_PER_SUBGRP, SubGroup.subgroupId) };`
 
 ### @Future
 
@@ -71,7 +93,18 @@ Applicable with "date" type.
 
 The attribute is the ID \(or Primary Key\) for the current entity.  
 For an entity with a composite ID \(composite Primary Key\), put this annotation on each attribute that is part of the ID.  
-Applicable with any basic type.
+Applicable with any basic type.  
+For a composite Primary Key just put an "@Id" annotation for each attribute that is part of the key.  
+Examples :  
+`Badge { // Simple key  
+  id   : int { @Id } ;  
+  name : string ;   
+}  
+SubGroup { // Composite key  
+  groupCode : string { @Id } ;  
+  sectionId : int { @Id } ;  
+  name : string ;  
+}`
 
 ### @InitialValue\(string\)
 
@@ -100,10 +133,16 @@ Defines the label usable for the field \(for example an HTML label\).
 Since version 4.0.0   
 Defines a link based on the given attribute name.
 
-### @LinkByCol\(string\) 
+### @LinkByCol\(string \[, strings\]\) 
 
 Since version 4.0.0   
-Defines a link based on the given column name.
+Defines a link based on the given database column name\(s\).  
+Examples :  
+`// Link with a Foreign Key based on a single column  
+country : Country { @LinkByCol(COUNTRY_CODE) } ;  
+-----  
+// Link with a Foreign Key based on 2 columns  
+group   : Group { @LinkByCol(GROUP_FAMILY, GROUP_CODE) } ;`
 
 ### @LinkByFK\(string\) 
 
