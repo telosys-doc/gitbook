@@ -133,7 +133,7 @@ Defines the label usable for the field \(for example an HTML label\).
 Since version 4.0.0   
 Defines a link based on the given attribute name.
 
-### @LinkByCol\(string \[, strings\]\) 
+### @LinkByCol\(column\[, column2 \[, columnN \] \] \) 
 
 Since version 4.0.0   
 Defines a link based on the given database column name\(s\).  
