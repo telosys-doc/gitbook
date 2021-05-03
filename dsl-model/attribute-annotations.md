@@ -14,17 +14,17 @@ Applicable with "numeric" types
 ### @DbComment\(string\)
 
 Since version 3.2.0  
-xxx
+The comment in the database \(typically a column comment in a relational database\)
 
 ### @DbDefaultValue\(string\)
 
 Since version 3.2.0  
-xxx
+The default value in the database. 
 
 ### @DbName\(string\)
 
 Since version 3.2.0  
-xxx
+The name in the database \(for example the column name in a relational database\)
 
 ### @DbSize\(string\)
 
@@ -34,12 +34,12 @@ Deprecated - Do not use
 ### @DbType\(string\)
 
 Since version 3.2.0   
-xxxx
+The type in the database \(for example the column type in a relational database\)
 
 ### @DefaultValue\(string\)
 
 Since version 3.2.0  
-xxx
+The default value 
 
 ### @Embedded
 
@@ -49,12 +49,12 @@ Applicable with "references" to embed them in the current entity.
 ### @FetchTypeEager
 
 Since version 4.0.0   
-xxx
+Define an "Eager Loading" fetch type for a link, typically for ORM \(JPA, Doctrine, etc \).
 
 ### @FetchTypeLazy
 
 Since version 4.0.0   
-xxx
+Define a "Lazy Loading" fetch type for a link, typically for ORM \(JPA, Doctrine, etc \).
 
 ### @FK\( string \[, string, string\] \)
 
@@ -76,12 +76,12 @@ Applicable with any basic type.
 ### @InitialValue\(string\)
 
 Since version 3.2.0  
-xxx
+Defines the initial value.
 
 ### @InputType\(string\)
 
 Since version 3.2.0   
-xxx
+Defines the input type usable for the field \(for example an HTML input type\).
 
 ### @Insertable\(boolean\) 
 
@@ -93,27 +93,27 @@ Examples :
 ### @Label\(string\)
 
 Since version 3.2.0   
-xxx
+Defines the label usable for the field \(for example an HTML label\).
 
 ### @LinkByAttr\(string\) 
 
 Since version 4.0.0   
-xxx
+Defines a link based on the given attribute name.
 
 ### @LinkByCol\(string\) 
 
 Since version 4.0.0   
-xxx
+Defines a link based on the given column name.
 
 ### @LinkByFK\(string\) 
 
 Since version 4.0.0   
-xxx
+Defines a link based on the given Foreign Key name.
 
 ### @LinkByJoinEntity\(string\)
 
 Since version 4.0.0   
-xxx
+Defines a link based on the given "join entity" name.
 
 ### @LongText
 
@@ -124,7 +124,7 @@ Applicable with "string" basic type.
 ### @ManyToMany 
 
 Since version 4.0.0   
-xxx
+Defines a "many to many" relationship for a link.
 
 ### @MappedBy\(string\)
 
@@ -167,7 +167,7 @@ Applicable with any basic type.
 ### @OneToOne 
 
 Since version 4.0.0   
-xxx
+Defines a "one to one" relationship for a link.
 
 ### @Optional
 
