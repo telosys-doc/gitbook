@@ -186,7 +186,12 @@ subGroup : SubGroup { @LinkByFK(FK_PERSON_SUBGROUP) } ;`
 ### @LinkByJoinEntity\(string\)
 
 Since version 4.0.0  
-Defines a link based on the given "join entity" name.
+Defines a link based on the given "join entity" name.  
+Usable with "many to many" link to define a "join table".  
+  
+Example :  
+`workgroups : Workgroup[] { @ManyToMany   
+             @LinkByJoinEntity(EmployeeGroup) } ;`
 
 ### @LongText
 
@@ -204,7 +209,10 @@ Usable for ORM code generation \(JPA, etc\)
 
 Since version 4.0.0   
 Defines the "mappedBy" attribute for a link.  
-Usable for an "inverse side" relationship.
+Usable for an "inverse side" relationship.  
+  
+Example :  
+`shops : Shop[] { @MappedBy(employee) } ;`
 
 ### @Max\(decimal\)
 
