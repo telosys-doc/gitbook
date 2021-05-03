@@ -132,7 +132,34 @@ Defines the label usable for the field \(for example an HTML label\).
 ### @LinkByAttr\(string\) 
 
 Since version 4.0.0   
-Defines a link based on the given attribute name.  
+Defines a link based on the given attribute\(s\) name\(s\).  
+For multiple attributes \(in case of composite PK\) each attribute must define the referenced attribute in the target entity by using the "&gt;" character \( "a &gt; b" for  "a" referencing "b"\).  
+  
+Syntax :  
+`// simple PK with a single attribute (ref not required) @LinkByAttr(attribName) // referenced PK inference  
+// composite PK with N columns (referenced required)  
+@LinkByAttr(attr1 > refAttr1 , attr2 > refAttr2 , ...)`   
+  
+Examples :  
+`Point {  
+  x : int { @Id } ;  
+  y : int { @Id } ;  
+  label : string ;  
+}  
+-----  
+Line {  
+  id : short ;  
+  name : string ;  
+  // Point 1  
+  point1X : int ;  
+  point1Y : int ;  
+  // Point 2  
+  point2X : int ;  
+  point2Y : int ;  
+  // Link to point  
+  point1 : Point { @LinkByAttr(point1X > x, point1Y > y) } ;  
+  point2 : Point { @LinkByAttr(point2X > x, point2Y > y) } ;  
+}`  
   
 Examples :  
 `// xx  
