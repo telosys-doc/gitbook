@@ -148,7 +148,7 @@ Examples :
 }  
 -----  
 Line {  
-  id : short ;  
+  id : short { @Id } ;  
   name : string ;  
   // Point 1  
   point1X : int ;  
@@ -160,13 +160,7 @@ Line {
   point1 : Point { @LinkByAttr(point1X > x, point1Y > y) } ;  
   point2 : Point { @LinkByAttr(point2X > x, point2Y > y) } ;  
 }`  
-  
-Examples :  
-`// xx  
-xxxxx  
------  
-// xxx  
-xx`
+
 
 ### @LinkByCol\(column\[, column2 \[, columnN \] \] \) 
 
@@ -203,12 +197,14 @@ Applicable with "string" basic type.
 ### @ManyToMany 
 
 Since version 4.0.0   
-Defines a "many to many" relationship for a link.
+Defines a "many to many" cardinality for a link.  
+Usable for ORM code generation \(JPA, etc\)
 
-### @MappedBy\(string\)
+### @MappedBy\(attributeName\)
 
 Since version 4.0.0   
-xxx
+Defines the "mappedBy" attribute for a link.  
+Usable for an "inverse side" relationship.
 
 ### @Max\(decimal\)
 
@@ -246,12 +242,14 @@ Applicable with any basic type.
 ### @OneToOne 
 
 Since version 4.0.0   
-Defines a "one to one" relationship for a link.
+Defines a "one to one" cardinality for a link.  
+Usable for ORM code generation \(JPA, etc\)
 
 ### @Optional
 
 Since version 4.0.0   
-xxx
+Defines an "optional" relationship for a link.  
+Usable for ORM code generation \(JPA, etc\)
 
 ### @Past
 
@@ -262,7 +260,7 @@ Applicable with "date" type.
 ### @Pattern\(string\)
 
 Since version 3.2.0   
-xxx
+Defines a pattern usable for field validation, for example a RegEx pattern.
 
 ### @PrimitiveType
 
@@ -295,8 +293,6 @@ Examples :
 @Updatable(false)`
 
 
-
-xxxxx
 
 
 
