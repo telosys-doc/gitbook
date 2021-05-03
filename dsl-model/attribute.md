@@ -56,7 +56,7 @@ Examples of **invalid** attribute names :
 
 The attribute type can be a "**basic type**" or a "**reference to another entity**". 
 
-#### Basic type
+####  🔷 Basic type
 
 A "**basic type**" is a "**neutral type**" independent of any programming language. 
 
@@ -78,7 +78,7 @@ Available basic types :
 
 All of these "neutral types" are converted into the target language types during generation. Telosys offers automatic conversion for most used languages \(Java, C\#, etc\). 
 
-#### Reference type
+#### 🔷 Reference type
 
 A "**reference**" is defined by using an **entity name** instead of the basic type.   
 The referenced entity must exist in the model \(at least the entity file\).  
