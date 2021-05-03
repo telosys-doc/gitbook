@@ -185,7 +185,7 @@ subGroup : SubGroup { @LinkByFK(FK_PERSON_SUBGROUP) } ;`
 
 ### @LinkByJoinEntity\(string\)
 
-Since version 4.0.0   
+Since version 4.0.0  
 Defines a link based on the given "join entity" name.
 
 ### @LongText
