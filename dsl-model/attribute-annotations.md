@@ -286,6 +286,10 @@ Usable for field validation rules and GUI fields definition.
 To set the minimum acceptable size of the attribute value.  
 Usable for field validation rules.
 
+### @Transient
+
+To define an attribute as "transient" \(for example in a Java class or with an ORM like JPA\)
+
 ### @UnsignedType
 
 The attribute type must be converted to "unsigned type" in the target language \(for example for C/C++\).  
