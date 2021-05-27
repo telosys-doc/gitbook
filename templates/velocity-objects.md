@@ -67,6 +67,10 @@ isEmpty : $mylist.isEmpty()
 
 size    : $mylist.size()
 #if ( $mylist.size() > 0 ) list is not void #end
+
+#set( $z = $mylist.add("new item") ) 
+##  set is a work around to avoid printing 
+##  the return value of 'add'
 ```
 
 ## Map
