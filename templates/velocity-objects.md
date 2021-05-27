@@ -1,16 +1,21 @@
 # Velocity objects
 
-## List
+## List \(array\)
 
 Object containing a list of any type of values.  
 The values are stored internally in a "_ArrayList_" Java object  
-\( see java.util.ArrayList for details \)
+\( see java.util.ArrayList for details \).
+
+This object is also considered as an "_array_" in many documentations.
 
 Initialization :
 
 ```text
 ## 4 numbers from 1 to 4 (with range operator)
 #set( $mylist = [1..4]) 
+
+## void list
+#set($mylist = [])
 
 ## 6 values with diferent types
 #set( $mylist = [1, 2, 3, "A", true, 65.78] )
