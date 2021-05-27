@@ -71,6 +71,9 @@ isEmpty : $mylist.isEmpty()
 size    : $mylist.size()
 #if ( $mylist.size() > 0 ) list is not void #end
 
+mylist.indexOf("A")  ## OUTPUT : 3 (found at index 3)
+mylist.indexOf("Z")  ## OUTPUT : -1 (not found)
+
 #set( $z = $mylist.add("new item") ) 
 ##  set is a work around to avoid printing 
 ##  the return value of 'add'
