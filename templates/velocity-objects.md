@@ -1,11 +1,5 @@
 # Velocity objects
 
-## Array 
-
-xxxx
-
-
-
 ## List
 
 Object containing a list of any type of values.  
@@ -15,6 +9,10 @@ The values are stored internally in a "_ArrayList_" Java object
 Initialization :
 
 ```text
+## 4 numbers from 1 to 4 (with range operator)
+#set( $mylist = [1..4]) 
+
+## 6 values with diferent types
 #set( $mylist = [1, 2, 3, "A", true, 65.78] )
 ```
 
