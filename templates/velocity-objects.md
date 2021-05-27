@@ -129,7 +129,7 @@ Print all items with "\#foreach"
 
 ```text
 #foreach ( $item in $array) 
- - $foreach.count : $item 
+ $foreach.count : $item 
 #end
 
 --- OUTPUT :
@@ -137,6 +137,19 @@ Print all items with "\#foreach"
  2 : item = B 
  3 : item = C 
  4 : item = D 
+```
+
+```text
+#set($last = $array.size() - 1 ) ## last index
+#foreach ( $i in [0..$last] )  ## index 'range'
+// index : $i --> element : $array[$i] 
+#end
+
+--- OUTPUT :
+// index : 0 --> element : A 
+// index : 1 --> element : B 
+// index : 2 --> element : C 
+// index : 3 --> element : D 
 ```
 
 Change value :
