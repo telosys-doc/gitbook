@@ -1,12 +1,12 @@
 # Velocity objects
 
-## List \(array\)
+## List
 
 Object containing a list of any type of values.  
 The values are stored internally in a "_ArrayList_" Java object  
 \( see java.util.ArrayList for details \).
 
-This object is also considered as an "_array_" in many documentations.
+Even if it's not a real "Java array", this object is often considered as an "_array_" in many Velocity documentations..
 
 Initialization :
 
@@ -95,7 +95,30 @@ mymap content : $mymap
 mymap content : {k1=v1, k2=v2}
 ```
 
+## Array
 
+"Pure array" object that can be obtained from other objects.
+
+The values are stored internally in a "_Object \[ \]_ " instance. And therefore it doesn't have all the features offered by a List.
+
+Initialization :
+
+```text
+#set( $array = $mylist.toArray() )
+```
+
+
+
+Other examples :
+
+```text
+isEmpty : $array.isEmpty()
+#if ( $array.isEmpty() ) is void #end
+
+size    : $array.size()
+#if ( $array.size() > 0 ) is not void #end
+
+```
 
 
 
