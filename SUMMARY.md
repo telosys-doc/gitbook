@@ -30,8 +30,8 @@
   * [Telosys directives](templates/telosys-directives.md)
   * [Telosys objects](templates/telosys-objects.md)
   * [Code snippets](templates/code-snippets.md)
+* [Support the project](supporters.md)
 * [How to contribute](how-to-contribute.md)
 * [Sponsors](sponsors.md)
-* [Support the project](supporters.md)
 * [Tooling](tooling.md)
 
