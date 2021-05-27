@@ -133,7 +133,11 @@ Print all items with "\#foreach"
  4 : item = D 
 ```
 
+Change value :
 
+```text
+#set( $array[2] = "newValue" )
+```
 
 Other examples :
 
