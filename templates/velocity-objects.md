@@ -80,9 +80,10 @@ $mylist.contains("Z") ## OUTPUT : false (not found)
 $mylist.subList(1,3) ## from 1 to 2 (3 is exclusive)
 
 #set( $z = $mylist.add("new item") ) 
+#set( $z = $mylist.remove("A") )
 #set( $z = $mylist.removeAll( [1, 2, true, "Y"] ) )
 ##  'set($z=..)' is a work around to avoid printing 
-##  the return value from 'add', 'removeAll', etc
+##  the return value from 'add', 'remove', etc
 ```
 
 ## Map
