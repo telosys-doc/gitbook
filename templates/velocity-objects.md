@@ -10,7 +10,7 @@ xxxx
 
 Object containing a list of any type of values.  
 The values are stored internally in a "_ArrayList_" Java object  
-\( see java.util.ArrayList \)
+\( see java.util.ArrayList for details \)
 
 Initialization :
 
@@ -27,7 +27,7 @@ mylist content : $mylist
 mylist content : [1, 2, 3, A, true, 65.78]
 ```
 
-Print all items :
+Print all items \("$foreach.count" goes from 1 to length, it's a count not an index \) :
 
 ```text
 #foreach ( $item in $mylist ) 
@@ -50,9 +50,9 @@ item 0 : $mylist[0]
 --- OUTPUT :
 item 0 : 1 
 
-item 4 : $mylist[4]
+item 3 : $mylist[3]
 --- OUTPUT :
-item 4 : A
+item 3 : A
 
 item 6 : $mylist[6]
 --- ERROR :
@@ -62,14 +62,17 @@ Index 6 out of bounds for length 6
 Other usages :
 
 ```text
-// size    : $mylist.size()
-// isEmpty : $mylist.isEmpty()
+isEmpty : $mylist.isEmpty()
+#if ( $mylist.isEmpty() ) list is void #end
+
+size    : $mylist.size()
+#if ( $mylist.size() > 0 ) list is not void #end
 ```
 
 ## Map
 
 Object containing Key-Value associations.  
-The "key-value" pairs are stored internally in a "_LinkedHashMap_" Java object \(see "java.util.LinkedHashMap" \)
+The "key-value" pairs are stored internally in a "_LinkedHashMap_" Java object \(see "java.util.LinkedHashMap" for details\)
 
 Initialization :
 
@@ -80,12 +83,12 @@ Initialization :
 Print content :
 
 ```text
-mymap content : $mymap 
+mymap content : $mymap
+--- OUTPUT :
+mymap content : {k1=v1, k2=v2}
 ```
 
-Result :
 
-  `mymap content : {k1=v1, k2=v2}`
 
 
 
