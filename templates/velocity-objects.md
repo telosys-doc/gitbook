@@ -63,6 +63,18 @@ item 6 : $mylist[6]
 Index 6 out of bounds for length 6
 ```
 
+Change list content :
+
+```text
+#set( $mylist[2] = "CCC" ) ## index starts at 0
+
+#set( $z = $mylist.add("new item") ) 
+#set( $z = $mylist.remove("A") )
+#set( $z = $mylist.removeAll( [1, 2, true, "Y"] ) )
+##  'set($z=..)' is a work around to avoid printing 
+##  the return value from 'add', 'remove', etc
+```
+
 Other examples :
 
 ```text
@@ -79,12 +91,6 @@ $mylist.contains("A") ## OUTPUT : true (found)
 $mylist.contains("Z") ## OUTPUT : false (not found)
 
 $mylist.subList(1,3) ## from 1 to 2 (3 is exclusive)
-
-#set( $z = $mylist.add("new item") ) 
-#set( $z = $mylist.remove("A") )
-#set( $z = $mylist.removeAll( [1, 2, true, "Y"] ) )
-##  'set($z=..)' is a work around to avoid printing 
-##  the return value from 'add', 'remove', etc
 ```
 
 ## Map
@@ -115,7 +121,7 @@ The values are stored internally in a "_Object \[ \]_ " instance. And therefore 
 Initialization :
 
 ```text
-#set( $array = $mylist.toArray() )
+#set( $array = $mylist.toArray() ) 
 ```
 
 Print all items with "\#foreach"  
@@ -136,7 +142,7 @@ Print all items with "\#foreach"
 Change value :
 
 ```text
-#set( $array[2] = "newValue" )
+#set( $array[2] = "newValue" ) ## index starts at 0
 ```
 
 Other examples :
