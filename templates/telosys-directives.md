@@ -1,10 +1,8 @@
 # Telosys directives
 
-xx
+In addition to the standard Velocity language syntax, Telosys provides some specific "directives". 
 
-
-
-
+These directives can be useful to simplify writing or debugging templates.
 
 ## \#assertFalse
 

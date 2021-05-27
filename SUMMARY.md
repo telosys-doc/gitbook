@@ -25,6 +25,7 @@
   * [Examples](dsl-model/examples.md)
 * [Database model](database-model.md)
 * [Templates](templates/README.md)
+  * [Bundle of templates](templates/bundle-of-templates.md)
   * [Velocity Language](templates/velocity-language.md)
   * [Telosys directives](templates/telosys-directives.md)
   * [Telosys objects](templates/telosys-objects.md)
