@@ -118,7 +118,7 @@ Examples :
 
 Examples \(showing different operators\):
 
-| Operator Name | Symbol | Alternative Symbol | Example |
+| Operator Name | Symbol | Alt | Example |
 | :--- | :--- | :--- | :--- |
 | Equals Number | == | eq | `#if( $foo == 42 )` |
 | Equals String | == | eq | `#if( $foo == "bar" )` |
@@ -126,8 +126,8 @@ Examples \(showing different operators\):
 | Not Equals | != | ne | `#if( $foo != $bar )` |
 | Greater Than | &gt; | gt | `#if( $foo > 42 )` |
 | Less Than | &lt; | lt | `#if( $foo < 42 )` |
-| Greater Than or Equal To | &gt;= | ge | `#if( $foo >= 42 )` |
-| Less Than or Equal To | &lt;= | le | `#if( $foo <= 42 )` |
+| Greater Than  or Equal To | &gt;= | ge | `#if( $foo >= 42 )` |
+| Less Than  or Equal To | &lt;= | le | `#if( $foo <= 42 )` |
 | Boolean NOT | ! | not | `#if( !$foo )` |
 
 Notes:
