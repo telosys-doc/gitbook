@@ -30,7 +30,8 @@ mylist content : $mylist
 mylist content : [1, 2, 3, A, true, 65.78]
 ```
 
-Print all items \("$foreach.count" goes from 1 to length, it's a count not an index \) :
+Print all items with "\#foreach"  
+\( "$foreach.count" goes from 1 to length, it's a count not an index \) :
 
 ```text
 #foreach ( $item in $mylist ) 
@@ -109,12 +110,27 @@ mymap content : {k1=v1, k2=v2}
 
 "Pure array" object that can be obtained from other objects.
 
-The values are stored internally in a "_Object \[ \]_ " instance. And therefore it doesn't have all the features offered by a List.
+The values are stored internally in a "_Object \[ \]_ " instance. And therefore it doesn't have all the features offered by a List. An array does not support operations changing its size \( add, remove, removeAll, etc\)
 
 Initialization :
 
 ```text
 #set( $array = $mylist.toArray() )
+```
+
+Print all items with "\#foreach"  
+\( "$foreach.count" goes from 1 to length, it's a count not an index \) :
+
+```text
+#foreach ( $item in $array) 
+ - $foreach.count : $item 
+#end
+
+--- OUTPUT :
+ 1 : item = A 
+ 2 : item = B 
+ 3 : item = C 
+ 4 : item = D 
 ```
 
 
@@ -128,6 +144,8 @@ isEmpty : $array.isEmpty()
 size    : $array.size()
 #if ( $array.size() > 0 ) is not void #end
 
+$array.contains("B") ## OUTPUT : true (found)
+$array.indexOf("B") ## OUTPUT : 1 (found at index 1)
 ```
 
 
