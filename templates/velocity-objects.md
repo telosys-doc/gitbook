@@ -59,7 +59,7 @@ item 6 : $mylist[6]
 Index 6 out of bounds for length 6
 ```
 
-Other usages :
+Other examples :
 
 ```text
 isEmpty : $mylist.isEmpty()
