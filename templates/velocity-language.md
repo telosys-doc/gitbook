@@ -1,10 +1,6 @@
 # Velocity Language
 
-Telosys code generation is based on "templates". A template is a file with a "**.vm**" extension written in "**Velocity Template Language** \(VTL\)".
-
-Velocity is a well known Open Source template engine \( cf [http://velocity.apache.org/](http://velocity.apache.org/) \) 
-
-The Velocity engine used in Telosys Tools is version 1.7
+The **Velocity engine** used in Telosys is **version 1.7**
 
 For more information about the Velocity Templates Language \(VTL\) see the official web site : 
 
