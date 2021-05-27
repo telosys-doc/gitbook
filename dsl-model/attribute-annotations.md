@@ -288,6 +288,8 @@ Usable for field validation rules.
 
 ### @Transient
 
+Since version 4.0.0
+
 To define an attribute as "transient" \(for example in a Java class or with an ORM like JPA\)
 
 ### @UnsignedType
