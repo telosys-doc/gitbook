@@ -27,6 +27,7 @@
 * [Templates](templates/README.md)
   * [Bundle of templates](templates/bundle-of-templates.md)
   * [Velocity Language](templates/velocity-language.md)
+  * [Velocity objects](templates/velocity-objects.md)
   * [Telosys directives](templates/telosys-directives.md)
   * [Telosys objects](templates/telosys-objects.md)
   * [Code snippets](templates/code-snippets.md)
