@@ -1,6 +1,6 @@
 # Velocity directives
 
-## Most useful directives
+## Most used directives
 
 ### \#set
 
