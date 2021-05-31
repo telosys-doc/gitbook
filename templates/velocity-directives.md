@@ -2,6 +2,20 @@
 
 ## Most useful directives
 
+### \#set
+
+The \#set directive is used for setting a value. A value can be assigned to either a simple variable or an object property.
+
+```text
+#set( $name = "Bob" )
+#set( $customer.name = "Bob")
+#set( $user.level = 3 ) ## number literal
+#set( $a = $b ) ## variable reference
+#set( $mylist = [ "A", $v, "Z"] ) ## list
+```
+
+
+
 ### \#foreach / \#end
 
 Loops through a list of objects
@@ -70,6 +84,20 @@ Break the current iteration :
 ```text
 #foreach( $customer in $customerList )
   $customer.Name#if( $foreach.hasNext ),#end
+#end
+```
+
+Nested loops  :
+
+It's possible to access outer loops properties by using "**$foreach.parent**" or "**$foreach.topmost**"   
+\(e.g. $foreach.parent.index or $foreach.topmost.hasNext\).
+
+```text
+#foreach ( $item1 in ["A", "B", "C", "D" ] ) 
+#foreach ( $item2 in [1,2,3 ] )
+ . $foreach.index : $item1 / $item2  
+   ($foreach.parent.index) ($foreach.topmost.index)
+#end 
 #end
 ```
 
