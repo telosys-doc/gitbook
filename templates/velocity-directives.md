@@ -99,5 +99,21 @@ Examples :
 
 
 
+## \#stop
+
+The **\#stop** directive stops any further rendering and execution of the template. This is true even when the directive is nested within another template accessed through **\#parse** or located in a velocity **macro**. 
+
+The resulting output will contain all the content up to the point the \#stop directive was encountered. This is handy as an early exit from a template.
+
+Example :
+
+```text
+#if ( $v == 12 ) 
+#stop 
+#end 
+```
+
+## xxxxxxxx
+
 ## xxxx
 

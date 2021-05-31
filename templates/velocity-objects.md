@@ -67,13 +67,15 @@ Initialization :
 
 ### Boolean
 
-Each double value is stored internally in a "Boolean" Java object  
+Each boolean value is stored internally in a "Boolean" Java object  
 \( see "java.lang.Boolean" for details \).
 
 Initialization :
 
 ```text
 #set( $b = true )
+#set( $b = false )
+#set( $b = $mylist.isEmpty() )
 ```
 
 
