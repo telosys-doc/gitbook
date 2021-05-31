@@ -11,7 +11,8 @@ Initialization :
 
 ```text
 #set( $str = "abc" )
-#set( $str2 = "xx${str}yy" ) ## str2 = "xxabcyy"
+#set( $r = "xx${str}yy" )       ## r : "xxabcyy"
+#set( $r = "xx" + $str + "yy" ) ## r : "xxabcyy"
 ```
 
 String methods usage examples :
