@@ -1,63 +1,81 @@
 # Velocity directives
 
-## \#foreach / \#end
+## Most useful directives
+
+### \#foreach / \#end
 
 Loops through a list of objects
 
 Examples :
 
-Loop through an array :
+Loop with given values :
 
 ```text
- #foreach ( $item in [1..8] ) ## from 1 to 8
+#foreach ( $item in [1..8] ) ## from 1 to 8
  . item = $item 
- #end
+#end
 
- #foreach ( $item in [3,2,1] ) ## from 3 to 1
+#foreach ( $item in [3,2,1] ) ## from 3 to 1
  . item = $item 
- #end
+#end
 
- ## Everything in a single line
- #foreach ( $item in ['this', 'is', 'a', 'loop' ] ) ${item}#end
+## Everything in a single line
+#foreach( $item in ['A','B','C','D'] ) ${item}#end
 ```
 
-Loop through an object \(array, list, collection\) :
+Loop with an object \(array, list, collection\) :
 
 ```text
- #foreach( $attribute in $entity.attributes )
+#foreach( $attribute in $entity.attributes )
  $attribute.type $attribute.name
- #end
-```
-
-Loop counter provided by "$foreach.count" \( 1 to N \) :
-
-```text
- #foreach ( $item in ["A", "B", "C", "D" ] ) 
- $foreach.count : $item 
- #end
+#end
 ```
 
 Map iteration :
 
 ```text
- #set ( $map = {"banana" : "good", "cream" : "bad"} ) 
- #foreach($key in $map.keySet() )
+#set ( $map = {"banana" : "good", "cream" : "bad"} ) 
+#foreach($key in $map.keySet() )
  $key --> $map.get($key)
- #end
+#end
 ```
 
 Break the current iteration :
 
 ```text
- #foreach ( $item in [1..20] )
- #if ( $item > 3 ) #break #end
+#foreach ( $item in [1..20] )
+#if ( $item > 3 ) #break #end
  . item = $item 
- #end
+#end
+```
+
+"**$foreach.count**"  loop counter \( 1 to N \) :
+
+```text
+#foreach ( $item in ["A", "B", "C", "D" ] ) 
+ . $foreach.count : $item 
+#end
+```
+
+"**$foreach.index**"  zero-based index \( 0 to N-1 \) :
+
+```text
+#foreach ( $item in ["A", "B", "C", "D" ] ) 
+ . $foreach.index : $item 
+#end
+```
+
+"**$foreach.hasNext**"  \( true if not last item \) :
+
+```text
+#foreach( $customer in $customerList )
+  $customer.Name#if( $foreach.hasNext ),#end
+#end
 ```
 
 
 
-## \#if / \#else / \#**elseif** / \#end
+### \#if / \#else / \#**elseif** / \#end
 
 Conditional output or instructions
 
@@ -99,7 +117,9 @@ Examples :
 
 
 
-## \#stop
+## Other directives
+
+### \#stop
 
 The **\#stop** directive stops any further rendering and execution of the template. This is true even when the directive is nested within another template accessed through **\#parse** or located in a velocity **macro**. 
 
@@ -113,7 +133,7 @@ Example :
 #end 
 ```
 
-## xxxxxxxx
+### xxxxxxxx
 
-## xxxx
+### xxxx
 
