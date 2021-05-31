@@ -22,7 +22,10 @@ length :  $str.length()
 #if ( $str.equalsIgnoreCase("AbC") ) YES #end
 toUpperCase() : $str.toUpperCase()
 toLowerCase() : $str.toLowerCase()
+#set( $str2 = "xx${str}yy" ) ## str2 = "xxabcyy"
 ```
+
+
 
 ### Integer
 
@@ -35,6 +38,19 @@ Initialization :
 #set( $i = 123 )
 ```
 
+Calculations :
+
+```text
+#set( $r = $i + 1000 ) ## r = 1123
+#set( $r = $i - 23 )   ## r = 100
+#set( $r = $i * 10 )   ## r = 1230
+#set( $r = $i / 2 )    ## NB : r = 61 (!) (int)
+#set( $r = $i / 2.0 )  ## r = 61.5
+#set( $r = $i.doubleValue() / 2 ) ## r = 61.5
+```
+
+
+
 ### Double
 
 Each double value is stored internally in a "Double" Java object  
@@ -46,6 +62,8 @@ Initialization :
 #set( $d = 123.45 )
 ```
 
+
+
 ### Boolean
 
 Each double value is stored internally in a "Boolean" Java object  
@@ -56,6 +74,8 @@ Initialization :
 ```text
 #set( $b = true )
 ```
+
+
 
 ## Collections
 
