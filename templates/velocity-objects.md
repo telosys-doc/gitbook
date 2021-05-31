@@ -11,6 +11,7 @@ Initialization :
 
 ```text
 #set( $str = "abc" )
+#set( $str2 = "xx${str}yy" ) ## str2 = "xxabcyy"
 ```
 
 String methods usage examples :
@@ -22,7 +23,6 @@ length :  $str.length()
 #if ( $str.equalsIgnoreCase("AbC") ) YES #end
 toUpperCase() : $str.toUpperCase()
 toLowerCase() : $str.toLowerCase()
-#set( $str2 = "xx${str}yy" ) ## str2 = "xxabcyy"
 ```
 
 
