@@ -143,7 +143,13 @@ Examples :
  #end 
 ```
 
+### \#include
 
+xxxx
+
+### \#parse
+
+xxxx
 
 ## Other directives
 
@@ -161,7 +167,31 @@ Example :
 #end 
 ```
 
-### xxxxxxxx
 
-### xxxx
+
+### \#break
+
+xxxx
+
+
+
+### \#evaluate
+
+xxxx
+
+
+
+### \#define
+
+xxxx
+
+
+
+### \#macro
+
+xxxx
+
+
+
+
 
