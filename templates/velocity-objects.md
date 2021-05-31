@@ -4,13 +4,58 @@
 
 ### String
 
-xxxx
+Each string value is stored internally in a "_String_" Java object  
+\( see "java.lang.String" for details \).
+
+Initialization :
+
+```text
+#set( $str = "abc" )
+```
+
+String methods usage examples :
+
+```text
+length :  $str.length() 
+#set($str2 = $str.replaceFirst("def", "xy" ) )
+#if ( $str.endsWith("ef") ) YES #end
+#if ( $str.equalsIgnoreCase("AbC") ) YES #end
+toUpperCase() : $str.toUpperCase()
+toLowerCase() : $str.toLowerCase()
+```
 
 ### Integer
 
-xxx
+Each integer value is stored internally in a "Integer" Java object  
+\( see "java.lang.Integer" for details \).
 
+Initialization :
 
+```text
+#set( $i = 123 )
+```
+
+### Double
+
+Each double value is stored internally in a "Double" Java object  
+\( see "java.lang.Double" for details \).
+
+Initialization :
+
+```text
+#set( $d = 123.45 )
+```
+
+### Boolean
+
+Each double value is stored internally in a "Boolean" Java object  
+\( see "java.lang.Boolean" for details \).
+
+Initialization :
+
+```text
+#set( $b = true )
+```
 
 ## Collections
 
