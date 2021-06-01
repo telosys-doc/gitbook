@@ -30,5 +30,26 @@ The "templates.cfg" file is used to launch different types of processing defined
 * "1" : code generation executed only once independently of entities 
 * "R" : simple resources files copy in a destination folder 
 
+### How to install a bundle?
 
+xxxxx
+
+### How to customize a bundle?
+
+Telosys was designed to allow users to customize code generation. So, if you reuse existing bundles, you will probably want to change some its parts.
+
+What you can do:
+
+* modify existing templates \(.vm files\) with a text editor
+* add new templates \(.vm files\) in the bundle \(don't forget to reference them in "templates.cfg"\)
+* delete certain templates \(in this case you can only delete the line in "templates.cfg"\)
+* add new resources \(static files\) to be copied 
+
+### How to create a new bundle?
+
+xx
+
+### How to publish a bundle?
+
+xx
 
