@@ -51,5 +51,33 @@ xx
 
 ### How to publish a bundle?
 
-xx
+Once you've created \(or customized\) a bundle, you might want to publish it as a Git repository so that you can reuse it later from anywhere.
+
+Here's the procedure to follow:
+
+#### 1\) Prepare the local Git repository 
+
+The bundle folder will become a Git project.  
+So, in the bundle folder... 
+
+* Initialize the Git repository with initial branch “master”  `$ git init -b master`
+* Add all the bundle files to be committed  `$ git add .`
+* Commit the files  `$ git commit -m "Initial commit"`
+
+#### 2\) Publish on remote repository 
+
+On the **remote** Git server \(GitHub, GitLab, your own server, etc\):  
+- if you don't already have a repository to host the bundle, create it.  
+- copy the repository URL  
+For example :  `https://github.com/xxx/yyy.git`
+
+On the **local** bundle folder:
+
+* Add the remote repository as a new remote \(with name “origin”\) `$ git remote add origin https://xxx/yyy/repo-name.git`
+* Check Git remote `$ git remote -v origin  https://xxx/yyy/repo-name.git (fetch) origin  https://xxx/yyy/repo-name.git (push)`
+* Push to remote “origin” \(the GitHub repository\)  `$ git push origin master` \(if not authenticated Git ask for user & password\)
+
+And that's all.   
+The remote Git repository contains now all the bundle files.   
+The bundle is now installable by Telosys on any workstation \(see Telosys "ib" / "install bundle" command\).
 
