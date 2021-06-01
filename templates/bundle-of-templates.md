@@ -8,7 +8,7 @@ Thus it is possible to have clearly defined groups of templates for each part of
 
 ### What's in a bundle ?
 
-Each bundle folder is supposed to contain :
+Each bundle folder contains:
 
 * 1 file "**templates.cfg**" \(mandatory\)
 * 1 file "**README.md**" \(to provide information about the bundle\)
