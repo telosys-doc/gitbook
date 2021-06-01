@@ -13,7 +13,7 @@ Each bundle folder is supposed to contain :
 * 1 file "**templates.cfg**" \(mandatory\)
 * 1 file "**README.md**" \(to provide information about the bundle\)
 * 1..N **templates** \(Velocity "**.vm**" files\)
-* 1..N **resources** files \(static files\)
+* 0..N **resources** files \(static files\)
 * any other useful file for the bundle
 * 1..N subfolders \(to organize the different files\)
 
@@ -22,9 +22,9 @@ Each bundle folder is supposed to contain :
 All code generation is driven by the "**templates.cfg**" file.  
 It is this file which defines the target files to generate, the directory in which to place the result and the templates to use.
 
-For example, if a template \(.vm file\) is present in the bundle folder but is not present in "templates.cfg", it will not be used.
+For example, if a template \(.vm file\) is present in the bundle folder but not present in "templates.cfg", it will not be used.
 
-The "templates.cfg" file is used to launch different types of processing \(defined by the last character of each line\):
+The "templates.cfg" file is used to launch different types of processing defined by the last character of each line:
 
 * "\*" : code generation executed multiple times with the same template \(1 time for each selected entity\)
 * "1" : code generation executed only once independently of entities 
