@@ -4,6 +4,8 @@ A Telosys project may require a lot templates, that's why the templates are orga
 
 A "bundle" is just a set of "templates" \(and sometimes resources\) grouped together in a folder.
 
+Thus it is possible to have clearly defined groups of templates for each part of the code to be generated \(persistence, REST-API, DTO, HTML pages, testing, etc\)
+
 ### What's in a bundle ?
 
 Each bundle folder is supposed to contain :
