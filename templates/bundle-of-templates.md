@@ -25,13 +25,33 @@ For example, if a template \(".vm" file\) is present in the bundle folder but no
 
 The "templates.cfg" file is used to launch different types of processing defined by the last character of each line:
 
-* "\*" : code generation executed multiple times with the same template \(1 time for each selected entity\)
-* "1" : code generation executed only once independently of entities 
-* "R" : simple resources files copy in a destination folder 
+* **"\*"** :  code generation executed **multiple times** with the same template \(1 time for each selected entity\)
+* **"1"** :  code generation executed **only once** independently of entities 
+* **"R"** :  simple **resources files** copy in a destination folder 
 
 ### How to install a bundle?
 
-xxxxx
+Whatever your Telosys tool \(CLI or Eclipse\), it allows you to install remote model bundles from GitHub.
+
+#### With Telosys-CLI 
+
+Use the following commands :
+
+* "**gh**" \("GitHub"\) to print/change the current GitHub account
+* "**lb**" \("list bundles"\) to see the bundles already present in the current project
+* "**ib**" \("install bundle"\) to install new bundle\(s\) from the remote Git repository 
+
+#### With Telosys Eclipse plugin
+
+In the project properties / "**Telosys tools**"   
+- Select "**Templates**" tab  
+- Choose your GitHub account  
+- Click "Get available bundles"  
+- Select the desired bundles  
+- Click "Download selected bundle\(s\)"   
+  with "Install downloaded bundle\(s\)" checked
+
+
 
 ### How to customize a bundle?
 
