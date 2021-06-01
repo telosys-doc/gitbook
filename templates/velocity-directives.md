@@ -166,7 +166,7 @@ Examples :
 
 ### \#parse
 
-The **\#parse** directive allows to import a local VTL file.   
+The **\#parse** directive allows to import a local Velocity template file.   
 The file is parsed by the Velocity engine. Only one argument is accepted \(only one file for each call, other arguments are ignored\). A variable can be used instead of the literal filename.  
 All the variables defined before the "\#parse" call are usable in the parsed file. All the variables defined in the parsed file are usable in the primary file after the "\#parse" call.  
 Any templates to which \#parse refers must be included under "TEMPLATE\_ROOT" \( the "bundle" directory for Telosys \).
@@ -180,8 +180,8 @@ Examples :
 ## Here we can use variables defined in "initvar.vm"
 ```
 
-Recursion is permitted \(with a condition to stop recursion\).  
-Example :
+\#parse can be used inside "parsed files".  
+Recursion is permitted \(with a condition to stop recursion\).
 
 Primary file :
 
