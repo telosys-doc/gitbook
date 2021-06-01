@@ -145,7 +145,17 @@ Examples :
 
 ### \#include
 
-xxxx
+The **\#include** directive allows to import a local file at the current position.   
+NB : the file content is included "as is" \(not rendered through the template engine / not parsed\).  
+If more than one file will be included, they should be separated by commas. A variable can be used instead of a literal filename.
+
+Examples :
+
+```text
+#include( "myfile.txt" )
+#include( "a.txt", "b.html" )
+#include( $myfile )
+```
 
 ### \#parse
 
