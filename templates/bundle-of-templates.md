@@ -12,8 +12,8 @@ Each bundle folder is supposed to contain :
 
 * 1 file "**templates.cfg**" \(mandatory\)
 * 1 file "**README.md**" \(to provide information about the bundle\)
-* 1..N **templates** \( Velocity "**.vm**" files \)
-* 1..N **resources** files \(static files \)
+* 1..N **templates** \(Velocity "**.vm**" files\)
+* 1..N **resources** files \(static files\)
 * any other useful file for the bundle
 * 1..N subfolders \(to organize the different files\)
 
