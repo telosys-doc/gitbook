@@ -51,8 +51,6 @@ In the project properties / "**Telosys tools**"
 - Click "Download selected bundle\(s\)"   
   with "Install downloaded bundle\(s\)" checked
 
-
-
 ### How to customize a bundle?
 
 Telosys was designed to allow users to customize code generation. So, if you reuse existing bundles, you will probably want to change some its parts.
@@ -66,7 +64,8 @@ What you can do:
 
 ### How to create a new bundle?
 
-xx
+* Create the **bundle folder** in "TelosysTools/templates" \(the folder name is the bundle name\)
+* In the new folder : - Copy an existing "**templates.cfg**" file and adapt it - Create a "**README.md**" file  - Create \(or copy/paste/modify\) the bundle "**.vm**" files 
 
 ### How to publish a bundle?
 
