@@ -48,17 +48,17 @@ Applicable with "references" to embed them in the current entity.
 
 ### @FetchTypeEager
 
-Since version 4.0.0   
+Since version 3.3.0   
 Define an "Eager Loading" fetch type for a link, typically for ORM \(JPA, Doctrine, etc \).
 
 ### @FetchTypeLazy
 
-Since version 4.0.0   
+Since version 3.3.0   
 Define a "Lazy Loading" fetch type for a link, typically for ORM \(JPA, Doctrine, etc \).
 
 ### @FK\( \[fkName,\] referencedEntity\[.attribute\] \)
 
-Since version 4.0.0  
+Since version 3.3.0  
 Define a Foreign Key or a Foreign Key part   
   
 Syntax :  
@@ -118,7 +118,7 @@ Defines the input type usable for the field \(for example an HTML input type\).
 
 ### @Insertable\(boolean\) 
 
-Since version 4.0.0   
+Since version 3.3.0   
   
 Examples :  
 `@Insertable(true)  
@@ -131,7 +131,7 @@ Defines the label usable for the field \(for example an HTML label\).
 
 ### @LinkByAttr\(string\) 
 
-Since version 4.0.0   
+Since version 3.3.0   
 Defines a link based on the given attribute\(s\) name\(s\).  
 For multiple attributes \(in case of composite PK\) each attribute must define the referenced attribute in the target entity by using the "&gt;" character \( "a &gt; b" for  "a" referencing "b"\).  
   
@@ -164,7 +164,7 @@ Line {
 
 ### @LinkByCol\(column\[, column2 \[, columnN \] \] \) 
 
-Since version 4.0.0   
+Since version 3.3.0   
 Defines a link based on the given database column name\(s\).  
   
 Examples :  
@@ -176,7 +176,7 @@ group   : Group { @LinkByCol(GROUP_FAMILY, GROUP_CODE) } ;`
 
 ### @LinkByFK\(string\) 
 
-Since version 4.0.0   
+Since version 3.3.0   
 Defines a link based on the given Foreign Key name.  
   
 Examples :  
@@ -185,7 +185,7 @@ subGroup : SubGroup { @LinkByFK(FK_PERSON_SUBGROUP) } ;`
 
 ### @LinkByJoinEntity\(string\)
 
-Since version 4.0.0  
+Since version 3.3.0  
 Defines a link based on the given "join entity" name.  
 Usable with "many to many" link to define a "join table".  
   
@@ -201,13 +201,13 @@ Applicable with "string" basic type.
 
 ### @ManyToMany 
 
-Since version 4.0.0   
+Since version 3.3.0   
 Defines a "many to many" cardinality for a link.  
 Usable for ORM code generation \(JPA, etc\)
 
 ### @MappedBy\(attributeName\)
 
-Since version 4.0.0   
+Since version 3.3.0   
 Defines the "mappedBy" attribute for a link.  
 Usable for an "inverse side" relationship.  
   
@@ -249,13 +249,13 @@ Applicable with any basic type.
 
 ### @OneToOne 
 
-Since version 4.0.0   
+Since version 3.3.0   
 Defines a "one to one" cardinality for a link.  
 Usable for ORM code generation \(JPA, etc\)
 
 ### @Optional
 
-Since version 4.0.0   
+Since version 3.3.0   
 Defines an "optional" relationship for a link.  
 Usable for ORM code generation \(JPA, etc\)
 
@@ -288,7 +288,7 @@ Usable for field validation rules.
 
 ### @Transient
 
-Since version 4.0.0
+Since version 3.3.0
 
 To define an attribute as "transient" \(for example in a Java class or with an ORM like JPA\)
 
@@ -300,7 +300,7 @@ Applicable with any basic type.
 
 ### @Updatable\(boolean\) 
 
-Since version 4.0.0   
+Since version 3.3.0   
   
 Examples :  
 `@Updatable(true)  
