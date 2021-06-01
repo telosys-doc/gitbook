@@ -99,3 +99,6 @@ And that's all.
 The remote Git repository contains now all the bundle files.   
 The bundle is now installable by Telosys on any workstation.
 
+See also :  
+[Adding an existing project to GitHub using the command line](https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line)
+
