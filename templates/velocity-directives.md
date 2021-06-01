@@ -147,7 +147,8 @@ Examples :
 
 The **\#include** directive allows to import a local file at the current position.   
 The file is included "as is" \(as a text file, not rendered through the template engine, not parsed\).  
-If more than one file will be included, they should be separated by commas. A variable can be used instead of a literal filename.
+If more than one file will be included, they should be separated by commas. A variable can be used instead of a literal filename.  
+Any files to which \#include refers must be included under "TEMPLATE\_ROOT" \( the "bundle" directory for Telosys \).
 
 Examples :
 
@@ -166,7 +167,42 @@ Examples :
 
 ### \#parse
 
-xxxx
+The **\#parse** directive allows to import a local VTL file.   
+The file is parsed by the Velocity engine. Only one argument is accepted \(only one file for each call, other arguments are ignored\). A variable can be used instead of the literal filename.  
+All the variables defined before the "\#parse" call are usable in the parsed file. All the variables defined in the parsed file are usable in the primary file after the "\#parse" call.  
+Any templates to which \#parse refers must be included under "TEMPLATE\_ROOT" \( the "bundle" directory for Telosys \).
+
+Examples :
+
+```text
+#parse("foo.vm")
+#parse($myfile)
+#parse("include/initvar.vm")
+## Here we can use variables defined in "initvar.vm"
+```
+
+Recursion is permitted \(with a condition to stop recursion\).  
+Example :
+
+Primary file :
+
+```text
+#set( $count = 8 )
+#parse( "foo.vm" )
+```
+
+"foo.vm" file with recursive "parse" :
+
+```text
+#set( $count = $count - 1 )
+#if( $count > 0 )
+  #parse( "foo.vm" )
+#else
+  End of recursion.
+#end
+```
+
+
 
 ## Other directives
 
