@@ -145,8 +145,7 @@ Examples :
 
 ### \#include
 
-The **\#include** directive allows to import a local file at the current position.   
-The file is included "as is" \(as a text file, not rendered through the template engine, not parsed\).  
+The **\#include** directive allows to import a local file at the current position. The file is included "as is" \(as a text file, not rendered through the template engine, not parsed\).  
 If more than one file will be included, they should be separated by commas. A variable can be used instead of a literal filename.  
 Any files to which \#include refers must be included under "TEMPLATE\_ROOT" \( the "bundle" directory for Telosys \).
 
