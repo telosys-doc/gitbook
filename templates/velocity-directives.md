@@ -247,7 +247,7 @@ Examples :
 #end
 $foreach.count : $v
 
-## BREAK in a nested loop
+## BREAK in a nested loop (break innermost)
 #set($mylist1 = ["A", "B", "C", "D", "E", "F" ])
 #set($mylist2 = [1, 2, 3, 4, 5, 6 ])
 #foreach( $v1 in $mylist1 )
@@ -263,7 +263,18 @@ $foreach.parent.count : $v1 / $foreach.count : $v2
 
 ### \#evaluate
 
-xxxx
+The **\#evaluate** directive can be used to dynamically evaluate a statement \(piece of Velocity code\). This allows to evaluate a string that is created dynamically at render time.
+
+Examples :
+
+```text
+#set($v = 2)
+#set($statement = '#set($r = $v * 10)' )
+#evaluate($statement)
+v = $v 
+statement = $statement
+r = $r ## r = 20
+```
 
 
 
