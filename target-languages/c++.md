@@ -13,23 +13,124 @@ The information below shows the behavior of the generator when 'C++' is the curr
 
 ## Types conversion 
 
-The table below describes how the model neutral types are automatically converted to C++ types.
+The table below describes how model neutral types are automatically converted to C++ types with potential impact due to annotations \(@UnsignedType, @NotNull, @PrimitiveType, @ObjectType\)
 
-| Model type | Default |  @UnsignedType |  @NotNull |  @PrimitiveType |  @ObjectType |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| string | string | string | string | string | string |
-| byte | char | unsigned char | char | char | char |
-| short | short | unsigned short | short | short | short |
-| int | int | unsigned int | int | int | int |
-| long | long | unsigned long | long | long | long |
-| decimal | double | double | double | double | double |
-| float | float | float | float | float | float |
-| double | double | double | double | double | double |
-| boolean | bool | bool | bool | bool | bool |
-| date | std::tm | std::tm | std::tm | std::tm | std::tm |
-| time |  |  |  |  |  |
-| timestamp |  |  |  |  |  |
-| binary |  |  |  |  |  |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Model type</th>
+      <th style="text-align:left">Default</th>
+      <th style="text-align:left">
+        <p>@UnsignedType</p>
+        <p>@NotNull</p>
+      </th>
+      <th style="text-align:left">
+        <p>@PrimitiveType</p>
+        <p>@ObjectType</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left"><b>string</b>
+      </td>
+      <td style="text-align:left">string (U)
+        <br />string (N)</td>
+      <td style="text-align:left">
+        <p>string (P)</p>
+        <p>string (O)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">byte</td>
+      <td style="text-align:left"><b>char</b>
+      </td>
+      <td style="text-align:left">
+        <p>unsigned char</p>
+        <p>char (N)</p>
+      </td>
+      <td style="text-align:left">
+        <p>char (P)</p>
+        <p>char (O)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">short</td>
+      <td style="text-align:left"><b>short</b>
+      </td>
+      <td style="text-align:left">unsigned short</td>
+      <td style="text-align:left">short</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">int</td>
+      <td style="text-align:left"><b>int</b>
+      </td>
+      <td style="text-align:left">unsigned int</td>
+      <td style="text-align:left">int</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">long</td>
+      <td style="text-align:left"><b>long</b>
+      </td>
+      <td style="text-align:left">unsigned long</td>
+      <td style="text-align:left">long</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">decimal</td>
+      <td style="text-align:left"><b>double</b>
+      </td>
+      <td style="text-align:left">double</td>
+      <td style="text-align:left">double</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">float</td>
+      <td style="text-align:left"><b>float</b>
+      </td>
+      <td style="text-align:left">float</td>
+      <td style="text-align:left">float</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">double</td>
+      <td style="text-align:left"><b>double</b>
+      </td>
+      <td style="text-align:left">double</td>
+      <td style="text-align:left">double</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">boolean</td>
+      <td style="text-align:left"><b>bool</b>
+      </td>
+      <td style="text-align:left">bool</td>
+      <td style="text-align:left">bool</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">date</td>
+      <td style="text-align:left"><b>std::tm</b>
+      </td>
+      <td style="text-align:left">std::tm</td>
+      <td style="text-align:left">std::tm</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">time</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">timestamp</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">binary</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+  </tbody>
+</table>
 
 The type conversion has an impact on :
 
@@ -55,7 +156,7 @@ The type conversion has an impact on :
 |  FALSE | false |
 |  NULL | NULL |
 
-## Literal values
+## Literal values examples
 
 |  Model type |  Language type |  Language full type |  Language literal value example |
 | :--- | :--- | :--- | :--- |
