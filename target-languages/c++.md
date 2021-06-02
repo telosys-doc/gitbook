@@ -132,6 +132,32 @@ The table below describes how model neutral types are automatically converted to
   </tbody>
 </table>
 
+
+
+### Simpletype and full type
+
+|  Model type |  Simple type |  Full type |
+| :--- | :--- | :--- |
+| string | string | string |
+| byte | char | char |
+| byte | unsigned char | unsigned char |
+| short | short | short |
+| short | unsigned short | unsigned short |
+| int | int | int |
+| int | unsigned int | unsigned int |
+| long | long | long |
+| long | unsigned long | unsigned long |
+| decimal | double | double |
+| float | float | float |
+| double | double | double |
+| boolean | bool | bool |
+| date | std::tm | std::tm |
+| time |  |  |
+| timestamp |  |  |
+| binary |  |  |
+
+### Remarks
+
 The type conversion has an impact on :
 
 *  $attribute.type
@@ -140,8 +166,6 @@ The type conversion has an impact on :
 *  $attribute.wrapperType
 *  $attribute.isPrimitiveType\(\)
 
-## Remarks
-
 '@UnsignedType' has effect only for char, short, int, long
 
 '@NotNull' has no effect  
@@ -149,14 +173,17 @@ The type conversion has an impact on :
 '@ObjectType' has no effect  
 
 
-## Literals for TRUE, FALSE and NULL
+## Literals
 
-|  TRUE | true |
+### TRUE, FALSE, NULL
+
+|   | Generated  |
 | :--- | :--- |
-|  FALSE | false |
-|  NULL | NULL |
+| TRUE | **true** |
+|  FALSE | **false** |
+|  NULL | **NULL** |
 
-## Literal values examples
+### Examples of generated literals
 
 |  Model type |  Language type |  Language full type |  Language literal value example |
 | :--- | :--- | :--- | :--- |
