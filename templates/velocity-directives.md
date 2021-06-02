@@ -1,5 +1,22 @@
 # Velocity directives
 
+A directive is a Velocity keyword starting by a "**\#**", for example "\#set", "\#if", "\#foreach", etc. 
+
+Directives can be thought of as "instructions" for handling rendering in a model. They can be used to define variables \(\#set\), apply logical conditions \(\#if\), iterate over collections \(\#foreach\), etc.
+
+```text
+#set( $name = "Bob" )
+#foreach( $v in $elements )
+ $v
+#end
+```
+
+To avoid misinterpretations the name of the directive can be bracketed with "{" and "}" 
+
+```text
+#if($x)true#{else}false#end
+```
+
 ## Most used directives
 
 ### \#set
