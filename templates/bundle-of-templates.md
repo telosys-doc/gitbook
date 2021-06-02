@@ -20,7 +20,7 @@ Each bundle folder contains:
 ### How it works ?
 
 All code generation is driven by the "**templates.cfg**" file.  
-It's this file which defines the target files to generate, the directory in which to place the result and the templates to use.  
+This file defines the target files to generate, the directory in which to place the result and the templates to use.  
 For example, if a template \(".vm" file\) is present in the bundle folder but not present in "templates.cfg", it will not be used.
 
 The "templates.cfg" file is used to launch different types of processing defined by the last character of each line:
