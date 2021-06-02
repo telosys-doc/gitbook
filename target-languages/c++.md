@@ -47,7 +47,7 @@ The table below describes how model neutral types are automatically converted to
       <td style="text-align:left"><b>char</b>
       </td>
       <td style="text-align:left">
-        <p>unsigned char</p>
+        <p>unsigned char (U)</p>
         <p>char (N)</p>
       </td>
       <td style="text-align:left">
@@ -59,56 +59,56 @@ The table below describes how model neutral types are automatically converted to
       <td style="text-align:left">short</td>
       <td style="text-align:left"><b>short</b>
       </td>
-      <td style="text-align:left">unsigned short</td>
+      <td style="text-align:left">unsigned short (U)</td>
       <td style="text-align:left">short</td>
     </tr>
     <tr>
       <td style="text-align:left">int</td>
       <td style="text-align:left"><b>int</b>
       </td>
-      <td style="text-align:left">unsigned int</td>
+      <td style="text-align:left">unsigned int (U)</td>
       <td style="text-align:left">int</td>
     </tr>
     <tr>
       <td style="text-align:left">long</td>
       <td style="text-align:left"><b>long</b>
       </td>
-      <td style="text-align:left">unsigned long</td>
+      <td style="text-align:left">unsigned long (U)</td>
       <td style="text-align:left">long</td>
     </tr>
     <tr>
       <td style="text-align:left">decimal</td>
       <td style="text-align:left"><b>double</b>
       </td>
-      <td style="text-align:left">double</td>
+      <td style="text-align:left">double (U)</td>
       <td style="text-align:left">double</td>
     </tr>
     <tr>
       <td style="text-align:left">float</td>
       <td style="text-align:left"><b>float</b>
       </td>
-      <td style="text-align:left">float</td>
+      <td style="text-align:left">float (U)</td>
       <td style="text-align:left">float</td>
     </tr>
     <tr>
       <td style="text-align:left">double</td>
       <td style="text-align:left"><b>double</b>
       </td>
-      <td style="text-align:left">double</td>
+      <td style="text-align:left">double (U)</td>
       <td style="text-align:left">double</td>
     </tr>
     <tr>
       <td style="text-align:left">boolean</td>
       <td style="text-align:left"><b>bool</b>
       </td>
-      <td style="text-align:left">bool</td>
+      <td style="text-align:left">bool (U)</td>
       <td style="text-align:left">bool</td>
     </tr>
     <tr>
       <td style="text-align:left">date</td>
       <td style="text-align:left"><b>std::tm</b>
       </td>
-      <td style="text-align:left">std::tm</td>
+      <td style="text-align:left">std::tm (U)</td>
       <td style="text-align:left">std::tm</td>
     </tr>
     <tr>
