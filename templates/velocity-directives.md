@@ -31,7 +31,12 @@ The \#set directive is used for setting a value. A value can be assigned to eith
 #set( $mylist = [ "A", $v, "Z"] ) ## list
 ```
 
+NB : if the value to be assigned is null then it will not be assigned!
 
+```text
+#set( $v = $o.get("") ) 
+## if get returns null then $v remains unchanged
+```
 
 ### \#foreach / \#end
 
