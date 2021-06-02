@@ -219,16 +219,13 @@ isEmpty : $mymap.isEmpty()
 size : $mymap.size()
 #if ( $mymap.size() > 0 ) not void #end
 
-#if ( $mymap.containsKey("k1") ) K1 FOUND 
-#end
+#if ( $mymap.containsKey("k1") ) K1 FOUND #end
 
-#if ( $mymap.containsValue("v2") ) V2 FOUND 
-#end
+#if ( $mymap.containsValue("v2") ) V2 FOUND #end
 
 ## Remove element by key
 #set($removed = $mymap.remove("k1") )
-#if ( ! $mymap.containsKey("k1") ) K1 NOT FOUND 
-#end
+#if ( ! $mymap.containsKey("k1") ) K1 NOT FOUND #end
 
 ## Get all values
 #foreach($v in $mymap.values() )
@@ -240,6 +237,8 @@ size : $mymap.size()
  . $key
 #end
 ```
+
+
 
 ### Array
 
