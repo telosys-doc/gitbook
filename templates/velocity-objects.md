@@ -136,6 +136,10 @@ item 0 : $mylist[0]
 --- OUTPUT :
 item 0 : 1 
 
+$list.get(0) ## with Java get() method
+--- OUTPUT :
+item 0 : 1 
+
 item 3 : $mylist[3]
 --- OUTPUT :
 item 3 : A
