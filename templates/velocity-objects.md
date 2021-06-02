@@ -198,6 +198,21 @@ Print content :
 mymap content : $mymap
 --- OUTPUT :
 mymap content : {k1=v1, k2=v2}
+
+## print VALUES
+#foreach($v in $mymap )
+. $v 
+#end
+
+## print KEYS with Java "keySet()"
+#foreach($k in $mymap.keySet() )
+ . $k
+#end
+
+## print KEYS and VALUES with Java "entrySet()"
+#foreach($e in $mymap.entrySet() )
+. $e.key : $e.value
+#end
 ```
 
 Get by key:

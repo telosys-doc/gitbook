@@ -1,22 +1,5 @@
 # Velocity directives
 
-A directive is a Velocity keyword starting by a "**\#**", for example "\#set", "\#if", "\#foreach", etc. 
-
-Directives can be thought of as "instructions" for handling rendering in a model. They can be used to define variables \(\#set\), apply logical conditions \(\#if\), iterate over collections \(\#foreach\), etc.
-
-```text
-#set( $name = "Bob" )
-#foreach( $v in $elements )
- $v
-#end
-```
-
-To avoid misinterpretations the name of the directive can be bracketed with "{" and "}" 
-
-```text
-#if($x)true#{else}false#end
-```
-
 ## Most used directives
 
 ### \#set
@@ -31,12 +14,7 @@ The \#set directive is used for setting a value. A value can be assigned to eith
 #set( $mylist = [ "A", $v, "Z"] ) ## list
 ```
 
-NB : if the value to be assigned is null then it will not be assigned!
 
-```text
-#set( $v = $o.get("abc") ) 
-## if get returns null then $v remains unchanged
-```
 
 ### \#foreach / \#end
 
@@ -165,69 +143,13 @@ Examples :
  #end 
 ```
 
-
-
 ### \#include
 
-The **\#include** directive allows to import a local file at the current position. The file is included "as is" \(as a text file, not rendered through the template engine, not parsed\).  
-If more than one file will be included, they should be separated by commas. A variable can be used instead of a literal filename.  
-Any files to which \#include refers must be included under "TEMPLATE\_ROOT" \( the "bundle" directory for Telosys \).
-
-Examples :
-
-```text
-## Include a single file :
-#include( "myfile.txt" )
-#include( "include/myfile.txt" ) 
-
-## Include multiple files :
-#include( "a.txt", "b.html" )
-
-## Include with variables :
-#include( $myfile )
-#include( "header.include", $myfile ) 
-```
-
-
+xxxx
 
 ### \#parse
 
-The **\#parse** directive allows to import a local Velocity template file.   
-The file is parsed by the Velocity engine. Only one argument is accepted \(only one file for each call, other arguments are ignored\). A variable can be used instead of the literal filename.  
-All the variables defined before the "\#parse" call are usable in the parsed file. All the variables defined in the parsed file are usable in the primary file after the "\#parse" call.  
-Any templates to which \#parse refers must be included under "TEMPLATE\_ROOT" \( the "bundle" directory for Telosys \).
-
-Examples :
-
-```text
-#parse("foo.vm")
-#parse($myfile)
-#parse("include/initvar.vm")
-## Here we can use variables defined in "initvar.vm"
-```
-
-\#parse can be used inside "parsed files".  
-Recursion is permitted \(with a condition to stop recursion\).
-
-Primary file :
-
-```text
-#set( $count = 8 )
-#parse( "foo.vm" )
-```
-
-"foo.vm" file with recursive "parse" :
-
-```text
-#set( $count = $count - 1 )
-#if( $count > 0 )
-  #parse( "foo.vm" )
-#else
-  End of recursion.
-#end
-```
-
-
+xxxx
 
 ## Other directives
 
@@ -249,54 +171,13 @@ Example :
 
 ### \#break
 
-The **\#break** directive stops any further rendering of the current "execution scope".   
-An "execution scope" can be   
-- a **directive with content** : \#foreach, \#parse, \#evaluate, \#define, \#macro, or \#@somebodymacro  
-- the **current template** \("root scope"\).  
-Unlike \#stop, \#break will only stop the innermost, immediate scope, not all of them.
-
-Examples :
-
-```text
-## BREAK at template level (stop template rendering)
-#break
-
-## BREAK in a single loop
-#set($mylist = ["A", "B", "C", "D", "E", "F" ])
-#foreach( $v in $mylist )
-#if( $foreach.count > 3 ) 
-  #break
-#end
-$foreach.count : $v
-
-## BREAK in a nested loop (break innermost)
-#set($mylist1 = ["A", "B", "C", "D", "E", "F" ])
-#set($mylist2 = [1, 2, 3, 4, 5, 6 ])
-#foreach( $v1 in $mylist1 )
-#foreach( $v2 in $mylist2 )
-#if( $foreach.count > 3 )#break
-#end
-$foreach.parent.count : $v1 / $foreach.count : $v2
-#end
-#end
-```
+xxxx
 
 
 
 ### \#evaluate
 
-The **\#evaluate** directive can be used to dynamically evaluate a statement \(piece of Velocity code\). This allows to evaluate a string that is created dynamically at render time.
-
-Examples :
-
-```text
-#set($v = 2)
-#set($statement = '#set($r = $v * 10)' )
-#evaluate($statement)
-v = $v 
-statement = $statement
-r = $r ## r = 20
-```
+xxxx
 
 
 
