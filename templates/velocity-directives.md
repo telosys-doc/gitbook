@@ -143,6 +143,8 @@ Examples :
  #end 
 ```
 
+
+
 ### \#include
 
 The **\#include** directive allows to import a local file at the current position. The file is included "as is" \(as a text file, not rendered through the template engine, not parsed\).  
@@ -163,6 +165,8 @@ Examples :
 #include( $myfile )
 #include( "header.include", $myfile ) 
 ```
+
+
 
 ### \#parse
 
@@ -223,7 +227,37 @@ Example :
 
 ### \#break
 
-xxxx
+The **\#break** directive stops any further rendering of the current "execution scope".   
+An "execution scope" can be   
+- a **directive with content** : \#foreach, \#parse, \#evaluate, \#define, \#macro, or \#@somebodymacro  
+- the **current template** \("root scope"\).  
+Unlike \#stop, \#break will only stop the innermost, immediate scope, not all of them.
+
+Examples :
+
+```text
+## BREAK at template level (stop template rendering)
+#break
+
+## BREAK in a single loop
+#set($mylist = ["A", "B", "C", "D", "E", "F" ])
+#foreach( $v in $mylist )
+#if( $foreach.count > 3 ) 
+  #break
+#end
+$foreach.count : $v
+
+## BREAK in a nested loop
+#set($mylist1 = ["A", "B", "C", "D", "E", "F" ])
+#set($mylist2 = [1, 2, 3, 4, 5, 6 ])
+#foreach( $v1 in $mylist1 )
+#foreach( $v2 in $mylist2 )
+#if( $foreach.count > 3 )#break
+#end
+$foreach.parent.count : $v1 / $foreach.count : $v2
+#end
+#end
+```
 
 
 
