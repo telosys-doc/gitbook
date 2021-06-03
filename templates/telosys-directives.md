@@ -39,7 +39,9 @@ Examples :
 \( Telosys specific directive - since version 3.2.0 \)
 
 Cancels the current generation.   
-When "\#cancel" is used in a template the target file is not generated. This directive is useful when certain entities are not supposed to be generated. A cancellation is not considered as an error \(no reported in errors\)
+When "\#cancel" is used in a template the target file is not generated. This directive is useful when certain entities are not supposed to be generated. A cancellation is not considered as an error \(no reported in errors\).
+
+This directive has only one argument: a message to indicate why the generation was canceled 
 
 Examples :
 
@@ -53,7 +55,7 @@ Examples :
 
 \( Telosys specific directive - since version 3.0.0 \)
 
-Checks the existence of ID/Primary Key in the given entity   
+Checks the existence of ID/Primary Key in the given entity.  
 Throws an error if there's no ID/Primary Key defined in the entity.
 
 Examples :
