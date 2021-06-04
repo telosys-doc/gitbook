@@ -1,4 +1,4 @@
-# Velocity Language
+# Velocity language
 
 The **Velocity engine** used in Telosys is **version 1.7**
 

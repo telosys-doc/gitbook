@@ -132,7 +132,10 @@ The table below describes how model neutral types are automatically converted to
   </tbody>
 </table>
 
-
+| model | simpleType | fullType | wrapperType |
+| :--- | :--- | :--- | :--- |
+| string | string | string | string |
+| byte | char | char | char |
 
 ### Simpletype and full type
 

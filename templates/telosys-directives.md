@@ -36,7 +36,7 @@ Examples :
 
 ## \#cancel
 
-\( Telosys specific directive - since version 3.2.0 \)
+\( Telosys specific directive - since version 3.3.0 \)
 
 Cancels the current generation.   
 When "\#cancel" is used in a template the target file is not generated. This directive is useful when certain entities are not supposed to be generated. A cancellation is not considered as an error \(no reported in errors\).

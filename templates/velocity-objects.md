@@ -136,6 +136,10 @@ item 0 : $mylist[0]
 --- OUTPUT :
 item 0 : 1 
 
+$list.get(0) ## with Java get() method
+--- OUTPUT :
+item 0 : 1 
+
 item 3 : $mylist[3]
 --- OUTPUT :
 item 3 : A
@@ -194,9 +198,66 @@ Print content :
 mymap content : $mymap
 --- OUTPUT :
 mymap content : {k1=v1, k2=v2}
+
+## print VALUES
+#foreach($v in $mymap )
+. $v 
+#end
+
+## print KEYS with Java "keySet()"
+#foreach($k in $mymap.keySet() )
+ . $k
+#end
+
+## print KEYS and VALUES with Java "entrySet()"
+#foreach($e in $mymap.entrySet() )
+. $e.key : $e.value
+#end
 ```
 
-### 
+Get by key:
+
+```text
+k1 : $mymap["k1"] 
+k2 : $mymap["k2"]
+k3 : $mymap["k3"] ## error (no key "k3")
+```
+
+Set by key \( add or update a key-value pair \) :
+
+```text
+#set( $mymap["k0"] = "v0" )
+```
+
+Other examples using the Java map methods :
+
+```text
+isEmpty : $mymap.isEmpty()
+#if ( $mymap.isEmpty() ) void #end
+
+size : $mymap.size()
+#if ( $mymap.size() > 0 ) not void #end
+
+#if ( $mymap.containsKey("k1") ) K1 FOUND #end
+
+#if ( $mymap.containsValue("v2") ) V2 FOUND #end
+
+## Remove element by key
+#set($removed = $mymap.remove("k1") )
+#if ( ! $mymap.containsKey("k1") ) K1 NOT FOUND #end
+
+## Get all values
+#foreach($v in $mymap.values() )
+ . $v
+#end
+
+## Get all keys
+#foreach($key in $mymap.keySet() )
+ . $key
+#end
+```
+
+
 
 ### Array
 
