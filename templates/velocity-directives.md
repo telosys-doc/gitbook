@@ -300,10 +300,6 @@ r = $r ## r = 20
 
 
 
-### \#define
-
-xxxx
-
 
 
 ### \#macro
@@ -318,6 +314,10 @@ Arguments :
 A Velocimacro can take any number of arguments \(0 to N arguments\). When the Velocimacro is invoked, it must be called with the same number of arguments with which it was defined.
 
 
+
+### \#define
+
+xxxx
 
 
 
