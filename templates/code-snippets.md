@@ -25,5 +25,14 @@
 
 ```
 
+### Execute a ".vm" file located in a model folder
+
+If the file exists, its content is loaded and evaluated with "\#evaluate" directive
+
+```text
+#set( $file = $fn.fileFromModel("model-init.vm") )
+#if($file.exists())#evaluate($file.loadContent())#end
+```
+
 
 
