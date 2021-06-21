@@ -137,5 +137,10 @@ range size : $r.size()
 #foreach( $i in [$a..$b] )
   $i
 #end
+
+## Range in reverse order
+#foreach( $i in [ 4 .. -2 ] )
+  $i
+#end
 ```
 
