@@ -50,7 +50,7 @@ with 1 to N lines
 
 ## Operators 
 
-### Comparison Operators
+### Comparison operators
 
 Examples \(showing different operators\):
 
@@ -70,7 +70,7 @@ The == operator can be used to compare numbers, strings, objects of the same cla
 
 
 
-### Logical Operators
+### Logical operators
 
 | Operator | Symbol | Text |
 | :--- | :--- | :--- |
@@ -97,7 +97,7 @@ Var is not 100 or 101
 
 
 
-### Arithmetic Operators
+### Arithmetic operators
 
 | Operator | Symbol | Example |
 | :--- | :--- | :--- |
@@ -110,4 +110,31 @@ Var is not 100 or 101
 | Decrement | \(no operator\) | `#set( $a = $a - 1 )` |
 
 
+
+### Range operator
+
+The range operator creates an **array of integer objects**. It can be used in conjunction with \#set and \#foreach statements.
+
+Examples :
+
+```text
+## Range from 1 to 5
+#foreach( $i in [1..5] )
+  $i
+#end
+
+## Range from 10 to 12 (size : 3 )
+#set( $r = [10..12] )
+range size : $r.size()
+#foreach( $i in $r )
+  $i
+#end
+
+## Range from var to var
+#set( $a = 4 )
+#set( $b = 8 )
+#foreach( $i in [$a..$b] )
+  $i
+#end
+```
 
