@@ -7,9 +7,7 @@ Telosys provides a set of predefined objects usable in the templates :
 * Generation environment \( $env, $project, $target, etc \)
 * Functions dedicated to certain types of generation \($java, $h2, $jpa, etc\)
 
-The reference documentation for each object is available here :
-
-[Telosys objects reference](https://www.telosys.org/templates-doc/templates-objects.html)
+The documentation for each object is available in the [Telosys objects reference](https://www.telosys.org/templates-doc/templates-objects.html)
 
 
 
