@@ -13,9 +13,9 @@ Example : model "employees"
 ```text
 employees.model (file)
 employees_model (folder)
-employees_model/Employee.entity (file)
-employees_model/Company.entity (file)
-employees_model/Project.entity (file) 
+employees_model / Employee.entity (file)
+employees_model / Company.entity (file)
+employees_model / Project.entity (file) 
 ```
 
 
