@@ -1,4 +1,0 @@
-# Test foo
-
-Test page
-
