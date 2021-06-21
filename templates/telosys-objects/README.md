@@ -10,5 +10,7 @@ There are different kinds of objects :
 
 The documentation for each object if available in the following pages :
 
-* xxx
+* [test foo](test-foo.md)
+
+
 
