@@ -65,10 +65,8 @@ Examples \(showing different operators\):
 | Greater Than  or Equal To | &gt;= | ge | `#if( $foo >= 42 )` |
 | Less Than  or Equal To | &lt;= | le | `#if( $foo <= 42 )` |
 
-Notes:
-
-1. The == operator can be used to compare numbers, strings, objects of the same class, or objects of different classes. In the last case \(when objects are of different classes\), the toString\(\) method is called on each object and the resulting Strings are compared.
-2. You can also use brackets to delimit directives. This is especially useful when text immediately follows an `#else` directive.
+Note:  
+The == operator can be used to compare numbers, strings, objects of the same class, or objects of different classes. In the last case \(when objects are of different classes\), the toString\(\) method is called on each object and the resulting Strings are compared.
 
 
 
