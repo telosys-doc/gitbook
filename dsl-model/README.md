@@ -18,5 +18,10 @@ employees_model / Company.entity (file)
 employees_model / Project.entity (file) 
 ```
 
+Below the main elements of a DSL model:
 
+* [Entity](entity.md)
+* [Attribute](attribute.md)
+* [Annotations](attribute-annotations.md)
+* [Tags](tags.md)
 
