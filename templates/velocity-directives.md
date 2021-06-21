@@ -300,8 +300,6 @@ r : $r ## r : 20
 
 
 
-
-
 ### \#macro
 
 Velocity "macros" allow you to define a portion of VTL code which will then be reusable several times. They are often called "Velocimacro".
