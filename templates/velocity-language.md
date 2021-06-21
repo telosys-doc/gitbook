@@ -109,6 +109,8 @@ Var is not 100 or 101
 | Increment | \(no operator\) | `#set( $a = $a + 1 )` |
 | Decrement | \(no operator\) | `#set( $a = $a - 1 )` |
 
+Note:  when the "+" operator is used with 2 strings, it concatenates these 2 strings.
+
 
 
 ### Range operator
