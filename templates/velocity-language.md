@@ -113,7 +113,8 @@ Var is not 100 or 101
 
 ### Range operator
 
-The range operator creates an **array of integer objects**. It can be used in conjunction with \#set and \#foreach statements.
+The range operator creates an **array of integer objects**. It can be used in conjunction with \#set and \#foreach statements.  
+Syntax :  `[ first .. last ]`
 
 Examples :
 
@@ -124,7 +125,7 @@ Examples :
 #end
 
 ## Range from 10 to 12 (size : 3 )
-#set( $r = [10..12] )
+#set( $r = [ 10 .. 12 ] )
 range size : $r.size()
 #foreach( $i in $r )
   $i
