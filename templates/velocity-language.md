@@ -23,6 +23,17 @@ In some cases "**Formal Reference Notation**"  with "**${xxx}**" is required to 
 * **${customer.address}**
 * **${person.isVIP\(\)}**
 
+Examples :
+
+```text
+Current entity is ${entity.name}
+
+#foreach( $attrib in $entity.attributes )
+  Do something with $attrib.name and $attrib.type
+#end
+
+```
+
 ## Comments
 
 All line starting with **"\#\#"** is a comment.   
@@ -39,24 +50,66 @@ with 1 to N lines
 
 ## Operators 
 
-
+### Comparison Operators
 
 Examples \(showing different operators\):
 
-| Operator Name | Symbol | Alt | Example |
+| Operator | Symbol | Text | Example |
 | :--- | :--- | :--- | :--- |
-| Equals Number | == | eq | `#if( $foo == 42 )` |
-| Equals String | == | eq | `#if( $foo == "bar" )` |
-| Object Equivalence | == | eq | `#if( $foo == $bar )` |
+| Equals / number | == | eq | `#if( $foo == 42 )` |
+| Equals / string | == | eq | `#if( $foo == "bar" )` |
+| Equals / object  | == | eq | `#if( $foo == $bar )` |
 | Not Equals | != | ne | `#if( $foo != $bar )` |
 | Greater Than | &gt; | gt | `#if( $foo > 42 )` |
 | Less Than | &lt; | lt | `#if( $foo < 42 )` |
 | Greater Than  or Equal To | &gt;= | ge | `#if( $foo >= 42 )` |
 | Less Than  or Equal To | &lt;= | le | `#if( $foo <= 42 )` |
-| Boolean NOT | ! | not | `#if( !$foo )` |
 
 Notes:
 
 1. The == operator can be used to compare numbers, strings, objects of the same class, or objects of different classes. In the last case \(when objects are of different classes\), the toString\(\) method is called on each object and the resulting Strings are compared.
 2. You can also use brackets to delimit directives. This is especially useful when text immediately follows an `#else` directive.
+
+
+
+### Logical Operators
+
+| Operator | Symbol | Text |
+| :--- | :--- | :--- |
+| Logical AND | && |  and |
+| Logical OR | \|\| |  or |
+| Logical NOT | ! | not |
+
+Examples :
+
+```text
+#if ( $v > 100 && $v < 200 )
+Between 100 and 200 
+#end 
+
+#if ( $v == 100 || $v == 102 || $v == 123 )
+Var is 100 or 102 or 123 
+#end 
+
+#if ( ! ( $v == 100 || $v == 101 ) )
+Var is not 100 or 101
+#end 
+
+```
+
+
+
+### Arithmetic Operators
+
+| Operator | Symbol | Example |
+| :--- | :--- | :--- |
+| Addition | + | `#set( $r = $a + $b )` |
+| Subtraction | - | `#set( $r = $a - $b )` |
+| Multiplication | \* | `#set( $r = $a * $b )` |
+| Division | / | `#set( $r = $a / $b )` |
+| Modulo | % | `#set( $r = $a % 10 )` |
+| Increment | \(no operator\) | `#set( $a = $a + 1 )` |
+| Decrement | \(no operator\) | `#set( $a = $a - 1 )` |
+
+
 
