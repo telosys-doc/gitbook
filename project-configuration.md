@@ -54,6 +54,8 @@ TMP      = tmp
 ROOT_PKG = org.foo.bar
 ```
 
+### 
+
 ### Specific project variables 
 
 A "project-specific variable" is a variable defined specifically for the current project. For example, a project variable can be defined in a project to generate PHP code and not defined in another project which aims to generate Python code.
@@ -77,6 +79,8 @@ ProjectVariable.MICROSERVICE_DIR  = employee-ms
 ProjectVariable.APPLICATION_DIR   = application
 ProjectVariable.COMMONS_DIR       = commons
 ```
+
+### 
 
 ### Specific folders
 
