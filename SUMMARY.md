@@ -19,7 +19,7 @@
 * [DSL model](dsl-model/README.md)
   * [Entity](dsl-model/entity.md)
   * [Attribute](dsl-model/attribute.md)
-  * [Attribute annotations](dsl-model/attribute-annotations.md)
+  * [Annotations](dsl-model/attribute-annotations.md)
   * [Tags](dsl-model/tags.md)
   * [Examples](dsl-model/examples.md)
 * [Database model](database-model.md)
