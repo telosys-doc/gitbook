@@ -1,4 +1,4 @@
-# Annotations
+# Attribute annotations
 
 Each attribute can have **0 to N annotations**.   
 Annotations provide additional information usable during the code generation.   
