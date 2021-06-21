@@ -293,24 +293,31 @@ Examples :
 #set($v = 2)
 #set($statement = '#set($r = $v * 10)' )
 #evaluate($statement)
-v = $v 
-statement = $statement
-r = $r ## r = 20
+v : $v 
+statement : $statement
+r : $r ## r : 20
 ```
+
+
+
+
+
+### \#macro
+
+Velocity "macros" allow you to define a portion of VTL code which will then be reusable several times. They are often called "Velocimacro".
+
+
+
+NB : Macros are not functions, they are designed to render and they cannot return a value. But you can simulate a "return value" by setting a variable in the macro and using it after calling the macro.
+
+Arguments :   
+A Velocimacro can take any number of arguments \(0 to N arguments\). When the Velocimacro is invoked, it must be called with the same number of arguments with which it was defined.
 
 
 
 ### \#define
 
 xxxx
-
-
-
-### \#macro
-
-xxxx
-
-
 
 
 
