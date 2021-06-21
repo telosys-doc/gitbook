@@ -1,4 +1,4 @@
-# Velocity object types
+# Velocity objects
 
 ## Basic types
 
