@@ -9,7 +9,7 @@ Telosys provides a set of predefined objects usable in the templates :
 
 The reference documentation for each object is available here :
 
-Telosys objects reference
+[Telosys objects reference](https://www.telosys.org/templates-doc/templates-objects.html)
 
 
 
