@@ -21,7 +21,8 @@ To avoid misinterpretations the name of the directive can be bracketed with "{" 
 
 ### \#set
 
-The \#set directive is used for setting a value. A value can be assigned to either a simple variable or an object property.
+The \#set directive is used for setting a value. A value can be assigned to either a simple variable or an object property.  
+"\#set" always defines a "global variable" wherever you use it.
 
 ```text
 #set( $name = "Bob" )
@@ -29,6 +30,12 @@ The \#set directive is used for setting a value. A value can be assigned to eith
 #set( $user.level = 3 ) ## number literal
 #set( $a = $b ) ## variable reference
 #set( $mylist = [ "A", $v, "Z"] ) ## list
+```
+
+You cannot set a variable to "null" explicitly 
+
+```text
+#set( $v = null ) ## causes an error
 ```
 
 NB : if the value to be assigned is null then it will not be assigned!
@@ -321,7 +328,7 @@ Example : basic macro \(without argument\)
 ```
 
 Arguments :   
-A Velocimacro can take any number of arguments \(0 to N arguments\). When the Velocimacro is invoked, it must be called with the same number of arguments with which it was defined.
+A Velocimacro can take any number of arguments \(0 to N arguments\). When the Velocimacro is invoked, it must be called with the same number of arguments with which it was defined. Each argument is a local variable and can never be used outside.
 
 Example : macro with 2 arguments
 
