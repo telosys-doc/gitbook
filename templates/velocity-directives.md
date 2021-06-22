@@ -21,8 +21,7 @@ To avoid misinterpretations the name of the directive can be bracketed with "{" 
 
 ### \#set
 
-The \#set directive is used for setting a value. A value can be assigned to either a simple variable or an object property.  
-"\#set" always defines a "global variable" wherever you use it.
+The \#set directive is used for setting a value. A value can be assigned to either a simple variable or an object property.
 
 ```text
 #set( $name = "Bob" )
@@ -30,12 +29,6 @@ The \#set directive is used for setting a value. A value can be assigned to eith
 #set( $user.level = 3 ) ## number literal
 #set( $a = $b ) ## variable reference
 #set( $mylist = [ "A", $v, "Z"] ) ## list
-```
-
-You cannot set a variable to "null" explicitly 
-
-```text
-#set( $v = null ) ## causes an error
 ```
 
 NB : if the value to be assigned is null then it will not be assigned!
@@ -47,12 +40,7 @@ NB : if the value to be assigned is null then it will not be assigned!
 
 ### \#foreach / \#end
 
-The "\#foreach" directive is used to loop through a list of objects. Within the "\#foreach" directive 2 local variables are created to represent :  
- - the **current item** in the loop \(you can name it as you want\)  
- - the "**$foreach**" object providing properties like "count", "index", "hasNext", "first", "last", "parent", "topmost".  
-The visibility of these variables is only "local" \(visible only in the "\#foreach" block\).   
-A variable defined with "\#set" inside a "\#foreach" block remains global \(visible outside of the block\).  
-The "$foreach" object is an instance of org.apache.velocity.runtime.directive.ForeachScope.
+Loops through a list of objects
 
 Examples :
 
@@ -297,7 +285,7 @@ $foreach.parent.count : $v1 / $foreach.count : $v2
 
 ### \#evaluate
 
-The **\#evaluate** directive can be used to dynamically evaluate a statement \(piece of Velocity code\). This allows to evaluate a string that is created dynamically at render time. '\#evalute' works like '\#parse' but with content that comes from a variable in memory instead of a file \(it's possible to evaluate multiple lines\).
+The **\#evaluate** directive can be used to dynamically evaluate a statement \(piece of Velocity code\). This allows to evaluate a string that is created dynamically at render time.
 
 Examples :
 
@@ -305,79 +293,24 @@ Examples :
 #set($v = 2)
 #set($statement = '#set($r = $v * 10)' )
 #evaluate($statement)
-v : $v 
-statement : $statement
-r : $r ## r : 20
-```
-
-
-
-### \#macro
-
-Velocity "macros" allow you to define a portion of VTL code which will then be reusable several times. They are often called "Velocimacro".
-
-Example : basic macro \(without argument\)
-
-```text
-#macro( three )
-#set ( $result = "" )
-#foreach ( $i in [1..3] ) ${i}#end
-#end
-## -------
-#three() 
-```
-
-Arguments :   
-A Velocimacro can take any number of arguments \(0 to N arguments\). When the Velocimacro is invoked, it must be called with the same number of arguments with which it was defined. Each argument is a local variable and can never be used outside.
-
-Example : macro with 2 arguments
-
-```text
-#macro( add $a1 $a2 )
-#set ( $r = $a1 + $a2 )
-$a1 + $a2 = $r 
-#end
-## -------
-#add( 20, 3 )
-## rendering : 20 + 3 = 23
-```
-
-NB : Macros are not functions, they are designed to render and they cannot return a value. But you can simulate a "return value" by setting a variable in the macro and using it after calling the macro or by setting the result as a string.
-
-Example : "Function like call" getting the result as text \(with quotes\)
-
-```text
-#macro( add3 $a1 $a2 $a3 )
-#set ( $r = $a1 + $a2 + $a3)
-$r## NO EOL
-#end
-## -------
-#set($v = 50)
-#set( $result = "#add3(10,20,$v)" )
-result : $result
+v = $v 
+statement = $statement
+r = $r ## r = 20
 ```
 
 
 
 ### \#define
 
-The \#define directive allows to assign a **block of code** to a **variable**.  The associated block of code can contain any valid code.
+xxxx
 
-The code associated with a variable by \#define is executed **when the variable is referenced**. 
 
-The type of the variable created by \#define is org.apache.velocity.runtime.directive.Block$Reference
 
-Example :
+### \#macro
 
-```text
-#define( $block )Hello $who#end
-#set( $who = 'World!' )
-$block
-```
+xxxx
 
-Differences between "\#define" and "\#macro" : "  
- -  \#macro" accepts parameters so that they provide a context for creation of local variables   
- -  "\#define" structure \(unless it contains macros\) only works with global variables
+
 
 
 
