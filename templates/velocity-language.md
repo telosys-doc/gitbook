@@ -13,9 +13,9 @@ A template is a text file mixing fixed parts and dynamic parts based on referenc
 
 Exemple : 
 
-* **$foo**  : content of variable "foo" 
-* **$customer.address** : property "address" of object "customer" 
-* **$person.isVIP\(\)** : call method "isVIP\(\)" in object "person"
+* **$foo**  : content of **variable** "_foo_" 
+* **$customer.address** : get **property** "_address_" in object "_customer_" 
+* **$person.isVIP\(\)** : call **method** "_isVIP\(\)_" in object "_person_"
 
 In some cases "**Formal Reference Notation**"  with "**${xxx}**" is required to avoid ambiguities. Examples :
 
@@ -36,7 +36,7 @@ Current entity is ${entity.name}
 
 ## Comments
 
-All line starting with **"\#\#"** is a comment.   
+A line starting with **"\#\#"** is a comment.   
 All lines between "**\#\***" and **"\*\#"** are a comment block.
 
 ```text
