@@ -40,7 +40,12 @@ NB : if the value to be assigned is null then it will not be assigned!
 
 ### \#foreach / \#end
 
-The "\#foreach" directive is used to loop through a list of objects.
+The "\#foreach" directive is used to loop through a list of objects. Within the "\#foreach" directive 2 local variables are created to represent :  
+ - the **current item** in the loop \(you can name it as you want\)  
+ - the "**$foreach**" object providing properties like "count", "index", "hasNext", "first", "last", "parent", "topmost".  
+The visibility of these variables is only "local" \(visible only in the "\#foreach" block\).   
+A variable defined with "\#set" inside a "\#foreach" block remains global \(visible outside of the block\).  
+The $foreach object is an instance of org.apache.velocity.runtime.directive.ForeachScope.
 
 Examples :
 
