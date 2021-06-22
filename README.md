@@ -1,6 +1,6 @@
 # Telosys documentation
 
-**Welcome developer friend!** 
+Welcome developer friend! 
 
 Here you will find everything that can help you to boost your project with Telosys.
 
