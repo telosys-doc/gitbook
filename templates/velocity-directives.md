@@ -45,7 +45,7 @@ The "\#foreach" directive is used to loop through a list of objects. Within the 
  - the "**$foreach**" object providing properties like "count", "index", "hasNext", "first", "last", "parent", "topmost".  
 The visibility of these variables is only "local" \(visible only in the "\#foreach" block\).   
 A variable defined with "\#set" inside a "\#foreach" block remains global \(visible outside of the block\).  
-The $foreach object is an instance of org.apache.velocity.runtime.directive.ForeachScope.
+The "$foreach" object is an instance of org.apache.velocity.runtime.directive.ForeachScope.
 
 Examples :
 
