@@ -19,15 +19,8 @@ The table below describes how model neutral types are automatically converted to
   <thead>
     <tr>
       <th style="text-align:left">Model type</th>
-      <th style="text-align:left">Default</th>
-      <th style="text-align:left">
-        <p>@UnsignedType</p>
-        <p>@NotNull</p>
-      </th>
-      <th style="text-align:left">
-        <p>@PrimitiveType</p>
-        <p>@ObjectType</p>
-      </th>
+      <th style="text-align:left">C++ type</th>
+      <th style="text-align:left">with annotation</th>
     </tr>
   </thead>
   <tbody>
@@ -35,85 +28,85 @@ The table below describes how model neutral types are automatically converted to
       <td style="text-align:left">string</td>
       <td style="text-align:left"><b>string</b>
       </td>
-      <td style="text-align:left">string (U)
-        <br />string (N)</td>
-      <td style="text-align:left">
-        <p>string (P)</p>
-        <p>string (O)</p>
-      </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">byte</td>
       <td style="text-align:left"><b>char</b>
       </td>
-      <td style="text-align:left">
-        <p>unsigned char (U)</p>
-        <p>char (N)</p>
-      </td>
-      <td style="text-align:left">
-        <p>char (P)</p>
-        <p>char (O)</p>
-      </td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">short</td>
-      <td style="text-align:left"><b>short</b>
+      <td style="text-align:left">
+        <p><b>short</b>
+        </p>
+        <p><b>unsigned short</b>
+        </p>
       </td>
-      <td style="text-align:left">unsigned short (U)</td>
-      <td style="text-align:left">short</td>
+      <td style="text-align:left">
+        <p></p>
+        <p>@UnsignedType</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">int</td>
-      <td style="text-align:left"><b>int</b>
+      <td style="text-align:left">
+        <p><b>int</b>
+        </p>
+        <p><b>unsigned int</b>
+        </p>
       </td>
-      <td style="text-align:left">unsigned int (U)</td>
-      <td style="text-align:left">int</td>
+      <td style="text-align:left">
+        <p></p>
+        <p>@UnsignedType</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">long</td>
-      <td style="text-align:left"><b>long</b>
+      <td style="text-align:left">
+        <p><b>long</b>
+        </p>
+        <p><b>unsigned long</b>
+        </p>
       </td>
-      <td style="text-align:left">unsigned long (U)</td>
-      <td style="text-align:left">long</td>
+      <td style="text-align:left">
+        <p></p>
+        <p>@UnsignedType</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">decimal</td>
       <td style="text-align:left"><b>double</b>
       </td>
-      <td style="text-align:left">double (U)</td>
-      <td style="text-align:left">double</td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">float</td>
       <td style="text-align:left"><b>float</b>
       </td>
-      <td style="text-align:left">float (U)</td>
-      <td style="text-align:left">float</td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">double</td>
       <td style="text-align:left"><b>double</b>
       </td>
-      <td style="text-align:left">double (U)</td>
-      <td style="text-align:left">double</td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">boolean</td>
       <td style="text-align:left"><b>bool</b>
       </td>
-      <td style="text-align:left">bool (U)</td>
-      <td style="text-align:left">bool</td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">date</td>
       <td style="text-align:left"><b>std::tm</b>
       </td>
-      <td style="text-align:left">std::tm (U)</td>
-      <td style="text-align:left">std::tm</td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">time</td>
-      <td style="text-align:left"></td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
@@ -121,66 +114,38 @@ The table below describes how model neutral types are automatically converted to
       <td style="text-align:left">timestamp</td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">binary</td>
-      <td style="text-align:left"></td>
       <td style="text-align:left"></td>
       <td style="text-align:left"></td>
     </tr>
   </tbody>
 </table>
 
-| model | simpleType | fullType | wrapperType |
-| :--- | :--- | :--- | :--- |
-| string | string | string | string |
-| byte | char | char | char |
+### Annotations effects
 
-### Simpletype and full type
+* **@UnsignedType** has effect only for **char**, **short**, **int**, **long**
+* **@NotNull** has no effect
+* **@PrimitiveType** has no effect
+* **@ObjectType** has no effect
 
-|  Model type |  Simple type |  Full type |
-| :--- | :--- | :--- |
-| string | string | string |
-| byte | char | char |
-| byte | unsigned char | unsigned char |
-| short | short | short |
-| short | unsigned short | unsigned short |
-| int | int | int |
-| int | unsigned int | unsigned int |
-| long | long | long |
-| long | unsigned long | unsigned long |
-| decimal | double | double |
-| float | float | float |
-| double | double | double |
-| boolean | bool | bool |
-| date | std::tm | std::tm |
-| time |  |  |
-| timestamp |  |  |
-| binary |  |  |
+### Other "types"
 
-### Remarks
+All the following statements return the same type as "$attribute.type"
 
-The type conversion has an impact on :
-
-*  $attribute.type
 *  $attribute.fullType
 *  $attribute.simpleType
 *  $attribute.wrapperType
-*  $attribute.isPrimitiveType\(\)
 
-'@UnsignedType' has effect only for char, short, int, long
-
-'@NotNull' has no effect  
-'@PrimitiveType' has no effect  
-'@ObjectType' has no effect  
+So, for C++ you can always use "$attribute.type"  
 
 
-## Literals
+## Literal values
 
 ### TRUE, FALSE, NULL
 
-|   | Generated  |
+|   | C++ literal |
 | :--- | :--- |
 | TRUE | **true** |
 |  FALSE | **false** |
