@@ -1,5 +1,7 @@
 # Code snippets
 
+### 
+
 ### Iterate over entity attributes
 
 ```text
@@ -34,5 +36,21 @@ The function "$fn.fileFromModel\(fileName\)" returns an instance of "file" locat
 #if($file.exists())#evaluate($file.loadContent())#end
 ```
 
+### Get the class of an object
 
+As all Velocity references \( "$xxx" \) are references of Java objects, sometimes it could be useful to know the object's class. To do this, just use "**class.name**" \(full name with package\) or "**class.simpleName**" \(only the class name without package\)
+
+```text
+#set( $v = 12 )
+$v.class.name 
+$v.class.simpleName 
+
+#set( $s = "abc" )
+$s.class.name 
+$s.class.simpleName 
+
+$entity.class.name 
+
+$now.class.simpleName 
+```
 

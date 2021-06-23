@@ -32,3 +32,9 @@ For that just run the **`init`** command
 
 This command creates the "**TelosysTools**" folder containing all the Telosys files and subfolders.
 
+
+
+### Configure the project 
+
+If you want to 
+

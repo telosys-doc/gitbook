@@ -7,28 +7,173 @@ For more information about the Velocity Templates Language \(VTL\) see the offic
 * **User guide** : [http://velocity.apache.org/engine/releases/velocity-1.7/user-guide.html](http://velocity.apache.org/engine/releases/velocity-1.7/user-guide.html)
 * **Reference guide** : [http://velocity.apache.org/engine/releases/velocity-1.7/vtl-reference-guide.html](http://velocity.apache.org/engine/releases/velocity-1.7/vtl-reference-guide.html)
 
+## References
 
+A template is a text file mixing fixed parts and dynamic parts based on references to variables and objects. A **reference** to a variable or an object starts with "**$**". 
+
+Exemple : 
+
+* **$foo**  : content of **variable** "_foo_" 
+* **$customer.address** : get **property** "_address_" in object "_customer_" 
+* **$person.isVIP\(\)** : call **method** "_isVIP\(\)_" in object "_person_"
+
+In some cases "**Formal Reference Notation**"  with "**${xxx}**" is required to avoid ambiguities. Examples :
+
+* **${foo}**
+* **${customer.address}**
+* **${person.isVIP\(\)}**
+
+Examples :
+
+```text
+Current entity is ${entity.name}
+
+#foreach( $attrib in $entity.attributes )
+  Do something with $attrib.name and $attrib.type
+#end
+
+```
+
+## Comments
+
+A line starting with **"\#\#"** is a comment.   
+All lines between "**\#\***" and **"\*\#"** are a comment block.
+
+```text
+## This is a single line comment.
+
+#*
+This is a multi-lines comment
+with 1 to N lines
+*#
+```
+
+## Literals
+
+### String literals
+
+When using the \#set directive, strings that are enclosed in **double quote** characters will be **parsed**. But if the string literal is **enclosed in single quote characters**, it will **not be parsed**. A string literal can contains multiple lines.
+
+```text
+#set($s = "abc $i")## 'i' is replaced by its value
+
+#set($s = 'abc $i')## no variable substitution
+
+#set($s = 
+'line 1 $a
+line 2 $b
+line 3 $c')## 3 lines in the string
+```
+
+### Unparsed content
+
+The **\#\[\[ do not parse me \]\]\#** syntax allows to easily use large chunks of uninterpreted and unparsed content in a template.
+
+```text
+#[[
+Unparsed block (all this block will be rendered as is)
+$undefined
+#set($i = 50)
+#foobar #zzz(ee)
+#include("foo.txt")
+]]#
+```
 
 ## Operators 
 
-
+### Comparison operators
 
 Examples \(showing different operators\):
 
-| Operator Name | Symbol | Alt | Example |
+| Operator | Symbol | Text | Example |
 | :--- | :--- | :--- | :--- |
-| Equals Number | == | eq | `#if( $foo == 42 )` |
-| Equals String | == | eq | `#if( $foo == "bar" )` |
-| Object Equivalence | == | eq | `#if( $foo == $bar )` |
+| Equals / number | == | eq | `#if( $foo == 42 )` |
+| Equals / string | == | eq | `#if( $foo == "bar" )` |
+| Equals / object  | == | eq | `#if( $foo == $bar )` |
 | Not Equals | != | ne | `#if( $foo != $bar )` |
 | Greater Than | &gt; | gt | `#if( $foo > 42 )` |
 | Less Than | &lt; | lt | `#if( $foo < 42 )` |
 | Greater Than  or Equal To | &gt;= | ge | `#if( $foo >= 42 )` |
 | Less Than  or Equal To | &lt;= | le | `#if( $foo <= 42 )` |
-| Boolean NOT | ! | not | `#if( !$foo )` |
 
-Notes:
+Note:  
+The == operator can be used to compare numbers, strings, objects of the same class, or objects of different classes. In the last case \(when objects are of different classes\), the toString\(\) method is called on each object and the resulting Strings are compared.
 
-1. The == operator can be used to compare numbers, strings, objects of the same class, or objects of different classes. In the last case \(when objects are of different classes\), the toString\(\) method is called on each object and the resulting Strings are compared.
-2. You can also use brackets to delimit directives. This is especially useful when text immediately follows an `#else` directive.
+
+
+### Logical operators
+
+| Operator | Symbol | Text |
+| :--- | :--- | :--- |
+| Logical AND | && |  and |
+| Logical OR | \|\| |  or |
+| Logical NOT | ! | not |
+
+Examples :
+
+```text
+#if ( $v > 100 && $v < 200 )
+Between 100 and 200 
+#end 
+
+#if ( $v == 100 || $v == 102 || $v == 123 )
+Var is 100 or 102 or 123 
+#end 
+
+#if ( ! ( $v == 100 || $v == 101 ) )
+Var is not 100 or 101
+#end 
+
+```
+
+
+
+### Arithmetic operators
+
+| Operator | Symbol | Example |
+| :--- | :--- | :--- |
+| Addition | + | `#set( $r = $a + $b )` |
+| Subtraction | - | `#set( $r = $a - $b )` |
+| Multiplication | \* | `#set( $r = $a * $b )` |
+| Division | / | `#set( $r = $a / $b )` |
+| Modulo | % | `#set( $r = $a % 10 )` |
+| Increment | \(no operator\) | `#set( $a = $a + 1 )` |
+| Decrement | \(no operator\) | `#set( $a = $a - 1 )` |
+
+Note:  when the "+" operator is used with 2 strings, it concatenates these 2 strings.
+
+
+
+### Range operator
+
+The range operator creates an **array of integer objects**. It can be used in conjunction with \#set and \#foreach statements.  
+Syntax :  `[ first .. last ]`
+
+Examples :
+
+```text
+## Range from 1 to 5
+#foreach( $i in [1..5] )
+  $i
+#end
+
+## Range from 10 to 12 (size : 3 )
+#set( $r = [ 10 .. 12 ] )
+range size : $r.size()
+#foreach( $i in $r )
+  $i
+#end
+
+## Range from var to var
+#set( $a = 4 )
+#set( $b = 8 )
+#foreach( $i in [$a..$b] )
+  $i
+#end
+
+## Range in reverse order
+#foreach( $i in [ 4 .. -2 ] )
+  $i
+#end
+```
 
