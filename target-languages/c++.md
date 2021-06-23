@@ -32,9 +32,16 @@ The table below describes how model neutral types are automatically converted to
     </tr>
     <tr>
       <td style="text-align:left">byte</td>
-      <td style="text-align:left"><b>char</b>
+      <td style="text-align:left">
+        <p><b>char</b>
+        </p>
+        <p><b>unsigned char</b>
+        </p>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p></p>
+        <p>@UnsignedType</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">short</td>
