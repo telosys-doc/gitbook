@@ -6,6 +6,10 @@ When Telosys-CLI starts nothing is defined \( no "home directory", no "model", n
 
 You can use the **`env`** command to see the current Telosys environment.
 
+```
+telosys>env
+```
+
 With the command **`h`** you can see that the "home directory" is not yet defined.
 
 ### Set the "home directory"
@@ -18,11 +22,19 @@ Use **`cd`** to change the current directory
 
 Once your are in the correct directory \(the directory where you want to work with Telosys\) you can use the **`h`** command to set the project's home
 
-Examples :
+Example 1 : use the current directory "**.**" as HOME
 
-**`h .`** : HOME is set to the current directory
+```
+telosys>h .
+```
 
-**`h foo`** : HOME is set to the "foo" subdirectory
+Example 2 : use the "**foo**" subdirectory as HOME
+
+```
+telosys>h foo
+```
+
+**\`\`**
 
 ### Initialize the Telosys environment 
 
