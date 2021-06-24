@@ -116,5 +116,10 @@ The table below describes how model neutral types are automatically converted to
   </tbody>
 </table>
 
-### Annotations effects 
+### Annotations effects
+
+* **@UnsignedType**  has effect only for **byte**, **short**, **int**, **long**
+* **@ObjectType**  no effect
+* **@NotNull**  no effect
+* **@PrimitiveType**  no effect
 
