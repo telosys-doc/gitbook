@@ -172,7 +172,8 @@ Below some examples of literal values generated for each type :
     <tr>
       <td style="text-align:left">string</td>
       <td style="text-align:left">string</td>
-      <td style="text-align:left">&quot;AAA&quot;</td>
+      <td style="text-align:left"><b>&quot;AAA&quot;</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">byte</td>
@@ -180,7 +181,8 @@ Below some examples of literal values generated for each type :
         <p>char</p>
         <p>unsigned char</p>
       </td>
-      <td style="text-align:left">1</td>
+      <td style="text-align:left"><b>1</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">short</td>
@@ -188,7 +190,8 @@ Below some examples of literal values generated for each type :
         <p>short</p>
         <p>unsigned short</p>
       </td>
-      <td style="text-align:left">1</td>
+      <td style="text-align:left"><b>1</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">int</td>
@@ -196,7 +199,8 @@ Below some examples of literal values generated for each type :
         <p>int</p>
         <p>unsigned int</p>
       </td>
-      <td style="text-align:left">100</td>
+      <td style="text-align:left"><b>100</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">long</td>
@@ -204,47 +208,56 @@ Below some examples of literal values generated for each type :
         <p>long</p>
         <p>unsigned long</p>
       </td>
-      <td style="text-align:left">1000</td>
+      <td style="text-align:left"><b>1000</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">decimal</td>
       <td style="text-align:left">double</td>
-      <td style="text-align:left">10000.77</td>
+      <td style="text-align:left"><b>10000.77</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">float</td>
       <td style="text-align:left">float</td>
-      <td style="text-align:left">1000.5</td>
+      <td style="text-align:left"><b>1000.5</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">double</td>
       <td style="text-align:left">double</td>
-      <td style="text-align:left">1000.66</td>
+      <td style="text-align:left"><b>1000.66</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">boolean</td>
       <td style="text-align:left">bool</td>
-      <td style="text-align:left">true</td>
+      <td style="text-align:left"><b>true  </b>or <b>false</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">date</td>
       <td style="text-align:left">std::tm</td>
-      <td style="text-align:left">NULL</td>
+      <td style="text-align:left"><b>NULL</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">time</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">NULL</td>
+      <td style="text-align:left"><b>NULL</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">timestamp</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">NULL</td>
+      <td style="text-align:left"><b>NULL</b>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">binary</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">NULL</td>
+      <td style="text-align:left"><b>NULL</b>
+      </td>
     </tr>
   </tbody>
 </table>

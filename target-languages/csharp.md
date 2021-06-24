@@ -151,7 +151,11 @@ The table below describes how model neutral types are automatically converted to
 * **@NotNull**  no effect
 * **@PrimitiveType**  no effect
 
+### Specific types 
 
+*  **$attribute.fullType** returns the C\# "System" class full name \( for example : System.String, System.Int16, System.Decimal \)
+*  **$attribute.simpleType**  xx
+*  **$attribute.wrapperType**  xx
 
 ## Literal values
 
