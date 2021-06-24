@@ -1,14 +1,14 @@
 # C++
 
-C++ language is supported since version : **3.3.0**
+**C++** language is supported since version : **3.3.0**
 
-To define **C++** as the target language in a template file :
+To define **C++** as the **target language** in a template file :
 
 ```text
 #set( $env.language = 'C++' )
 ```
 
-The information below shows the behavior of the generator when 'C++' is the current target language.  
+The information below shows the behavior of the generator when C++ is the current target language.  
 
 
 ## Types conversion 
