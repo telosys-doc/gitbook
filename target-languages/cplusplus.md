@@ -132,10 +132,10 @@ The table below describes how model neutral types are automatically converted to
 
 ### Annotations effects
 
-* **@UnsignedType** has effect only for **char**, **short**, **int**, **long**
-* **@NotNull** has no effect
-* **@PrimitiveType** has no effect
-* **@ObjectType** has no effect
+* **@UnsignedType**  has effect only for **char**, **short**, **int**, **long**
+* **@NotNull**  has no effect
+* **@PrimitiveType** no effect
+* **@ObjectType**  no effect
 
 ### Specific types 
 
