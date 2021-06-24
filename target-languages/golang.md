@@ -123,3 +123,14 @@ The table below describes how model neutral types are automatically converted to
 * **@NotNull**  no effect
 * **@PrimitiveType**  no effect
 
+### Specific types 
+
+*  **$attribute.fullType** no effect \(always returns the standard Go type\)
+*  **$attribute.simpleType** 
+
+  no effect \(always returns the standard Go type\)
+
+*  **$attribute.wrapperType**  no effect \(always returns the standard Go type\)
+
+So, for **Golang** you can always use the basic "**$attribute.type**"
+
