@@ -153,9 +153,11 @@ The table below describes how model neutral types are automatically converted to
 
 ### Specific types 
 
-*  **$attribute.fullType** returns the C\# "System" class full name \( for example : System.String, System.Int16, System.Decimal \)
-*  **$attribute.simpleType**  xx
-*  **$attribute.wrapperType**  xx
+*  **$attribute.fullType** returns the C\# System class full name for both "primitive type" and "object type" \( for example : System.String, System.Int16, System.Decimal \)
+*  **$attribute.simpleType** 
+  * for an "object type" returns the simple type name of the C\# System class \( for example : String, Int16, Decimal \)
+  * for a "standard type" returns the usual type \( for example : string, int, uint, bool \)
+*  **$attribute.wrapperType**  returns the C\# System class associtated with the curren type
 
 ## Literal values
 
