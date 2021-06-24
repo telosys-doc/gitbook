@@ -34,13 +34,23 @@ Example 2 : use the "**foo**" subdirectory as HOME
 telosys>h foo
 ```
 
-**\`\`**
+Once Telosys HOME is defined the prompt contains a "\#"
+
+```
+telosys#>
+```
+
+
 
 ### Initialize the Telosys environment 
 
 Once the "home directory" is defined, you can initialize the Telosys projet.
 
 For that just run the **`init`** command
+
+```
+telosys#>init
+```
 
 This command creates the "**TelosysTools**" folder containing all the Telosys files and subfolders.
 
@@ -56,7 +66,11 @@ To print the current configuration, use the **`cfg`** command.
 
 To edit the configuration file with the Telosys-CLI default editor use **`ecfg`** command.
 
-For more information about project configuration see [Configuration & variables](../../configuration-and-variables.md)
+For more information about project configuration see [Configuration & variables](../../configuration-and-variables.md).
+
+If you want to try Telosys quickly you can continue with the default configuration.
+
+
 
 
 
