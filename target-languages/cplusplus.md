@@ -160,23 +160,92 @@ So, for C++ you can always use "$attribute.type"
 
 ### Examples of generated literals
 
-|  Model type |  Language type |  Language full type |  Language literal value example |
-| :--- | :--- | :--- | :--- |
-| string | string | string | "AAA" |
-| byte | char | char | 1 |
-| byte | unsigned char | unsigned char | 1 |
-| short | short | short | 1 |
-| short | unsigned short | unsigned short | 1 |
-| int | int | int | 100 |
-| int | unsigned int | unsigned int | 100 |
-| long | long | long | 1000 |
-| long | unsigned long | unsigned long | 1000 |
-| decimal | double | double | 10000.77 |
-| float | float | float | 1000.5 |
-| double | double | double | 1000.66 |
-| boolean | bool | bool | true |
-| date | std::tm | std::tm | NULL |
-| time |  |  | NULL |
-| timestamp |  |  | NULL |
-| binary |  |  | NULL |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Model type</th>
+      <th style="text-align:left">C++ type</th>
+      <th style="text-align:left">Literal value example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">string</td>
+      <td style="text-align:left">&quot;AAA&quot;</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">byte</td>
+      <td style="text-align:left">
+        <p>char</p>
+        <p>unsigned char</p>
+      </td>
+      <td style="text-align:left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">short</td>
+      <td style="text-align:left">
+        <p>short</p>
+        <p>unsigned short</p>
+      </td>
+      <td style="text-align:left">1</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">int</td>
+      <td style="text-align:left">
+        <p>int</p>
+        <p>unsigned int</p>
+      </td>
+      <td style="text-align:left">100</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">long</td>
+      <td style="text-align:left">
+        <p>long</p>
+        <p>unsigned long</p>
+      </td>
+      <td style="text-align:left">1000</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">decimal</td>
+      <td style="text-align:left">double</td>
+      <td style="text-align:left">10000.77</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">float</td>
+      <td style="text-align:left">float</td>
+      <td style="text-align:left">1000.5</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">double</td>
+      <td style="text-align:left">double</td>
+      <td style="text-align:left">1000.66</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">boolean</td>
+      <td style="text-align:left">bool</td>
+      <td style="text-align:left">true</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">date</td>
+      <td style="text-align:left">std::tm</td>
+      <td style="text-align:left">NULL</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">time</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">NULL</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">timestamp</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">NULL</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">binary</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">NULL</td>
+    </tr>
+  </tbody>
+</table>
 
