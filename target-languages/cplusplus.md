@@ -137,15 +137,15 @@ The table below describes how model neutral types are automatically converted to
 * **@PrimitiveType** has no effect
 * **@ObjectType** has no effect
 
-### Other "types"
+### Specific types 
 
-All the following statements return the same type as "$attribute.type"
+All the following statements have no effect for C++ :
 
 *  $attribute.fullType
 *  $attribute.simpleType
 *  $attribute.wrapperType
 
-So, for C++ you can always use "$attribute.type"  
+So, for **C++** you can always use "**$attribute.type**"  
 
 
 ## Literal values
@@ -158,14 +158,16 @@ So, for C++ you can always use "$attribute.type"
 |  FALSE | **false** |
 |  NULL | **NULL** |
 
-### Examples of generated literals
+### Generated literal values
+
+Below some examples of literal values generated for each type :
 
 <table>
   <thead>
     <tr>
       <th style="text-align:left">Model type</th>
       <th style="text-align:left">C++ type</th>
-      <th style="text-align:left">Literal value example</th>
+      <th style="text-align:left">C++ literal value</th>
     </tr>
   </thead>
   <tbody>
