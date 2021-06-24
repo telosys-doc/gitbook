@@ -139,11 +139,9 @@ The table below describes how model neutral types are automatically converted to
 
 ### Specific types 
 
-All the following statements have no effect for C++ :
-
-*  $attribute.fullType
-*  $attribute.simpleType
-*  $attribute.wrapperType
+*  **$attribute.fullType** no effect
+*  **$attribute.simpleType**  no effect
+*  **$attribute.wrapperType**  no effect
 
 So, for **C++** you can always use "**$attribute.type**"  
 
