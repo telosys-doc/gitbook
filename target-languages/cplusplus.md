@@ -1,6 +1,6 @@
 # C++
 
-**C++** language is supported since version : **3.3.0**
+**C++** language is supported since **version 3.3.0**
 
 To define **C++** as the **target language** in a template file :
 
