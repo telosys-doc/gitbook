@@ -143,7 +143,7 @@ The table below describes how model neutral types are automatically converted to
 *  **$attribute.simpleType**  no effect
 *  **$attribute.wrapperType**  no effect
 
-So, for **C++** you can always use "**$attribute.type**"  
+So, for **C++** you can always use the basic "**$attribute.type**"  
 
 
 ## Literal values
