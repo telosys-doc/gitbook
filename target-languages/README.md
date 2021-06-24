@@ -12,6 +12,16 @@ Thus Telosys will be able to apply certain default behaviors, for example to con
 
 By default the target language is Java.
 
+In the templates the target language has an influence on :
+
+* $attribute.**type** 
+* $attribute.**fullType** 
+* $attribute.**simpleType** 
+* $attribute.**wrapperType**
+* $attribute.**isPrimitiveType\(\)**
+
+
+
 All the pre-configured target languages currently supported by Telosys are defined below :
 
 * [C++](cplusplus.md)
