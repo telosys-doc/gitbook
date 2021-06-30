@@ -1,39 +1,37 @@
-# Attribute / Link
+# Attribute
 
-### Syntax
+### Attribute structure
 
-An attribute or link definition is composed of the following elements :
+An attribute structure is composed of the following elements :
 
-* **name**
+* attribute **name**
 * **":"** \(separator\)
-* **type** \(basic attribute type or referenced entity for a link\)
+* attribute **type** \(basic type or reference\)
 * further information \(optional\) defined between **"{"** and **"}"**
   * **annotations** \(optional\)  
   * **tags** \(optional\)  
-* **";"** \(end of definition\)
+* **";"** \(end of attribute definition\)
 
 Syntax :
 
 ```text
-name : type { annotations and tags } ;
+attributeName : attributeType { annotations and tags } ;
 ```
 
-An attribute or link definition can span multiple lines.   
+An attribute definition can span multiple lines.   
 Example :
 
 ```text
-name : type { 
-            annotations 
-            tags } ;
+attributeName : attributeType { 
+                annotations 
+                tags } ;
 ```
 
 ### 
 
-### Name
+### Attribute name
 
-The name can be composed of : **letters**, **numbers** and **"\_"** \(underscore\). Other characters are not allowed. By convention the name usually starts with a lower case character.
-
-Each name must be unique in the entity.
+The attribute name can be composed of : **letters**, **numbers** and **"\_"** \(underscore\). Other characters are not allowed. By convention the name usually starts with a lower case character.
 
 {% hint style="success" %}
 Examples of **valid** attribute names : 
@@ -56,9 +54,13 @@ Examples of **invalid** attribute names :
 
 ### Attribute type
 
-An attribute is a simple and unitary piece of data such as a string, a number, etc. Its type is defined by a "**neutral type**" independent of any programming language. Each "neutral type" will be converted into the target language type during generation. Telosys offers automatic conversion for most used languages \(Java, C\#, etc\).
+The attribute type can be a "**basic type**" or a "**reference to another entity**". 
 
-Available neutral types : 
+####  🔷 Basic type
+
+A "**basic type**" is a "**neutral type**" independent of any programming language. 
+
+Available basic types : 
 
 * **binary** 
 * **boolean** 
@@ -74,19 +76,20 @@ Available neutral types :
 * **time** 
 * **timestamp** 
 
-\*\*\*\*
+All of these "neutral types" are converted into the target language types during generation. Telosys offers automatic conversion for most used languages \(Java, C\#, etc\). 
 
-### Link type
+#### 🔷 Reference type
 
-A link is a reference to another entity. It's a relationship with a cardinality \(one to many, many to one, etc\). So the type is the **referenced entity name**. Of course, the referenced entity must exist in the model \(at least the entity file\).  
-To reference a **collection** of entities just add "**\[ \]**" after the entity name. 
+A "**reference**" is defined by using an **entity name** instead of the basic type.   
+The referenced entity must exist in the model \(at least the entity file\).  
+To reference a collection of entities just add "\[ \]" after the entity name. 
 
 Examples : 
 
 * **Driver** \(to reference a single Driver instance, "0..1" cardinality\) 
 * **Driver\[ \]** \(to reference a collection of Driver instances, "0..N" cardinality\)
 
-
+References are used to define _links_ between entities \("many to one" and "one to many"\)
 
 
 

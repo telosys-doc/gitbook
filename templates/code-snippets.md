@@ -1,6 +1,12 @@
 # Code snippets
 
-### 
+### Iterate over all entities defined in the model
+
+```text
+#foreach( $e in $model.allEntites )
+		...
+#end
+```
 
 ### Iterate over entity attributes
 
