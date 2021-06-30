@@ -18,7 +18,7 @@
 * [Configuration & variables](configuration-and-variables.md)
 * [DSL model](dsl-model/README.md)
   * [Entity](dsl-model/entity.md)
-  * [Attribute](dsl-model/attribute.md)
+  * [Attribute / Link](dsl-model/attribute.md)
   * [Annotations](dsl-model/attribute-annotations.md)
   * [Tags](dsl-model/tags.md)
   * [Examples](dsl-model/examples.md)
