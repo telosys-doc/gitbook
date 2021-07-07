@@ -16,7 +16,12 @@ You can also share your experience by writing articles or tutorials on your own 
 
 ### Create new extensions for some IDE or editors
 
-xxxx
+You can create an extension for your favorite IDE or editor in order to get syntax highlighting for Telosys models or templates.
+
+### Contact
+
+Whatever you creation around Telosys let us know.   
+Send a mail at : telosysteam@gmail.com 
 
 
 
