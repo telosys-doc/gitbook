@@ -19,8 +19,8 @@ Examples of tags :
 MyEntity {
 id  : int { @Id } ;
 
-// tag "mandatory " (without value) :
-comment : string { #mandatory } ;
+// tag "mytag" (without value) :
+comment : string { #mytag } ;
 
 // tag "OpenAPIFormat" with value :
 val : long  { #OpenAPIFormat(int64) } ;
