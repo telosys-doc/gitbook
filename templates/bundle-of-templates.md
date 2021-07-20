@@ -79,6 +79,7 @@ The bundle folder will become a Git project.
 So, in the bundle folder... 
 
 * Initialize the Git repository with initial branch “master”  `$ git init -b master`
+* You can also define your user name and email for the current repo \(optional\) `$ git config user.name "Your Name"`  `$ git config user.email your@email.com`
 * Add all the bundle files to be committed  `$ git add .`
 * Commit the files  `$ git commit -m "Initial commit"`
 
