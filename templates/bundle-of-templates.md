@@ -87,7 +87,8 @@ So, in the bundle folder...
 On the **remote** Git server \(GitHub, GitLab, your own server, etc\):  
 - if you don't already have a repository to host the bundle, create it.  
 - copy the repository URL  
-For example :  `https://github.com/xxx/yyy.git`
+For example : `https://github.com/xxx/yyy.git`    
+or `https://gitlab.com/xxx/yyy.git` 
 
 On the **local** bundle folder:
 
