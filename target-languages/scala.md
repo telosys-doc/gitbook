@@ -32,8 +32,8 @@ The table below describes how model neutral types are automatically converted to
 
 ### Annotations effects
 
-* **@UnsignedType**  no effect
-* **@ObjectType**  no effect
-* **@NotNull**  no effect
-* **@PrimitiveType**  no effect
+* **@UnsignedType** : no effect
+* **@ObjectType** : no effect
+* **@NotNull** : no effect
+* **@PrimitiveType**  : no effect
 
