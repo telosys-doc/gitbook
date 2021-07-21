@@ -37,3 +37,11 @@ The table below describes how **model neutral types** are automatically converte
 * **@NotNull** : no effect
 * **@PrimitiveType**  : no effect
 
+### See also
+
+For more information about TypeScript see :
+
+* [https://www.typescriptlang.org/docs/handbook/2/everyday-types.html\#object-types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#object-types)
+
+
+
