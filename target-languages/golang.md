@@ -134,6 +134,12 @@ The table below describes how model neutral types are automatically converted to
 
 So, for **Golang** you can always use the basic "**$attribute.type**"
 
+### See also
+
+For more information about Golang types see :
+
+* [https://golang.org/ref/spec\#Types](https://golang.org/ref/spec#Types)
+
 ## Literal values
 
 ### TRUE, FALSE, NULL
