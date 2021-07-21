@@ -10,8 +10,6 @@ To define **Scala** as the **target language** in a template file :
 
 The information below shows the behavior of the generator when Scala is the current target language.
 
-
-
 ## Types conversion 
 
 The table below describes how model neutral types are automatically converted to Scala types with potential impact due to attribute annotations.
