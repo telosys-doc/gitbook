@@ -14,9 +14,9 @@ If Eclipse cannot connect the Eclipse Market Place web site check the proxy conf
 
 In the **"Find"** field enter **"Telosys"** and press Return or click **"Go"**
 
-When the Telosys plugin is found, click on "**Install**"
-
 ![](../.gitbook/assets/eclipse-2-marketplace-search.png)
+
+When the Telosys plugin is found, click on "**Install**"
 
 ### 3 - Install Telosys plugin
 
@@ -40,9 +40,13 @@ Just restart Eclipse and check the installation.
 
 ### 4 - Check the installation
 
-Once the Telosys plugin is installed you can see its logo in the "**About**" window :
-
 In the menu select "**Help**" - "**About Eclipse**"
 
-It is also present in the "Installation Details" \( in the "Features" and "Plugins" tabs \)
+![](../.gitbook/assets/eclipse-6-about.png)
+
+Click on "**Installation Details**" 
+
+![](../.gitbook/assets/eclipse-7-installed-software.png)
+
+"Telosys Code Generator" must be present in the list of installed software. You can also check its version.
 
