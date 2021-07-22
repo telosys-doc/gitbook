@@ -79,6 +79,7 @@ The bundle folder will become a Git project.
 So, in the bundle folder... 
 
 * Initialize the Git repository with initial branch “master”  `$ git init -b master`
+* You can also define your user name and email for the current repo \(optional\) `$ git config user.name "Your Name"`  `$ git config user.email your@email.com`
 * Add all the bundle files to be committed  `$ git add .`
 * Commit the files  `$ git commit -m "Initial commit"`
 
@@ -87,7 +88,8 @@ So, in the bundle folder...
 On the **remote** Git server \(GitHub, GitLab, your own server, etc\):  
 - if you don't already have a repository to host the bundle, create it.  
 - copy the repository URL  
-For example :  `https://github.com/xxx/yyy.git`
+For example : `https://github.com/xxx/yyy.git`    
+or `https://gitlab.com/xxx/yyy.git` 
 
 On the **local** bundle folder:
 

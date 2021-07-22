@@ -48,16 +48,18 @@ xxx  // the comment
 
 ### Entity structure
 
-The entity's structure is composed of the **entity name** followed by a block containing all the **entity's attributes**. The block of attributes starts with **'{'** and ends with **'}'**.   
+The entity structure is made up of the **name of the entity** followed by a block containing all of its **attributes and links**. The block containing the attributes and the links starts with **'{'** and ends with **'}'**.   
 "End Of Line" characters are not significant. They are used only for readability. Potentially all the entity can be described in a single line.
 
 Example :
 
 ```text
 EntityName {
-   // attributes list
+   // attributes 
    id   : int { @Id } ; // attribute 'id'
    name : string  ; // attribute 'name'
+   // links
+   town : Town ; // link to the 'Town' entity
 }
 ```
 

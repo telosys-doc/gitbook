@@ -1,7 +1,5 @@
 # Golang
 
-**Golang** is supported since **version 3.3.0**
-
 To define **Golang** as the **target language** in a template file :
 
 ```text
