@@ -1,10 +1,12 @@
 # Eclipse plugin installation
 
-Telosys plugin can be installed as any other Eclipse plugin by using Eclipse Marketplace wizard.
+Telosys plugin can be installed as any other Eclipse plugin by using **Eclipse Marketplace wizard**.
 
 ### **1 -** Open Eclipse Marketplace wizard
 
-In the Eclipse main menu, select **"Help"** - **"Eclipse Marketplace..."**
+In the **Eclipse main menu**, select **"Help"** and **"Eclipse Marketplace..."**
+
+![](../.gitbook/assets/eclipse-menu-marketplace.png)
 
 If Eclipse cannot connect the Eclipse Market Place web site check the proxy configuration \( in Window - Preferences - General - Network Connection \)
 
@@ -12,9 +14,13 @@ If Eclipse cannot connect the Eclipse Market Place web site check the proxy conf
 
 ### 2 - Search Telosys plugin in Eclipse Marketplace
 
-In the **search** field enter **"Telosys"** and press **"Go"**
+In the **"Find"** field enter **"Telosys"** and press Return or click **"Go"**
 
-\*\*\*\*
+![](../.gitbook/assets/eclipse-marketplace-search.png)
+
+When the Telosys plugin is found, click on "**Install**"
+
+
 
 ### 3 - Install Telosys plugin
 
