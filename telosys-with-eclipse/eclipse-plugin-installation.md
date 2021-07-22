@@ -6,9 +6,9 @@ Telosys plugin can be installed as any other Eclipse plugin by using **Eclipse M
 
 In the **Eclipse main menu**, select **"Help"** and **"Eclipse Marketplace..."**
 
-If Eclipse cannot connect the Eclipse Market Place web site check the proxy configuration \( in Window - Preferences - General - Network Connection \)
-
 ![](../.gitbook/assets/eclipse-1-menu-marketplace.png)
+
+Note : if Eclipse cannot connect the Eclipse Market Place web site check the proxy configuration \( in "Window - Preferences", then "General - Network Connections" \)
 
 ### 2 - Search Telosys plugin in Eclipse Marketplace
 
@@ -44,9 +44,15 @@ In the menu select "**Help**" - "**About Eclipse**"
 
 ![](../.gitbook/assets/eclipse-6-about.png)
 
+You can see the Telosys logo among those of the installed software.
+
 Click on "**Installation Details**" 
 
 ![](../.gitbook/assets/eclipse-7-installed-software.png)
 
-"Telosys Code Generator" must be present in the list of installed software. You can also check its version.
+"**Telosys Code Generator**" must be present in the list of installed software. You can also check its version.
+
+
+
+There you go, you can now start using Telosys.
 
