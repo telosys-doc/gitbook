@@ -32,6 +32,7 @@
   * [Velocity object types](templates/velocity-objects.md)
   * [Telosys directives](templates/telosys-directives.md)
   * [Telosys objects](templates/telosys-objects.md)
+  * [Telosys variables](templates/telosys-variables.md)
   * [Code snippets](templates/code-snippets.md)
 * [Target languages](target-languages/README.md)
   * [C++](target-languages/cplusplus.md)
