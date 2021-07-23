@@ -117,7 +117,7 @@ Variables usable for target languages having a notion of "packages" or "modules"
 
 ## Specific variables
 
-If you need more configuration variables for your project you can define them in the project configuration file "**telosys-tools.cfg**".
+If you need more variables for your project you can define them in the project configuration file "**telosys-tools.cfg**".
 
 Once defined, these specific variables are usable exactly like standard variables.
 
