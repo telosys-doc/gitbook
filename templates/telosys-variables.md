@@ -4,9 +4,13 @@ Telosys provides a set of predefined variables which can be used in all template
 
 ## Standard variables
 
+Standard variables have predefined names, their values are either set by Telosys or can be defined in the project configuration.
+
 ### Special characters
 
-xxxx
+These variables are used to simplify the writing of templates when certain special characters are required and are difficult to mix with Velocity syntax.
+
+These variables should be considered as "constants" and used as such.
 
 | Variable name | Variable value |
 | :--- | :--- |
@@ -25,7 +29,11 @@ xxxx
 
 ### Project configuration
 
-xxxx
+These variables are specific for each project. They can be defined in the project configuration file \( "telosys-tools.cfg" \)
+
+All the project configuration variables are usable in both templates files \(".vm" files\) and bundle configuration file \("templates.cfg"\).
+
+#### Directories
 
 <table>
   <thead>
@@ -97,6 +105,15 @@ xxxx
     </tr>
   </tbody>
 </table>
+
+**Packages**
+
+Variables usable for target languages having a notion of "packages" or "modules" or "namespaces" \(Java, Golang, C\#, etc\)
+
+| Variable name | Configuration value |
+| :--- | :--- |
+| **$ROOT\_PKG** | The root package  containing all other packages |
+| **$ENTITY\_PKG** | The package containing the entities  classes or structures |
 
 ## Specific variables
 
