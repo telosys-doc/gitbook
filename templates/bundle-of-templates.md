@@ -51,6 +51,21 @@ In the project properties / "**Telosys tools**"
 - Click "Download selected bundle\(s\)"   
   with "Install downloaded bundle\(s\)" checked
 
+
+
+#### With Git \(from any Git remote repository\)
+
+As each bundle is a Git repository you can install a bundle just using Git.
+
+Get the Git repository URL for the bundle to install \(on your remote Git server\).  
+For example :  `http://server-name/xxx/yyy/bundle-name.git`  
+
+Clone the Git repository in the Telosys project **templates** **directory**.  
+For example :   
+`git clone http://server-name/xxx/yyy/bundle-name.git` 
+
+There you have it. You can now use the bundle to generate your code and eventually modify it and update it on the remote Git repository \(with git commit and push\).
+
 ### How to customize a bundle?
 
 Telosys was designed to allow users to customize code generation. So, if you reuse existing bundles, you will probably want to change some its parts.
