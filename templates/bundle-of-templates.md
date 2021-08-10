@@ -33,15 +33,15 @@ The "templates.cfg" file is used to launch different types of processing defined
 
 Whatever your Telosys tool \(CLI or Eclipse\), it allows you to install remote model bundles from GitHub.
 
-#### With Telosys-CLI 
+#### ✔ Installation from GitHub with Telosys-CLI 
 
 Use the following commands :
 
 * "**gh**" \("GitHub"\) to print/change the current GitHub account
 * "**lb**" \("list bundles"\) to see the bundles already present in the current project
-* "**ib**" \("install bundle"\) to install new bundle\(s\) from the remote Git repository 
+* "**ib**" \("install bundle"\) to install new bundle\(s\) from the remote Git repository
 
-#### With Telosys Eclipse plugin
+#### ✔Installation from GitHub with Telosys Eclipse plugin
 
 In the project properties / "**Telosys tools**"   
 - Select "**Templates**" tab  
@@ -51,11 +51,9 @@ In the project properties / "**Telosys tools**"
 - Click "Download selected bundle\(s\)"   
   with "Install downloaded bundle\(s\)" checked
 
+#### ✔Installation from any Git remote repository with Git 
 
-
-#### With Git \(from any Git remote repository\)
-
-As each bundle is a Git repository you can install a bundle just using Git.
+You can install a bundle from any Git repository just using **Git commands**.
 
 Get the Git repository URL for the bundle to install \(on your remote Git server\).  
 For example :  `http://server-name/xxx/yyy/bundle-name.git`  
