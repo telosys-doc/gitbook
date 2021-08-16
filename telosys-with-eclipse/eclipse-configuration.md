@@ -1,4 +1,4 @@
-# Eclipse configuration
+# Eclipse customization
 
 Once Telosys plugin is installed you can customize few Eclipse features in order to be more comfortable.
 

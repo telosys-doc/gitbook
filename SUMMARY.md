@@ -15,7 +15,7 @@
     * [Code generation](telosys-cli/cli-getting-started/code-generation.md)
 * [Telosys with Eclipse](telosys-with-eclipse/README.md)
   * [Eclipse plugin installation](telosys-with-eclipse/eclipse-plugin-installation.md)
-  * [Eclipse configuration](telosys-with-eclipse/eclipse-configuration.md)
+  * [Eclipse customization](telosys-with-eclipse/eclipse-configuration.md)
   * [Getting started](telosys-with-eclipse/getting-started.md)
 * [Telosys with VSCode](telosys-with-vscode.md)
 * [Configuration & variables](configuration-and-variables.md)
