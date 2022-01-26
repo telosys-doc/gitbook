@@ -1,13 +1,13 @@
 # CLI commands
 
-Telosys-CLI uses a set of short commands \(based on 2 or 3 characters\) to identify the action to be launched.
+Telosys-CLI uses a set of short commands (based on 2 or 3 characters) to identify the action to be launched.
 
 Most commands start with a letter which designates the action :
 
 * **`"e"`** for "edit"
 * **`"l"`** for "list"
 * **`"d"`** for "delete"
-* **`"n"`** for "new" \( "creation" \)
+* **`"n"`** for "new" ( "creation" )
 * **`"c"`** for "check"
 * **`"i"`** for "install"
 
@@ -97,8 +97,6 @@ Description :
 Usage :
   nm [model-name]
 ```
-
-
 
 
 

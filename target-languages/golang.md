@@ -2,133 +2,52 @@
 
 To define **Golang** as the **target language** in a template file :
 
-```text
+```
 #set( $env.language = 'Go' )
 ```
 
 The information below shows the behavior of the generator when Golang is the current target language.
 
-## Types conversion 
+## Types conversion&#x20;
 
 The table below describes how model neutral types are automatically converted to Golang types with potential impact due to attribute annotations.
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Model type</th>
-      <th style="text-align:left">Go type</th>
-      <th style="text-align:left">with annotation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left"><b>string</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">byte</td>
-      <td style="text-align:left"><b>byte <br />uint8</b>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>@UnsignedType</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">short</td>
-      <td style="text-align:left"><b>int16 <br />uint16</b>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>@UnsignedType</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">int</td>
-      <td style="text-align:left"><b>int32 <br />uint32</b>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>@UnsignedType</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">long</td>
-      <td style="text-align:left"><b>int64<br />uint64</b>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>@UnsignedType</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">decimal</td>
-      <td style="text-align:left"><b>float64</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">float</td>
-      <td style="text-align:left"><b>float32</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">double</td>
-      <td style="text-align:left"><b>float64</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">boolean</td>
-      <td style="text-align:left"><b>bool</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">date</td>
-      <td style="text-align:left"><b>time.Time</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">time</td>
-      <td style="text-align:left"><b>time.Time</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">timestamp</td>
-      <td style="text-align:left"><b>time.Time</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">binary</td>
-      <td style="text-align:left"><b>[ ] byte</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-  </tbody>
-</table>
+| Model type | Go type                                                   | with annotation              |
+| ---------- | --------------------------------------------------------- | ---------------------------- |
+| string     | **string**                                                |                              |
+| byte       | <p><strong>byte</strong> <br><strong>uint8</strong></p>   | <p></p><p>@UnsignedType </p> |
+| short      | <p><strong>int16</strong> <br><strong>uint16</strong></p> | <p></p><p>@UnsignedType</p>  |
+| int        | <p><strong>int32</strong> <br><strong>uint32</strong></p> | <p></p><p>@UnsignedType</p>  |
+| long       | <p><strong>int64</strong><br><strong>uint64</strong></p>  | <p></p><p>@UnsignedType</p>  |
+| decimal    | **float64**                                               |                              |
+| float      | **float32**                                               |                              |
+| double     | **float64**                                               |                              |
+| boolean    | **bool**                                                  |                              |
+| date       | **time.Time**                                             |                              |
+| time       | **time.Time**                                             |                              |
+| timestamp  | **time.Time**                                             |                              |
+| binary     | **\[ ] byte**                                             |                              |
 
 ### Annotations effects
 
-* **@UnsignedType**  has effect only for **byte**, **short**, **int**, **long**
-* **@ObjectType**  no effect
-* **@NotNull**  no effect
-* **@PrimitiveType**  no effect
+* **@UnsignedType** \
+  ****has effect only for **byte**, **short**, **int**, **long**
+* **@ObjectType** \
+  ****no effect
+* **@NotNull** \
+  ****no effect
+* **@PrimitiveType** \
+  no effect
 
-### Specific types 
+### Specific types&#x20;
 
-*  **$attribute.fullType** no effect \(always returns the standard Go type\)
-*  **$attribute.simpleType** 
+* &#x20;**$attribute.fullType**\
+  no effect (always returns the standard Go type)
+*   &#x20;**$attribute.simpleType**&#x20;
 
-  no effect \(always returns the standard Go type\)
-
-*  **$attribute.wrapperType**  no effect \(always returns the standard Go type\)
+    no effect (always returns the standard Go type)
+* &#x20;**$attribute.wrapperType** \
+  no effect (always returns the standard Go type)
 
 So, for **Golang** you can always use the basic "**$attribute.type**"
 
@@ -136,117 +55,35 @@ So, for **Golang** you can always use the basic "**$attribute.type**"
 
 For more information about Golang types see :
 
-* [https://golang.org/ref/spec\#Types](https://golang.org/ref/spec#Types)
+* [https://golang.org/ref/spec#Types](https://golang.org/ref/spec#Types)
 
 ## Literal values
 
 ### TRUE, FALSE, NULL
 
-|   | Golang literal |
-| :--- | :--- |
-| TRUE | **true** |
-|  FALSE | **false** |
-|  NULL | **nil** |
+|        | Golang literal |
+| ------ | -------------- |
+| TRUE   | **true**       |
+|  FALSE | **false**      |
+|  NULL  | **nil**        |
 
 ### Generated literal values
 
 Below some examples of literal values generated for each type :
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Model type</th>
-      <th style="text-align:left">Golang type</th>
-      <th style="text-align:left">Golang literal value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left"><b>&quot;AAA&quot;</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">byte</td>
-      <td style="text-align:left">
-        <p>byte</p>
-        <p>uint8</p>
-      </td>
-      <td style="text-align:left"><b>1</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">short</td>
-      <td style="text-align:left">int16
-        <br />uint16</td>
-      <td style="text-align:left"><b>1</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">int</td>
-      <td style="text-align:left">int32
-        <br />uint32</td>
-      <td style="text-align:left"><b>100</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">long</td>
-      <td style="text-align:left">int64
-        <br />uint64</td>
-      <td style="text-align:left"><b>1000</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">decimal</td>
-      <td style="text-align:left">float64</td>
-      <td style="text-align:left"><b>10000.77</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">float</td>
-      <td style="text-align:left">float32</td>
-      <td style="text-align:left"><b>1000.5</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">double</td>
-      <td style="text-align:left">float64</td>
-      <td style="text-align:left"><b>1000.66</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">boolean</td>
-      <td style="text-align:left">bool</td>
-      <td style="text-align:left"><b>true  </b>or <b>false</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">date</td>
-      <td style="text-align:left">time.Time</td>
-      <td style="text-align:left"><b>nil</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">time</td>
-      <td style="text-align:left">time.Time</td>
-      <td style="text-align:left"><b>nil</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">timestamp</td>
-      <td style="text-align:left">time.Time</td>
-      <td style="text-align:left"><b>nil</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">binary</td>
-      <td style="text-align:left">[ ] byte</td>
-      <td style="text-align:left"><b>nil</b>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
+|  Model type |  Golang  type           |  Golang literal value   |
+| ----------- | ----------------------- | ----------------------- |
+| string      | string                  | **"AAA"**               |
+| byte        | <p>byte</p><p>uint8</p> | **1**                   |
+| short       | <p>int16 <br>uint16</p> | **1**                   |
+| int         | <p>int32 <br>uint32</p> | **100**                 |
+| long        | <p>int64<br>uint64</p>  | **1000**                |
+| decimal     | float64                 | **10000.77**            |
+| float       | float32                 | **1000.5**              |
+| double      | float64                 | **1000.66**             |
+| boolean     | bool                    | **true**  or  **false** |
+| date        | time.Time               | **nil**                 |
+| time        | time.Time               | **nil**                 |
+| timestamp   | time.Time               | **nil**                 |
+| binary      | \[ ] byte               | **nil**                 |
 

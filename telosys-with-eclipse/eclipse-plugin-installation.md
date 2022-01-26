@@ -8,7 +8,7 @@ In the **Eclipse main menu**, select **"Help"** and **"Eclipse Marketplace..."**
 
 ![](../.gitbook/assets/eclipse-1-menu-marketplace.png)
 
-Note : if Eclipse cannot connect the Eclipse Market Place web site check the proxy configuration \( in "Window - Preferences", then "General - Network Connections" \)
+Note : if Eclipse cannot connect the Eclipse Market Place web site check the proxy configuration ( in "Window - Preferences", then "General - Network Connections" )
 
 ### 2 - Search Telosys plugin in Eclipse Marketplace
 
@@ -46,7 +46,7 @@ In the menu select "**Help**" - "**About Eclipse**"
 
 You can see the Telosys logo among those of the installed software.
 
-Click on "**Installation Details**" 
+Click on "**Installation Details**"&#x20;
 
 ![](../.gitbook/assets/eclipse-7-installed-software.png)
 
@@ -55,4 +55,3 @@ Click on "**Installation Details**"
 
 
 There you go, you can now start using Telosys.
-

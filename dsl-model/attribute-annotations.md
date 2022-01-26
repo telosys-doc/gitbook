@@ -1,312 +1,298 @@
 # Annotations
 
-Each attribute can have **0 to N annotations**.   
-Annotations provide additional information usable during the code generation.   
-An annotation is a **predefined name** starting with "**@**".   
-Some annotations may have **values** specified between "**\(**" and "**\)**".   
+Each attribute can have **0 to N annotations**. \
+Annotations provide additional information usable during the code generation. \
+An annotation is a **predefined name** starting with "**@**". \
+Some annotations may have **values** specified between "**(**" and "**)**". \
 All annotations must be located in the block delimited by "**{**" and "**}**".
 
 ### @AutoIncremented
 
-The attribute is supposed to be auto-incremented \(for example for an auto-incremented key\)  
+The attribute is supposed to be auto-incremented (for example for an auto-incremented key)\
 Applicable only with "numeric" types
 
-### @DbComment\(string\)
+### @DbComment(string)
 
-Since version 3.2.0  
-The comment in the database \(typically a column comment in a relational database\)
+Since version 3.2.0\
+The comment in the database (typically a column comment in a relational database)
 
-### @DbDefaultValue\(string\)
+### @DbDefaultValue(string)
 
-Since version 3.2.0  
-The default value in the database. 
+Since version 3.2.0\
+The default value in the database.&#x20;
 
-### @DbName\(string\)
+### @DbName(string)
 
-Since version 3.2.0  
-The name in the database \(for example the column name in a relational database\)
+Since version 3.2.0\
+The name in the database (for example the column name in a relational database)
 
-### @DbSize\(string\)
+### @DbSize(string)
 
-Since version 3.2.0   
+Since version 3.2.0 \
 _Deprecated - Do not use_
 
-### @DbType\(string\)
+### @DbType(string)
 
-Since version 3.2.0   
-The type in the database \(for example the column type in a relational database\)
+Since version 3.2.0 \
+The type in the database (for example the column type in a relational database)
 
-### @DefaultValue\(string\)
+### @DefaultValue(string)
 
-Since version 3.2.0  
-The default value 
+Since version 3.2.0\
+The default value&#x20;
 
 ### @Embedded
 
-The entity referenced by the attribute must be embedded \(typically for NoSQL databases\).  
+The entity referenced by the attribute must be embedded (typically for NoSQL databases).\
 Applicable with "references" to embed them in the current entity.
 
 ### @FetchTypeEager
 
-Since version 3.3.0   
-Define an "Eager Loading" fetch type for a link, typically for ORM \(JPA, Doctrine, etc \).
+Since version 3.3.0 \
+Define an "Eager Loading" fetch type for a link, typically for ORM (JPA, Doctrine, etc ).
 
 ### @FetchTypeLazy
 
-Since version 3.3.0   
-Define a "Lazy Loading" fetch type for a link, typically for ORM \(JPA, Doctrine, etc \).
+Since version 3.3.0 \
+Define a "Lazy Loading" fetch type for a link, typically for ORM (JPA, Doctrine, etc ).
 
-### @FK\( \[fkName,\] referencedEntity\[.attribute\] \)
+### @FK( \[fkName,] referencedEntity\[.attribute] )
 
-Since version 3.3.0  
-Define a Foreign Key or a Foreign Key part   
-  
-Syntax :  
-`// FK referencing an entity with a basic PK (single attribute)  
-@FK( ReferencedEntity ) // without FK name (default name)  
-@FK( ForeignKeyName, ReferencedEntity ) // with FK name  
----  
-// FK referencing an entity with a compositePK (N attributes)  
-@FK( ForeignKeyName, ReferencedEntity.ReferencedAttribute )`  
-  
-Examples :  
-`// FK referencing "Brand" entity (with default FK name)  
-brandId : int { @FK(Brand) }; // PK inference   
------  
-// FK referencing "Brand" entity (with default FK name)  
-brandId : int { @FK(Brand.id) }; // explicit PK attribute  
------  
-// FK referencing "Group" entity (with FK name)  
-groupCode : string { @FK(FK_EMP_GRP, Group) } ;  
------  
-// FK referencing "SubGroup" entity (composite PK)  
-groupCode : string { @FK(FK_PER_SUBGRP, SubGroup.groupCode ) };   
-subgroupId : int   { @FK(FK_PER_SUBGRP, SubGroup.subgroupId) };`
+Since version 3.3.0\
+Define a Foreign Key or a Foreign Key part \
+\
+Syntax :\
+`// FK referencing an entity with a basic PK (single attribute)`\
+`@FK( ReferencedEntity ) // without FK name (default name)`\
+`@FK( ForeignKeyName, ReferencedEntity ) // with FK name`\
+`---`\
+`// FK referencing an entity with a compositePK (N attributes)`\
+`@FK( ForeignKeyName, ReferencedEntity.ReferencedAttribute )`\
+\
+Examples :\
+`// FK referencing "Brand" entity (with default FK name)`\
+`brandId : int { @FK(Brand) }; // PK inference` \
+`-----`\
+`// FK referencing "Brand" entity (with default FK name)`\
+`brandId : int { @FK(Brand.id) }; // explicit PK attribute`\
+`-----`\
+`// FK referencing "Group" entity (with FK name)`\
+`groupCode : string { @FK(FK_EMP_GRP, Group) } ;`\
+`-----`\
+`// FK referencing "SubGroup" entity (composite PK)`\
+`groupCode : string { @FK(FK_PER_SUBGRP, SubGroup.groupCode ) };` \
+`subgroupId : int   { @FK(FK_PER_SUBGRP, SubGroup.subgroupId) };`
 
 ### @Future
 
-The attribute value must be in the future \(after current date\).  
-Usable for field validation rules.  
+The attribute value must be in the future (after current date).\
+Usable for field validation rules.\
 Applicable with "date" type.
 
 ### @Id
 
-The attribute is the ID \(or Primary Key\) for the current entity.  
-For an entity with a composite ID \(composite Primary Key\), put this annotation on each attribute that is part of the ID.  
-Applicable with any basic type.  
-For a composite Primary Key just put an "@Id" annotation for each attribute that is part of the key.  
-Examples :  
-`Badge { // Simple key => single "@Id"  
-  id   : int { @Id } ;  
-  name : string ;   
-}  
-SubGroup { // Composite key => multiple "@Id"  
-  groupCode : string { @Id } ;  
-  sectionId : int { @Id } ;  
-  name : string ;  
-}`
+The attribute is the ID (or Primary Key) for the current entity.\
+For an entity with a composite ID (composite Primary Key), put this annotation on each attribute that is part of the ID.\
+Applicable with any basic type.\
+For a composite Primary Key just put an "@Id" annotation for each attribute that is part of the key.\
+Examples :\
+`Badge { // Simple key => single "@Id"`\
+&#x20; `id   : int { @Id } ;`\
+&#x20; `name : string ;` \
+`}`\
+`SubGroup { // Composite key => multiple "@Id"`\
+&#x20; `groupCode : string { @Id } ;`\
+&#x20; `sectionId : int { @Id } ;`\
+&#x20; `name : string ;`\
+`}`
 
-### @InitialValue\(string\)
+### @InitialValue(string)
 
-Since version 3.2.0  
+Since version 3.2.0\
 Defines the initial value.
 
-### @InputType\(string\)
+### @InputType(string)
 
-Since version 3.2.0   
-Defines the input type usable for the field \(for example an HTML input type\).
+Since version 3.2.0 \
+Defines the input type usable for the field (for example an HTML input type).
 
-### @Insertable\(boolean\) 
+### @Insertable(boolean)&#x20;
 
-Since version 3.3.0   
-  
-Examples :  
-`@Insertable(true)  
-@Insertable(false)`
+Since version 3.3.0 \
+\
+Examples :\
+`@Insertable(true)`\
+`@Insertable(false)`
 
-### @Label\(string\)
+### @Label(string)
 
-Since version 3.2.0   
-Defines the label usable for the field \(for example an HTML label\).
+Since version 3.2.0 \
+Defines the label usable for the field (for example an HTML label).
 
-### @LinkByAttr\(string\) 
+### @LinkByAttr(string)&#x20;
 
-Since version 3.3.0   
-Defines a link based on the given attribute\(s\) name\(s\).  
-For multiple attributes \(in case of composite PK\) each attribute must define the referenced attribute in the target entity by using the "&gt;" character \( "a &gt; b" for  "a" referencing "b"\).  
-  
-Syntax :  
-`// simple PK with a single attribute (ref not required) @LinkByAttr(attribName) // referenced PK inference  
-// composite PK with N columns (referenced required)  
-@LinkByAttr(attr1 > refAttr1 , attr2 > refAttr2 , ...)`   
-  
-Examples :  
-`Point {  
-  x : int { @Id } ;  
-  y : int { @Id } ;  
-  label : string ;  
-}  
------  
-Line {  
-  id : short { @Id } ;  
-  name : string ;  
-  // Point 1  
-  point1X : int ;  
-  point1Y : int ;  
-  // Point 2  
-  point2X : int ;  
-  point2Y : int ;  
-  // Link to point  
-  point1 : Point { @LinkByAttr(point1X > x, point1Y > y) } ;  
-  point2 : Point { @LinkByAttr(point2X > x, point2Y > y) } ;  
-}`  
+Since version 3.3.0 \
+Defines a link based on the given attribute(s) name(s).\
+For multiple attributes (in case of composite PK) each attribute must define the referenced attribute in the target entity by using the ">" character ( "a > b" for  "a" referencing "b").\
+\
+Syntax :\
+`// simple PK with a single attribute (ref not required) @LinkByAttr(attribName) // referenced PK inference`\
+`// composite PK with N columns (referenced required)`\
+`@LinkByAttr(attr1 > refAttr1 , attr2 > refAttr2 , ...)` \
+\
+Examples :\
+`Point {`\
+&#x20; `x : int { @Id } ;`\
+&#x20; `y : int { @Id } ;`\
+&#x20; `label : string ;`\
+`}`\
+`-----`\
+`Line {`\
+&#x20; `id : short { @Id } ;`\
+&#x20; `name : string ;`\
+&#x20; `// Point 1`\
+&#x20; `point1X : int ;`\
+&#x20; `point1Y : int ;`\
+&#x20; `// Point 2`\
+&#x20; `point2X : int ;`\
+&#x20; `point2Y : int ;`\
+&#x20; `// Link to point`\
+&#x20; `point1 : Point { @LinkByAttr(point1X > x, point1Y > y) } ;`\
+&#x20; `point2 : Point { @LinkByAttr(point2X > x, point2Y > y) } ;`\
+`}`\
 
 
-### @LinkByCol\(column\[, column2 \[, columnN \] \] \) 
+### @LinkByFK(string)&#x20;
 
-Since version 3.3.0   
-Defines a link based on the given database column name\(s\).  
-  
-Examples :  
-`// Link with a Foreign Key based on a single column  
-country : Country { @LinkByCol(COUNTRY_CODE) } ;  
------  
-// Link with a Foreign Key based on 2 columns  
-group   : Group { @LinkByCol(GROUP_FAMILY, GROUP_CODE) } ;`
+Since version 3.3.0 \
+Defines a link based on the given Foreign Key name.\
+\
+Examples :\
+`// Link based on Foreign Key "FK_PERSON_SUBGROUP"`\
+`subGroup : SubGroup { @LinkByFK(FK_PERSON_SUBGROUP) } ;`
 
-### @LinkByFK\(string\) 
+### @LinkByJoinEntity(string)
 
-Since version 3.3.0   
-Defines a link based on the given Foreign Key name.  
-  
-Examples :  
-`// Link based on Foreign Key "FK_PERSON_SUBGROUP"  
-subGroup : SubGroup { @LinkByFK(FK_PERSON_SUBGROUP) } ;`
-
-### @LinkByJoinEntity\(string\)
-
-Since version 3.3.0  
-Defines a link based on the given "join entity" name.  
-Usable with "many to many" link to define a "join table".  
-  
-Example :  
-`workgroups : Workgroup[] { @ManyToMany   
-             @LinkByJoinEntity(EmployeeGroup) } ;`
+Since version 3.3.0\
+Defines a link based on the given "join entity" name.\
+Usable with "many to many" link to define a "join table".\
+\
+Example :\
+`workgroups : Workgroup[] { @ManyToMany` \
+&#x20;            `@LinkByJoinEntity(EmployeeGroup) } ;`
 
 ### @LongText
 
-The attribute is a "long text" for example a text of several lines.   
-This annotation can be used for HTML "text area" or database "CLOB".  
+The attribute is a "long text" for example a text of several lines. \
+This annotation can be used for HTML "text area" or database "CLOB".\
 Applicable with "string" basic type.
 
-### @ManyToMany 
+### @ManyToMany&#x20;
 
-Since version 3.3.0   
-Defines a "many to many" cardinality for a link.  
-Usable for ORM code generation \(JPA, etc\)
+Since version 3.3.0 \
+Defines a "many to many" cardinality for a link.\
+Usable for ORM code generation (JPA, etc)
 
-### @MappedBy\(attributeName\)
+### @MappedBy(attributeName)
 
-Since version 3.3.0   
-Defines the "mappedBy" attribute for a link.  
-Usable for an "inverse side" relationship.  
-  
-Example :  
+Since version 3.3.0 \
+Defines the "mappedBy" attribute for a link.\
+Usable for an "inverse side" relationship.\
+\
+Example :\
 `shops : Shop[] { @MappedBy(employee) } ;`
 
-### @Max\(decimal\)
+### @Max(decimal)
 
-To set the maximum acceptable value.  
-Usable for field validation rules.  
+To set the maximum acceptable value.\
+Usable for field validation rules.\
 Applicable with "numeric" types.
 
-### @Min\(decimal\)
+### @Min(decimal)
 
-To set the minimum acceptable value.  
-Usable for field validation rules.  
+To set the minimum acceptable value.\
+Usable for field validation rules.\
 Applicable with "numeric" types.
 
 ### @NotBlank
 
-The attribute value cannot be blank.  
+The attribute value cannot be blank.\
 Usable for field validation rules.
 
 ### @NotEmpty
 
-The attribute value cannot be empty.  
+The attribute value cannot be empty.\
 Usable for field validation rules.
 
 ### @NotNull
 
-The attribute value cannot be null.  
+The attribute value cannot be null.\
 Usable for field validation rules and SQL databases.
 
 ### @ObjectType
 
-The attribute type must be converted to "object/wrapper type" in the target language \(for example for Java\).  
-No effect if not supported by the target language.  
+The attribute type must be converted to "object/wrapper type" in the target language (for example for Java).\
+No effect if not supported by the target language.\
 Applicable with any basic type.
 
-### @OneToOne 
+### @OneToOne&#x20;
 
-Since version 3.3.0   
-Defines a "one to one" cardinality for a link.  
-Usable for ORM code generation \(JPA, etc\)
+Since version 3.3.0 \
+Defines a "one to one" cardinality for a link.\
+Usable for ORM code generation (JPA, etc)
 
 ### @Optional
 
-Since version 3.3.0   
-Defines an "optional" relationship for a link.  
-Usable for ORM code generation \(JPA, etc\)
+Since version 3.3.0 \
+Defines an "optional" relationship for a link.\
+Usable for ORM code generation (JPA, etc)
 
 ### @Past
 
-The attribute value must be in the past \(before current date\).  
-Usable for field validation rules.  
+The attribute value must be in the past (before current date).\
+Usable for field validation rules.\
 Applicable with "date" type.
 
-### @Pattern\(string\)
+### @Pattern(string)
 
-Since version 3.2.0   
+Since version 3.2.0 \
 Defines a pattern usable for field validation, for example a RegEx pattern.
 
 ### @PrimitiveType
 
-The attribute type must be converted to "primitive type" in the target language \(for example for Java\).  
-No effect if not supported by the target language.  
+The attribute type must be converted to "primitive type" in the target language (for example for Java).\
+No effect if not supported by the target language.\
 Applicable with any basic type.
 
-### @SizeMax\(int\)
+### @SizeMax(int)
 
-To set the maximum acceptable size of the attribute value.  
+To set the maximum acceptable size of the attribute value.\
 Usable for field validation rules and GUI fields definition.
 
-### @SizeMin\(int\)
+### @SizeMin(int)
 
-To set the minimum acceptable size of the attribute value.  
+To set the minimum acceptable size of the attribute value.\
 Usable for field validation rules.
 
 ### @Transient
 
 Since version 3.3.0
 
-To define an attribute as "transient" \(for example in a Java class or with an ORM like JPA\)
+To define an attribute as "transient" (for example in a Java class or with an ORM like JPA)
 
 ### @UnsignedType
 
-The attribute type must be converted to "unsigned type" in the target language \(for example for C/C++\).  
-No effect if not supported by the target language.  
+The attribute type must be converted to "unsigned type" in the target language (for example for C/C++).\
+No effect if not supported by the target language.\
 Applicable with any basic type.
 
-### @Updatable\(boolean\) 
+### @Updatable(boolean)&#x20;
 
-Since version 3.3.0   
-  
-Examples :  
-`@Updatable(true)  
-@Updatable(false)`
-
-
+Since version 3.3.0 \
+\
+Examples :\
+`@Updatable(true)`\
+`@Updatable(false)`
 
 
 

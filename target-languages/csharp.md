@@ -1,286 +1,84 @@
 # C\#
 
-To define **C\#** as the **target language** in a template file :
+To define **C#** as the **target language** in a template file :
 
-```text
+```
 #set( $env.language = 'C#' )
 ```
 
-The information below shows the behavior of the generator when C\# is the current target language.  
+The information below shows the behavior of the generator when C# is the current target language.\
 
 
-## Types conversion 
+## Types conversion&#x20;
 
-The table below describes how model neutral types are automatically converted to C\# types with potential impact due to attribute annotations.
+The table below describes how model neutral types are automatically converted to C# types with potential impact due to attribute annotations.
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Model type</th>
-      <th style="text-align:left">C# type</th>
-      <th style="text-align:left">with annotation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left"><b>string <br />String</b>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>@ObjectType</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">byte</td>
-      <td style="text-align:left"><b>sbyte <br />byte <br />SByte</b>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>@UnsignedType
-          <br />@ObjectType</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">short</td>
-      <td style="text-align:left"><b>short <br />ushort <br />Int16</b>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>@UnsignedType</p>
-        <p>@ObjectType</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">int</td>
-      <td style="text-align:left"><b>int <br />uint <br />Int32</b>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>@UnsignedType</p>
-        <p>@ObjectType</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">long</td>
-      <td style="text-align:left">
-        <p><b>long</b>
-        </p>
-        <p><b>ulong</b>
-        </p>
-        <p><b>Int64</b>
-        </p>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>@UnsignedType</p>
-        <p>@ObjectType</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">decimal</td>
-      <td style="text-align:left">
-        <p><b>decimal</b>
-        </p>
-        <p><b>Decimal</b>
-        </p>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>@ObjectType</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">float</td>
-      <td style="text-align:left"><b>float<br />Single</b>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>@ObjectType</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">double</td>
-      <td style="text-align:left"><b>double<br />Double</b>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>@ObjectType</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">boolean</td>
-      <td style="text-align:left"><b>bool<br />Boolean</b>
-      </td>
-      <td style="text-align:left">
-        <p></p>
-        <p>@ObjectType</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">date</td>
-      <td style="text-align:left"><b>DateTime</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">time</td>
-      <td style="text-align:left"><b>DateTime</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">timestamp</td>
-      <td style="text-align:left"><b>DateTime</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-    <tr>
-      <td style="text-align:left">binary</td>
-      <td style="text-align:left"><b>byte [ ]</b>
-      </td>
-      <td style="text-align:left"></td>
-    </tr>
-  </tbody>
-</table>
+| Model type | C# type                                                                                | with annotation                               |
+| ---------- | -------------------------------------------------------------------------------------- | --------------------------------------------- |
+| string     | <p><strong>string</strong> <br><strong>String</strong></p>                             | <p></p><p>@ObjectType</p>                     |
+| byte       | <p><strong>sbyte</strong> <br><strong>byte</strong> <br><strong>SByte</strong></p>     | <p></p><p>@UnsignedType <br>@ObjectType</p>   |
+| short      | <p><strong>short</strong> <br><strong>ushort</strong> <br><strong>Int16</strong></p>   | <p></p><p>@UnsignedType</p><p>@ObjectType</p> |
+| int        | <p><strong>int</strong> <br><strong>uint</strong> <br><strong>Int32</strong></p>       | <p></p><p>@UnsignedType</p><p>@ObjectType</p> |
+| long       | <p><strong>long</strong></p><p><strong>ulong</strong></p><p><strong>Int64</strong></p> | <p></p><p>@UnsignedType</p><p>@ObjectType</p> |
+| decimal    | <p><strong>decimal</strong></p><p><strong>Decimal</strong></p>                         | <p></p><p>@ObjectType</p>                     |
+| float      | <p><strong>float</strong><br><strong>Single</strong></p>                               | <p></p><p>@ObjectType</p>                     |
+| double     | <p><strong>double</strong><br><strong>Double</strong></p>                              | <p></p><p>@ObjectType</p>                     |
+| boolean    | <p><strong>bool</strong><br><strong>Boolean</strong></p>                               | <p></p><p>@ObjectType</p>                     |
+| date       | **DateTime**                                                                           |                                               |
+| time       | **DateTime**                                                                           |                                               |
+| timestamp  | **DateTime**                                                                           |                                               |
+| binary     | **byte \[ ]**                                                                          |                                               |
 
 ### Annotations effects
 
-* **@UnsignedType**  has effect only for **byte**, **short**, **int**, **long**
-* **@ObjectType**  switches to **.Net types** \( System.Int64, System.Boolean, etc\)
-* **@NotNull**  no effect
-* **@PrimitiveType**  no effect
+* **@UnsignedType** \
+  ****has effect only for **byte**, **short**, **int**, **long**
+* **@ObjectType** \
+  ****switches to **.Net types** ( System.Int64, System.Boolean, etc)
+* **@NotNull** \
+  ****no effect
+* **@PrimitiveType** \
+  no effect
 
-### Specific types 
+### Specific types&#x20;
 
-*  **$attribute.fullType** returns the C\# System class full name for both "primitive type" and "object type" \( for example : System.String, System.Int16, System.Decimal \)
-*  **$attribute.simpleType** 
-  * for an "object type" returns the simple type name of the C\# System class \( for example : String, Int16, Decimal \)
-  * for a "standard type" returns the usual type \( for example : string, int, uint, bool \)
-*  **$attribute.wrapperType**  returns the C\# System class associtated with the curren type
+* &#x20;**$attribute.fullType**\
+  returns the C# System class full name for both "primitive type" and "object type"\
+  ( for example : System.String, System.Int16, System.Decimal )
+* &#x20;**$attribute.simpleType**&#x20;
+  * for an "object type" returns the simple type name of the C# System class ( for example : String, Int16, Decimal )
+  * for a "standard type" returns the usual type\
+    ( for example : string, int, uint, bool )
+* &#x20;**$attribute.wrapperType** \
+  returns the C# System class associtated with the curren type
 
 ## Literal values
 
 ### TRUE, FALSE, NULL
 
-|   | C\# literal |
-| :--- | :--- |
-| TRUE | **true** |
-|  FALSE | **false** |
-|  NULL | **null** |
+|        | C# literal |
+| ------ | ---------- |
+| TRUE   | **true**   |
+|  FALSE | **false**  |
+|  NULL  | **null**   |
 
 ### Generated literal values
 
 Below some examples of literal values generated for each type :
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Model type</th>
-      <th style="text-align:left">C# type</th>
-      <th style="text-align:left">C# literal value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">string</td>
-      <td style="text-align:left">
-        <p>string</p>
-        <p>System.String</p>
-      </td>
-      <td style="text-align:left"><b>&quot;AAA&quot;</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">byte</td>
-      <td style="text-align:left">
-        <p>sbyte</p>
-        <p>byte</p>
-        <p>System.SByte</p>
-      </td>
-      <td style="text-align:left"><b>1</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">short</td>
-      <td style="text-align:left">short
-        <br />ushort
-        <br />System.Int16</td>
-      <td style="text-align:left"><b>1</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">int</td>
-      <td style="text-align:left">int
-        <br />uint
-        <br />System.Int32</td>
-      <td style="text-align:left"><b>100</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">long</td>
-      <td style="text-align:left">
-        <p>long</p>
-        <p>ulong</p>
-        <p>System.Int64</p>
-      </td>
-      <td style="text-align:left"><b>1000L</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">decimal</td>
-      <td style="text-align:left">decimal
-        <br />System.Decimal</td>
-      <td style="text-align:left"><b>10000.77M</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">float</td>
-      <td style="text-align:left">float
-        <br />System.Single</td>
-      <td style="text-align:left"><b>1000.5F</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">double</td>
-      <td style="text-align:left">double
-        <br />System.Double</td>
-      <td style="text-align:left"><b>1000.66D</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">boolean</td>
-      <td style="text-align:left">bool
-        <br />System.Boolean</td>
-      <td style="text-align:left"><b>true  </b>or <b>false</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">date</td>
-      <td style="text-align:left">System.DateTime</td>
-      <td style="text-align:left"><b>null</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">time</td>
-      <td style="text-align:left">System.DateTime</td>
-      <td style="text-align:left"><b>null</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">timestamp</td>
-      <td style="text-align:left">System.DateTime</td>
-      <td style="text-align:left"><b>null</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">binary</td>
-      <td style="text-align:left">byte [ ]</td>
-      <td style="text-align:left"><b>null</b>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-
+|  Model type |  C# type                                     |  C# literal value       |
+| ----------- | -------------------------------------------- | ----------------------- |
+| string      | <p>string</p><p>System.String</p>            | **"AAA"**               |
+| byte        | <p>sbyte </p><p>byte</p><p>System.SByte</p>  | **1**                   |
+| short       | <p>short<br>ushort<br>System.Int16</p>       | **1**                   |
+| int         | <p>int<br>uint<br>System.Int32</p>           | **100**                 |
+| long        | <p>long </p><p>ulong </p><p>System.Int64</p> | **1000L**               |
+| decimal     | <p>decimal<br>System.Decimal</p>             | **10000.77M**           |
+| float       | <p>float <br>System.Single</p>               | **1000.5F**             |
+| double      | <p>double<br>System.Double</p>               | **1000.66D**            |
+| boolean     | <p>bool<br>System.Boolean</p>                | **true**  or  **false** |
+| date        | System.DateTime                              | **null**                |
+| time        | System.DateTime                              | **null**                |
+| timestamp   | System.DateTime                              | **null**                |
+| binary      | byte \[ ]                                    | **null**                |
 

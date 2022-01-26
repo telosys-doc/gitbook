@@ -4,12 +4,12 @@
 
 ### String
 
-Each string value is stored internally in a "_String_" Java object  
-\( see "java.lang.String" for details \).
+Each string value is stored internally in a "_String_" Java object\
+( see "java.lang.String" for details ).
 
 Initialization :
 
-```text
+```
 #set( $str = "abc" )
 #set( $r = "xx${str}yy" )       ## r : "xxabcyy"
 #set( $r = "xx" + $str + "yy" ) ## r : "xxabcyy"
@@ -17,7 +17,7 @@ Initialization :
 
 String methods usage examples :
 
-```text
+```
 length :  $str.length() 
 #set($str2 = $str.replaceFirst("def", "xy" ) )
 #if ( $str.endsWith("ef") ) YES #end
@@ -30,18 +30,18 @@ toLowerCase() : $str.toLowerCase()
 
 ### Integer
 
-Each integer value is stored internally in a "Integer" Java object  
-\( see "java.lang.Integer" for details \).
+Each integer value is stored internally in a "Integer" Java object\
+( see "java.lang.Integer" for details ).
 
 Initialization :
 
-```text
+```
 #set( $i = 123 )
 ```
 
 Calculations :
 
-```text
+```
 #set( $r = $i + 1000 ) ## r = 1123
 #set( $r = $i - 23 )   ## r = 100
 #set( $r = $i * 10 )   ## r = 1230
@@ -54,12 +54,12 @@ Calculations :
 
 ### Double
 
-Each double value is stored internally in a "Double" Java object  
-\( see "java.lang.Double" for details \).
+Each double value is stored internally in a "Double" Java object\
+( see "java.lang.Double" for details ).
 
 Initialization :
 
-```text
+```
 #set( $d = 123.45 )
 ```
 
@@ -67,12 +67,12 @@ Initialization :
 
 ### Boolean
 
-Each boolean value is stored internally in a "Boolean" Java object  
-\( see "java.lang.Boolean" for details \).
+Each boolean value is stored internally in a "Boolean" Java object\
+( see "java.lang.Boolean" for details ).
 
 Initialization :
 
-```text
+```
 #set( $b = true )
 #set( $b = false )
 #set( $b = $mylist.isEmpty() )
@@ -84,15 +84,15 @@ Initialization :
 
 ### List
 
-Object containing a list of any type of values.  
-The values are stored internally in a "_ArrayList_" Java object  
-\( see java.util.ArrayList for details \).
+Object containing a list of any type of values.\
+The values are stored internally in a "_ArrayList_" Java object\
+( see java.util.ArrayList for details ).
 
 Even if it's not a real "Java array", this object is often considered as an "_array_" in many Velocity documentations..
 
 Initialization :
 
-```text
+```
 ## 4 numbers from 1 to 4 (with range operator)
 #set( $mylist = [1..4]) 
 
@@ -105,17 +105,17 @@ Initialization :
 
 Print content :
 
-```text
+```
 mylist content : $mylist
 
 --- OUTPUT :
 mylist content : [1, 2, 3, A, true, 65.78]
 ```
 
-Print all items with "\#foreach"  
-\( "$foreach.count" goes from 1 to length, it's a count not an index \) :
+Print all items with "#foreach"\
+( "$foreach.count" goes from 1 to length, it's a count not an index ) :
 
-```text
+```
 #foreach ( $item in $mylist ) 
  - $foreach.count : $item 
 #end
@@ -129,9 +129,9 @@ Print all items with "\#foreach"
  6 : item = 65.78 
 ```
 
-Print a single item by index \(the index goes from 0 to length-1\)  :
+Print a single item by index (the index goes from 0 to length-1)  :
 
-```text
+```
 item 0 : $mylist[0]
 --- OUTPUT :
 item 0 : 1 
@@ -151,7 +151,7 @@ Index 6 out of bounds for length 6
 
 Change list content :
 
-```text
+```
 #set( $mylist[2] = "CCC" ) ## index starts at 0
 
 #set( $z = $mylist.add("new item") ) 
@@ -163,7 +163,7 @@ Change list content :
 
 Other examples :
 
-```text
+```
 isEmpty : $mylist.isEmpty()
 #if ( $mylist.isEmpty() ) list is void #end
 
@@ -179,22 +179,22 @@ $mylist.contains("Z") ## OUTPUT : false (not found)
 $mylist.subList(1,3) ## from 1 to 2 (3 is exclusive)
 ```
 
-### 
+###
 
 ### Map
 
-Object containing Key-Value associations.  
-The "key-value" pairs are stored internally in a "_LinkedHashMap_" Java object \(see "java.util.LinkedHashMap" for details\)
+Object containing Key-Value associations.\
+The "key-value" pairs are stored internally in a "_LinkedHashMap_" Java object (see "java.util.LinkedHashMap" for details)
 
 Initialization :
 
-```text
+```
 #set( $mymap = {"k1" : "v1" , "k2" : "v2"} )
 ```
 
 Print content :
 
-```text
+```
 mymap content : $mymap
 --- OUTPUT :
 mymap content : {k1=v1, k2=v2}
@@ -217,21 +217,21 @@ mymap content : {k1=v1, k2=v2}
 
 Get by key:
 
-```text
+```
 k1 : $mymap["k1"] 
 k2 : $mymap["k2"]
 k3 : $mymap["k3"] ## error (no key "k3")
 ```
 
-Set by key \( add or update a key-value pair \) :
+Set by key ( add or update a key-value pair ) :
 
-```text
+```
 #set( $mymap["k0"] = "v0" )
 ```
 
 Other examples using the Java map methods :
 
-```text
+```
 isEmpty : $mymap.isEmpty()
 #if ( $mymap.isEmpty() ) void #end
 
@@ -263,18 +263,18 @@ size : $mymap.size()
 
 "Pure array" object that can be obtained from other objects.
 
-The values are stored internally in a "_Object \[ \]_ " instance. And therefore it doesn't have all the features offered by a List. An array does not support operations changing its size \( add, remove, removeAll, etc\)
+The values are stored internally in a "_Object \[ ]_ " instance. And therefore it doesn't have all the features offered by a List. An array does not support operations changing its size ( add, remove, removeAll, etc)
 
 Initialization :
 
-```text
+```
 #set( $array = $mylist.toArray() ) 
 ```
 
-Print all items with "\#foreach"  
-\( "$foreach.count" goes from 1 to length, it's a count not an index \) :
+Print all items with "#foreach"\
+( "$foreach.count" goes from 1 to length, it's a count not an index ) :
 
-```text
+```
 #foreach ( $item in $array) 
  $foreach.count : $item 
 #end
@@ -286,7 +286,7 @@ Print all items with "\#foreach"
  4 : item = D 
 ```
 
-```text
+```
 #set($last = $array.size() - 1 ) ## last index
 #foreach ( $i in [0..$last] )  ## index 'range'
 // index : $i --> element : $array[$i] 
@@ -301,13 +301,13 @@ Print all items with "\#foreach"
 
 Change value :
 
-```text
+```
 #set( $array[2] = "newValue" ) ## index starts at 0
 ```
 
 Other examples :
 
-```text
+```
 isEmpty : $array.isEmpty()
 #if ( $array.isEmpty() ) is void #end
 
@@ -317,8 +317,6 @@ size    : $array.size()
 $array.contains("B") ## OUTPUT : true (found)
 $array.indexOf("B") ## OUTPUT : 1 (found at index 1)
 ```
-
-
 
 
 

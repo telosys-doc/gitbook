@@ -2,9 +2,9 @@
 
 With Telosys you can generate any type of language by managing yourself all the target language specificities. But for the most common languages you can indicate the nature of your target language so as to simplify the writing of templates.
 
-The target language can be specified in the template files \(.vm\) using the following directive :
+The target language can be specified in the template files (.vm) using the following directive :
 
-```text
+```
 #set( $env.language = 'LanguageName' )
 ```
 
@@ -14,18 +14,18 @@ By default the target language is Java.
 
 In the templates the target language has an influence on :
 
-* $attribute.**type** 
-* $attribute.**fullType** 
-* $attribute.**simpleType** 
+* $attribute.**type**&#x20;
+* $attribute.**fullType**&#x20;
+* $attribute.**simpleType**&#x20;
 * $attribute.**wrapperType**
-* $attribute.**isPrimitiveType\(\)**
+* $attribute.**isPrimitiveType()**
 
 
 
 All the pre-configured target languages currently supported by Telosys are defined below :
 
 * [C++](cplusplus.md)
-* [C\#](csharp.md)
+* [C#](csharp.md)
 * [Golang](golang.md)
 * [Java](java.md)
 * [JavaScript](javascript.md)
@@ -33,6 +33,4 @@ All the pre-configured target languages currently supported by Telosys are defin
 * [Python](python.md)
 * [Scala](scala.md)
 * [TypeScript](typescript.md)
-
-
 

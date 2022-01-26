@@ -1,19 +1,19 @@
 # Configuration & variables
 
-The project configuration is centralized in a single file :  
+The project configuration is centralized in a single file :\
 **TelosysTools/telosys-tools.cfg**
 
-This file is a "properties file" \(i.e. a file containing parameters with their value\).
+This file is a "properties file" (i.e. a file containing parameters with their value).
 
 Each line has the following syntax :
 
-```text
+```
 name = value
 ```
 
-Each line starting with a "\#" is a comment :
+Each line starting with a "#" is a comment :
 
-```text
+```
 # this is a comment
 ```
 
@@ -21,24 +21,24 @@ Each parameter can be :
 
 * a standard variable
 * a specific variable
-* a specific location \(a folder where to get the templates or where to generate the files\)
-* a network proxy setting \(for templates installation via http\)
+* a specific location (a folder where to get the templates or where to generate the files)
+* a network proxy setting (for templates installation via http)
 
 With Telosys-CLI you can print the current configuration using the `cfg` command.
 
-### Variables 
+### Variables&#x20;
 
-By convention, the variables defined at the project level are always in upper case. All the defined variables \(standard & specific\) are visible and usable in templates \(".vm" files\). They can also be used in the "templates.cfg" file in bundles of templates. 
+By convention, the variables defined at the project level are always in upper case. All the defined variables (standard & specific) are visible and usable in templates (".vm" files). They can also be used in the "templates.cfg" file in bundles of templates.&#x20;
 
 
 
-### Standard variables 
+### Standard variables&#x20;
 
-A "standard variable" is a variable which is supposed to be defined in most cases \(for all types of projects\).
+A "standard variable" is a variable which is supposed to be defined in most cases (for all types of projects).
 
 Examples :
 
-```text
+```
 # -------------------------------------------
 # STANDARD VARIABLES 
 # -------------------------------------------
@@ -54,9 +54,9 @@ TMP      = tmp
 ROOT_PKG = org.foo.bar
 ```
 
-### 
+###
 
-### Specific project variables 
+### Specific project variables&#x20;
 
 A "project-specific variable" is a variable defined specifically for the current project. For example, a project variable can be defined in a project to generate PHP code and not defined in another project which aims to generate Python code.
 
@@ -64,7 +64,7 @@ Note : a project variable cannot override a standard variable.
 
 Examples :
 
-```text
+```
 # -------------------------------------------
 # SPECIFIC VARIABLES 
 # -------------------------------------------
@@ -80,7 +80,7 @@ ProjectVariable.APPLICATION_DIR   = application
 ProjectVariable.COMMONS_DIR       = commons
 ```
 
-### 
+###
 
 ### Specific folders
 
@@ -91,7 +91,7 @@ In the configuration file you can define the following specic folders :
 
 Examples :
 
-```text
+```
 #-- Specific location for templates (Windows) :
 SpecificTemplatesFolder=C\:\\dir1\\dir2
 
@@ -104,8 +104,6 @@ SpecificDestinationFolder=C\:\\dir1\\dir2
 #-- Specific destination for code generation (Linux) :
 SpecificDestinationFolder=/dir1/dir2
 ```
-
-
 
 
 

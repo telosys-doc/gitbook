@@ -4,23 +4,23 @@ Once you have a model you need at least one **bundle of templates** to generate 
 
 The templates are organized in "bundles". A **"bundle"** is a set of templates designed to generate a particular kind of targets.
 
-Of course you can create your own templates from scatch, but the simplest way to start is to use existing templates. 
+Of course you can create your own templates from scatch, but the simplest way to start is to use existing templates.&#x20;
 
-Templates bundles can be downloaded from **GitHub** \(each bundle is a "git repository"\).
+Templates bundles can be downloaded from **GitHub** (each bundle is a "git repository").
 
-### Templates catalog configuration \(GitHub account\)
+### Templates catalog configuration (GitHub account)
 
 By default the templates catalog points to [https://github.com/telosys-templates-v3](https://github.com/telosys-templates-v3)
 
-To see the current catalog use the **`gh`** \("GitHub"\) command without argument.
+To see the current catalog use the **`gh`** ("GitHub") command without argument.
 
-You can change it by defining a new account or organization name where you will store your own templates. 
+You can change it by defining a new account or organization name where you will store your own templates.&#x20;
 
 Use**`gh new-catalog`**  to change the current catalog
 
 Examples :
 
-```text
+```
 telosys#(mymodel.model)>gh
 telosys-templates-v3
 
@@ -33,16 +33,16 @@ mycatalog
 
 ### List templates bundles available in GitHub catalog
 
-To list the bundles available in the current GitHub account use the **`lgh`** \(List GitHub\) command.
+To list the bundles available in the current GitHub account use the **`lgh`** (List GitHub) command.
 
-The syntax is : 
+The syntax is :&#x20;
 
-* **`lgh`** list all bundles 
+* **`lgh`** list all bundles&#x20;
 * **`lgh bundle-name-part`** list all bundles containing the given name-part in their name
 
 Example : list bundles with name containing "pyth"
 
-```text
+```
 telosys#(mymodel.model)>lgh pyth
 Bundles found in GitHub store 'telosys-templates-v3' :
  . python-persistence-sqlalchemy
@@ -53,7 +53,7 @@ GitHub API rate limit : 57/60
 
 ### Install bundles of templates
 
-When you have found a useful bundle for your project, you can install it with the **`ib`** \(Install Bundle\) command.
+When you have found a useful bundle for your project, you can install it with the **`ib`** (Install Bundle) command.
 
 The syntax is : **`ib bundle-name-part`**
 
@@ -61,7 +61,7 @@ For more convenience, you can use only a part of the bundle name. If several bun
 
 Example : install all bundles with name containing "pyth"
 
-```text
+```
 telosys#(mymodel.model)>ib pyth
 Installing 3 bundle(s) from GitHub...
  . 'python-persistence-sqlalchemy' : installed.
@@ -70,23 +70,23 @@ Installing 3 bundle(s) from GitHub...
 ```
 
 {% hint style="info" %}
-If you are using a **proxy** to access Internet, you must configure it in the project configuration file.   
-Use the "**ecfg**" command to edit the configuration file   
+If you are using a **proxy** to access Internet, you must configure it in the project configuration file. \
+Use the "**ecfg**" command to edit the configuration file \
 and set the properties for "**Network proxy configuration**"
 {% endhint %}
 
 ### List templates bundles available in the project
 
-To list the bundles available in the current Telosys project use the **`lb`** \(List Bundles\) command.
+To list the bundles available in the current Telosys project use the **`lb`** (List Bundles) command.
 
-The syntax is : 
+The syntax is :&#x20;
 
-* **`lb`** list all bundles 
+* **`lb`** list all bundles&#x20;
 * **`lb bundle-name-part`** list all bundles containing the given name-part in their name
 
-Example : list all bundles 
+Example : list all bundles&#x20;
 
-```text
+```
 telosys#(mymodel.model)>lb
 3 bundle(s) :
  . python-persistence-sqlalchemy
@@ -96,7 +96,7 @@ telosys#(mymodel.model)>lb
 
 Example : list bundles with name containing "sql"
 
-```text
+```
 telosys#(mymodel.model)>lb sql
 1 bundle(s) :
  . python-persistence-sqlalchemy
@@ -108,7 +108,7 @@ Use the **`b`**command to show the current bundle or select a new one.
 
 Example : select the bundle having "sqlalch" in its name
 
-```text
+```
 telosys#(mymodel.model)>b sqlalch
 Current bundle is now 'python-persistence-sqlalchemy'
 ```
@@ -119,9 +119,8 @@ Once you have defined a **current model** and a **current bundle** the Telosys p
 
 ### Commands summary
 
-* **`lb`** \(List Bundles\) to list all the bundles installed in your project
-* **`b`** \(Bundle\) to show or set the current bundle
-* **`eb`** \(Edit Bundle\) to edit the bundle of templates \('templates.cfg'\)
-* **`db`** \(Delete Bundle\) to delete a bundle
-* **`lt`** \(List Templates\) to list all the templates provided by the current bundle
-
+* **`lb`** (List Bundles) to list all the bundles installed in your project
+* **`b`** (Bundle) to show or set the current bundle
+* **`eb`** (Edit Bundle) to edit the bundle of templates ('templates.cfg')
+* **`db`** (Delete Bundle) to delete a bundle
+* **`lt`** (List Templates) to list all the templates provided by the current bundle

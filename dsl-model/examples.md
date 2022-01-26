@@ -2,7 +2,7 @@
 
 ### Driver.entity
 
-```text
+```
 // Entity Driver
 // Defines a person who is able to drive a car
 Driver {
@@ -16,7 +16,7 @@ Driver {
 
 ### Car.entity
 
-```text
+```
 // Entity Car
 // with autoincremented id
 Car {
@@ -31,6 +31,4 @@ Car {
   driver : Driver[] ; // N driver
 }
 ```
-
-
 

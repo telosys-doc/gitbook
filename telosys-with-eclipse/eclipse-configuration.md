@@ -4,21 +4,19 @@ Once Telosys plugin is installed you can customize few Eclipse features in order
 
 ## Telosys menu visibility
 
-You can customize your Eclipse perspective so that Telosys actions are accessible from the first menu level \(instead of going through "Other / Telosys "\)
+You can customize your Eclipse perspective so that Telosys actions are accessible from the first menu level (instead of going through "Other / Telosys ")
 
-In the main Eclipse menu : 
+In the main Eclipse menu :&#x20;
 
-**Window / Perspective / Customize Perspective...** 
+**Window / Perspective / Customize Perspective...**&#x20;
 
 In "**Menu visibility**" tab :  **File / New**
 
-![](../.gitbook/assets/eclipse-custom-perspective-menu-vis.jpg)
+![](../.gitbook/assets/Eclipse-custom-perspective-menu-vis.jpg)
 
 Select the Telosys menu entry :
 
-![](../.gitbook/assets/eclipse-custom-perspective-menu-telosys.jpg)
+![](../.gitbook/assets/Eclipse-custom-perspective-menu-telosys.jpg)
 
 Click **"Apply and Close**"
-
-
 
