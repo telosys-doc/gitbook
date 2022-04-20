@@ -1,10 +1,24 @@
 # Annotations
 
-Each attribute can have **0 to N annotations**. \
+Each entity, attribute or link can have **0 to N annotations**. \
 Annotations provide additional information usable during the code generation. \
 An annotation is a **predefined name** starting with "**@**". \
 Some annotations may have **values** specified between "**(**" and "**)**". \
-All annotations must be located in the block delimited by "**{**" and "**}**".
+For attributes and links all annotations must be located in the block delimited by "**{**" and "**}**".
+
+### @Abstract
+
+Marks an entity as "abstract"&#x20;
+
+Scope : **entity**  \
+****Since : **4.0.0**
+
+### @AggregateRoot
+
+Marks an entity as "aggregate root" (useful in a "DDD" approach)
+
+Scope : **entity**  \
+****Since : **4.0.0**
 
 ### @AutoIncremented
 
