@@ -335,16 +335,18 @@ Scope : **attribute**  /  Since : **2.0.0**
 
 ### @ManyToMany&#x20;
 
-Since version 3.3.0 \
 Defines a "many to many" cardinality for a link.\
 Usable for ORM code generation (JPA, etc)
 
+Scope : **link**  /  Since : **3.3.0**
+
 ### @MappedBy(attributeName)
 
-Since version 3.3.0 \
 Defines the "mappedBy" attribute for a link.\
-Usable for an "inverse side" relationship.\
-\
+Usable for an "inverse side" relationship.
+
+Scope : **link**  /  Since : **3.3.0**
+
 Example :\
 `shops : Shop[] { @MappedBy(employee) } ;`
 
@@ -354,11 +356,29 @@ To set the maximum acceptable value.\
 Usable for field validation rules.\
 Applicable with "numeric" types.
 
+Scope : **attribute**  /  Since : **2.0.0**
+
+### @Max**Len**(int)
+
+To set the maximum acceptable length.\
+Usable for field validation rules and GUI fields definition.
+
+Scope : **attribute**  /  Since : **4.0.0**  (replaces "@SizeMax" )
+
 ### @Min(decimal)
 
 To set the minimum acceptable value.\
 Usable for field validation rules.\
 Applicable with "numeric" types.
+
+Scope : **attribute**  /  Since : **2.0.0**
+
+### @M**inLen**(int)
+
+To set the minimum acceptable length.\
+Usable for field validation rules and GUI fields definition.
+
+Scope : **attribute**  /  Since : **4.0.0**  (replaces "@SizeMin" )
 
 ### @NotBlank
 
