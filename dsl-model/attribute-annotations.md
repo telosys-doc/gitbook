@@ -200,26 +200,38 @@ Examples :\
 
 ### @InitialValue(string)
 
-Since version 3.2.0\
-Defines the initial value.
+Sets the initial value of the attribute.
+
+Scope : **attribute**  /  Since : **3.2.0**
+
+### @InMemoryRepository
+
+Marks an entity as fully stored in memory.\
+All occurrences can be accessed directly in memory (can be useful for static datasets).
+
+Scope : **entity**  /  Since : **4.0.0**
 
 ### @InputType(string)
 
-Since version 3.2.0 \
-Defines the input type usable for the field (for example an HTML input type).
+Defines the input type usable for a field (for example an HTML input type).
+
+Scope : **attribute**  /  Since : **3.2.0**
 
 ### @Insertable(boolean)&#x20;
 
-Since version 3.3.0 \
-\
+Defines if the link is "insertable" or not. &#x20;
+
+Scope : **link**  /  Since : **3.3.0**
+
 Examples :\
 `@Insertable(true)`\
 `@Insertable(false)`
 
 ### @Label(string)
 
-Since version 3.2.0 \
 Defines the label usable for the field (for example an HTML label).
+
+Scope : **attribute**  /  Since : **3.2.0**
 
 ### @LinkByAttr(string)&#x20;
 
