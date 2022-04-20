@@ -39,7 +39,7 @@ Scope : **entity**  /  Since : **4.0.0**
 
 ### @DbComment(string)
 
-The comment in the database (typically a column comment in a relational database)
+The comment in the database (typically a column comment or table comment in a relational database)
 
 Scope : **attribute & entity**  /  Since : **3.2.0** for attribute, **4.0.0** for entity
 
