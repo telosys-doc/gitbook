@@ -158,14 +158,33 @@ Examples :\
 
 ### @Future
 
-The attribute value must be in the future (after current date).\
-Usable for field validation rules.\
-Applicable with "date" type.
+The attribute date value must be in the future (after current date).\
+Usable for field validation rules. Applicable with "date" type.
+
+Scope : **attribute**  /  Since : **2.0.0**
+
+### @GeneratedValue(string \[, string, ...])
+
+Defines the generated value strategy ("AUTO", "IDENTITY", SEQUENCE" or "TABLE") for an attribute.
+
+Scope : **attribute**  /  Since : **3.4.0**
+
+Syntax :
+
+`@GeneratedValue(AUTO)` \
+`@GeneratedValue(IDENTITY)` \
+`@GeneratedValue(SEQUENCE [, GeneratorName, SequenceName` \
+&#x20; `[, AllocationSize ] ])` \
+`@GeneratedValue(TABLE [, GeneratorName, TableName` \
+&#x20; `[, PkColumnName, PkColumnValue, ValueColumnName [, AllocationSize ] ] ])`
 
 ### @Id
 
-The attribute is the ID (or Primary Key) for the current entity.\
-For an entity with a composite ID (composite Primary Key), put this annotation on each attribute that is part of the ID.\
+The attribute is the "ID" (or "Primary Key") for the current entity.\
+For an entity with a composite ID (composite Primary Key), put this annotation on each attribute that is part of the ID.
+
+Scope : **attribute**  /  Since : **1.0.0**
+
 Applicable with any basic type.\
 For a composite Primary Key just put an "@Id" annotation for each attribute that is part of the key.\
 Examples :\
