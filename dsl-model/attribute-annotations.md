@@ -487,6 +487,12 @@ Define an attribute as "transient" (for example in a Java class or with an ORM l
 
 Scope : **attribute**  /  Since : **3.3.0**
 
+### @Un**iqu**e
+
+Marks the attribute as unique for the entity.
+
+Scope : **attribute**  /  Since : **4.0.0  **_**(experimental)**_
+
 ### @UnsignedType
 
 The attribute type must be converted to "unsigned type" in the target language (for example for C/C++).\
