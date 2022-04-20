@@ -93,28 +93,46 @@ Scope : **entity**  /  Since : **4.0.0**
 
 ### @DefaultValue(string)
 
-Since version 3.2.0\
-The default value&#x20;
+The default value for an attribute
+
+Scope : **attribute**  /  Since : **3.2.0**&#x20;
+
+### @Domain(string)
+
+Defines the "domain" to which the entity belongs
+
+Scope : **entity**  /  Since : **4.0.0**
 
 ### @Embedded
 
 The entity referenced by the attribute must be embedded (typically for NoSQL databases).\
 Applicable with "references" to embed them in the current entity.
 
+Scope : **link**  /  Since : **3.0.0**
+
+### @**Extends**(string)
+
+Defines the "superclass" of an entity (inheritance)
+
+Scope : **entity**  /  Since : **4.0.0**
+
 ### @FetchTypeEager
 
-Since version 3.3.0 \
 Define an "Eager Loading" fetch type for a link, typically for ORM (JPA, Doctrine, etc ).
+
+Scope : **link**  /  Since : **3.3.0**
 
 ### @FetchTypeLazy
 
-Since version 3.3.0 \
 Define a "Lazy Loading" fetch type for a link, typically for ORM (JPA, Doctrine, etc ).
+
+Scope : **link**  /  Since : **3.3.0**
 
 ### @FK( \[fkName,] referencedEntity\[.attribute] )
 
-Since version 3.3.0\
-Define a Foreign Key or a Foreign Key part \
+Define a "Foreign Key" or a "Foreign Key part"&#x20;
+
+Scope : **attribute**  /  Since : **3.3.0**\
 \
 Syntax :\
 `// FK referencing an entity with a basic PK (single attribute)`\
