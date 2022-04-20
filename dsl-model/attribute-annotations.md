@@ -223,9 +223,12 @@ Defines if the link is "insertable" or not. &#x20;
 
 Scope : **link**  /  Since : **3.3.0**
 
-Examples :\
-`@Insertable(true)`\
-`@Insertable(false)`
+Examples :&#x20;
+
+```
+@Insertable(true)
+@Insertable(false)
+```
 
 ### @Label(string)
 
@@ -466,23 +469,23 @@ Scope : **attribute**  /  Since : **4.0.0**
 
 ### @SizeMax(int)
 
-_**Deprecated** - Do not use - Use "@MaxLen" instead_
+_**Deprecated** - Do not use - Use "**@MaxLen**" instead_
 
 _Defines the maximum acceptable size of the attribute value_.\
 _Scope : attribute  /_  Since : 2.0.0
 
 ### @SizeMin(int)
 
-_**Deprecated** - Do not use - Use "@MinLen" instead_
+_**Deprecated** - Do not use - Use "**@MinLen**" instead_
 
 _Defines the minimum acceptable size of the attribute value_.\
 _Scope : attribute  /_  Since : 2.0.0
 
 ### @Transient
 
-Since version 3.3.0
+Define an attribute as "transient" (for example in a Java class or with an ORM like JPA)
 
-To define an attribute as "transient" (for example in a Java class or with an ORM like JPA)
+Scope : **attribute**  /  Since : **3.3.0**
 
 ### @UnsignedType
 
@@ -492,11 +495,16 @@ Applicable with any basic type.
 
 ### @Updatable(boolean)&#x20;
 
-Since version 3.3.0 \
-\
-Examples :\
-`@Updatable(true)`\
-`@Updatable(false)`
+Defines if the link is "updatable" or not. &#x20;
+
+Scope : **link**  /  Since : **3.3.0**
+
+Examples :&#x20;
+
+```
+@Updatable(true)
+@Updatable(false)
+```
 
 
 
