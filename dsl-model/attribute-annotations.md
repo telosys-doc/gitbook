@@ -493,6 +493,8 @@ The attribute type must be converted to "unsigned type" in the target language (
 No effect if not supported by the target language.\
 Applicable with any basic type.
 
+Scope : **attribute**  /  Since : **3.0.0**
+
 ### @Updatable(boolean)&#x20;
 
 Defines if the link is "updatable" or not. &#x20;
