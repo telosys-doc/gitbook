@@ -239,15 +239,15 @@ Defines a link based on the given attribute(s) name(s) referencing the Primary K
 
 For multiple attributes (in case of composite PK) each attribute must define the referenced attribute in the target entity.
 
-Scope : **link**/  Since : **3.3.0**\
+Scope : **link**  /  Since : **3.3.0**\
 \
 Syntax :&#x20;
 
 ```
  // simple PK with a single attribute :
- @LinkByAttr(empId) 
- // composite PK with 2 columns :
- @LinkByAttr(point1X , point1Y)
+ @LinkByAttr(attributeName) 
+ // composite PK with N columns (in PK order) :
+ @LinkByAttr(attributeName1, attributeName2 [, attributeNameX ] )
 ```
 
 Example :&#x20;
@@ -277,28 +277,61 @@ Line {
 
 ### @LinkByFK(string)&#x20;
 
-Since version 3.3.0 \
-Defines a link based on the given Foreign Key name.\
-\
-Examples :\
-`// Link based on Foreign Key "FK_PERSON_SUBGROUP"`\
-`subGroup : SubGroup { @LinkByFK(FK_PERSON_SUBGROUP) } ;`
+Defines a link based on the given Foreign Key name.
+
+Scope : **link**  /  Since : **3.3.0**
+
+Syntax :&#x20;
+
+```
+  @LinkByFK(foreignKeyName) 
+```
+
+Example : &#x20;
+
+```
+Area {
+   id : int { @Id } ; 
+   name : string ;
+   // Foreign Key
+   countryCode : string { @FK(FK_AREA_COUNTRY, Country) } ;
+   // Link definition based on Foreign Key
+   country : Country  { @LinkByFK(FK_AREA_COUNTRY) } ; 
+}
+```
 
 ### @LinkByJoinEntity(string)
 
-Since version 3.3.0\
 Defines a link based on the given "join entity" name.\
-Usable with "many to many" link to define a "join table".\
-\
-Example :\
-`workgroups : Workgroup[] { @ManyToMany` \
-&#x20;            `@LinkByJoinEntity(EmployeeGroup) } ;`
+Usable with "many to many" links to define a "join table".
+
+Scope : **link**  /  Since : **3.3.0**
+
+Syntax :&#x20;
+
+```
+  @LinkByJoinEntity(entityName)
+```
+
+Example : &#x20;
+
+```
+Employee {
+   id   : int { @Id } ; 
+   name : string ;
+   // EmployeeGroup is a "join entity" to associate employees and workgroups
+   workgroups : Workgroup[] { @ManyToMany 
+                @LinkByJoinEntity(EmployeeGroup) } ;
+}
+```
 
 ### @LongText
 
-The attribute is a "long text" for example a text of several lines. \
+Marks the attribute as "long text" (for example a text with several lines). \
 This annotation can be used for HTML "text area" or database "CLOB".\
 Applicable with "string" basic type.
+
+Scope : **attribute**  /  Since : **2.0.0**
 
 ### @ManyToMany&#x20;
 
