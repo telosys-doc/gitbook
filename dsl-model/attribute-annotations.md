@@ -233,38 +233,47 @@ Defines the label usable for the field (for example an HTML label).
 
 Scope : **attribute**  /  Since : **3.2.0**
 
-### @LinkByAttr(string)&#x20;
+### @LinkByAttr(string \[, string, ...])&#x20;
 
-Since version 3.3.0 \
-Defines a link based on the given attribute(s) name(s).\
-For multiple attributes (in case of composite PK) each attribute must define the referenced attribute in the target entity by using the ">" character ( "a > b" for  "a" referencing "b").\
-\
-Syntax :\
-`// simple PK with a single attribute (ref not required) @LinkByAttr(attribName) // referenced PK inference`\
-`// composite PK with N columns (referenced required)`\
-`@LinkByAttr(attr1 > refAttr1 , attr2 > refAttr2 , ...)` \
-\
-Examples :\
-`Point {`\
-&#x20; `x : int { @Id } ;`\
-&#x20; `y : int { @Id } ;`\
-&#x20; `label : string ;`\
-`}`\
-`-----`\
-`Line {`\
-&#x20; `id : short { @Id } ;`\
-&#x20; `name : string ;`\
-&#x20; `// Point 1`\
-&#x20; `point1X : int ;`\
-&#x20; `point1Y : int ;`\
-&#x20; `// Point 2`\
-&#x20; `point2X : int ;`\
-&#x20; `point2Y : int ;`\
-&#x20; `// Link to point`\
-&#x20; `point1 : Point { @LinkByAttr(point1X > x, point1Y > y) } ;`\
-&#x20; `point2 : Point { @LinkByAttr(point2X > x, point2Y > y) } ;`\
-`}`\
+Defines a link based on the given attribute(s) name(s) referencing the Primary Key.
 
+For multiple attributes (in case of composite PK) each attribute must define the referenced attribute in the target entity.
+
+Scope : **link**/  Since : **3.3.0**\
+\
+Syntax :&#x20;
+
+```
+ // simple PK with a single attribute :
+ @LinkByAttr(empId) 
+ // composite PK with 2 columns :
+ @LinkByAttr(point1X , point1Y)
+```
+
+Example :&#x20;
+
+```
+Point { 
+   x : int { @Id @DbName(X) } ;  // PK 
+   y : int { @Id @DbName(Y) } ;  // PK
+   name : string ;
+}
+
+Line {
+   id : int { @Id } ;
+   color : string ;
+	
+   point1X : int  { @DbName(X1) } ;
+   point1Y : int  { @DbName(Y1) } ;
+	
+   point2X : int  { @DbName(X2) } ;
+   point2Y : int  { @DbName(Y2) } ;
+
+   // LINKS 
+   point1 : Point { @LinkByAttr(point1X , point1Y ) } ;
+   point2 : Point { @LinkByAttr(point2X , point2Y ) } ;
+}
+```
 
 ### @LinkByFK(string)&#x20;
 
