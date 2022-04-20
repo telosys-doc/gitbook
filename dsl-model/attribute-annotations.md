@@ -449,15 +449,34 @@ The attribute type must be converted to "primitive type" in the target language 
 No effect if not supported by the target language.\
 Applicable with any basic type.
 
+Scope : **attribute**  /  Since : **2.0.0**
+
+### @ReadOnly
+
+Marks the entity as "readonly"
+
+Scope : **entity**  /  Since : **4.0.0**
+
+### @Size(size)
+
+Defines the attribute size.\
+The size is defined with "precision" and "scale" if necessary (eg "6" or "6,2")
+
+Scope : **attribute**  /  Since : **4.0.0**
+
 ### @SizeMax(int)
 
-To set the maximum acceptable size of the attribute value.\
-Usable for field validation rules and GUI fields definition.
+_**Deprecated** - Do not use - Use "@MaxLen" instead_
+
+_Defines the maximum acceptable size of the attribute value_.\
+_Scope : attribute  /_  Since : 2.0.0
 
 ### @SizeMin(int)
 
-To set the minimum acceptable size of the attribute value.\
-Usable for field validation rules.
+_**Deprecated** - Do not use - Use "@MinLen" instead_
+
+_Defines the minimum acceptable size of the attribute value_.\
+_Scope : attribute  /_  Since : 2.0.0
 
 ### @Transient
 
