@@ -10,25 +10,38 @@ For attributes and links all annotations must be located in the block delimited 
 
 Marks an entity as "abstract"&#x20;
 
-Scope : **entity**  \
-****Since : **4.0.0**
+Scope : **entity** /  Since : **4.0.0**
 
 ### @AggregateRoot
 
-Marks an entity as "aggregate root" (useful in a "DDD" approach)
+Marks an entity as "aggregate root" (useful to define "DDD aggregates" )
 
-Scope : **entity**  \
-****Since : **4.0.0**
+Scope : **entity**  /  Since : **4.0.0**
 
 ### @AutoIncremented
 
 The attribute is supposed to be auto-incremented (for example for an auto-incremented key)\
 Applicable only with "numeric" types
 
+Scope : **attribute**  /  Since : **2.0.0**
+
+### @Context(string)
+
+Defines the context to which the entity belongs
+
+Scope : **entity**  /  Since : **4.0.0**
+
+### @DbCatalog(string)
+
+Defines the database catalog to which the entity table belongs
+
+Scope : **entity**  /  Since : **4.0.0**
+
 ### @DbComment(string)
 
-Since version 3.2.0\
 The comment in the database (typically a column comment in a relational database)
+
+Scope : **attribute & entity**  /  Since : **3.2.0** for attribute, **4.0.0** for entity
 
 ### @DbDefaultValue(string)
 
