@@ -385,15 +385,21 @@ Scope : **attribute**  /  Since : **4.0.0**  (replaces "@SizeMin" )
 The attribute value cannot be blank.\
 Usable for field validation rules.
 
+Scope : **attribute**  /  Since : **2.0.0**
+
 ### @NotEmpty
 
 The attribute value cannot be empty.\
 Usable for field validation rules.
 
+Scope : **attribute**  /  Since : **2.0.0**
+
 ### @NotNull
 
 The attribute value cannot be null.\
 Usable for field validation rules and SQL databases.
+
+Scope : **attribute**  /  Since : **2.0.0**
 
 ### @ObjectType
 
@@ -401,17 +407,27 @@ The attribute type must be converted to "object/wrapper type" in the target lang
 No effect if not supported by the target language.\
 Applicable with any basic type.
 
+Scope : **attribute**  /  Since : **2.0.0**
+
 ### @OneToOne&#x20;
 
-Since version 3.3.0 \
 Defines a "one to one" cardinality for a link.\
 Usable for ORM code generation (JPA, etc)
 
+Scope : **link**  /  Since : **3.3.0**
+
 ### @Optional
 
-Since version 3.3.0 \
 Defines an "optional" relationship for a link.\
 Usable for ORM code generation (JPA, etc)
+
+Scope : **link**  /  Since : **3.3.0**
+
+### @Pa**ckage(string)**
+
+Defines the "package" to which the entity belongs
+
+Scope : **entity**  /  Since : **4.0.0**
 
 ### @Past
 
@@ -419,10 +435,13 @@ The attribute value must be in the past (before current date).\
 Usable for field validation rules.\
 Applicable with "date" type.
 
+Scope : **attribute**  /  Since : **2.0.0**
+
 ### @Pattern(string)
 
-Since version 3.2.0 \
-Defines a pattern usable for field validation, for example a RegEx pattern.
+Defines a pattern usable for field validation, for example a "RegEx" pattern.
+
+Scope : **attribute**  /  Since : **3.2.0**
 
 ### @PrimitiveType
 
