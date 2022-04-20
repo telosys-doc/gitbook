@@ -45,23 +45,51 @@ Scope : **attribute & entity**  /  Since : **3.2.0** for attribute, **4.0.0** fo
 
 ### @DbDefaultValue(string)
 
-Since version 3.2.0\
 The default value in the database.&#x20;
+
+Scope : **attribute**  /  Since : **3.2.0**&#x20;
 
 ### @DbName(string)
 
-Since version 3.2.0\
 The name in the database (for example the column name in a relational database)
+
+Scope : **attribute**  /  Since : **3.2.0**&#x20;
+
+### @DbSchema(string)
+
+Defines the database schema to which the entity table belongs
+
+Scope : **entity**  /  Since : **4.0.0**
 
 ### @DbSize(string)
 
-Since version 3.2.0 \
-_Deprecated - Do not use_
+_**Deprecated** - Do not use_
+
+_Scope : attribute  /_  Since : 3.2.0
+
+### @Db**Table(str**ing)
+
+Defines the database table associated with the entity
+
+Scope : **entity**  /  Since : **4.0.0**
+
+### @Db**Tablespace(str**ing)
+
+Defines the database tablespace where the entity table is located
+
+Scope : **entity**  /  Since : **4.0.0**
 
 ### @DbType(string)
 
-Since version 3.2.0 \
-The type in the database (for example the column type in a relational database)
+The attribute type in the database (for example the column type in a relational database)
+
+Scope : **attribute**  /  Since : **3.2.0**&#x20;
+
+### @Db**View**
+
+Marks the entity as a "view" in the database
+
+Scope : **entity**  /  Since : **4.0.0**
 
 ### @DefaultValue(string)
 
