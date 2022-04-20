@@ -50,6 +50,6 @@ employees_model / Project.entity (file)
 Below the main elements of a DSL model:
 
 * [Entity](entity.md)
-* [Attribute](attribute.md)
-* [Annotations](attribute-annotations.md)
+* [Attribute](fields.md)
+* [Annotations](annotations.md)
 * [Tags](tags.md)
