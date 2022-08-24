@@ -48,3 +48,10 @@ Example :&#x20;
 telosys#>nm mymodel mydb
 ```
 
+The created model is a standard Telosys model with exactly the same syntax as if it has been created manually.
+
+You can see the result with commands "lm" and "le".
+
+### Adapt the created model
+
+Once the "raw model" has been created by Telosys, you can check it and adapt it if necessary.
