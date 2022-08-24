@@ -22,8 +22,10 @@ Database id and information
 * **id**  : a string that identifies the database (required)\
   must be unique
 * **name** : the database name (optional) \
-  example : "Ecommerce Products"
+  just used to initialize the model property "$model.databaseName"\
+  example : "Ecommerce Products"&#x20;
 * **type** : the database type (optional) \
+  just used to initialize the model property "$model.databaseType"\
   examples : "POSTGRESQL", "DERBY", "H2", "ORACLE", etc
 
 Database JDBC configuration :&#x20;
