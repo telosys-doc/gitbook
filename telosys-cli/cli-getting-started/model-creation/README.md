@@ -1,14 +1,9 @@
 # Model creation
 
-Since version 4 Telosys manages on only one type of model : \
-the model based on the Telosys DSL (Domain-Specific Language).
+Telosys supports 2 kinds of models :&#x20;
 
-There are 2 ways to create a Telosys model :&#x20;
+* **DSL model** : a pure text model based on a simple grammar that can be created from scratch&#x20;
+* **Database model** : a model initialized from an existing database (the database schema is the model)
 
-* **from scratch** : \
-  an empty model in which you can then create the entities you need&#x20;
-* **from an existing relational database** : \
-  a model created from the database schema (1 entity for each table)
-
-
+So there are 2 different ways to create a model depending on the type of model you want.
 
