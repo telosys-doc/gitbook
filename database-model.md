@@ -1,3 +1,0 @@
-# Database model
-
-Comming soon...

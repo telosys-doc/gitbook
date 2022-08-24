@@ -16,7 +16,7 @@ For more information about "**bundles**" see :
 
 ### Templates language
 
-A template is a file with a "**.vm**" extension written in "**Velocity Template Language** (VTL)". Velocity is a well known Open Source template engine ( [http://velocity.apache.org/](http://velocity.apache.org) )&#x20;
+A template is a file with a "**.vm**" extension written in "**Velocity Template Language** (VTL)". Velocity is a well known Open Source template engine ( [http://velocity.apache.org/](http://velocity.apache.org/) )&#x20;
 
 The **Velocity engine** used in Telosys is **version 1.7**
 

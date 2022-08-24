@@ -26,7 +26,6 @@
   * [Annotations](dsl-model/annotations.md)
   * [Tags](dsl-model/tags.md)
   * [Examples](dsl-model/examples.md)
-* [Model from database](database-model.md)
 * [Templates](templates/README.md)
   * [Bundle of templates](templates/bundle-of-templates.md)
   * [Velocity language](templates/velocity-language.md)
