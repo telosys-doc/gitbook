@@ -12,7 +12,7 @@ If you have ideas for improving Telosys, please let us know. You may have use ca
 
 ### Write articles or tutorials
 
-You can also share your experience by writing articles or tutorials on your own blog or on sites like LinkedIN ([https://www.linkedin.com/](https://www.linkedin.com)), DEV ([https://dev.to/](https://dev.to)), HackerNoon ([https://hackernoon.com/](https://hackernoon.com)), Medium ( [https://medium.com/](https://medium.com)), etc
+You can also share your experience by writing articles or tutorials on your own blog or on sites like LinkedIN ([https://www.linkedin.com/](https://www.linkedin.com/)), DEV ([https://dev.to/](https://dev.to/)), HackerNoon ([https://hackernoon.com/](https://hackernoon.com/)), Medium ( [https://medium.com/](https://medium.com/)), etc
 
 ### Create new extensions for some IDE or editors
 
