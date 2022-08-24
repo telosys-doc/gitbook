@@ -13,7 +13,7 @@ If your Telosys project has been correctly initialized (with "init" command) you
 This file contains all the configuration required to connect to one or more databases (you can have multiple databases if you want to manage multiple modes in your project).&#x20;
 
 As a "yaml" file it can be edited with any text editor.\
-You can use the "**edb**" command to edit this file with the default Telosys editor.
+You can use the "**edb**" (Edit DB) command to edit this file with the default Telosys editor.
 
 ### List the defined databases&#x20;
 
