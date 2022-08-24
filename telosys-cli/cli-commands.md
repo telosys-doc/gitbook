@@ -28,8 +28,10 @@ Examples :
 
 Just press **`"?"`** to see all the available commands
 
+Example of commands available in Telosys 4.0 :
+
 ```
-telosys#(cars.model)[java-jpa-entities]> ?
+telosys#> ?
 General commands :
 . ?    Help : Print help (list of all available commands)
 . cd   Change Directory : Change the current directory
@@ -48,13 +50,11 @@ Project commands :
 . ecfg Edit Configuration : Open an editor to edit 'telosys-tools.cfg'
 Database commands :
 . ldb  List Databases : List the databases
-. edb  Edit Databases : Open an editor to edit the 'databases.dbcfg' file
+. edb  Edit Databases : Open an editor to edit 'databases.yaml' file
 . cdb  Check Database : Check the current/given database
 Model commands :
 . m    Model : Set/print the current model
-. nm   New Model : New Telosys DSL model
-. ndbm New Database Model : New model for the current/given database
-. udbm Update Database Model : Update a model for the current/given database
+. nm   New Model : Create a new Telosys model (optionally from a database)
 . lm   List Models : List the models
 . em   Edit Model : Edit the current/given model
 . cm   Check Model : Check the current/given model
@@ -90,12 +90,12 @@ For more information about a specific command, just press **`"? command-name"`**
 For example **`"? nm"`**
 
 ```
-telosys#(cars.model)[java-jpa-entities]>? nm
+telosys#>? nm
 nm : New Model
 Description :
-  New Telosys DSL model
+  Create a new Telosys model (optionally from a database)
 Usage :
-  nm [model-name]
+  nm model-name [database-id]
 ```
 
 
