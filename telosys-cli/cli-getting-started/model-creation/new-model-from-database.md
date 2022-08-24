@@ -20,13 +20,14 @@ You can use the "**edb**" (Edit DB) command to edit this file with the default T
 Database id and information
 
 * **id**  : a string that identifies the database (required)\
-  must be unique
+  must be unique\
+  used to initialize the model property "$model.databaseId"
 * **name** : the database name (optional) \
-  just used to initialize the model property "$model.databaseName"\
-  example : "Ecommerce Products"&#x20;
+  example : "Ecommerce Products" \
+  just used to initialize the model property "$model.databaseName"
 * **type** : the database type (optional) \
-  just used to initialize the model property "$model.databaseType"\
-  examples : "POSTGRESQL", "DERBY", "H2", "ORACLE", etc
+  examples : "POSTGRESQL", "DERBY", "H2", "ORACLE", etc\
+  just used to initialize the model property "$model.databaseType"
 
 Database JDBC configuration :&#x20;
 
