@@ -37,7 +37,10 @@ Checking database 'mydb'...
 
 Once you have validated the connection to the database you are ready to create a new model from the database.
 
-To do this, use the "**nm**" ("New Model") command with the database-id as an argument (the database-id defined in "databases.yaml").
+To do this, use the "**nm**" ("New Model") command with the database-id as an argument (the database-id defined in "databases.yaml").\
+Example :&#x20;
 
-
+```
+telosys#>nm mymodel mydb
+```
 
