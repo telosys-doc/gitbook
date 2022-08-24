@@ -1,8 +1,4 @@
-# New model from scratch
-
-This page describes how to create a new Telosys model from scratch.
-
-Note : Since version 4 there is only one type of model in Telosys (the DSL model)
+# DSL model
 
 ### Create a DSL Model
 
