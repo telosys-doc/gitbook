@@ -1,12 +1,14 @@
-# DSL model
+# New model from scratch
 
-### Create a DSL Model
+This page describes how to create a new Telosys model from scratch.
 
-To create a DSL Model use the **`nm`** ("New Model") command
+### Create a new model
+
+To create a new model use the **`nm`** ("New Model") command
 
 Example :
 
-**`nm cars`** will create the "cars" DSL model
+**`nm cars`** will create the "cars" model
 
 Use the **`lm`** (List Models) command to see all models defined in the current project
 
@@ -28,12 +30,7 @@ telosys#(mymodel.model)>lm
  . mymodel.model
 ```
 
-{% hint style="info" %}
-You can also **reuse an existing DSL model** (instead of creating a new one from scratch). For that you can download a basic DSL model from here : [http://www.telosys.org/download/models-v3/](http://www.telosys.org/download/models-v3/) \
-After download just unzip the file in the "TelosysTools" folder.
-{% endhint %}
-
-### Create an ENTITY in the current model
+### Create an entity in the current model
 
 The **`le`** (List Entities) command can be used to see all the entities of the current model
 
@@ -60,27 +57,36 @@ telosys#(cars.model)>ne Foo
 Entity 'Foo' created.
 ```
 
-### Edit an ENTITY
+### Edit an entity
 
 To define an entity you must define all its attributes, for that use the **`ee`** (Edit Entity) command.
 
 Example :
 
-**`ee Driver`** will launch the external editor to edit the "**Driver.entity**" file.
+**`ee Driver`**   will launch the external editor to edit the "**Driver.entity**" file.
 
 {% hint style="info" %}
 Telosys cannot launch an external editor if your Operating System doesn't have a GUI, for example a Linux server without GUI. In this case you will have to edit the ".entity" files outside in a separated console.
 {% endhint %}
 
-### Delete an entity or a model
+### Delete an entity&#x20;
 
-**`de Driver`** will delete the "Driver" entity
+To delete an entity in the current model use the "**de**" (Delete Entity) command.
 
-**`dm cars`** will delete the "cars" model
+Examples :&#x20;
 
-Example :
+**`de Driver`**   will delete the "Driver" entity&#x20;
 
 ```
 telosys#(cars.model)>de Foo
 Entity 'Foo' deleted.
 ```
+
+### Delete a model
+
+To delete a model use the "**dm**" (Delete Model) command.
+
+Example :&#x20;
+
+**`dm cars`**    will delete the "cars" model&#x20;
+
