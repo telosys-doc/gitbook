@@ -10,6 +10,7 @@
     * [Project initialization](telosys-cli/cli-getting-started/project-initialization.md)
     * [Model creation](telosys-cli/cli-getting-started/model-creation/README.md)
       * [New model from scratch](telosys-cli/cli-getting-started/model-creation/untitled-1.md)
+      * [New model from database](telosys-cli/cli-getting-started/model-creation/new-model-from-database.md)
       * [Telosys 3 database model](telosys-cli/cli-getting-started/model-creation/untitled.md)
     * [Templates installation](telosys-cli/cli-getting-started/templates-installation.md)
     * [Code generation](telosys-cli/cli-getting-started/code-generation.md)
