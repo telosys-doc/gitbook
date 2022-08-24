@@ -19,14 +19,19 @@ You can use the "**edb**" (Edit DB) command to edit this file with the default T
 
 Database id and information
 
-* **id**  : a string that identifies the database (required, must be unique)
-* **name** : the database name (optional, just for information)&#x20;
-* **type** : the database type (optional, just for information)&#x20;
+* **id**  : a string that identifies the database (required)\
+  must be unique
+* **name** : the database name (optional) \
+  example : "Ecommerce Products"
+* **type** : the database type (optional) \
+  examples : "POSTGRESQL", "DERBY", "H2", "ORACLE", etc
 
 Database JDBC configuration :&#x20;
 
-* **driver** : the JDBC driver class name (required)
-* **url** : the JDBC URL to access the database (required)
+* **driver** : the JDBC driver class name (required)\
+  examples : "org.h2.Driver", "com.mysql.jdbc.Driver", "org.postgresql.Driver"
+* **url** : the JDBC URL to access the database (required)\
+  examples : "jdbc:postgresql://localhost:5432/store", "jdbc:oracle:thin:@localhost:1521/XE"
 * **user** : the database user (required)
 * **password** :  the database user's password (required)
 
