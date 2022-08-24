@@ -1,6 +1,6 @@
 # Telosys 3 database model
 
-This step describe how to create a **old "database model"** from an existing database \
+This step describe how to create an **old "database model"** from an existing database \
 with Telosys **version 3.x** (**old version**)
 
 This old type of model is usable only with old Telosys versions (before version 4.0) \
