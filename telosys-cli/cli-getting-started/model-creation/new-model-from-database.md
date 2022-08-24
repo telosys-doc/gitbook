@@ -2,10 +2,6 @@
 
 This page describes how to create a new Telosys model from an existing relational database.
 
-Telosys connects to the database, retrieves the database schema (structure of all tables) and creates an entity for each table with 1-N and/or N-1 links (depending on the configuration).
-
-The auto-created model is a "raw model", you can then adjust it to your needs after creation.
-
 ### Configure your database
 
 If your Telosys project has been correctly initialized (with "init" command) you have a "**databases.yaml**" file in the home directory.
@@ -48,10 +44,3 @@ Example :&#x20;
 telosys#>nm mymodel mydb
 ```
 
-The created model is a standard Telosys model with exactly the same syntax as if it has been created manually.
-
-You can see the result with commands "lm" and "le".
-
-### Adapt the created model
-
-Once the "raw model" has been created by Telosys, you can check it and adapt it if necessary.
