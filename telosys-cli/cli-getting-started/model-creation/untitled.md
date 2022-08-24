@@ -1,10 +1,8 @@
-# Telosys 3 database model
+# Database model
 
-This step describe how to create an **old "database model"** from an existing database \
-with Telosys **version 3.x** (**old version**)
+This step describe how to create a new model from an existing database.
 
-This old type of model is usable only with old Telosys versions (before version 4.0) \
-and is no longer maintained.
+Before continuing ensure your home directory is defined and the project has been initialized.
 
 ### Configure your database
 

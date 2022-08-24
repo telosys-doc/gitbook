@@ -11,7 +11,7 @@ In addition to this documentation you can also take a look at ...
 
 For your questions you can use …
 
-* [StackOverflow](https://stackoverflow.com/) (use the “**telosys**” tag for your questions)&#x20;
+* [StackOverflow](https://stackoverflow.com) (use the “**telosys**” tag for your questions)&#x20;
 * [Telosys Forum](https://muut.com/telosystools) &#x20;
 
 Telosys presentations and articles available on the web:

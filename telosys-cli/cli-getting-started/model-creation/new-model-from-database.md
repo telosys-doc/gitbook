@@ -15,9 +15,41 @@ This file contains all the configuration required to connect to one or more data
 As a "yaml" file it can be edited with any text editor.\
 You can use the "**edb**" (Edit DB) command to edit this file with the default Telosys editor.
 
+#### Configuration attributes for each database :&#x20;
+
+Database id and information
+
+* **id**  : a string that identifies the database (required, must be unique)
+* **name** : the database name (optional, just for information)&#x20;
+* **type** : the database type (optional, just for information)&#x20;
+
+Database JDBC configuration :&#x20;
+
+* **driver** : the JDBC driver class name (required)
+* **url** : the JDBC URL to access the database (required)
+* **user** : the database user (required)
+* **password** :  the database user's password (required)
+
+Database metadata configuration :&#x20;
+
+* **catalog** :  the catalog where to search the metadata (optional) \
+  catalog name or "!" for "null"  ("null" is sometimes needed for certain types of databases)
+* **schema** :  the schema where to search the metadata  (optional)  \
+  schema name or "!" for "null"  ("null" is sometimes needed for certain types of databases)
+* **tableTypes** : types of table to retrieve, separated by blanks (optional)\
+  examples : "TABLE" = only tables,   "TABLE VIEW" = tables and views&#x20;
+* **tableNamePattern** : the pattern used as table name filter (optional)\
+  examples : "%",  "A%", ...
+* **tableNameExclude** : the pattern used to exclude some tables (optional)
+* **tableNameInclude** : the pattern used to include some tables (optional)
+
+
+
 ### List the defined databases&#x20;
 
-To see all databases currently defined you can use the "**ldb**" command (List DB)
+To see all databases currently defined you can use the "**ldb**" command (List DB).
+
+The configuration is printed for each defined database.
 
 ### Provide the JDBC driver&#x20;
 
