@@ -17,21 +17,21 @@ The information below shows the behavior of the generator when Java is the curre
 
 The table below describes how model neutral types are automatically converted to Java types with potential impact due to attribute annotations.
 
-| Model type | Java type                                                                                     | with annotation                          |
-| ---------- | --------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| string     | **String**                                                                                    |                                          |
-| byte       | <p><strong>Byte</strong><br><strong>byte</strong><br><strong>byte</strong></p>                | <p></p><p>@NotNull<br>@PrimitiveType</p> |
-| short      | <p><strong>Short</strong></p><p><strong>short</strong></p><p><strong>short</strong></p>       | <p></p><p>@NotNull<br>@PrimitiveType</p> |
-| int        | <p><strong>Integer</strong><br><strong>int</strong></p><p><strong>int</strong></p>            | <p></p><p>@NotNull<br>@PrimitiveType</p> |
-| long       | <p><strong>Long</strong></p><p><strong>long</strong></p><p><strong>long</strong></p>          | <p></p><p>@NotNull<br>@PrimitiveType</p> |
-| decimal    | **BigDecimal**                                                                                | <p></p><p></p>                           |
-| float      | <p><strong>Float</strong></p><p><strong>float</strong></p><p><strong>float</strong></p>       | <p></p><p>@NotNull<br>@PrimitiveType</p> |
-| double     | <p><strong>Double</strong></p><p><strong>double</strong></p><p><strong>double</strong></p>    | <p></p><p>@NotNull<br>@PrimitiveType</p> |
-| boolean    | <p><strong>Boolean</strong></p><p><strong>boolean</strong></p><p><strong>boolean</strong></p> | <p></p><p>@NotNull<br>@PrimitiveType</p> |
-| date       | **Date**                                                                                      |                                          |
-| time       | **Date**                                                                                      |                                          |
-| timestamp  | **Date**                                                                                      |                                          |
-| binary     | **byte \[ ]**                                                                                 |                                          |
+| Model type | Java type                                                                                                          | with annotation                          |
+| ---------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------- |
+| string     | **String**                                                                                                         |                                          |
+| byte       | <p><strong>Byte</strong><br><strong>byte</strong><br><strong>byte</strong></p>                                     | <p></p><p>@NotNull<br>@PrimitiveType</p> |
+| short      | <p><strong>Short</strong></p><p><strong>short</strong></p><p><strong>short</strong></p>                            | <p></p><p>@NotNull<br>@PrimitiveType</p> |
+| int        | <p><strong>Integer</strong><br><strong>int</strong></p><p><strong>int</strong></p>                                 | <p></p><p>@NotNull<br>@PrimitiveType</p> |
+| long       | <p><strong>Long</strong></p><p><strong>long</strong></p><p><strong>long</strong></p>                               | <p></p><p>@NotNull<br>@PrimitiveType</p> |
+| decimal    | **BigDecimal**                                                                                                     | <p></p><p></p>                           |
+| float      | <p><strong>Float</strong></p><p><strong>float</strong></p><p><strong>float</strong></p>                            | <p></p><p>@NotNull<br>@PrimitiveType</p> |
+| double     | <p><strong>Double</strong></p><p><strong>double</strong></p><p><strong>double</strong></p>                         | <p></p><p>@NotNull<br>@PrimitiveType</p> |
+| boolean    | <p><strong>Boolean</strong></p><p><strong>boolean</strong></p><p><strong>boolean</strong></p>                      | <p></p><p>@NotNull<br>@PrimitiveType</p> |
+| date       | <p><strong>LocalDate</strong> (since v 4.0)<br><strong></strong><em><strong>Date</strong>  (before v 4.0)</em></p> |                                          |
+| time       | <p><strong>LocalTime</strong> (since v 4.0)<br><em><strong>Date</strong>  (before v 4.0)</em></p>                  |                                          |
+| timestamp  | <p><strong>LocalDateTime</strong> (since v 4.0)<br><em><strong>Date</strong>  (before v 4.0)</em></p>              |                                          |
+| binary     | **byte \[ ]**                                                                                                      |                                          |
 
 ### Annotations effects
 
