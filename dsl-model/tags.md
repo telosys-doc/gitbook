@@ -50,3 +50,6 @@ Example : check tag presence and use its value if present
 $attrib.tagValue("OpenAPIFormat")
 #end
 ```
+
+See [Telosys objects](../templates/telosys-objects.md) reference guide for detailed information \
+(objects $entity, $attribute and $link).
