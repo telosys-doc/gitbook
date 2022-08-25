@@ -12,4 +12,5 @@ You can use Telosys CLI to
 * customize existing template or create your own templates
 * generate your code&#x20;
 
-Telosys CLI has been developed with Java, the JVM is the only requirement to use it.
+Telosys CLI has been developed with Java, \
+the Java Runtime (JRE) is the only requirement to use it.
