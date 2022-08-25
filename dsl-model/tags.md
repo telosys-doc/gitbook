@@ -6,7 +6,7 @@ Tags are a very simple way to easily customize your models by adding as much add
 
 ### Set tags in model
 
-Each attribute can have **0 to N tags**.&#x20;
+Each **entity**, **attribute** or **link** can have **0 to N tags**.&#x20;
 
 Like annotations, tags provide additional information usable during the code generation. But, unlike annotations, **tags do not have predefined names**. The user can define as many tags as he wants.
 
