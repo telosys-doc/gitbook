@@ -15,4 +15,6 @@ Warning: some are not up to date and do not yet support Telosys 4.0
 * **Notepad++**
   * See GitHub readme : \
     [https://github.com/telosys-tools-bricks/telosys-editor-notepadplusplus](https://github.com/telosys-tools-bricks/telosys-editor-notepadplusplus) \
-    \
+
+
+:point\_up: If you have developed an IDE/editor extension, please let us know.
