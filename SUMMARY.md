@@ -48,4 +48,4 @@
 * [Support the project](support-the-project.md)
 * [How to contribute](how-to-contribute.md)
 * [Sponsors](sponsors.md)
-* [Tooling](tooling.md)
+* [IDE and editors](tooling.md)
