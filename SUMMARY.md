@@ -18,7 +18,6 @@
   * [Eclipse plugin installation](telosys-with-eclipse/eclipse-plugin-installation.md)
   * [Eclipse customization](telosys-with-eclipse/eclipse-configuration.md)
   * [Getting started](telosys-with-eclipse/getting-started.md)
-* [Telosys with VSCode](telosys-with-vscode.md)
 * [Configuration & variables](configuration-and-variables.md)
 * [Model (DSL model)](dsl-model/README.md)
   * [Entity](dsl-model/entity.md)
