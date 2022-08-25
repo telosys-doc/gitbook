@@ -1,6 +1,6 @@
 # Tags
 
-As Telosys aims to provide highly customizable models (and predefined annotations are usually not sufficient to handle all special cases) since version 3.3.0 "**tags**" have been added.
+As Telosys aims to provide highly customizable models (and predefined annotations are usually not sufficient to handle all special cases) in version 3.3.0 "**tags**" have been added for attributes and since version 4.0.0 they can be used everywhere (entity, attribute and link).
 
 Tags are a very simple way to easily customize your models by adding as much additional information as you want.
 
@@ -32,12 +32,16 @@ val : long  { #OpenAPIFormat(int64) } ;
 
 ### Use tags in templates
 
-In a template you can define conditions based on the presence (or absence) of a tag and you can retrieve the value of a tag.
+In a template you can define conditions based on the presence (or absence) of a tag \
+and you can retrieve the value of a tag (with default value if necessary).
 
 To do this, use the following syntax:
 
-* $attrib.**hasTag**("tagName")
-* $attrib.**tagValue**("tagName")
+* $x.**hasTag**("tagName")
+* $x.**tagValue**("tagName")
+* $x.**tagValue**("tagName", "defaultValue")
+* $x.**tagValueAsBoolean**("tagName", true/false)
+* $x.**tagValueAsInt**("tagName", 123)
 
 Example : check tag presence and use its value if present
 
