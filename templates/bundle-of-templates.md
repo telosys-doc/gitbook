@@ -1,6 +1,6 @@
 # Bundle of templates
 
-A Telosys project may require a lot templates, that's why the templates are organized in "bundles".
+A Telosys project may require a lot of templates, that's why the templates are organized in "bundles".
 
 A "bundle" is just a set of "templates" (and sometimes resources) grouped together in a folder.
 
@@ -34,7 +34,7 @@ The "templates.cfg" file is used to launch different types of processing defined
 
 ### How to install a bundle?
 
-Whatever your Telosys tool (CLI or Eclipse), it allows you to install remote model bundles from GitHub.
+Whatever your Telosys tool (CLI or Eclipse), it allows you to install remote bundles from GitHub.
 
 #### :heavy\_check\_mark: Installation from GitHub with Telosys-CLI&#x20;
 
