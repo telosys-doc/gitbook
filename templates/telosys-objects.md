@@ -9,6 +9,7 @@ Telosys provides a set of predefined objects usable in the templates :
         * **$fkPart** (part of foreign key, if attribute is involved in one or more FK)
       * **$link**  (link defined in an entity)
       * **$fk** (foreign key defined in an entity)
+      * **$reference** (reference to other entity)
 * Configuration : &#x20;
   * **$env** (environment configuration)
   * **$project** (project configuration)
@@ -20,9 +21,11 @@ Telosys provides a set of predefined objects usable in the templates :
   * **$fn** (set of utility functions)
   * **$const** (set of constants)
   * **$factory** (a factory to create objects)
-  * &#x20;
   * **$file** (to use files located on the file system)&#x20;
-  * **$loader**&#x20;
+  * **$loader** (to load your own utility classes)
+  * **$now**  (current date and time)
+  * **$values** (literal values generator for attributes)
+  * **$h2** (utility functions for H2 database)
 * Utility functions for generating Java code :  &#x20;
   * **$java**  &#x20;
   * **$jpa**  &#x20;
@@ -33,8 +36,8 @@ Telosys provides a set of predefined objects usable in the templates :
 * Utility functions for generating HTML code :  &#x20;
   * **$html**
 * Deprecated objects (do not use, just for backward compatibility) : &#x20;
-  * _**$jdbcFactory**_&#x20;
-  * _**$today**_
+  * _**$jdbcFactory**_  (use **$factory** instead)
+  * _**$today**_ (use **$now** instead)
 
 The documentation reference for each object is available here :
 
