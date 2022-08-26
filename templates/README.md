@@ -14,6 +14,13 @@ For more information about "**bundles**" see :
 
 * [Bundles of templates](bundle-of-templates.md)
 
+### Sample template bundles
+
+Some examples are available here :&#x20;
+
+* [Template bundles for Telosys 4.0](https://github.com/telosys-templates)&#x20;
+* [Template bundles for Telosys 3.3](https://github.com/telosys-templates-v3)
+
 ### Templates language
 
 A template is a file with a "**.vm**" extension written in "**Velocity Template Language** (VTL)". Velocity is a well known Open Source template engine ( [http://velocity.apache.org/](http://velocity.apache.org/) )&#x20;
