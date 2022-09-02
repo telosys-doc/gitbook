@@ -1,10 +1,12 @@
 # Annotations
 
-Each entity, attribute or link can have **0 to N annotations**. \
+Each **entity**, **attribute** or **link** can have **0 to N annotations**. \
 Annotations provide additional information usable during the code generation. \
 An annotation is a **predefined name** starting with "**@**". \
 Some annotations may have **values** specified between "**(**" and "**)**". \
 For attributes and links all annotations must be located in the block delimited by "**{**" and "**}**".
+
+NB : since version 4.0 the useless comma between annotations is prohibited **** and must be removed
 
 ### @Abstract
 
