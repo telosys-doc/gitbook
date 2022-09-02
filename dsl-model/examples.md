@@ -1,5 +1,7 @@
 # Examples
 
+Sample models are available here: [https://github.com/telosys-models](https://github.com/telosys-models)&#x20;
+
 ### Driver.entity
 
 ```
