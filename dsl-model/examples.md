@@ -2,6 +2,8 @@
 
 Sample models are available here: [https://github.com/telosys-models](https://github.com/telosys-models)&#x20;
 
+Below some entities examples:
+
 ### Driver.entity
 
 ```
@@ -29,7 +31,7 @@ Car {
   price : float  { @Min(500)  @Max(99999) };
   
   // links (references to other entities)
-  brand  : Brand { @NotNull } ; // 1 Brand
+  brand  : Brand ; // 1 Brand
   driver : Driver[] ; // N driver
 }
 ```
