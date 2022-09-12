@@ -66,7 +66,7 @@ To print the current configuration, use the **`cfg`** command.
 
 To edit the configuration file with the Telosys-CLI default editor use **`ecfg`** command.
 
-For more information about project configuration see [Configuration & variables](../../configuration-and-variables.md).
+For more information about project configuration see [Configuration & variables](../../project-configuration.md).
 
 If you want to try Telosys quickly you can continue with the default configuration.
 

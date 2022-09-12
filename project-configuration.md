@@ -1,103 +1,48 @@
-# Configuration & variables
+# Project configuration
 
-The project configuration is centralized in a single file :  
-**TelosysTools/telosys-tools.cfg**
+The project configuration is defined in the file **TelosysTools/telosys-tools.cfg**
 
-This file is a "properties file" \(i.e. a file containing parameters with their value\).
+This file is a "properties file" (i.e. a file containing parameters with their value).
 
 Each line has the following syntax :
 
-```text
+```
 name = value
 ```
 
-Each line starting with a "\#" is a comment :
+Each line starting with a "#" is a comment :
 
-```text
+```
 # this is a comment
 ```
 
-Each parameter can be :
-
-* a standard variable
-* a specific variable
-* a specific location \(a folder where to get the templates or where to generate the files\)
-* a network proxy setting \(for templates installation via http\)
-
-With Telosys-CLI you can print the current configuration using the `cfg` command.
-
-### Variables 
-
-By convention, the variables defined at the project level are always in upper case. All the defined variables \(standard & specific\) are visible and usable in templates \(".vm" files\). They can also be used in the "templates.cfg" file in bundles of templates. 
-
-
-
-### Standard variables 
-
-A "standard variable" is a variable which is supposed to be defined in most cases \(for all types of projects\).
-
-Examples :
-
-```text
-# -------------------------------------------
-# STANDARD VARIABLES 
-# -------------------------------------------
-# --- Folders 
-SRC      = src/main/java
-RES      = src/main/resources
-WEB      = src/main/webapp
-TEST_SRC = src/test/java
-TEST_RES = src/test/resources
-DOC      = doc
-TMP      = tmp
-# --- Packages
-ROOT_PKG = org.foo.bar
-```
-
-### 
-
-### Specific project variables 
-
-A "project-specific variable" is a variable defined specifically for the current project. For example, a project variable can be defined in a project to generate PHP code and not defined in another project which aims to generate Python code.
-
-Note : a project variable cannot override a standard variable.
-
-Examples :
-
-```text
-# -------------------------------------------
-# SPECIFIC VARIABLES 
-# -------------------------------------------
-# Project configuration :
-ProjectVariable.PROJECT_NAME    = cool-project
-ProjectVariable.MAIN_ENTITY     = Employee
-ProjectVariable.PROJECT_VERSION = 1.0.0-SNAPSHOT
-ProjectVariable.MAVEN_GROUP_ID  = com.foo.bar
-
-# Modules directories :
-ProjectVariable.MICROSERVICE_DIR  = employee-ms
-ProjectVariable.APPLICATION_DIR   = application
-ProjectVariable.COMMONS_DIR       = commons
-```
-
-### 
+Project configuration allows setting parameters such as **specific directories** and **http proxy configuration**.
 
 ### Specific folders
 
-In the configuration file you can define the following specic folders :
+In the configuration file you can define the following specific folders :
 
-* **SpecificTemplatesFolder** : Specific location for templates
-* **SpecificDestinationFolder**  : Specific destination for code generation
+**--> SpecificTemplatesFolder** :&#x20;
+
+To define a specific location for templates, a directory where the templates are located for the current project. By default templates are located in "(project-home)/TelosysTools/templates", if you want to use another directory you can define it with this parameter.
 
 Examples :
 
-```text
+```
 #-- Specific location for templates (Windows) :
 SpecificTemplatesFolder=C\:\\dir1\\dir2
 
 #-- Specific location for templates (Linux) :
 SpecificTemplatesFolder=/dir1/dir2
+```
 
+**--> SpecificDestinationFolder**  :&#x20;
+
+To define a specific destination for code generation. The root directory where the generated files will be placed. By default the generated files are located in the current project directory (project home), you can change it with this parameter.
+
+Examples :
+
+```
 #-- Specific destination for code generation (Windows) :
 SpecificDestinationFolder=C\:\\dir1\\dir2
 
@@ -105,9 +50,40 @@ SpecificDestinationFolder=C\:\\dir1\\dir2
 SpecificDestinationFolder=/dir1/dir2
 ```
 
+### Http proxy configuration
 
+Telosys uses http to get models from a remote repository (usually GitHub).&#x20;
 
+So if you use a proxy to access the Internet you need to configure its configuration so that the Telosys "http client" can connect to proxy.
 
+The usual proxy configuration settings are expected (for http and https) :&#x20;
+
+\--> **http\[s].proxyHost** :   the host name of the proxy server
+
+\--> **http\[s].proxyPort** :  the port number of the proxy server
+
+\--> **http\[s].nonProxyHosts**  : a list of hosts that should be reached directly, bypassing the proxy
+
+\--> **http\[s].proxyUser** the proxy user name
+
+\--> **http\[s].proxyPassword**  the proxy user password
+
+Example:&#x20;
+
+```
+# --- Network proxy configuration
+http.proxyHost=my.proxy.hostname
+http.proxyPort=3128
+http.nonProxyHosts=localhost|127.0.0.1
+http.proxyUser=foo
+http.proxyPassword=secret
+#--
+https.proxyHost=my.proxy.hostname
+https.proxyPort=3129
+https.nonProxyHosts=localhost|127.0.0.1
+https.proxyUser=foo
+https.proxyPassword=secret
+```
 
 
 
