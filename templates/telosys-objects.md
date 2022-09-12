@@ -4,12 +4,14 @@ Telosys provides a set of predefined objects usable in the templates :
 
 * Current model elements :&#x20;
   * **$model**  (current model)
-    * **$entity**  (entity defined in the model)
-      * **$attribute**  (attribute defined in an entity)
+    * **$entity**  (entity defined in the model) \[0:N / model]
+      * **$attribute**  (attribute defined in an entity) \[1:N / entity]
         * **$fkPart** (part of foreign key, if attribute is involved in one or more FK)
-      * **$link**  (link defined in an entity)
-      * **$fk** (foreign key defined in an entity)
-      * **$reference** (reference to other entity)
+      * **$link**  (link defined in an entity) \[0:N / entity]
+        * **$linkAttribute** (attribute involved in link definition) \[1:N / link]
+      * **$fk** (foreign key defined in an entity) \[0:N / entity]
+        * **$fkAttribute** (attribute involved in FK definition) \[1:N / fk]
+      * **$reference** (reference to other entity) \[0:N / entity]
 * Configuration : &#x20;
   * **$env** (environment configuration)
   * **$project** (project configuration)
