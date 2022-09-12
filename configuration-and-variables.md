@@ -22,7 +22,7 @@ Project configuration allows setting parameters such as **specific directories**
 
 In the configuration file you can define the following specific folders :
 
-**--> SpecificTemplatesFolder** :&#x20;
+* **SpecificTemplatesFolder** :&#x20;
 
 To define a specific location for templates, a directory where the templates are located for the current project. By default templates are located in "(project-home)/TelosysTools/templates", if you want to use another directory you can define it with this parameter.
 
@@ -36,7 +36,7 @@ SpecificTemplatesFolder=C\:\\dir1\\dir2
 SpecificTemplatesFolder=/dir1/dir2
 ```
 
-**--> SpecificDestinationFolder**  :&#x20;
+* **SpecificDestinationFolder**  :&#x20;
 
 To define a specific destination for code generation. The root directory where the generated files will be placed. By default the generated files are located in the current project directory (project home), you can change it with this parameter.
 
@@ -58,15 +58,16 @@ So if you use a proxy to access the Internet you need to configure its configura
 
 The usual proxy configuration settings are expected (for http and https) :&#x20;
 
-\--> **http\[s].proxyHost** :   the host name of the proxy server
-
-\--> **http\[s].proxyPort** :  the port number of the proxy server
-
-\--> **http\[s].nonProxyHosts**  : a list of hosts that should be reached directly, bypassing the proxy
-
-\--> **http\[s].proxyUser** the proxy user name
-
-\--> **http\[s].proxyPassword**  the proxy user password
+* **http\[s].proxyHost** :   \
+  the host name of the proxy server
+* **http\[s].proxyPort** :  \
+  the port number of the proxy server
+* **http\[s].nonProxyHosts**  : \
+  a list of hosts that should be reached directly, bypassing the proxy
+* **http\[s].proxyUser** :  \
+  the proxy user name
+* **http\[s].proxyPassword**  :  \
+  the proxy user password
 
 Example:&#x20;
 
