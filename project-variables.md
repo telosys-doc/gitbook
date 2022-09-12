@@ -6,8 +6,6 @@ This is the highest level of variable definition. These variables are usable eve
 
 Project variables are defined in the file "**TelosysTools/telosys-tools.cfg**".
 
-This file is a "properties file" (i.e. a file containing parameters with their value).
-
 Each line has the following syntax :
 
 <pre><code><strong>VARIABLE_NAME = value</strong></code></pre>
