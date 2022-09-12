@@ -2,8 +2,6 @@
 
 The project configuration is defined in the file **TelosysTools/telosys-tools.cfg**
 
-This file is a "properties file" (i.e. a file containing parameters with their value).
-
 Each line has the following syntax :
 
 ```
