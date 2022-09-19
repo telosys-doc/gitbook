@@ -45,6 +45,7 @@
   * [Python](target-languages/python.md)
   * [Scala](target-languages/scala.md)
   * [TypeScript](target-languages/typescript.md)
+* [Target databases](target-databases.md)
 * [Support the project](support-the-project.md)
 * [How to contribute](how-to-contribute.md)
 * [Sponsors](sponsors.md)
