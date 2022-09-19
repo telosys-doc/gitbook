@@ -24,6 +24,8 @@ A specific rules file is a text file (properties file) containing 2 parts:
 * Naming conventions  (prefix "conv.")
 * Type conversion (prefix "type.")
 
+
+
 **1) Naming conventions:**
 
 You can set the naming convention to be applied for **tables**, **columns**, **primary keys** and **foreign keys**.
@@ -46,4 +48,54 @@ conv.fkName = camelCase
 
 **2) Type conversion:**
 
-This part defines how to convert a neutral type (Telosys model type) to an SQL type (in the database).
+This part defines how to convert a **neutral type** (Telosys model type) to an **SQL type** (in the database).
+
+Syntax:
+
+* Left side:\
+  the **neutral type** with "type." prefix and optionally the ".autoincr" suffix \
+  if used for autoincremented attribute
+* Right side:\
+  any string to be used as the **SQL type** for this neutral type\
+  with placeholders for "**size**" and "**precision**":
+  * "**(%s)**" : size (optional)
+  * "**(%S)**" : size mandatory
+  * "**(%p)**" : precision (optional)
+  * "**(%P)**" : precision mandatory
+
+Examples:&#x20;
+
+```
+type.string = VARCHAR(%s)
+type.string = VARCHAR2(%s)
+  
+type.byte          = smallint
+type.byte.autoincr = smallserial
+
+type.short          = smallint
+type.short.autoincr = smallserial
+
+type.int           = integer
+type.int.autoincr  = serial
+
+type.long          = bigint
+type.long.autoincr = bigserial
+
+type.decimal   = numeric(%p)
+type.decimal   = numeric(%P) 
+type.float     = real
+type.double    = double precision
+  
+type.boolean   = boolean
+type.boolean   = CHAR(1)
+
+type.date      = date
+
+type.time      = time
+type.time      = time with time zone
+
+type.timestamp = timestamp
+type.timestamp = timestamp with time zone
+  
+type.binary    = bytea
+```
