@@ -27,6 +27,14 @@ In the templates the database configuration has an influence on:&#x20;
 * $attribute.sqlColumnType&#x20;
 * $attribute.sqlColumnConstraints\
 
+* $fk.sqlName&#x20;
+* $fk.sqlOriginTableName&#x20;
+* $fk.sqlOriginColumns&#x20;
+* $fk.sqlOriginColumnsAsString&#x20;
+* $fk.sqlReferencedTableName&#x20;
+* $fk.sqlReferencedColumns&#x20;
+* $fk.sqlReferencedColumnsAsString\
+
 * $sql object
 
 
