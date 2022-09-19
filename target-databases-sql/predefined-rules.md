@@ -2,7 +2,7 @@
 
 Telosys provides predefined rules to generate SQL for the most common databases.
 
-To use them, simply indicate the base type in the template file (.vm).
+To use them, simply indicate the database type in the template file (.vm).
 
 The target database can be specified using the following directive :
 

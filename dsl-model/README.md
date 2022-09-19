@@ -1,18 +1,10 @@
 # Model (DSL model)
 
-A "Telosys model" is a model based on a set of text files written with the Telosys "Domain Specific Language". The Telosys DSL uses a very simple grammar to define entities with their attributes and relationships.&#x20;
+&#x20;"Telosys model" is a model based on a set of text files written with the Telosys "Domain Specific Language". The Telosys DSL uses a very simple grammar to define entities with their attributes and relationships.&#x20;
+
+Since Telosys version 4.0 there is only one type of model: the DSL model
 
 To create a model see : [Model creation](../telosys-cli/cli-getting-started/model-creation/)
-
-Since Telosys version 4.0 there is only one type of model: the DSL model.
-
-**In version 4.0, the DSL model has evolved in terms of structure and syntax.**
-
-The model parser has been completely rewritten, it has more consistency and syntax checks.&#x20;
-
-For example, the unnecessary comma between annotations is now prohibited and each annotation has a specific scope defining where it can be used or not (level : entity, attribute or link).&#x20;
-
-In short, the parser is now stricter and some entities may need to be modified to comply with the new rules.
 
 ### Model structure since version 4.0
 
