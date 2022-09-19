@@ -1,4 +1,4 @@
-# Target databases
+# Target databases (SQL)
 
 With Telosys you can generate SQL scripts to manage your database.&#x20;
 
@@ -38,7 +38,7 @@ If you try to use an unknown database name, an error will occur.
 
 If your database is not part of the predefined databases, or if the generated SQL does not suit you, you can define your own SQL generation rules.
 
-To do this, you just need to create a file containing the conversion rules.
+To do this, you just need to create a **file** containing the **conversion rules**.
 
 The rules file can be specified in the template files (.vm) using the following directive:&#x20;
 
@@ -53,9 +53,14 @@ Examples:&#x20;
 #set ( $env.databaseConvFile = $fn.fileFromModel('mydb.properties') )
 ```
 
-#### Define conversion rules:
+### Defining specific conversion rules
 
-Naming conventions:
+A specific rules file is a text file (properties) containing 2 parts:
+
+* Naming conventions  (prefix "conv.")
+* Type conversion (prefix "type.")
+
+**Naming conventions:**
 
 You can set the naming convention to be applied for tables, columns, primary keys and foreign keys.
 
@@ -75,7 +80,13 @@ conv.pkName = PascalCase
 conv.fkName = camelCase
 ```
 
-Converting types:
+**Type conversion:**
+
+This part defines how to convert a neutral type (Telosys model type) to an SQL type (in the database).
+
+
+
+
 
 
 
