@@ -6,8 +6,8 @@ As SQL statements may differ depending on the type of database you are targeting
 
 This can be done in 2 ways:
 
-* using **predefined rules**
-* using **specific rules**
+* using [**predefined rules**](predefined-rules.md)&#x20;
+* using [**specific rules**](specific-rules.md)****
 
 ### Database customization behavior
 
