@@ -13,7 +13,7 @@ This can be done in 2 ways:
 
 If **no rules** have been defined (neither predefined nor specific), then the "**ANSI-SQL**" will be used by default.
 
-If you have defined both a predefined database name and a rules file, the rules file will apply (the more specific takes precedence).
+If you have defined both predefined rules and specific rules, the specific rules will apply (the more specific takes precedence).
 
 Whatever your rules definition, if an entity or an attribute has database annotations in the model (@DbName, @DbType, @DbTable, etc) those annotations will be used first.
 
