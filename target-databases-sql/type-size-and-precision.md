@@ -40,6 +40,7 @@ The "**precision**" is often required (or indispensable) for SQL types like:
 
 * NUMERIC(precision)&#x20;
 * NUMBER(precision)&#x20;
+* DECIMAL(precision)
 * FLOAT(precision)
 
 The "**precision**" defines the number of digits for a decimal type, \
@@ -50,5 +51,22 @@ Examples:&#x20;
 * "10"  :  precision = 10 digits
 * "8,2"  :  precision = 8 digits with 2 digits after the decimal (scale = 2)
 
+This is how the precision value is determined:
 
+1. if the attribute has a "**@DbType**" annotation this database type will be used "as is"\
+   regardless of the target database, for example:\
+   &#x20; `weight : decimal {`` `**`@DbType('DECIMAL(5,2)')`**` ``}`\
+   the SQL type will be  **`DECIMAL(5,2)`**
+2. else, if the attribute has a "**@Size**" annotation this value will be used \
+   for example: \
+   &#x20; `weight: decimal {`` `**`@Size(8,5)`**` ``}`\
+   the SQL type will be \
+   &#x20; \- `numeric(`**`8,5`**`)` for PostgreSQL \
+   &#x20; \- `NUMBER(`**`8,5`**`)` for Oracle
+3. else, if the attribute has a "**@MaxLen**" annotation this value will be used \
+   for example:\
+   &#x20; `weight : decimal {`` `**`@MaxLen(12)`**` ``}`\
+   ``the SQL type will be \
+   &#x20; \- `numeric(`**`12`**`)` for PostgreSQL \
+   &#x20; \- `NUMBER(`**`12`**`)` for Oracle
 
