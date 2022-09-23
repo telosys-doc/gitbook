@@ -1,5 +1,7 @@
 # Target languages
 
+<figure><img src="../.gitbook/assets/telosys-v4-target-languages.png" alt=""><figcaption><p>Telosys 4.0 predefined target languages</p></figcaption></figure>
+
 With Telosys you can generate any type of language by managing yourself all the target language specificities. But for the most common languages you can indicate the nature of your target language so as to simplify the writing of templates.
 
 The target language can be specified in the template files (.vm) using the following directive :
