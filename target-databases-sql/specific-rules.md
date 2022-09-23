@@ -55,13 +55,16 @@ Syntax:
 * Left side:\
   the **neutral type** with "type." prefix and optionally the ".autoincr" suffix \
   if used for autoincremented attribute
-* Right side:\
-  any string to be used as the **SQL type** for this neutral type\
-  with placeholders for "**size**" and "**precision**":
-  * "**(%s)**" : size (optional)
-  * "**(%S)**" : size mandatory
-  * "**(%p)**" : precision (optional)
-  * "**(%P)**" : precision mandatory
+*   Right side:\
+    any string to be used as the **SQL type** for this neutral type\
+    with placeholders for "**size**" and "**precision**":
+
+    * "**(%s)**" : size (optional)
+    * "**(%S)**" : size mandatory
+    * "**(%p)**" : precision (optional)
+    * "**(%P)**" : precision mandatory
+
+    See [type size and precision](type-size-and-precision.md) for more information
 
 Examples:&#x20;
 
