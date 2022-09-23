@@ -48,6 +48,7 @@
 * [Target databases (SQL)](target-databases-sql/README.md)
   * [Predefined rules](target-databases-sql/predefined-rules.md)
   * [Specific rules](target-databases-sql/specific-rules.md)
+  * [Type size and precision](target-databases-sql/type-size-and-precision.md)
 * [Support the project](support-the-project.md)
 * [How to contribute](how-to-contribute.md)
 * [Sponsors](sponsors.md)
