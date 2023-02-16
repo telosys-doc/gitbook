@@ -23,7 +23,7 @@ Scope : **entity**  /  Since : **4.0.0**
 ### @AutoIncremented
 
 The attribute is supposed to be auto-incremented (for example for an auto-incremented key)\
-Applicable only with "numeric" types
+Only applicable to numeric types
 
 Scope : **attribute**  /  Since : **2.0.0**
 
