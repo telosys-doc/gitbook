@@ -5,9 +5,9 @@
 Telosys provides a set of predefined objects usable in the templates :
 
 * Objects representing the model elements :&#x20;
-  * **$model**  \[doc]  (current model)
-    * [**$entity**](https://www.telosys.org/doc/latest/objects/entity.html)  (entity defined in the model) \[0:N / model]
-      * **$attribute**  [\[doc\]](https://www.telosys.org/doc/latest/objects/attribute.html)  (attribute defined in an entity) \[1:N / entity]
+  * [**$model**](https://www.telosys.org/doc/latest/objects/model.html)  (current model)
+    * [**$entity**](https://www.telosys.org/doc/latest/objects/entity.html)  (entity defined in the model) \[0:N entities in a model]
+      * [**$attribute**](https://www.telosys.org/doc/latest/objects/attribute.html)  (attribute defined in an entity) \[1:N attributes in an entity]
         * **$fkPart** (part of foreign key, if attribute is involved in one or more FK)
       * **$link**  (link defined in an entity) \[0:N / entity]
         * **$linkAttribute** (attribute involved in link definition) \[1:N / link]
