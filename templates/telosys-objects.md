@@ -37,8 +37,8 @@ Telosys provides a set of predefined objects usable in the templates :
   * PHP :  **$php** &#x20;
   * HTML :  **$html** &#x20;
 * Deprecated objects (do not use, just for backward compatibility) : &#x20;
-  * _**$jdbcFactory**_  (use **$factory** instead)
-  * _**$today**_ (use **$now** instead)
+  * ~~**$jdbcFactory**~~  (use **$factory** instead)
+  * ~~**$today**~~ (use **$now** instead)
 
 ## Objects reference documentation
 
