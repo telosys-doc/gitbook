@@ -6,7 +6,7 @@ An annotation is a **predefined name** starting with "**@**". \
 Some annotations may have **values** specified between "**(**" and "**)**". \
 For attributes and links all annotations must be located in the block delimited by "**{**" and "**}**".
 
-NB : since version 4.0 the useless comma between annotations is prohibited **** and must be removed
+NB : since version 4.0 the useless comma between annotations is prohibited and must be removed
 
 ### @Abstract
 
@@ -25,7 +25,18 @@ Scope : **entity**  /  Since : **4.0.0**
 The attribute is supposed to be auto-incremented (for example for an auto-incremented key)\
 Only applicable to numeric types
 
-Scope : **attribute**  /  Since : **2.0.0**
+Scope : **attribute**  /  Since : **2.0.0** &#x20;
+
+### @Cascade(string \[, string, ...] )&#x20;
+
+Defines how to manage ORM "cascade" options for a link \
+Valid options : ALL or A, MERGE or M, PERSIST or P, REFRESH or REF, REMOVE or REM
+
+Scope : **link**  /  Since : **4.1.0**&#x20;
+
+Examples :
+
+&#x20;`@Cascade(MERGE)  @Cascade(REMOVE)  @Cascade(MERGE,REMOVE)  @Cascade(M,REM)`&#x20;
 
 ### @Context(string)
 
