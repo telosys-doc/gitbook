@@ -18,8 +18,8 @@ Telosys provides a set of predefined objects usable in the templates :
   * [**$env**](https://www.telosys.org/doc/latest/objects/env.html)  (environment configuration)
   * [**$project** ](https://www.telosys.org/doc/latest/objects/project.html) (project configuration)
 * Generation in progress :&#x20;
-  * **$target** (current target)
-  * **$bundle** (current bundle)
+  * [**$target** ](https://www.telosys.org/doc/latest/objects/target.html)  (current target file being generated)
+  * **$bundle**   (bundle in use for current generation)
   * **$generator** (generator engine)
 * Utility functions and tools :&#x20;
   * **$fn** (set of utility functions)
