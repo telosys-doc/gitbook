@@ -74,7 +74,7 @@ Defines the database schema to which the entity table belongs
 
 Scope : **entity**  /  Since : **4.0.0**
 
-### @DbSize(string)
+### ~~@DbSize(string)~~
 
 _**Deprecated** - Do not use_
 
@@ -494,14 +494,14 @@ The size is defined with "precision" and "scale" if necessary (eg "6" or "6,2")
 
 Scope : **attribute**  /  Since : **4.0.0**
 
-### @SizeMax(int)
+### ~~@SizeMax(int)~~
 
 _**Deprecated** - Do not use - Use "**@MaxLen**" instead_
 
 _Defines the maximum acceptable size of the attribute value_.\
 _Scope : attribute  /_  Since : 2.0.0
 
-### @SizeMin(int)
+### ~~@SizeMin(int)~~
 
 _**Deprecated** - Do not use - Use "**@MinLen**" instead_
 
