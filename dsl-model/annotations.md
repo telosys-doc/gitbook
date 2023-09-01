@@ -243,7 +243,15 @@ Examples :&#x20;
 @Insertable(false)
 ```
 
+### @JoinEntity&#x20;
+
+Marks the current entity as a "Join Entity" (an entity referencing two other entities in order to manage a many-to-many relationship).
+
+Scope : **entity**  /  Since :  **4.1.0**
+
 ### @Label(string)
+
+Defineabel(string)
 
 Defines the label usable for the field (for example an HTML label).
 
