@@ -31,7 +31,7 @@ Telosys provides a set of predefined objects usable in the templates :
   * [**$values** ](https://www.telosys.org/doc/latest/objects/values.html) (literal values generator for attributes)
   * [**$h2**  ](https://www.telosys.org/doc/latest/objects/h2.html) (utility functions for H2 database)
 * Objects dedicated to code generation of certain target languages :  &#x20;
-  * Java :  **$java**   **$jpa**   **$jdbc**   **$beanValidation**  &#x20;
+  * Java :  [**$java** ](https://www.telosys.org/doc/latest/objects/java.html)  [**$jpa** ](https://www.telosys.org/doc/latest/objects/jpa.html)   [**$jdbc**](https://www.telosys.org/doc/latest/objects/jdbc.html)   [**$beanValidation**](https://www.telosys.org/doc/latest/objects/beanValidation.html)  &#x20;
   * SQL :  **$sql** &#x20;
   * C#  :  **$csharp**&#x20;
   * PHP :  **$php** &#x20;
