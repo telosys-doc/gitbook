@@ -11,8 +11,8 @@ Below some entities examples:
 // Defines a person who is able to drive a car
 Driver {
    id : long { @Id } ;
-   firstName : string { @SizeMax(20) @NotEmpty } ;
-   lastName  : string { @SizeMax(20) @NotEmpty } ;
+   firstName : string { @MaxLen(20) @NotEmpty } ;
+   lastName  : string { @MaxLen(20) @NotEmpty } ;
    birthDate : date { @Past };
    certified : boolean ;
 }
@@ -31,8 +31,8 @@ Car {
   price : float  { @Min(500)  @Max(99999) };
   
   // links (references to other entities)
-  brand  : Brand ; // 1 Brand
-  driver : Driver[] ; // N driver
+  brand  : Brand ; // 1 Brand (ManyToOne)
+  driver : Driver[] ; // N Driver (OneToMany)
 }
 ```
 
