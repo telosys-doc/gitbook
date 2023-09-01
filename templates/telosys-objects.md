@@ -19,7 +19,7 @@ Telosys provides a set of predefined objects usable in the templates :
   * [**$project** ](https://www.telosys.org/doc/latest/objects/project.html) (project configuration)
 * Generation in progress :&#x20;
   * [**$target** ](https://www.telosys.org/doc/latest/objects/target.html)  (current target file being generated)
-  * **$bundle**   (bundle in use for current generation)
+  * [**$bundle**](https://www.telosys.org/doc/latest/objects/bundle.html) (bundle in use for current generation)
   * **$generator** (generator engine)
 * Utility functions and tools :&#x20;
   * **$fn** (set of utility functions)
@@ -49,6 +49,10 @@ The documentation reference for each object is available here :
 * Previous version :&#x20;
   * [Telosys 4.0.0 - objects reference](https://www.telosys.org/doc/v400/objects/index.html)
   * [Telosys 3.3.0 - objects reference](https://www.telosys.org/doc/v330/objects/index.html)
+
+
+
+
 
 
 
