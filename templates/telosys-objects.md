@@ -32,10 +32,10 @@ Telosys provides a set of predefined objects usable in the templates :
   * [**$h2**  ](https://www.telosys.org/doc/latest/objects/h2.html) (utility functions for H2 database)
 * Objects dedicated to code generation of certain target languages :  &#x20;
   * Java :  [**$java** ](https://www.telosys.org/doc/latest/objects/java.html)  [**$jpa** ](https://www.telosys.org/doc/latest/objects/jpa.html)   [**$jdbc**](https://www.telosys.org/doc/latest/objects/jdbc.html)   [**$beanValidation**](https://www.telosys.org/doc/latest/objects/beanValidation.html)  &#x20;
-  * SQL :  **$sql** &#x20;
-  * C#  :  **$csharp**&#x20;
-  * PHP :  **$php** &#x20;
-  * HTML :  **$html** &#x20;
+  * C#  :  [**$csharp**](https://www.telosys.org/doc/latest/objects/csharp.html) &#x20;
+  * PHP :  [**$php** ](https://www.telosys.org/doc/latest/objects/php.html) &#x20;
+  * SQL :  [**$sql** ](https://www.telosys.org/doc/latest/objects/sql.html)&#x20;
+  * HTML :  [**$html** ](https://www.telosys.org/doc/latest/objects/html.html)&#x20;
 * Deprecated objects (do not use, just for backward compatibility) : &#x20;
   * ~~**$jdbcFactory**~~  (use **$factory** instead)
   * ~~**$today**~~ (use **$now** instead)
