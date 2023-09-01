@@ -13,7 +13,7 @@ Telosys provides a set of predefined objects usable in the templates :
         * **$linkAttribute** (attribute involved in link definition) \[1:N / link]
       * [**$fk** ](https://www.telosys.org/doc/latest/objects/fk.html)(foreign key defined in an entity) \[0:N FK in each entity]
         * **$fkAttribute** (attribute involved in FK definition) \[1:N / fk]
-      * &#x20; **$reference**  (reference to other entity) \[0:N / entity]
+      * [**$reference**](https://www.telosys.org/doc/latest/objects/reference.html)  (reference to other entity)  \[0:N references in each entity]
 * Configuration : &#x20;
   * **$env** (environment configuration)
   * **$project** (project configuration)
