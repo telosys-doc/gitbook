@@ -20,13 +20,13 @@ Telosys provides a set of predefined objects usable in the templates :
 * Generation in progress :&#x20;
   * [**$target** ](https://www.telosys.org/doc/latest/objects/target.html)  (current target file being generated)
   * [**$bundle**](https://www.telosys.org/doc/latest/objects/bundle.html) (bundle in use for current generation)
-  * **$generator** (generator engine)
+  * [**$generator**](https://www.telosys.org/doc/latest/objects/generator.html) (generator engine)
 * Utility functions and tools :&#x20;
-  * **$fn** (set of utility functions)
-  * **$const** (set of constants)
-  * **$factory** (a factory to create objects)
-  * **$file** (to use files located on the file system)&#x20;
-  * **$loader** (to load your own utility classes)
+  * [**$fn**  ](https://www.telosys.org/doc/latest/objects/fn.html) (set of utility functions)
+  * [**$const** ](https://www.telosys.org/doc/latest/objects/const.html) (set of constants)
+  * [**$factory**](https://www.telosys.org/doc/latest/objects/factory.html) (a factory to create objects)
+  * [**$file** ](https://www.telosys.org/doc/latest/objects/file.html) (to use files located on the file system)&#x20;
+  * [**$loader** ](https://www.telosys.org/doc/latest/objects/loader.html) (to load your own utility classes)
   * **$now**  (current date and time)
   * **$values** (literal values generator for attributes)
   * **$h2** (utility functions for H2 database)
