@@ -447,6 +447,12 @@ Usable for ORM code generation (JPA, etc)
 
 Scope : **link**  /  Since : **3.3.0**
 
+### @OrphanRemoval
+
+Set 'orphanRemoval'  to true in ORM (JPA, etc)
+
+Scope : **link**  /  Since : **4.1.0**
+
 ### @Pa**ckage(string)**
 
 Defines the "package" to which the entity belongs
