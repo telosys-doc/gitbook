@@ -1,8 +1,10 @@
 # Telosys objects
 
+## Objects by categories
+
 Telosys provides a set of predefined objects usable in the templates :
 
-* Current model elements :&#x20;
+* Objects representing the model elements :&#x20;
   * **$model**  (current model)
     * **$entity**  (entity defined in the model) \[0:N / model]
       * **$attribute**  (attribute defined in an entity) \[1:N / entity]
@@ -28,18 +30,17 @@ Telosys provides a set of predefined objects usable in the templates :
   * **$now**  (current date and time)
   * **$values** (literal values generator for attributes)
   * **$h2** (utility functions for H2 database)
-* Utility functions for generating Java code :  &#x20;
-  * **$java**  &#x20;
-  * **$jpa**  &#x20;
-  * **$jdbc**  &#x20;
-  * **$beanValidation**  &#x20;
-* Utility functions for generating SQL code :  &#x20;
-  * **$sql**
-* Utility functions for generating HTML code :  &#x20;
-  * **$html**
+* Objects dedicated to code generation of certain target languages :  &#x20;
+  * Java :  **$java**   **$jpa**   **$jdbc**   **$beanValidation**  &#x20;
+  * SQL :  **$sql** &#x20;
+  * C#  :  **$csharp**&#x20;
+  * PHP :  **$php** &#x20;
+  * HTML :  **$html** &#x20;
 * Deprecated objects (do not use, just for backward compatibility) : &#x20;
   * _**$jdbcFactory**_  (use **$factory** instead)
   * _**$today**_ (use **$now** instead)
+
+## Objects reference documentation
 
 The documentation reference for each object is available here :
 
