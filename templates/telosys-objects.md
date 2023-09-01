@@ -14,9 +14,9 @@ Telosys provides a set of predefined objects usable in the templates :
       * [**$fk** ](https://www.telosys.org/doc/latest/objects/fk.html)(foreign key defined in an entity) \[0:N FK in each entity]
         * [**$fkAttribute** ](https://www.telosys.org/doc/latest/objects/fkAttribute.html) (attribute involved in FK definition) \[1:N / fk]
       * [**$reference**](https://www.telosys.org/doc/latest/objects/reference.html)  (reference to other entity)  \[0:N references in each entity]
-* Configuration : &#x20;
-  * **$env** (environment configuration)
-  * **$project** (project configuration)
+* Current environment and project : &#x20;
+  * [**$env**](https://www.telosys.org/doc/latest/objects/env.html)  (environment configuration)
+  * [**$project** ](https://www.telosys.org/doc/latest/objects/project.html) (project configuration)
 * Generation in progress :&#x20;
   * **$target** (current target)
   * **$bundle** (current bundle)
