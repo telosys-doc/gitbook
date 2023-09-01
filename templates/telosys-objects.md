@@ -27,9 +27,9 @@ Telosys provides a set of predefined objects usable in the templates :
   * [**$factory**](https://www.telosys.org/doc/latest/objects/factory.html) (a factory to create objects)
   * [**$file** ](https://www.telosys.org/doc/latest/objects/file.html) (to use files located on the file system)&#x20;
   * [**$loader** ](https://www.telosys.org/doc/latest/objects/loader.html) (to load your own utility classes)
-  * **$now**  (current date and time)
-  * **$values** (literal values generator for attributes)
-  * **$h2** (utility functions for H2 database)
+  * [**$now** ](https://www.telosys.org/doc/latest/objects/now.html) (current date and time)
+  * [**$values** ](https://www.telosys.org/doc/latest/objects/values.html) (literal values generator for attributes)
+  * [**$h2**  ](https://www.telosys.org/doc/latest/objects/h2.html) (utility functions for H2 database)
 * Objects dedicated to code generation of certain target languages :  &#x20;
   * Java :  **$java**   **$jpa**   **$jdbc**   **$beanValidation**  &#x20;
   * SQL :  **$sql** &#x20;
