@@ -9,9 +9,9 @@ Telosys provides a set of predefined objects usable in the templates :
     * [**$entity**](https://www.telosys.org/doc/latest/objects/entity.html)  (entity defined in the model) \[0:N entities in a model]
       * [**$attribute**](https://www.telosys.org/doc/latest/objects/attribute.html)  (attribute defined in an entity) \[1:N attributes in an entity]
         * **$fkPart** (part of foreign key, if attribute is involved in one or more FK)
-      * **$link**  (link defined in an entity) \[0:N / entity]
+      * [**$link**](https://www.telosys.org/doc/latest/objects/link.html)  (link defined in an entity) \[0:N links in an entity]
         * **$linkAttribute** (attribute involved in link definition) \[1:N / link]
-      * **$fk** (foreign key defined in an entity) \[0:N / entity]
+      * [**$fk** ](https://www.telosys.org/doc/latest/objects/fk.html)(foreign key defined in an entity) \[0:N / entity]
         * **$fkAttribute** (attribute involved in FK definition) \[1:N / fk]
       * **$reference** (reference to other entity) \[0:N / entity]
 * Configuration : &#x20;
