@@ -8,11 +8,11 @@ Telosys provides a set of predefined objects usable in the templates :
   * [**$model**](https://www.telosys.org/doc/latest/objects/model.html)  (current model)
     * [**$entity**](https://www.telosys.org/doc/latest/objects/entity.html)  (entity defined in the model) \[0:N entities in each model]
       * [**$attribute**](https://www.telosys.org/doc/latest/objects/attribute.html)  (attribute defined in an entity) \[1:N attributes in each entity]
-        * **$fkPart** (part of foreign key, if attribute is involved in one or more FK)
+        * [**$fkPart** ](https://www.telosys.org/doc/latest/objects/fkPart.html) (part of foreign key, if attribute is involved in one or more FK)
       * [**$link**](https://www.telosys.org/doc/latest/objects/link.html)  (link defined in an entity) \[0:N links in each entity]
-        * **$linkAttribute** (attribute involved in link definition) \[1:N / link]
+        * [**$linkAttribute** ](https://www.telosys.org/doc/latest/objects/linkAttribute.html) (attribute involved in link definition) \[1:N / link]
       * [**$fk** ](https://www.telosys.org/doc/latest/objects/fk.html)(foreign key defined in an entity) \[0:N FK in each entity]
-        * **$fkAttribute** (attribute involved in FK definition) \[1:N / fk]
+        * [**$fkAttribute** ](https://www.telosys.org/doc/latest/objects/fkAttribute.html) (attribute involved in FK definition) \[1:N / fk]
       * [**$reference**](https://www.telosys.org/doc/latest/objects/reference.html)  (reference to other entity)  \[0:N references in each entity]
 * Configuration : &#x20;
   * **$env** (environment configuration)
