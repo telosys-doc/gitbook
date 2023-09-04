@@ -87,5 +87,19 @@ generates the code for only the entities having "**Car**" or "**Dri**" in their 
 You don't have to defined the **current model** and the **current bundle** before using the genb command (it can work with any models and any bundles)
 {% endhint %}
 
+### "genb" command examples
 
+```
+> genb * *
+```
+
+generates the code for **all the models** with **all the templates**&#x20;
+
+
+
+```
+> genb cars java 
+```
+
+generates the code for **all the entities** of the "cars" model with **all bundles** having "java" in their name
 
