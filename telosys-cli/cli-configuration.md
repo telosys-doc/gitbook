@@ -71,7 +71,7 @@ EditorCommand = /usr/bin/lxterminal -e "nano $FILE"
 
 ## File explorer configuration&#x20;
 
-The "**fx**" command launches a file explorer in the current directory.&#x20;
+The "**fx**" command launches a file explorer in the current directory (since ver 4.1.0).&#x20;
 
 2 commands are defined by default : "explorer" for Windows and "open" for MacOS.
 
