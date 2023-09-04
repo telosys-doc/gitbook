@@ -2,9 +2,12 @@
 
 Once you have a **valid model** and a least one **bundle of templates**, you are **ready to generate your code**.
 
-**`gen`** is the only command you need to generate your code.
+To generate your code you can use the following commands:
 
-### "gen" command syntax
+* **`gen`** to generate code with the current model and the current bundle
+* **`genb`** to generate code in "batch mode" (since ver 4.1.0) with multiple models and/or bundles
+
+## "gen" command syntax
 
 ```
 > gen *|entities *|templates [-r] [-y]
@@ -66,3 +69,23 @@ generates the code for all the entities of the current model with only the templ
 ```
 
 generates the code for only the entities having "**Car**" or "**Dri**" in their name and only the templates having "**dao**" or "**controller**" in their name
+
+
+
+## "genb" command syntax
+
+```
+> genb model(s) bundle(s) [-r] [-y]
+```
+
+* **`models`**:    **model name** or **part of name** or **"\*"** for all models
+* **`bundles`**:  **bundle name**  or **part of name**  or **"\*"** for all bundles
+* **`-r`**  (optional) to copy the **static resources** provided by the bundle (if any)
+* **`-y`**  (optional) to force "**yes**" answer (to avoid confirmation)
+
+{% hint style="info" %}
+You don't have to defined the **current model** and the **current bundle** before using the genb command (it can work with any models and any bundles)
+{% endhint %}
+
+
+
