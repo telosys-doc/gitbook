@@ -1,16 +1,21 @@
 # CLI configuration
 
-The configuration of Telosys-CLI is defined in the file **`telosys-cli.cfg`**.  This file is located in the directory where Telosys-CLI has been installed.  It can be edited with any text editor.
+The configuration of Telosys-CLI is defined in the file **`telosys-cli.cfg`**.  &#x20;
 
-For now, this file simply allows you to define a **specific external editor** that will be launched  for all "edit" commands (eg "eb", "ecfg", etc.)
+This file is located in the directory where Telosys-CLI has been installed.  It can be edited with any text editor.
 
-Telosys-CLI comes with its own text editor, but this editor is quite basic and requires a graphical interface (eg GNOME or KDE for Linux). So you might prefer to set another text editor.
+For now, this file simply allows you to define a **specific external editor** that will be launched  for all "edit" commands (eg "eb", "ecfg", etc.) and a **specific file explorer** for "fx" command.
 
-Telosys allows you to define a command to launch your favorite text editor :      "Visual Source Code", "Atom", "Sublime Text", "Notepad++", etc
+
 
 ## Text editor configuration
 
-Use the **`EditorCommand`** propterty to define the command that will be launched by Telosys-CLI.
+Telosys-CLI comes with its own text editor, but this editor is quite basic and requires a graphical interface (eg GNOME or KDE for Linux). So you might prefer to set another text editor.
+
+Telosys allows you to define a command to launch your favorite text editor for example     \
+&#x20;"Visual Source Code", "Atom", "Sublime Text", "Notepad++", etc
+
+Use the **`EditorCommand`** property to define the command that will be launched by Telosys-CLI.
 
 The value is the OS command to execute to launch the editor. If the executable file is accessible via the "PATH", you can use it as a simple command (without full path). Otherwise, you need to find where the editor is installed and use the full path.
 
@@ -61,3 +66,19 @@ EditorCommand = /usr/bin/leafpad $FILE &
 EditorCommand = /usr/bin/lxterminal -e "vi $FILE"
 EditorCommand = /usr/bin/lxterminal -e "nano $FILE"
 ```
+
+
+
+## File explorer configuration&#x20;
+
+The "**fx**" command launches a file explorer.&#x20;
+
+2 commands are defined by default : "explorer" for Windows and "open" for MacOS.
+
+You can set your own command to use your favorite explorer   \
+by using the  **`FileExplorerCommand`**   property
+
+The variable **`$DIR`** is a placeholder for the current directory.
+
+
+
