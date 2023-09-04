@@ -6,6 +6,9 @@ With this this plugin it's very easy to configure a project, create models, desi
 
 It can be used to generate the code anywhere (not only in Eclipse) so you can use it to generate your code in another IDE workspace.
 
+**NB** : Eclipse Plugin is currently for **Telosys ver 3.3.0**, \
+the plugin for Telosys 4.x is under development
+
 This plugin is totally free and open source.
 
 See Telosys plugin on **Eclipse marketplace** : \
