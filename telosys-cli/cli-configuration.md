@@ -1,10 +1,10 @@
 # CLI configuration
 
-The configuration of Telosys-CLI is defined in the file **`telosys-cli.cfg`**.  &#x20;
+The Telosys-CLI configuration is defined in the file **`telosys-cli.cfg`**.  &#x20;
 
 This file is located in the directory where Telosys-CLI has been installed.  It can be edited with any text editor.
 
-For now, this file simply allows you to define a **specific external editor** that will be launched  for all "edit" commands (eg "eb", "ecfg", etc.) and a **specific file explorer** for "fx" command.
+For now, this file simply allows you to define a **specific external editor** that will be launched for all "edit" commands (eg "eb", "ecfg", etc.) and a **specific file explorer** for "fx" command.
 
 
 
