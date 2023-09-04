@@ -12,7 +12,8 @@ You can help Telosys in different ways ...
 
 ### Help us spread the word about Telosys :loudspeaker:&#x20;
 
-* follow Telosys on [**LinkedIn** ](https://www.linkedin.com/company/telosys/)and share the news
+* follow Telosys page on [**LinkedIn** ](https://www.linkedin.com/company/telosys/)and share the news
+* join Telosys group on [**LinkedIn**](https://www.linkedin.com/groups/1340197/) and share your ideas
 * follow Telosys on [**Twitter**](https://twitter.com/telosys) and retweet the news
 * write something about Telosys on the web (blog, article, etc)
 
