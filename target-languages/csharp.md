@@ -36,6 +36,10 @@ The table below describes how model neutral types are automatically converted to
 | timestamp  | <p><strong>DateTime?</strong> <br><strong>DateTime</strong></p>                                                       | <p><br>@NotNull</p>                                       |
 | binary     | <p><strong>byte[]?</strong><br><strong>byte [ ]</strong></p>                                                          | <p><br>@NotNull</p>                                       |
 
+Remarks:&#x20;
+
+* since ver 4.1.0 "date" is converted to "DateOnly" and "time" is converted to "TimeOnly" &#x20;
+
 ### Annotations effects
 
 * **@UnsignedType** \
