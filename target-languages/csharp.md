@@ -6,7 +6,16 @@ To define **C#** as the **target language** in a template file :
 #set( $env.language = 'C#' )
 ```
 
-The information below shows the behavior of the generator when C# is the current target language.\
+The information below shows the behavior of the generator when C# is the current target language.
+
+A "**?**" is automatically added to the end of the type if the attribute is "**nullable**" (no "@NotNull" annotation). To disable this behavior:&#x20;
+
+```
+#set( $env.typeWithNullableMark = false )
+```
+
+The information below shows the behavior of the generator when C# is the current target language. For a detailed description of type conversion, see the generated documentation :  \
+&#x20;[https://www.telosys.org/doc/latest/languages/language-csharp.html](https://www.telosys.org/doc/latest/languages/language-csharp.html) \
 
 
 ## Types conversion&#x20;
