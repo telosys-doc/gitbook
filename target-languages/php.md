@@ -38,3 +38,14 @@ So since Telosys version 4.1.0, type conversion was added for the PHP language.
 | timestamp  | <p><strong>?DateTime</strong> <br><strong>DateTime</strong></p> | <p><br>@NotNull</p>    |
 | binary     |                                                                 | <p><br></p>            |
 
+
+
+## Literal values
+
+### TRUE, FALSE, NULL
+
+|        | PHP literal |
+| ------ | ----------- |
+| TRUE   | **true**    |
+|  FALSE | **false**   |
+|  NULL  | **null**    |
