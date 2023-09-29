@@ -6,10 +6,20 @@ To define **JavaScript** as the **target language** in a template file :
 #set( $env.language = 'JavaScript' )
 ```
 
-The information below shows the behavior of the generator when JavaScript is the current target language.\
 
 
-## Types conversion&#x20;
-
-JavaScript is a dynamically-typed language, there are no types in the source code. \
+JavaScript is a dynamically-typed language, with **no type** in the source code. \
 Therefore, the type conversion always return a void string.
+
+Only literal values are affected by the current target language.
+
+|        | Javascript literal |
+| ------ | ------------------ |
+| TRUE   | **true**           |
+|  FALSE | **false**          |
+|  NULL  | **null**           |
+
+
+
+For a detailed description with literal values examples, see the generated documentation : \
+&#x20; [https://www.telosys.org/doc/latest/languages/language-javascript.html](https://www.telosys.org/doc/latest/languages/language-javascript.html)&#x20;
