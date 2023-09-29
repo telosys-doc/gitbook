@@ -60,9 +60,9 @@ The table below describes how model neutral types are automatically converted to
 
 ### TRUE, FALSE, NULL
 
-|        | Kotlin literal |
-| ------ | -------------- |
-| TRUE   | **true**       |
-|  FALSE | **false**      |
-|  NULL  | **null**       |
+|        |           |
+| ------ | --------- |
+| TRUE   | **true**  |
+|  FALSE | **false** |
+|  NULL  | **null**  |
 
