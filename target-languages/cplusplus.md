@@ -8,8 +8,9 @@ To define **C++** as the **target language** in a template file :
 #set( $env.language = 'C++' )
 ```
 
-The information below shows the behavior of the generator when C++ is the current target language.\
-
+\
+The information below shows the behavior of the generator when C++ is the current target language. For a detailed description of type conversion, see the generated documentation :\
+[https://www.telosys.org/doc/latest/languages/language-c++.html](https://www.telosys.org/doc/latest/languages/language-c++.html)&#x20;
 
 ## Types conversion&#x20;
 
@@ -34,13 +35,13 @@ The table below describes how model neutral types are automatically converted to
 ### Annotations effects
 
 * **@UnsignedType** \
-  ****has effect only for **char**, **short**, **int**, **long**
+  has effect only for **char**, **short**, **int**, **long**
 * **@NotNull** \
-  ****has no effect
+  has no effect
 * **@PrimitiveType**\
-  ****no effect
+  no effect
 * **@ObjectType** \
-  ****no effect
+  no effect
 
 ### Specific types&#x20;
 
