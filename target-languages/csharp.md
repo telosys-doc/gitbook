@@ -36,7 +36,7 @@ The table below describes how model neutral types are automatically converted to
 * **@ObjectType** \
   switches to **.Net types** ( System.Int64, System.Boolean, etc)
 * **@NotNull** \
-  no effect
+  type not nullable => no "?" at the end of the type
 * **@PrimitiveType** \
   no effect
 
