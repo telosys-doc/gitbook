@@ -31,6 +31,7 @@ All the pre-configured target languages currently supported by Telosys are defin
 * [Golang](golang.md)
 * [Java](java.md)
 * [JavaScript](javascript.md)
+* [Kotlin](kotlin.md)
 * [PHP](php.md)
 * [Python](python.md)
 * [Scala](scala.md)
@@ -38,7 +39,8 @@ All the pre-configured target languages currently supported by Telosys are defin
 
 For more detailed information, see the automatically generated documentation :&#x20;
 
-* **Latest version** :&#x20;
-  * [Target languages in Telosys version 4.0](https://www.telosys.org/doc/v400/languages/index.html)
+* **Latest version (4.1.0)**&#x20;
+  * T[arget languages in Telosys latest version](https://www.telosys.org/doc/latest/languages/index.html)
 * Previous version :&#x20;
+  * [Target languages in Telosys version 4.0](https://www.telosys.org/doc/v400/languages/index.html)
   * [Target languages in Telosys version 3.3](https://www.telosys.org/doc/v330/languages/index.html)
