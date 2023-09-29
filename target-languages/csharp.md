@@ -88,8 +88,8 @@ Below some examples of literal values generated for each type :
 | float       | <p>float <br>System.Single</p>               | **1000.5F**             |
 | double      | <p>double<br>System.Double</p>               | **1000.66D**            |
 | boolean     | <p>bool<br>System.Boolean</p>                | **true**  or  **false** |
-| date        | System.DateTime                              | **null**                |
-| time        | System.DateTime                              | **null**                |
+| date        | System.DateOnly                              | **null**                |
+| time        | System.TimeOnly                              | **null**                |
 | timestamp   | System.DateTime                              | **null**                |
 | binary      | byte \[ ]                                    | **null**                |
 
