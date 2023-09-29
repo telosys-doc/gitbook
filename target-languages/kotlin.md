@@ -1,12 +1,21 @@
 # Kotlin
 
+Kotlin is a predefined target language since Telosys **version 4.1.0**
+
 To define **Kotlin** as the **target language** in a template file :
 
 ```
 #set( $env.language = 'Kotlin' )
 ```
 
+A "**?**" is automatically added to the end of the type if the attribute is "**nullable**" (no "@NotNull" annotation).
+
+
+
 The information below shows the behavior of the generator when Kotlin is the current target language.
+
+For a detailed description of type conversion, see the generated documentation : \
+[https://www.telosys.org/doc/latest/languages/language-kotlin.html](https://www.telosys.org/doc/latest/languages/language-kotlin.html)&#x20;
 
 ## Types conversion&#x20;
 
