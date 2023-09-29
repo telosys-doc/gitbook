@@ -16,40 +16,23 @@ The table below describes how model **neutral types** are automatically converte
 
 The table below describes how model neutral types are automatically converted to C# types with potential impact due to attribute annotations.
 
-| Model type | C# type                                                                                | with annotation                               |
-| ---------- | -------------------------------------------------------------------------------------- | --------------------------------------------- |
-| string     | <p><strong>String?</strong><br><strong>String</strong></p>                             | <p></p><p>@NotNull</p>                        |
-| byte       | <p><strong>Byte?</strong><br><strong>UByte?</strong><br><strong>Byte</strong></p>      | <p></p><p>@UnsignedType <br>@NotNull</p>      |
-| short      | <p>Short?<br>UShort?<br>Short</p>                                                      | <p></p><p>@UnsignedType <br>@NotNull</p>      |
-| int        | <p>Int? <br>UInt? <br>Int</p>                                                          | <p></p><p>@UnsignedType <br>@NotNull</p>      |
-| long       | <p><strong>long</strong></p><p><strong>ulong</strong></p><p><strong>Int64</strong></p> | <p></p><p>@UnsignedType</p><p>@ObjectType</p> |
-| decimal    | <p><strong>decimal</strong></p><p><strong>Decimal</strong></p>                         | <p></p><p>@ObjectType</p>                     |
-| float      | <p><strong>float</strong><br><strong>Single</strong></p>                               | <p></p><p>@ObjectType</p>                     |
-| double     | <p><strong>double</strong><br><strong>Double</strong></p>                              | <p></p><p>@ObjectType</p>                     |
-| boolean    | <p><strong>bool</strong><br><strong>Boolean</strong></p>                               | <p></p><p>@ObjectType</p>                     |
-| date       | **DateTime**                                                                           |                                               |
-| time       | **DateTime**                                                                           |                                               |
-| timestamp  | **DateTime**                                                                           |                                               |
-| binary     | **byte \[ ]**                                                                          |                                               |
-
-### Annotations effects
+| Model type | C# type                                                                              | with annotation                            |
+| ---------- | ------------------------------------------------------------------------------------ | ------------------------------------------ |
+| string     | <p><strong>String?</strong><br><strong>String</strong></p>                           | <p></p><p>@NotNull</p>                     |
+| byte       | <p><strong>Byte?</strong><br><strong>UByte?</strong><br><strong>Byte</strong></p>    | <p></p><p>@UnsignedType <br>@NotNull</p>   |
+| short      | <p><strong>Short?</strong><br><strong>UShort?</strong><br><strong>Short</strong></p> | <p></p><p>@UnsignedType <br>@NotNull</p>   |
+| int        | <p><strong>Int?</strong> <br><strong>UInt?</strong> <br><strong>Int</strong></p>     | <p></p><p>@UnsignedType <br>@NotNull</p>   |
+| long       | <p><strong>Long?</strong> <br><strong>ULong?</strong> <br><strong>Long</strong></p>  | <p></p><p>@UnsignedType</p><p>@NotNull</p> |
+| decimal    | <p><strong>BigDecimal?</strong> <br><strong>BigDecimal</strong></p>                  | <p></p><p>@NotNull</p>                     |
+| float      | <p><strong>Float?</strong> <br><strong>Float</strong></p>                            | <p></p><p>@NotNull</p>                     |
+| double     | <p><strong>Double?</strong> <br><strong>Double</strong></p>                          | <p></p><p>@NotNull</p>                     |
+| boolean    | <p><strong>Boolean?</strong> <br><strong>Boolean</strong></p>                        | <p></p><p>@NotNull</p>                     |
+| date       | <p><strong>LocalDate?</strong> </p><p><strong>LocalDate</strong></p>                 | <p><br>@NotNull</p>                        |
+| time       | <p><strong>LocalTime?</strong> </p><p><strong>LocalTime</strong></p>                 | <p><br>@NotNull</p>                        |
+| timestamp  | <p><strong>LocalDateTime?</strong><br><strong>LocalDateTime</strong></p>             | <p><br>@NotNull</p>                        |
+| binary     | <p><strong>ByteArray?</strong> <br><strong>ByteArray</strong></p>                    | <p><br>@NotNull</p>                        |
 
 
-
-| string    | <p>String?<br>String</p>                          | <p><br>@NotNull</p>         |
-| --------- | ------------------------------------------------- | --------------------------- |
-| byte      | <p><strong>xx</strong><br><strong>xx</strong></p> | <p></p><p></p>              |
-| short     | <p><strong>xx</strong><br><strong>xx</strong></p> | <p></p><p></p>              |
-| int       | <p><strong>xx</strong><br><strong>xx</strong></p> | <p></p><p></p>              |
-| long      | <p><strong>x</strong><br><strong>x</strong></p>   | <p></p><p>@UnsignedType</p> |
-| decimal   | **x**                                             |                             |
-| float     | **x**                                             |                             |
-| double    | **x**                                             |                             |
-| boolean   | **x**                                             |                             |
-| date      | **xx**                                            |                             |
-| time      | **xx**                                            |                             |
-| timestamp | **x**                                             |                             |
-| binary    | **x**                                             |                             |
 
 ### Annotations effects
 
