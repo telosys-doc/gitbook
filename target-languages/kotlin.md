@@ -25,7 +25,7 @@ The table below describes how model **neutral types** are automatically converte
 
 The table below describes how model neutral types are automatically converted to C# types with potential impact due to attribute annotations.
 
-| Model type | C# type                                                                              | with annotation                            |
+| Model type | Kotlin type                                                                          | with annotation                            |
 | ---------- | ------------------------------------------------------------------------------------ | ------------------------------------------ |
 | string     | <p><strong>String?</strong><br><strong>String</strong></p>                           | <p></p><p>@NotNull</p>                     |
 | byte       | <p><strong>Byte?</strong><br><strong>UByte?</strong><br><strong>Byte</strong></p>    | <p></p><p>@UnsignedType <br>@NotNull</p>   |
