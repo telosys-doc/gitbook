@@ -41,6 +41,7 @@
   * [Golang](target-languages/golang.md)
   * [Java](target-languages/java.md)
   * [JavaScript](target-languages/javascript.md)
+  * [Kotlin](target-languages/kotlin.md)
   * [PHP](target-languages/php.md)
   * [Python](target-languages/python.md)
   * [Scala](target-languages/scala.md)

@@ -31,11 +31,11 @@ The table below describes how model neutral types are automatically converted to
 ### Annotations effects
 
 * **@UnsignedType** \
-  ****has effect only for **byte**, **short**, **int**, **long**
+  has effect only for **byte**, **short**, **int**, **long**
 * **@ObjectType** \
-  ****no effect
+  no effect
 * **@NotNull** \
-  ****no effect
+  no effect
 * **@PrimitiveType** \
   no effect
 

@@ -32,11 +32,11 @@ The table below describes how model neutral types are automatically converted to
 ### Annotations effects
 
 * **@UnsignedType** \
-  ****has effect only for **byte**, **short**, **int**, **long**
+  has effect only for **byte**, **short**, **int**, **long**
 * **@ObjectType** \
-  ****switches to **.Net types** ( System.Int64, System.Boolean, etc)
+  switches to **.Net types** ( System.Int64, System.Boolean, etc)
 * **@NotNull** \
-  ****no effect
+  no effect
 * **@PrimitiveType** \
   no effect
 
