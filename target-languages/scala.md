@@ -39,3 +39,13 @@ The table below describes how model neutral types are automatically converted to
 * **@ObjectType** : no effect
 * **@NotNull** : no effect
 * **@PrimitiveType**  : no effect
+
+## Literal values
+
+### TRUE, FALSE, NULL
+
+|        | Scala  literal |
+| ------ | -------------- |
+| TRUE   | **true**       |
+|  FALSE | **false**      |
+|  NULL  | **null**       |
