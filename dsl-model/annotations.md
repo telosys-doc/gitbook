@@ -512,7 +512,7 @@ _Scope : attribute  /_  Since : 2.0.0
 
 Define an attribute as "transient" (for example in a Java class or with an ORM like JPA)
 
-Scope : **attribute**  /  Since : **3.3.0**
+Scope : **attribute & link**  /  Since : **3.3.0**
 
 ### @Un**iqu**e
 
