@@ -251,9 +251,7 @@ Scope : **entity**  /  Since :  **4.1.0**
 
 ### @Label(string)
 
-Defineabel(string)
-
-Defines the label usable for the field (for example an HTML label).
+Defines a label usable for the attribute, for example in GUI (HTML label for an input field, etc)
 
 Scope : **attribute**  /  Since : **3.2.0**
 
