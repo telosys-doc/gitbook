@@ -7,6 +7,7 @@ Here you will find everything that can help you to boost your project with Telos
 In addition to this documentation you can also take a look at ...
 
 * [Twitter](https://twitter.com/telosys)&#x20;
+* [LinkedIn](https://www.linkedin.com/company/telosys/)
 * [YouTube](https://www.youtube.com/channel/UCX5-ypQygEHMCGXVTTbhfNQ)  ( short presentation : [Introducing Telosys 4.0](https://www.youtube.com/watch?v=nMEZ4tz-E4k) )
 
 For your questions you can use …
