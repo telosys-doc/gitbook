@@ -16,7 +16,11 @@ In "**Menu visibility**" tab :  **File / New**
 
 Select the Telosys menu entry :
 
-![](../.gitbook/assets/Eclipse-custom-perspective-menu-telosys.jpg)
+<div align="left">
+
+<img src="../.gitbook/assets/Eclipse-custom-perspective-menu-telosys.jpg" alt="">
+
+</div>
 
 Click **"Apply and Close**"
 

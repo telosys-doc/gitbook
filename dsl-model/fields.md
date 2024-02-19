@@ -74,7 +74,7 @@ Available neutral types :&#x20;
 * **time**&#x20;
 * **timestamp**&#x20;
 
-****
+
 
 ### Link type
 

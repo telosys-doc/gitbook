@@ -27,7 +27,7 @@ This is how the size value is determined:
 3. else  if the attribute has a "**@MaxLen**" annotation this value will be used \
    Example:\
    &#x20;   `name : string {`` `**`@MaxLen(12)`**`}`\
-   ``the SQL type will be \
+   the SQL type will be \
    &#x20; \- **`VARCHAR(12)`**  for PostgreSQL \
    &#x20; \- **`VARCHAR2(12)`** for Oracle
 4. else  if the size is not mandatory ("%s") for the SQL type\
@@ -73,13 +73,13 @@ This is how the precision value is determined:
 3. else  if the attribute has a "**@MaxLen**" annotation this value will be used \
    Example:\
    &#x20;   `weight : decimal {`` `**`@MaxLen(12)`**` ``}`\
-   ``the SQL type will be \
+   the SQL type will be \
    &#x20; \- **`numeric(12)`** for PostgreSQL \
    &#x20; \- **`NUMBER(12)`** for Oracle
 4. else  if the precision is not mandatory ("%p") for the SQL type\
    then the type is generated without precision, for example:\
    &#x20; \- **`numeric`**  for PostgreSQL \
-   &#x20; \- **`NUMBER`  ** for Oracle&#x20;
+   &#x20; \- **`NUMBER` ** for Oracle&#x20;
 5. else  precision is mandatory ("%P") and cannot be determined:\
    an error is thrown\
 
