@@ -1,8 +1,8 @@
 # Installation
 
-The Telosys extension&#x20;
+You can install the Telosys extension just like any other extension.
 
-In VSCode click the "Extension" icon&#x20;
+In VSCode click the "Extension" icon in the Activity Bar on the side of VS Code
 
 <img src="../.gitbook/assets/image (1).png" alt="" data-size="original">
 
@@ -24,7 +24,7 @@ search "telosys"&#x20;
 
 </div>
 
-select "**Telosys-VSCode**"&#x20;
+select "**Telosys-VSCode**" extension
 
 <div align="left">
 
@@ -34,7 +34,7 @@ select "**Telosys-VSCode**"&#x20;
 
 NB:&#x20;
 
-There are 2 Telosys extensions "Telosys-VSCode" is the latest designed to work with Telosys 4+
+There are 2 Telosys extensions "**Telosys-VSCode**" is the **latest** designed to work with **Telosys 4+**
 
 \=> Be sure to select this extension
 
