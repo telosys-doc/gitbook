@@ -2,11 +2,14 @@
 
 
 
-Since Telosys version 4.x, VSCode has been the recommended editor.
+VSCode is the recommended editor for working with Telosys-CLI version 4+.
 
-The latest VSCode extension for Telosys is available on VSCode marketplace.
+"**Telosys-VSCode**" is the latest extension for Telosys.
 
-See : "Telosys-VSCode"  [https://marketplace.visualstudio.com/items?itemName=telosys.telosys-vscode](https://marketplace.visualstudio.com/items?itemName=telosys.telosys-vscode)&#x20;
+It is available on VSCode marketplace: \
+&#x20;  [https://marketplace.visualstudio.com/items?itemName=telosys.telosys-vscode](https://marketplace.visualstudio.com/items?itemName=telosys.telosys-vscode)&#x20;
+
+
 
 This extension is open source and free.
 
