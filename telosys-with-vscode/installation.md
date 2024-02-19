@@ -32,11 +32,16 @@ select "**Telosys-VSCode**" extension
 
 </div>
 
-NB:&#x20;
 
-There are 2 Telosys extensions "**Telosys-VSCode**" is the **latest** designed to work with **Telosys 4+**
 
+{% hint style="info" %}
+NB \
+There are 2 Telosys extensions \
+"<mark style="color:red;">**Telosys-VSCode**</mark>" is the **latest** designed to work with **Telosys 4+** \
 \=> Be sure to select this extension
+{% endhint %}
+
+
 
 
 
