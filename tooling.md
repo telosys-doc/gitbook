@@ -2,11 +2,8 @@
 
 Extensions or plugins have been developed for some editors or IDEs to facilitate editing of Telosys files.
 
-Warning: some are not up to date and do not yet support Telosys 4.0
+Warning: some are not up to date and do not yet support Telosys 4.0\
 
-* **Visual Studio Code**&#x20;
-  * See Visual Studio Marketplace :  \
-    [https://marketplace.visualstudio.com/items?itemName=telosysteam.telosys](https://marketplace.visualstudio.com/items?itemName=telosysteam.telosys)\
 
 * **Atom**&#x20;
   * See Atom packages :  \
