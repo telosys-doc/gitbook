@@ -17,7 +17,7 @@
 * [Telosys 4 with VSCode](telosys-with-vscode/README.md)
   * [Extension installation](telosys-with-vscode/installation.md)
   * [VSCode settings](telosys-4-with-vscode/vscode-settings.md)
-  * [Page](telosys-4-with-vscode/page.md)
+  * [Telosys terminal in VSCode](telosys-4-with-vscode/telosys-terminal-in-vscode.md)
 * [Telosys 3 with Eclipse](telosys-with-eclipse/README.md)
   * [Eclipse plugin installation](telosys-with-eclipse/eclipse-plugin-installation.md)
   * [Eclipse customization](telosys-with-eclipse/eclipse-configuration.md)
