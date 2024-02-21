@@ -15,7 +15,7 @@
     * [Templates installation](telosys-cli/cli-getting-started/templates-installation.md)
     * [Code generation](telosys-cli/cli-getting-started/code-generation.md)
 * [Telosys 4 with VSCode](telosys-with-vscode/README.md)
-  * [Extension installation](telosys-4-with-vscode/extension-installation.md)
+  * [Extension installation](telosys-with-vscode/installation.md)
   * [VSCode settings](telosys-4-with-vscode/vscode-settings.md)
   * [Page](telosys-4-with-vscode/page.md)
 * [Telosys 3 with Eclipse](telosys-with-eclipse/README.md)

@@ -16,7 +16,7 @@ In section "**Text Editor**" / "**Suggestions**" :&#x20;
 * "**Word Based Suggestions**" \
   Turn it "**off"** to obtain suggestions only from snippets (including those from Telosys extension).
 
-
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 It's usually enough to get a clearest view of snippets suggestion.
 
