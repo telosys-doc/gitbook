@@ -112,3 +112,14 @@ so you just have to launch it and it is ready to use in the current workspace
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
+
+Telosys terminal with "**rocket**" icon :&#x20;
+
+![](<../.gitbook/assets/image (7).png>)&#x20;
+
+<div align="left">
+
+<figure><img src="../.gitbook/assets/image (8).png" alt="" width="263"><figcaption></figcaption></figure>
+
+</div>
+
