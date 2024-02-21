@@ -12,7 +12,13 @@ This terminal is the ideal place to launch and use Telosys-CLI. So you can run a
 
 The most basic way to use Telosys in VSCode is to launch a predefined terminal to get a shell and to launch Telosys from the command line.
 
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
+But you will have to launch Telosys manually and to set the home directory each time you want to use it.
+
+What's more, the terminal's name is "java", which is not self-explanatory.
+
+To benefit from a dedicated Telosys terminal, simply create a "terminal profile", as described below...
 
 ## Specific terminal profile
 
