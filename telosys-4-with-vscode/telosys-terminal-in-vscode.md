@@ -18,18 +18,26 @@ The most basic way to use Telosys in VSCode is to launch a predefined terminal t
 
 VSCode allows to define specific terminal profiles ( see [https://code.visualstudio.com/docs/terminal/profiles](https://code.visualstudio.com/docs/terminal/profiles) )&#x20;
 
-Here is how to define a terminal profile for Telosys by editing the "settings.json" file.
+Here's how to define a terminal profile for Telosys by editing the "settings.json" file.
 
-#### Open the "settings.json" file
+### Open the "settings.json" file
 
 Launch the "command palette" with  \[ Ctrl ]  +  \[ Shift ]  +  \[ P ]
 
 Search "open settings json"&#x20;
 
-Choose the JSON file to edit:
+<div align="left">
 
-* User settings file (recommanded to be able to use the terminal in any workspace)
-* Workspace settings file
+<figure><img src="../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
+
+</div>
+
+Choose the JSON file to edit:\
+"**User Settings**" JSON file (recommanded to be able to use the terminal in any workspace)\
+or\
+"**Workspace Settings**" JSON file (to store the file in the current workspace)
+
+### Edit the "settings.json" file
 
 In section "**terminal.integrated.profiles.windows**" add an entry for "**Telosys**" with&#x20;
 
