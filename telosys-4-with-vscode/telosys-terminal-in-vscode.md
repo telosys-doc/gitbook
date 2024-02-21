@@ -10,7 +10,7 @@ This terminal is the ideal place to launch and use Telosys-CLI. So you can run a
 
 ## Standard terminal usage&#x20;
 
-The most basic way to use Telosys in VSCode is to launch a predefined terminal to get a shell and to launch Telosys from the command line.
+The most basic way to use Telosys in VSCode is to launch a standard terminal (predefined in VSCode) to get a shell and to launch Telosys from the command line.
 
 <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
