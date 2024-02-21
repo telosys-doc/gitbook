@@ -1,0 +1,31 @@
+# VSCode settings
+
+For greater ease of use, we suggest the following configuration&#x20;
+
+### In VSCode Settings
+
+To access "Settings" from the menu:  **File** -> **Preferences** -> **Settings**   or   \[**Ctrl**] + \[ **,** ]
+
+In section "**Text Editor**" / "**Suggestions**" :&#x20;
+
+* "**Snippet Suggestions**"\
+  Choose "**top**" to to show snippet suggestions on top of other suggestions
+
+
+
+* "**Word Based Suggestions**" \
+  Turn it "**off"** to obtain suggestions only from snippets (including those from Telosys extension).
+
+
+
+It's usually enough to get a clearest view of snippets suggestion.
+
+If you want to go further, have a look at the following options:&#x20;
+
+* Editor › **Suggest: Show Words**&#x20;
+* Editor › **Suggest: Filter Graceful**
+* Editor: **Quick Suggestions**
+
+
+
+&#x20;

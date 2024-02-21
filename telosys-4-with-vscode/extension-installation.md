@@ -1,10 +1,10 @@
-# Installation
+# Extension installation
 
 You can install the Telosys extension just like any other extension.
 
 In VSCode click the "Extension" icon in the Activity Bar on the side of VS Code
 
-<img src="../.gitbook/assets/image (1).png" alt="" data-size="original">
+<img src="../.gitbook/assets/image (1) (1).png" alt="" data-size="original">
 
 
 
@@ -28,7 +28,7 @@ select "**Telosys-VSCode**" extension
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
