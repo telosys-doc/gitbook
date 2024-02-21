@@ -11,12 +11,20 @@ In section "**Text Editor**" / "**Suggestions**" :&#x20;
 * "**Snippet Suggestions**"\
   Choose "**top**" to to show snippet suggestions on top of other suggestions
 
+<div align="left">
 
+<figure><img src="../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
+
+</div>
 
 * "**Word Based Suggestions**" \
   Turn it "**off"** to obtain suggestions only from snippets (including those from Telosys extension).
 
+<div align="left">
+
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 It's usually enough to get a clearest view of snippets suggestion.
 
