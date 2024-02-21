@@ -82,7 +82,18 @@ Example:
 
 
 
+After this configuration "Telosys" appears as a new kind of terminal in VSCode&#x20;
 
+<div align="left">
 
+<figure><img src="../.gitbook/assets/image.png" alt="" width="446"><figcaption></figcaption></figure>
 
+</div>
 
+so you just have to launch it and it is ready to use in the current workspace
+
+<div align="left">
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+</div>
