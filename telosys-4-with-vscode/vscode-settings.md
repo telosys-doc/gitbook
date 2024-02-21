@@ -9,7 +9,7 @@ To access "Settings" from the menu:  **File** -> **Preferences** -> **Settings**
 In section "**Text Editor**" / "**Suggestions**" :&#x20;
 
 * "**Snippet Suggestions**"\
-  Choose "**top**" to to show snippet suggestions on top of other suggestions
+  Choose "**top**" to show snippet suggestions on top of other suggestions
 
 <div align="left">
 
