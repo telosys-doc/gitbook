@@ -49,6 +49,7 @@ In section "**terminal.integrated.profiles.windows**" add an entry for "**Telosy
   * "-h" + "." \
     to define the current directory as the Telosys "home"\
     ( for a VSCode terminal the current directory is the root of your workspace )
+* "**overrideName**" = "**true**"  ->  to replace the dynamic terminal title&#x20;
 * "_**icon**_"  ->  optional (just to set a specific terminal icon )
 * "_**color**_"  ->  optional ( just to set the icon color )
 
