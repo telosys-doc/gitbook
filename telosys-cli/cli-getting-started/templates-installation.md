@@ -10,7 +10,7 @@ Templates bundles can be downloaded from **GitHub** (each bundle is a "git repos
 
 ### Templates catalog configuration (GitHub account)
 
-By default the templates catalog points to [https://github.com/telosys-templates-v3](https://github.com/telosys-templates-v3)
+By default the templates catalog points to  [https://github.com/telosys-templates](https://github.com/telosys-templates) &#x20;
 
 To see the current catalog use the **`gh`** ("GitHub") command without argument.
 
