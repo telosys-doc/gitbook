@@ -69,3 +69,31 @@ Sometimes it can be useful to make sure you only generate a file once to avoid o
 #if($target.outputFileExists() )#cancel("File already exists")#end
 
 ```
+
+
+
+### Maps of lists&#x20;
+
+With Velocity, you can create a "map" of "anything". \
+A map can contain any object, even lists.
+
+```
+## --- Example 1 :
+#set( $list1 = [ 0, 1, 2 ] )
+#set( $list2 = [ "", "A", "B", "C", "D" ] )
+## A map of lists :
+#set( $m = {"k1" : $list1 , "k2" : $list2} )
+
+## --- Example 2 (literal):
+#set( $m2 = {
+  "int" : [ 100, 200, 300 ] , 
+  "str" : [ "AAA", "BB", "CCC", "D" ] 
+  } )
+
+## --- Usage 
+$m["k2"]
+$m["k2"][2]
+
+$m2["int"][1]
+```
+
