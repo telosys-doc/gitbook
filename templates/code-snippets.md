@@ -70,12 +70,9 @@ Sometimes it can be useful to make sure you only generate a file once to avoid o
 
 ```
 
-
-
 ### Maps of lists&#x20;
 
-With Velocity, you can create a "map" of "anything". \
-A map can contain any object, even lists.
+With Velocity, you can create a "map" of "anything". A map can contain any object, even lists.
 
 ```
 ## --- Example 1 :
