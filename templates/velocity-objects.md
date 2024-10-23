@@ -179,7 +179,7 @@ $mylist.contains("Z") ## OUTPUT : false (not found)
 $mylist.subList(1,3) ## from 1 to 2 (3 is exclusive)
 ```
 
-###
+
 
 ### Map
 
@@ -226,7 +226,15 @@ k3 : $mymap["k3"] ## error (due to no key "k3")
 Get value by key with default value if key not in map (secure, no error):
 
 ```
-k1 : $map.getOrDefault("k1", "default_value")
+k1 : $mymap.getOrDefault("k1", "default_value")
+```
+
+Each map key is also usable as an object's property then it's possible to get its value using the "object dot notation":
+
+```
+k1 : $mymap.k1
+k2 : $mymap.k2
+k3 : $mymap.k3  ## error (due to no key "k3")
 ```
 
 Set an entry in the map (add or update a key-value pair):
@@ -238,19 +246,19 @@ Set an entry in the map (add or update a key-value pair):
 Remove an entry by key (error if the key doesn't exist in the map):
 
 ```
-#set( $_ = $map.remove("k1") )
+#set( $_ = $mymap.remove("k1") )
 ## "#set" is just to avoid to print the return value (here "v1")
 ## NB: error if the key doesn't exist in the map 
 ## key not found => return null => Velocity error
 
 ## workaround with "if exist" before remove:
-#if($map.containsKey($key))#set($_=$map.remove($key))#end
+#if($mymap.containsKey($key))#set($_=$mymap.remove($key))#end
 ```
 
 Remove an entry by key and value (secure, no error if no match):
 
 ```
-#set( $_ = $map.remove("k1", "v1") )
+#set( $_ = $mymap.remove("k1", "v1") )
 ## "#set" is just to avoid to print the return value (boolean)
 ```
 
@@ -282,7 +290,7 @@ size : $mymap.size()
 #end
 
 ## Clear map (return void so no resulting output)
-$map.clear() 
+$mymap.clear() 
 
 ```
 
