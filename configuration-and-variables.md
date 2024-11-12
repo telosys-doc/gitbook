@@ -24,11 +24,11 @@ In the configuration file you can define the following specific folders :
 
 To define a specific location for templates, a directory where the templates are located for the current project. By default templates are located in "(project-home)/TelosysTools/templates", if you want to use another directory you can define it with this parameter.
 
-Examples :
+Examples:
 
 ```
 #-- Specific location for templates (Windows) :
-SpecificTemplatesFolder=C\:\\dir1\\dir2
+SpecificTemplatesFolder=C:/dir1/dir2
 
 #-- Specific location for templates (Linux) :
 SpecificTemplatesFolder=/dir1/dir2
@@ -38,11 +38,11 @@ SpecificTemplatesFolder=/dir1/dir2
 
 To define a specific destination for code generation. The root directory where the generated files will be placed. By default the generated files are located in the current project directory (project home), you can change it with this parameter.
 
-Examples :
+Examples:
 
 ```
 #-- Specific destination for code generation (Windows) :
-SpecificDestinationFolder=C\:\\dir1\\dir2
+SpecificDestinationFolder=C:/dir1/dir2
 
 #-- Specific destination for code generation (Linux) :
 SpecificDestinationFolder=/dir1/dir2

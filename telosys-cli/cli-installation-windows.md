@@ -11,9 +11,9 @@ You can check it with the command \
 
 ### 1) Download
 
-With your browser go to page [Telosys-CLI](http://www.telosys.org/cli.html)
+With your browser go to "[**Download**](https://www.telosys.org/download/telosys-cli/index.html)" page
 
-Click on the button " **Download Telosys-CLI** " and choose the "Latest version"
+Choose the "**Latest version**" and ckick "**Download**" button.
 
 A ZIP file "telosys-cli-x.x.x-xxx.zip" will be downloaded.
 
@@ -39,7 +39,7 @@ To be able to launch Telosys from any location, just add its directory to the "*
     in the "**System variables**" section&#x20;
 
     select the "**Path**" variable and click the "**Edit**" button
-* Add the Telosys directory in the PATH variable
+* Add the **Telosys directory** in the **PATH** variable
 
 ### 4) Run Telosys
 
@@ -50,7 +50,8 @@ Open a command window ( open the Start Search and enter "**cmd**" )
 Move to the directory where you want to use Telosys\
 &#x20;   `X:\> cd myproject`
 
-Launch Telosys-CLI with the **`tt`** command ( that is `tt.bat` ) \
+Launch Telosys-CLI with the **`tt`** command ( that is `tt.bat` )  \
+or **`telosys`** command (since ver 4.2.0)\
 &#x20;  `X:\myproject> tt`
 
 ### 5) You can also create a shortcut on your desktop
