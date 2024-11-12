@@ -1,4 +1,4 @@
-# Templates
+# Bundles (templates)
 
 Telosys code generation is based on "**templates**".&#x20;
 
@@ -10,7 +10,7 @@ The Telosys templates are organised in "**bundles**".&#x20;
 
 A "**bundle of templates**" is a set of templates files designed to generate different target files that can work together.
 
-For more information about "**bundles**" see :
+For more information about "**bundles**" see:
 
 * [Bundles of templates](bundle-of-templates.md)
 
@@ -18,8 +18,8 @@ For more information about "**bundles**" see :
 
 Some examples are available here :&#x20;
 
-* [Template bundles for Telosys 4.0](https://github.com/telosys-templates)&#x20;
-* [Template bundles for Telosys 3.3](https://github.com/telosys-templates-v3)
+* [Bundles for Telosys 4.x (latest version)](https://github.com/telosys-templates)
+* [Bundles for Telosys 3.x](https://github.com/telosys-templates-v3)
 
 ### Templates language
 
