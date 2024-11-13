@@ -20,6 +20,7 @@
   * [Telosys editor configuration](telosys-vscode/telosys-editor-configuration.md)
 * [Project configuration](configuration-and-variables.md)
 * [Project variables](project-variables.md)
+* [Project databases](project-databases.md)
 * [Models (entities)](dsl-model/README.md)
   * [Entity](dsl-model/entity.md)
   * [Attribute / Link](dsl-model/fields.md)
