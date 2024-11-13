@@ -38,10 +38,21 @@ For each database:
   * **`password:`** (string)  the database user password
 * What metadata to retrieve &#x20;
   * **`catalog:`**  (string)  the database catalog to use or  '!' for none &#x20;
-  * schema: (string)  the database schema to use or  '!' for none
-* tableNamePattern:&#x20;
-* tableNameInclude:&#x20;
-* tableNameExclude:&#x20;
-* tableTypes: TABLE # DB model creation dbModelName: # Telosys DSL model creation linksManyToOne: true linksOneToMany: false # linksManyToMany: false dbComment: false dbCatalog : false dbSchema : false dbTable : false dbView : false dbName : false\
-  dbType : false\
-  dbDefaultValue: false
+  * **`schema:`** (string)  the database schema to use or  '!' for none
+  * tableNamePattern:&#x20;
+  * tableNameInclude:&#x20;
+  * tableNameExclude:&#x20;
+  * tableTypes: TABLE&#x20;
+  * \# DB model creation&#x20;
+  * dbModelName:&#x20;
+* \# Telosys DSL model creation&#x20;
+  * linksManyToOne: true&#x20;
+  * linksOneToMany: false&#x20;
+  * linksManyToMany: false&#x20;
+  * dbComment: false&#x20;
+  * dbCatalog : false&#x20;
+  * dbSchema : false&#x20;
+  * dbTable : false&#x20;
+  * dbView : false dbName : false
+  * dbType : false
+  * dbDefaultValue: false
