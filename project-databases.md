@@ -61,6 +61,20 @@ For each database entry:
 
 
 
+### Setting up the JDBC driver library
+
+After defining the database in "databases.yaml" you also need to set up the **Java library** containing the **JDBC driver**.
+
+The Java library is the "**.jar**" file (sometimes ".zip") provided by the database supplier.
+
+JDBC library files examples:\
+&#x20;   \-  `postgresql-42.2.26.jre7.jar` \
+&#x20;   \-  `mariadb-java-client-3.1.0.jar`
+
+Put the "**.jar**" file in  "<mark style="color:purple;">**TelosysTools/lib**</mark>" directory so that Telosys can use it.
+
+
+
 ### Check database configuration
 
 Once a database has been defined in "databases.yaml", it is recommended to test the database configuration using the "**cdb**" command.
