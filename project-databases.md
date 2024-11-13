@@ -22,7 +22,7 @@ This YAML file can edited with any editor or IDE.
 
 The file contains a list of database configurations (n items in "**`databases:`**" entry)
 
-For each database:
+For each database entry:
 
 * Database identification:&#x20;
   * **`id:`**   (string) a unique identifier for the database&#x20;
@@ -45,15 +45,16 @@ For each database:
   * **`tableNameExclude:`**  (string)  pattern used to exclude tables
   * **`tableTypes:`**  (string)  types to retrieve, separated by blanks \
     &#x20;    examples: "TABLE" (only tables),  "VIEW" (only views),  "TABLE VIEW" (tables and views)
-* Options for Telosys model creation (boolean type for all):
-  * **`linksManyToOne:`**  (true/false)&#x20;
-  * **`linksOneToMany:`** (true/false)&#x20;
-  * **`linksManyToMany:`** (true/false)&#x20;
-  * **`dbComment:`** (true/false)&#x20;
-  * **`dbCatalog:`** (true/false)&#x20;
-  * **`dbSchema:`** (true/false)&#x20;
-  * **`dbTable:`** (true/false)&#x20;
-  * **`dbView:`** (true/false)&#x20;
-  * **`dbName:`** (true/false)&#x20;
-  * **`dbType:`** (true/false)&#x20;
-  * **`dbDefaultValue:`** (true/false)&#x20;
+* Options for Telosys model creation ("boolean" type for all):
+  * **`linksManyToOne:`**  (default = true)  create "**ManyToOne**" **links** in model entities
+  * **`linksOneToMany:`** (default = false)  create "**OneToMany**" **links** in model entities
+  * **`linksManyToMany:`** ( default = false)  create "**ManyToMany**" **links** in model entities
+  * **`dbComment:`** (default = true)  create **@DbComment(...)** annotation (entity & attribute level)
+  * **`dbCatalog:`** (default = true)  create **@DbCatalog(...)** annotation (entity level)
+  * **`dbSchema:`** (default = true) create **@DbSchema(...)** annotation (entity level)
+  * **`dbTable:`** (default = true) create **@DbTable(...)** annotation (entity level)
+  * **`dbView:`** (default = true) create **@DbView(...)** annotation (entity level)
+  * **`dbName:`** (default = true) create **@DbName(...)** annotation (attribute level)
+  * **`dbType:`** (default = true)  create **@DbType(...)** annotation (attribute level)
+  * **`dbDefaultValue:`** (default = true) create **@DbDefaultValue(...)** annotation (attribute level)
+
