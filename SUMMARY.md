@@ -54,7 +54,7 @@
 * [How to contribute](how-to-contribute.md)
 * [Sponsors](sponsors.md)
 * [IDE and editors](tooling.md)
-* [Telosys 3 with Eclipse](telosys-with-eclipse/README.md)
+* [Telosys 3 Eclipse plugin](telosys-with-eclipse/README.md)
   * [Eclipse plugin installation](telosys-with-eclipse/eclipse-plugin-installation.md)
   * [Eclipse customization](telosys-with-eclipse/eclipse-configuration.md)
   * [Telosys 3 database model](telosys-with-eclipse/telosys-3-database-model.md)

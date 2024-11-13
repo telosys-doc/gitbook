@@ -1,17 +1,15 @@
-# Telosys 3 with Eclipse
+# Telosys 3 Eclipse plugin
 
-{% hint style="info" %}
-NB : \
-Eclipse plugin currently only supports **Telosys version 3.3.0**
+{% hint style="warning" %}
+The **Eclipse plugin** only supports **Telosys version 3.3.0**, which is an **old version**.&#x20;
 
-( for Telosys 4 we recommend VSCode + Telosys-CLI )
+To take advantage of the latest features, it's best to use the \
+most recent version of **Telosys-CLI** with **VS-Code** and the **Telosys extension**.
 {% endhint %}
 
 
 
-**Telosys Eclipse plugin** has been designed to be a simple and handy tool.
-
-With this plugin it's very easy to configure a project, create models, design templates and generate your code.
+With **Telosys Eclipse plugin** it's very easy to configure a project, create models, design templates and generate your code.
 
 It can be used to generate the code anywhere (not only in Eclipse) so you can use it to generate your code in another IDE workspace.
 
