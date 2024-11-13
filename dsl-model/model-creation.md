@@ -9,7 +9,9 @@ There are 2 ways to create a Telosys model :&#x20;
 
 
 
-### Creating a model from scracth&#x20;
+### Creating a model from scratch&#x20;
+
+**Step #1 - Create a void model**
 
 To create a model from scratch use the "**nm**" (New Model) command.
 
@@ -23,6 +25,8 @@ This command creates a new model with the given name.
 
 This model is void, it does not contain any entity.
 
+**Step #2 - Add entities to the model**
+
 To add entities, use the "ne" (New Entity) command.
 
 Syntaxe:
@@ -32,6 +36,8 @@ Syntaxe:
 This command creates a new entity with the given name -> a file "**entity-name.entity**"
 
 You can now edit the ".entity" files of the model with any editor or IDE to define the attributes and links.
+
+You can also "copy/paste" certain files if you have similarities between entities.
 
 
 
