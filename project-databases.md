@@ -94,3 +94,4 @@ Once a database has been defined in "databases.yaml", it is recommended to test 
 * Get database **catalogs** ->  **`-cat`**\
   **`cdb <dbid>`**<mark style="color:purple;">**`-cat`**</mark>
 
+When all checks are OK, you are ready to create a model from the database.
