@@ -31,20 +31,21 @@ For each database entry:
     &#x20;    examples: "PostgreSQL", "MySQL", "Oracle", etc
 * JDBC connection:
   * **`driver:`**  (string) the JDBC driver to use to connect to the database (driver Java class name)  \
-    &#x20;    examples:  "org.postgresql.Driver"
+    &#x20;    examples:  "org.postgresql.Driver",  "org.mariadb.jdbc.Driver"
   * **`url:`**    (string)  the JDBC URL for connection  \
     &#x20;    examples:    "jdbc:postgresql://{HOST}:{PORT}/{DATABASE}"&#x20;
   * **`user:`**  (string)  the database user name&#x20;
   * **`password:`** (string)  the database user password&#x20;
-* What metadata to retrieve:
+* What tables to retrieve - first level filter:
   * **`catalog:`**  (string)  the database catalog to use or  '!' for none &#x20;
   * **`schema:`** (string)  the database schema to use or  '!' for none
   * **`tableNamePattern:`**  (string) pattern used as table name filter \
     &#x20;    examples:  "%",   "ABC%",  ...&#x20;
-  * **`tableNameInclude:`**  (string)  pattern used to include tables
-  * **`tableNameExclude:`**  (string)  pattern used to exclude tables
   * **`tableTypes:`**  (string)  types to retrieve, separated by blanks \
     &#x20;    examples: "TABLE" (only tables),  "VIEW" (only views),  "TABLE VIEW" (tables and views)
+* What tables to retrieve - second level filter (applied on the result of the first level filter)
+  * **`tableNameExclude:`**  (string)  regular expression used to exclude tables
+  * **`tableNameInclude:`**  (string)  regular expression used to include tables
 * Options for Telosys model creation ("boolean" type for all):
   * **`linksManyToOne:`**  (default = true)  create "**ManyToOne**" **links** in model entities
   * **`linksOneToMany:`** (default = false)  create "**OneToMany**" **links** in model entities
