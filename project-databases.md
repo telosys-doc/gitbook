@@ -6,7 +6,7 @@ Each database can be used to create a **new model** based on its database schema
 
 Project databases are defined in the file "<mark style="color:purple;">**TelosysTools/databases.yaml**</mark>".
 
-This YAML file can edited with any editor or IDE.
+This YAML file can be edited with any editor or IDE.
 
 
 
