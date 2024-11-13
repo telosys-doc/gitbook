@@ -59,3 +59,24 @@ For each database entry:
   * **`dbType:`** (default = true)  create **@DbType(...)** annotation (attribute level)
   * **`dbDefaultValue:`** (default = true) create **@DbDefaultValue(...)** annotation (attribute level)
 
+
+
+### Check database configuration
+
+Once a database has been defined in "databases.yaml", it is recommended to test the database configuration using the "**cdb**" command.
+
+* Check if it is possible to connect to the database\
+  **`cdb <dbid>`**
+* Check **tables** retrieved ->  **`-t`**\
+  **`cdb <dbid>`**<mark style="color:purple;">**`-t`**</mark>
+* Check **columns** retrieved ->  **`-c`**\
+  **`cdb <dbid>`**<mark style="color:purple;">**`-c`**</mark>
+* Check **primary keys** retrieved ->  **`-pk`**\
+  **`cdb <dbid>`**<mark style="color:purple;">**`-pk`**</mark>
+* Check **foreign keys** retrieved ->  **`-fk`**\
+  **`cdb <dbid>`**<mark style="color:purple;">**`-fk`**</mark>
+* Get database **shemas**  ->  **`-s`**\
+  **`cdb <dbid>`**<mark style="color:purple;">**`-s`**</mark>
+* Get database **catalogs** ->  **`-cat`**\
+  **`cdb <dbid>`**<mark style="color:purple;">**`-cat`**</mark>
+
