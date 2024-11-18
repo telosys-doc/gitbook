@@ -25,9 +25,11 @@ This command creates a new model with the given name.
 
 This model is void, it does not contain any entity.
 
+
+
 **Step #2 - Add entities to the model**
 
-To add entities, use the "ne" (New Entity) command.
+To add entities, use the "**ne**" (New Entity) command.
 
 Syntaxe:
 
@@ -38,6 +40,8 @@ This command creates a new entity with the given name -> a file "**entity-name.e
 You can now edit the ".entity" files of the model with any editor or IDE to define the attributes and links.
 
 You can also "copy/paste" certain files if you have similarities between entities.
+
+
 
 
 
