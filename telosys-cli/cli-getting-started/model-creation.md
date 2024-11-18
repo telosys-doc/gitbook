@@ -17,9 +17,9 @@ For more information, see pages "[Model creation](../../dsl-model/model-creation
 
 ### Main commands for model management
 
-* "nm" (New Model) to create a new model from scratch or from a database
-* "lm" (List Models) to list project models
-* "
+Models management is based on "Model commands" and "Entity commands".
+
+See page "[Model management](../../dsl-model/models-management.md)".
 
 
 
