@@ -8,7 +8,7 @@
   * [CLI commands](telosys-cli/cli-commands.md)
   * [Getting started](telosys-cli/cli-getting-started/README.md)
     * [Project initialization](telosys-cli/cli-getting-started/project-initialization.md)
-    * [Model creation](telosys-cli/cli-getting-started/model-creation/README.md)
+    * [Set up a model](telosys-cli/cli-getting-started/model-creation/README.md)
       * [New model from scratch](telosys-cli/cli-getting-started/model-creation/untitled-1.md)
       * [New model from database](telosys-cli/cli-getting-started/model-creation/new-model-from-database.md)
     * [Templates installation](telosys-cli/cli-getting-started/templates-installation.md)

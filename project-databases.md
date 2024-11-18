@@ -95,3 +95,11 @@ Once a database has been defined in "databases.yaml", it is recommended to test 
   **`cdb <dbid>`**<mark style="color:purple;">**`-cat`**</mark>
 
 When all checks are OK, you are ready to create a model from the database.
+
+
+
+### Create a new model from a database
+
+To create a new model from one of the databases defined in "databases.yaml" you just have to use the "nm" (New Model) command.
+
+See "[Model creation](dsl-model/model-creation.md)"

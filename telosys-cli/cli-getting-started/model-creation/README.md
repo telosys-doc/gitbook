@@ -1,14 +1,15 @@
-# Model creation
+# Set up a model
 
-Since version 4.0 Telosys manages on only one type of model : \
-the model based on the Telosys DSL (Domain-Specific Language).
+To generate application code, you need a **model** containing the **entities** of your business domain.
 
-There are 2 ways to create a Telosys model :&#x20;
+There are 3 ways to set up a Telosys model :&#x20;
 
-* **from scratch** : \
+* **create a new model from scratch** \
   an empty model in which you can then create the entities you need&#x20;
-* **from an existing relational database** : \
+* **create a new model from an existing relational database** : \
   a model created from the database schema (1 entity for each table)
+* **install an existing model from a depot** \
+  download and install a Git repository containing the model&#x20;
 
-
+For more information, see pages "[Model creation](../../../dsl-model/model-creation.md)" and "[Model installation](../../../dsl-model/model-installation.md)"
 
