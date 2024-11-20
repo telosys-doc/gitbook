@@ -2,8 +2,8 @@
 
 The most efficient way to use templates is to install existing bundles and then adapt them to the specific needs of the project.
 
-Bundles of template can be installed from a “depot”. \
-A "depot" contains several bundles, which are in fact Git repositories. \
+Bundles of templates can be installed from a “depot”. \
+A "depot" contains several bundles, which are actually Git repositories. \
 A "depot" can be a **GitHub organization** or a **GitHub user** (containing a Git repository for each bundle).
 
 ### Command "lbd" <a href="#command-lmd" id="command-lmd"></a>
