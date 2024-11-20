@@ -41,7 +41,7 @@ Example:  install all bundles with name containing "pyth"
 
 ```
 telosys#(mymodel.model)>ib pyth
-Installing 3 bundle(s) from GitHub...
+Installing 3 bundle(s) from depot...
  . 'python-persistence-sqlalchemy' : installed.
  . 'python-web-mvc-bottle' : installed.
  . 'python-web-rest-bottle' : installed.
