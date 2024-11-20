@@ -1,35 +1,14 @@
-# Templates installation
+# Set up a bundle of templates
 
 Once you have a model you need at least one **bundle of templates** to generate your code.
 
 The templates are organized in "bundles". A **"bundle"** is a set of templates designed to generate a particular kind of targets.
 
-Of course you can create your own templates from scatch, but the simplest way to start is to use existing templates.&#x20;
+Of course you can create your own templates from scatch, but the simplest way to start is to use existing templates. To do so, see "[Bundles installation](../../templates/bundles-installation.md)"
 
-Templates bundles can be downloaded from **GitHub** (each bundle is a "git repository").
 
-### Templates catalog configuration (GitHub account)
 
-By default the templates catalog points to  [https://github.com/telosys-templates](https://github.com/telosys-templates) &#x20;
 
-To see the current catalog use the **`gh`** ("GitHub") command without argument.
-
-You can change it by defining a new account or organization name where you will store your own templates.&#x20;
-
-Use**`gh new-catalog`**  to change the current catalog
-
-Examples :
-
-```
-telosys#(mymodel.model)>gh
-telosys-templates-v3
-
-telosys#(mymodel.model)>gh mycatalog
-GitHub store is now 'mycatalog'
-
-telosys#(mymodel.model)>gh
-mycatalog
-```
 
 ### List templates bundles available in GitHub catalog
 

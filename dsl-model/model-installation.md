@@ -16,6 +16,12 @@ The "**im**" command allows to install a model from the Depot"
 
 
 
+### Proxy configuration
+
+These commands must use Internet to reach the depot. \
+So, if you are using a **proxy** to access Internet, you must configure it in the project configuration file. \
+See "**Network proxy configuration**" in "[Project configuration](../configuration-and-variables.md)".
+
 
 
 ### Defining the depot containing the models
