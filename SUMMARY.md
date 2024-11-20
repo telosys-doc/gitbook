@@ -19,7 +19,7 @@
 * [Project configuration](configuration-and-variables.md)
 * [Project variables](project-variables.md)
 * [Project databases](project-databases.md)
-* [Models (entities)](dsl-model/README.md)
+* [Models & entities](dsl-model/README.md)
   * [Model structure](dsl-model/model-structure.md)
   * [Entity](dsl-model/entity.md)
   * [Attribute / Link](dsl-model/fields.md)
