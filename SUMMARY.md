@@ -32,6 +32,7 @@
 * [Bundles of templates](templates/README.md)
   * [Bundle structure](templates/bundle-of-templates.md)
   * [Bundles installation](templates/bundles-installation.md)
+  * [Bundles management](templates/bundles-management.md)
   * [Velocity language](templates/velocity-language.md)
   * [Velocity directives](templates/velocity-directives.md)
   * [Velocity object types](templates/velocity-objects.md)

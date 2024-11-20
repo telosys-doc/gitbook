@@ -12,23 +12,42 @@ The "**lbd**" command means "List Bundles available in the Depot".
 
 It can be used to see which bundles can be installed.
 
+Syntax:   **`lbd [bundle-name-part-1] [bundle-name-part-2] [bundle-name-part-N]`**
+
+For more convenience, you can use only a part of the bundle name. If several bundles contain this part in their name then they will all be listed.
+
 Examples:
 
 * **`lbd`**   -> show all available bundles&#x20;
-* **`lbd java`**  -> show all available bundles with “java” in their name
-* **`lbd java php`**  -> show all available bundles with “java” or "php" in their name
+* **`lbd java`**  -> show all available bundles with “_java_” in their name
+* **`lbd java php`**  -> show all available bundles with “_java_” or "_php_" in their name
 
 ### Command "ib" <a href="#command-im" id="command-im"></a>
 
-The "**ib**" command means "Install Bundle(s)"&#x20;
-
+The "**ib**" command means "Install Bundle(s)".\
 It allows to install one or more bundles from the Depot.
+
+Syntax:   **`ib bundle-name-part-1 [bundle-name-part-2] [bundle-name-part-N]`**
+
+For more convenience, you can use only a part of the bundle name. If several bundles contain this part in their name then they will all be installed.
 
 Examples:
 
-* **`ib php`**  -> install all bundles with “php” in their name
-* **`ib php java`** -> install all bundles with “php” or "java" in their name
+* **`ib php`**  -> install all bundles with “_php_” in their name
+* **`ib php java`** -> install all bundles with “_php_” or "_java_" in their name
 * **`ib *`** -> install all bundles&#x20;
+
+Example:  install all bundles with name containing "pyth"
+
+```
+telosys#(mymodel.model)>ib pyth
+Installing 3 bundle(s) from GitHub...
+ . 'python-persistence-sqlalchemy' : installed.
+ . 'python-web-mvc-bottle' : installed.
+ . 'python-web-rest-bottle' : installed.
+```
+
+
 
 Note: \
 When installing bundles with the “ib” command, only bundles that do not exist locally are installed.\
@@ -37,10 +56,10 @@ In this way, it is not possible to overwrite a local bundle that may contain spe
 Example:
 
 `Installing 4 bundle(s) from depot...` \
-`. 'java-domain-example' :`` `**`not installed (already exists)`**`.` \
-`. 'java-jdbc' :`` `**`not installed (already exists)`**`.` \
-`. 'java-jpa-entities' :`` `**`installed`**`.` \
-`. 'java-rest-springboot-jpa-basic' :`` `**`not installed (already exists)`**`.`
+`. 'java-domain-example' :`` `**`not installed (already exists)`** \
+`. 'java-jdbc' :`` `**`not installed (already exists)`** \
+`. 'java-jpa-entities' :`` `**`installed`** \
+`. 'java-rest-springboot-jpa-basic' :`` `**`not installed (already exists)`**
 
 
 
