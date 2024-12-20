@@ -36,6 +36,8 @@ You can also use the IDE settings to define Telosys as the terminal shell.
     (telosys command full path, with ".bat" extension on Windows)
   * Default tab name: **`Telosys`**
 
+<figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1734729617/JetBrains-Settings-Terminal-Telosys.png" alt=""><figcaption></figcaption></figure>
+
 
 
 By doing so, Telosys will be launched by default every time a new tab is opened in the terminal ( for example by clicking on “**`+`**” or with "**`Ctrl+Shift+T`**" )
