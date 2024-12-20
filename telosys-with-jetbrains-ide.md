@@ -21,6 +21,8 @@ The **`telosys`** command must be accessible via the **`PATH`** (an environment 
 You can also launch Telosys with the -h . parameter so that the "home" directory is set immediately.\
 Command:   **`telosys -h .`**&#x20;
 
+<div align="left"><figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1734732486/JetBrains-Terminal-Shell-Telosys.png" alt="" width="563"><figcaption></figcaption></figure></div>
+
 
 
 ### 2 - Terminal customization
@@ -38,7 +40,7 @@ You can also use the IDE settings to define Telosys as the terminal shell.
 
 Example:
 
-<div align="left"><figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1734729617/JetBrains-Settings-Terminal-Telosys.png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1734729617/JetBrains-Settings-Terminal-Telosys.png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 By doing so, Telosys will be launched by default every time a new tab is opened in the terminal ( for example by clicking on “**`+`**” or with "**`Ctrl+Shift+T`**" )
 
