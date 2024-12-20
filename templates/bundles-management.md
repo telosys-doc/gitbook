@@ -26,7 +26,7 @@ Examples:
 {% hint style="info" %}
 Once you have defined a **current model** and a **current bundle** \
 the Telosys prompt looks like this:\
-**`telosys#(model-name)[bundle-name]>`**
+&#xNAN;**`telosys#(model-name)[bundle-name]>`**
 {% endhint %}
 
 

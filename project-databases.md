@@ -80,19 +80,19 @@ Put the "**.jar**" file in  "<mark style="color:purple;">**TelosysTools/lib**</m
 Once a database has been defined in "databases.yaml", it is recommended to test the database configuration using the "**cdb**" command.
 
 * Check if it is possible to connect to the database\
-  **`cdb <dbid>`**
+  &#xNAN;**`cdb <dbid>`**
 * Check **tables** retrieved ->  **`-t`**\
-  **`cdb <dbid>`**<mark style="color:purple;">**`-t`**</mark>
+  &#xNAN;**`cdb <dbid>`**<mark style="color:purple;">**`-t`**</mark>
 * Check **columns** retrieved ->  **`-c`**\
-  **`cdb <dbid>`**<mark style="color:purple;">**`-c`**</mark>
+  &#xNAN;**`cdb <dbid>`**<mark style="color:purple;">**`-c`**</mark>
 * Check **primary keys** retrieved ->  **`-pk`**\
-  **`cdb <dbid>`**<mark style="color:purple;">**`-pk`**</mark>
+  &#xNAN;**`cdb <dbid>`**<mark style="color:purple;">**`-pk`**</mark>
 * Check **foreign keys** retrieved ->  **`-fk`**\
-  **`cdb <dbid>`**<mark style="color:purple;">**`-fk`**</mark>
+  &#xNAN;**`cdb <dbid>`**<mark style="color:purple;">**`-fk`**</mark>
 * Get database **shemas**  ->  **`-s`**\
-  **`cdb <dbid>`**<mark style="color:purple;">**`-s`**</mark>
+  &#xNAN;**`cdb <dbid>`**<mark style="color:purple;">**`-s`**</mark>
 * Get database **catalogs** ->  **`-cat`**\
-  **`cdb <dbid>`**<mark style="color:purple;">**`-cat`**</mark>
+  &#xNAN;**`cdb <dbid>`**<mark style="color:purple;">**`-cat`**</mark>
 
 When all checks are OK, you are ready to create a model from the database.
 

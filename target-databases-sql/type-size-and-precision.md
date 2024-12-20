@@ -79,7 +79,7 @@ This is how the precision value is determined:
 4. else  if the precision is not mandatory ("%p") for the SQL type\
    then the type is generated without precision, for example:\
    &#x20; \- **`numeric`**  for PostgreSQL \
-   &#x20; \- **`NUMBER` ** for Oracle&#x20;
+   &#x20; \- **`NUMBER`&#x20;**&#x20;for Oracle&#x20;
 5. else  precision is mandatory ("%P") and cannot be determined:\
    an error is thrown\
 

@@ -497,14 +497,14 @@ Scope : **attribute**  /  Since : **4.0.0**
 _**Deprecated** - Do not use - Use "**@MaxLen**" instead_
 
 _Defines the maximum acceptable size of the attribute value_.\
-_Scope : attribute  /_  Since : 2.0.0
+&#xNAN;_&#x53;cope : attribute  /_  Since : 2.0.0
 
 ### ~~@SizeMin(int)~~
 
 _**Deprecated** - Do not use - Use "**@MinLen**" instead_
 
 _Defines the minimum acceptable size of the attribute value_.\
-_Scope : attribute  /_  Since : 2.0.0
+&#xNAN;_&#x53;cope : attribute  /_  Since : 2.0.0
 
 ### @Transient
 
@@ -516,7 +516,7 @@ Scope : **attribute & link**  /  Since : **3.3.0**
 
 Marks the attribute as unique for the entity.
 
-Scope : **attribute**  /  Since : **4.0.0  **_**(experimental)**_
+Scope : **attribute**  /  Since : **4.0.0 &#x20;**_**(experimental)**_
 
 ### @UnsignedType
 

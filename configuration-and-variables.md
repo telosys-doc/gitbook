@@ -32,7 +32,7 @@ SpecificTemplatesFolder=/dir1/dir2
 
 
 
-### **"**SpecificModelsFolder**" -> specific location for models**&#x20;
+### **"**&#x53;pecificModelsFolde&#x72;**" -> specific location for models**&#x20;
 
 (since ver 4.2.0)
 
@@ -65,7 +65,7 @@ SpecificDestinationFolder=/dir1/dir2
 
 
 
-### **"**SpecificDepotForBundles**" -> specific "depot" for bundles**
+### **"**&#x53;pecificDepotForBundle&#x73;**" -> specific "depot" for bundles**
 
 (since ver 4.2.0)
 
@@ -90,7 +90,7 @@ SpecificDepotForBundles=github_current_user
 
 
 
-### **"**SpecificDepotForModels**" -> specific "depot" for models**
+### **"**&#x53;pecificDepotForModel&#x73;**" -> specific "depot" for models**
 
 (since ver 4.2.0)
 
