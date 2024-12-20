@@ -44,3 +44,4 @@ By doing so, Telosys will be launched by default every time a new tab is opened 
 
 ### 3 - Plugin installation
 
+See: [https://telosys.hashnode.dev/telosys-plugin-for-jetbrains-ide](https://telosys.hashnode.dev/telosys-plugin-for-jetbrains-ide)&#x20;
