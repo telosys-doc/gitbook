@@ -2,6 +2,8 @@
 
 For seamless integration of **Telosys** with a **JetBrains IDE** (IntelliJ, PyCharm, GoLand, PhpStorm, etc.), the simplest approach is to launch the telosys command in the IDE's integrated **terminal** and install the **plugin** that provides syntax highlighting for .entity files.
 
+<div align="left"><figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1734732906/JetBrains-Telosys-Plugin-and-Terminal_awccb7.png" alt=""><figcaption></figcaption></figure></div>
+
 
 
 ### 1 – Launching Telosys in the Terminal
