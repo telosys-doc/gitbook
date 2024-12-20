@@ -4,7 +4,7 @@ For seamless integration of **Telosys** with a **JetBrains IDE** (IntelliJ, PyCh
 
 
 
-1 – Launching Telosys in the Terminal
+### 1 – Launching Telosys in the Terminal
 
 **Prerequisite**: \
 The **`telosys`** command must be accessible via the **`PATH`** (an environment variable of the shell you are using; see "Telosys installation" for details).
@@ -20,4 +20,19 @@ The **`telosys`** command must be accessible via the **`PATH`** (an environment 
 **Note**: \
 You can also launch Telosys with the -h . parameter so that the "home" directory is set immediately.\
 Command:   **`telosys -h .`**&#x20;
+
+
+
+### 2 - Terminal customization
+
+You can also use the IDE settings to define Telosys as the terminal shell.
+
+**Steps**:
+
+* Open the "**Settings**" (Ctrl + Alt + S)
+* Go to  "**Tools / Terminal**"
+* Define Telosys as the default shell :&#x20;
+  * Shell path:  **`aaa/bbb/ccc/telosys.bat -h .`**\
+    (telosys command full path, with ".bat" extension on Windows)
+  * Default tab name: **`Telosys`**
 
