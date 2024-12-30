@@ -4,7 +4,7 @@ Once you have a model you need at least one **bundle of templates** to generate 
 
 The templates are organized in "bundles". A **"bundle"** is a set of templates designed to generate a particular kind of targets.
 
-Of course you can create your own templates from scatch, but the simplest way to start is to use existing templates. To do so, see "[Bundles installation](../../templates/bundles-installation.md)"
+Of course you can create your own templates from scatch, but the simplest way to start is to use existing templates. To do so, see "[Bundles installation](../../bundles/bundles-installation.md)"
 
 
 
@@ -12,4 +12,4 @@ Of course you can create your own templates from scatch, but the simplest way to
 
 Bundles management is based on "**Bundle commands**" and "**Template commands**".
 
-See page  "[Bundles management](../../templates/bundles-management.md)".
+See page  "[Bundles management](../../bundles/bundles-management.md)".

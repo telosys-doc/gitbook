@@ -51,5 +51,5 @@ $attrib.tagValue("OpenAPIFormat")
 #end
 ```
 
-See [Telosys objects](../templates/telosys-objects.md) reference guide for detailed information \
+See [Telosys objects](../bundles/telosys-objects.md) reference guide for detailed information \
 (objects $entity, $attribute and $link).
