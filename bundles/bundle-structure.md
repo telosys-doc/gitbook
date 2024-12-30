@@ -6,12 +6,14 @@ A "bundle" is just a set of "templates" (and sometimes resources) grouped togeth
 
 Thus it is possible to have clearly defined groups of templates for each part of the code to be generated (persistence, REST-API, DTO, HTML pages, testing, etc)
 
+<div align="left"><figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1735580497/bundle-struct-001.png" alt=""><figcaption></figcaption></figure></div>
+
 ### What's in a bundle ?
 
 Each bundle folder contains:
 
 * 1 file "**templates.cfg**" (mandatory)
-* 1 file "**README.md**" (to provide information about the bundle)
+* 1 file "**README.md**" (to provide information about the bundle, optional)
 * 1..N **templates** (Velocity "**.vm**" files)
 * 0..N **resources** files (static files)
 * any other useful file for the bundle
