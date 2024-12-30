@@ -14,7 +14,8 @@ Each model or bundle is a directory, so you can use it as Git repository.
 
 In the model/bundle directory:&#x20;
 
-* Initialize the Git repository with initial branch (for example “master”)\
+* If the directory is not already a Git repository (for example after a "git clone")\
+  initialize the Git repository with initial branch (for example “master”)\
   `$`**`git init -b master`**
 * You can also define your user name and email for the current repository (optional)\
   `$`**`git config user.name "Your Name"`**\
