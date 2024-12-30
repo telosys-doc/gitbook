@@ -22,6 +22,10 @@ Examples:
 * **`lbd java`**  -> show all available bundles with “_java_” in their name
 * **`lbd java php`**  -> show all available bundles with “_java_” or "_php_" in their name
 
+<figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1735566885/telosys-cli-command-lbd.png" alt=""><figcaption></figcaption></figure>
+
+
+
 ### Command "ib" <a href="#command-im" id="command-im"></a>
 
 The "**ib**" command means "Install Bundle(s)".\
