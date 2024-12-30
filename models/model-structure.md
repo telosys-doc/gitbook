@@ -6,6 +6,8 @@ Since version 4.0 each model is a **directory** located in "<mark style="color:p
 
 The **directory name** is the **model name**.
 
+<div align="left"><figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1735580746/model-struct-001.png" alt=""><figcaption></figcaption></figure></div>
+
 A model directory contains&#x20;
 
 * a file "<mark style="color:purple;">**model.yaml**</mark>"&#x20;
