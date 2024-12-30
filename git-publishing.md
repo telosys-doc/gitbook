@@ -4,6 +4,8 @@ Once you've created (or customized) a **model** or a **bundle**, you might want 
 
 Here's the procedure to follow...
 
+NB: all the following command examples are meant to be used with a standard operating-system shell (not in Telosys-CLI )
+
 ### 1) Prepare the local Git repository&#x20;
 
 Each model or bundle is a directory, so you can use it as Git repository.
@@ -13,7 +15,7 @@ In the model/bundle directory:&#x20;
 * Initialize the Git repository with initial branch (for example “master”)\
   `$`**`git init -b master`**
 * You can also define your user name and email for the current repository (optional)\
-  `$`**`git config user.name "Your Name"`** \
+  `$`**`git config user.name "Your Name"`**\
   `$`**`git config user.email your@email.com`**
 * Add all the files to be committed (usually all files)\
   `$`**`git add .`**
