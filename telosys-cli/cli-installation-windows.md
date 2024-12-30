@@ -50,19 +50,19 @@ Open a command window ( open the Start Search and enter "**cmd**" )
 Move to the directory where you want to use Telosys\
 &#x20;   `X:\>`**`cd myproject`**
 
-Launch Telosys-CLI using **`tt`** command (`tt.bat` )   \
-or **`telosys`** command (`telosys.bat`  since ver 4.2.0)\
-&#x20;  `X:\myproject>`**`tt`**\
-&#x20;  `X:\myproject>`**`telosys`**
+Launch Telosys-CLI using **`telosys`** command (`telosys.bat`)\
+or **`tt`** command (`tt.bat`)  for older versions (before version 4.2.0)\
+&#x20;  `X:\myproject>`**`telosys`**\
+
 
 ### 5) You can also create a shortcut on your desktop
 
 For more convenience you can create a shortcut on the desktop
 
 To launch Telosys in its own directory :  \
-&#x20;   `X:\telosys-dir\tt.bat`
+&#x20;   `X:\telosys-dir\telosys.bat`
 
 To launch Telosys in a specific directory (eg a project directory) use '**-h**' option : \
-&#x20;   `X:\telosys-dir\tt.bat -h X:\myproject-dir`
+&#x20;   `X:\telosys-dir\telosys.bat -h X:\myproject-dir`
 
 You can use the "telosys.ico" file as the shortcut icon.
