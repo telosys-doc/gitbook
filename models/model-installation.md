@@ -41,6 +41,14 @@ Example:  install all models with name containing "_ord_"
 
 <div align="left"><figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1735579923/telosys-cli-command-im-001.png" alt=""><figcaption></figcaption></figure></div>
 
+Note: \
+When installing models with the “im” command, only models that do not exist locally are installed.\
+In this way, it is not possible to overwrite a local model.
+
+Example:
+
+<div align="left"><figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1735580186/telosys-cli-command-im-002.png" alt=""><figcaption></figcaption></figure></div>
+
 ### Proxy configuration
 
 These commands must use Internet to reach the depot. \
