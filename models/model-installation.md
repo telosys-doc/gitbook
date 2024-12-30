@@ -24,9 +24,22 @@ Examples:
 
 ### Command "im"&#x20;
 
-The "**im**" command allows to install a model from the Depot"
+The "**im**" command means "Install Model(s)".\
+It allows to install one or more models from the Depot.
 
+Syntax:   **`im model-name-part-1 [model-name-part-2] [model-name-part-N]`**
 
+For more convenience, you can use only a part of the model name. If several bundles contain this part in their name then they will all be installed.
+
+Examples:
+
+* **`im ord`** ->  install all models with “_ord_” in their name
+* **`im ord car`** -> ->  install all models with “_ord_” or "_car_" in their name
+* **`im *`** -> install all models&#x20;
+
+Example:  install all models with name containing "_ord_"
+
+<div align="left"><figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1735579923/telosys-cli-command-im-001.png" alt=""><figcaption></figcaption></figure></div>
 
 ### Proxy configuration
 
