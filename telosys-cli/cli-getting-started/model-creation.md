@@ -11,7 +11,7 @@ There are 3 ways to set up a Telosys model :&#x20;
 * **install an existing model from a depot** \
   download and install a Git repository containing the model&#x20;
 
-For more information, see pages "[Model creation](../../dsl-model/model-creation.md)" and "[Model installation](../../dsl-model/model-installation.md)"
+For more information, see pages "[Model creation](../../models/model-creation.md)" and "[Model installation](../../models/model-installation.md)"
 
 
 
@@ -19,7 +19,7 @@ For more information, see pages "[Model creation](../../dsl-model/model-creation
 
 Models management is based on "Model commands" and "Entity commands".
 
-See page "[Model management](../../dsl-model/models-management.md)".
+See page "[Model management](../../models/models-management.md)".
 
 
 
