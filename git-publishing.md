@@ -1,4 +1,4 @@
-# Git publishing
+# Publish with Git
 
 Once you've created (or customized) a **model** or a **bundle**, you might want to publish it as a **Git repository** so that you can share it and reuse it later from anywhere.
 
