@@ -31,7 +31,7 @@
   * [Model installation](models/model-installation.md)
   * [Models management](models/models-management.md)
 * [Bundles of templates](bundles/README.md)
-  * [Bundle structure](bundles/bundle-of-templates.md)
+  * [Bundle structure](bundles/bundle-structure.md)
   * [Bundle creation](bundles/bundle-creation.md)
   * [Bundles installation](bundles/bundles-installation.md)
   * [Bundles management](bundles/bundles-management.md)

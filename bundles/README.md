@@ -1,4 +1,4 @@
-# Bundles (templates)
+# Bundles of templates
 
 Telosys code generation is based on "**templates**".&#x20;
 
@@ -12,7 +12,7 @@ A "**bundle of templates**" is a set of templates files designed to generate dif
 
 For more information about "**bundles**" see:
 
-* [Bundles of templates](bundle-of-templates.md)
+* [Bundles of templates](bundle-structure.md)
 
 ### Sample template bundles
 
