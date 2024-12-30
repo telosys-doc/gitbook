@@ -71,50 +71,7 @@ What you can do:
   \- Create a "**README.md**" file \
   \- Create (or copy/paste/modify) the bundle "**.vm**" files&#x20;
 
-### How to publish a bundle?
 
-Once you've created (or customized) a bundle, you might want to publish it as a Git repository so that you can reuse it later from anywhere.
 
-Here's the procedure to follow:
 
-#### 1) Prepare the local Git repository&#x20;
 
-The bundle folder will become a Git project.\
-So, in the bundle folder...&#x20;
-
-* Initialize the Git repository with initial branch “master” \
-  `$ git init -b master`
-* You can also define your user name and email for the current repo (optional)\
-  `$ git config user.name "Your Name"` \
-  `$ git config user.email your@email.com`
-* Add all the bundle files to be committed \
-  `$ git add .`
-* Commit the files \
-  `$ git commit -m "Initial commit"`
-
-#### 2) Publish on remote repository&#x20;
-
-On the **remote** Git server (GitHub, GitLab, your own server, etc):\
-\- if you don't already have a repository to host the bundle, create it.\
-\- copy the repository URL\
-For example : `https://github.com/xxx/yyy.git`  \
-or `https://gitlab.com/xxx/yyy.git`&#x20;
-
-On the **local** bundle folder:
-
-* Add the remote repository as a new remote (with name “origin”)\
-  `$ git remote add origin https://xxx/yyy/repo-name.git`
-* Check Git remote\
-  `$ git remote -v`\
-  `origin  https://xxx/yyy/repo-name.git (fetch)`\
-  `origin  https://xxx/yyy/repo-name.git (push)`
-* Push to remote “origin” (the GitHub repository) \
-  `$ git push origin master`\
-  (if not authenticated Git ask for user & password)
-
-And that's all. \
-The remote Git repository contains now all the bundle files. \
-The bundle is now installable by Telosys on any workstation.
-
-See also :\
-[Adding an existing project to GitHub using the command line](https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line)
