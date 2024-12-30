@@ -32,3 +32,8 @@ You can define your own depot for models -> see "SpecificDepotForModels" in [Pro
 
 Use the "**cfg**" command to see the current configuration including the "depot for models".
 
+
+
+### How to install a model with Git clone?
+
+See  [Install with Git](../install-with-git.md) &#x20;
