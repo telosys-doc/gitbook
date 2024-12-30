@@ -4,7 +4,9 @@ Once you've created (or customized) a **model** or a **bundle**, you might want 
 
 Here's the procedure to follow...
 
-NB: all the following command examples are meant to be used with a standard operating-system shell (not in Telosys-CLI )
+{% hint style="info" %}
+All the following command examples are meant to be used with a standard operating-system shell (not in Telosys-CLI )
+{% endhint %}
 
 ### 1) Prepare the local Git repository&#x20;
 
