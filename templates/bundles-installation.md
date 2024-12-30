@@ -22,7 +22,7 @@ Examples:
 * **`lbd java`**  -> show all available bundles with “_java_” in their name
 * **`lbd java php`**  -> show all available bundles with “_java_” or "_php_" in their name
 
-<figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1735566885/telosys-cli-command-lbd.png" alt=""><figcaption></figcaption></figure>
+<div align="left"><figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1735566885/telosys-cli-command-lbd.png" alt=""><figcaption></figcaption></figure></div>
 
 
 
@@ -41,17 +41,9 @@ Examples:
 * **`ib php java`** -> install all bundles with “_php_” or "_java_" in their name
 * **`ib *`** -> install all bundles&#x20;
 
-Example:  install all bundles with name containing "pyth"
+Example:  install all bundles with name containing "java"
 
-```
-telosys#(mymodel.model)>ib pyth
-Installing 3 bundle(s) from depot...
- . 'python-persistence-sqlalchemy' : installed.
- . 'python-web-mvc-bottle' : installed.
- . 'python-web-rest-bottle' : installed.
-```
-
-
+<div align="left"><figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1735567501/telosys-cli-command-ib-001.png" alt=""><figcaption></figcaption></figure></div>
 
 Note: \
 When installing bundles with the “ib” command, only bundles that do not exist locally are installed.\
@@ -59,11 +51,7 @@ In this way, it is not possible to overwrite a local bundle that may contain spe
 
 Example:
 
-`Installing 4 bundle(s) from depot...` \
-`. 'java-domain-example' :`` `**`not installed (already exists)`** \
-`. 'java-jdbc' :`` `**`not installed (already exists)`** \
-`. 'java-jpa-entities' :`` `**`installed`** \
-`. 'java-rest-springboot-jpa-basic' :`` `**`not installed (already exists)`**
+<div align="left"><figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1735567510/telosys-cli-command-ib-002.png" alt=""><figcaption></figcaption></figure></div>
 
 
 
