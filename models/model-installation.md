@@ -6,9 +6,21 @@ A "depot" is a collection of Git repositories, each repository is a "model".
 
 ### Command "lmd"
 
-The "**lmd**" command can be used to "List Models available in the Depot"
+The "**lmd**" command can be used to "List Models available in the Depot".
 
+It can be used to see which models can be installed.&#x20;
 
+Syntax: **`lmd [model-name-part-1] [model-name-part-2] [model-name-part-N]`**
+
+For more convenience, you can use only a part of the model name. If several models contain this part in their name then they will all be listed.
+
+Examples:
+
+* **`lmd`**   -> show all available models
+* **`lmd ord`**  -> show all available models with “_ord_” in their name
+* **`lmd ord car`**  -> show all available models with “_ord_” or "_car_" in their name
+
+<div align="left"><figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1735579247/telosys-cli-command-lmd.png" alt=""><figcaption></figcaption></figure></div>
 
 ### Command "im"&#x20;
 
