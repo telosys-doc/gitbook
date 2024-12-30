@@ -32,25 +32,6 @@ The "templates.cfg" file is used to launch different types of processing defined
 * **"R"** : \
   simple **resources files** copy in a destination folder&#x20;
 
-### How to install a bundle?
-
-
-
-
-
-#### :heavy\_check\_mark:Installation from any Git remote repository with Git&#x20;
-
-You can install a bundle from any Git repository just using **Git commands**.
-
-Get the Git repository URL for the bundle to install (on your remote Git server).\
-For example : `http://server-name/xxx/yyy/bundle-name.git`&#x20;
-
-Clone the Git repository in the Telosys project **templates** **directory**.\
-For example : \
-`git clone http://server-name/xxx/yyy/bundle-name.git`&#x20;
-
-There you have it. You can now use the bundle to generate your code and eventually modify it and update it on the remote Git repository (with git commit and push).
-
 ### How to customize a bundle?
 
 Telosys was designed to allow users to customize code generation. So, if you reuse existing bundles, you will probably want to change some its parts.
@@ -62,7 +43,9 @@ What you can do:
 * delete certain templates (in this case you can only delete the line in "templates.cfg")
 * add new resources (static files) to be copied&#x20;
 
+### How to use Git to clone and push a bundle ?
 
+See  [Install with Git](../install-with-git.md)  and  [Publish with Git](../git-publishing.md)
 
 
 
