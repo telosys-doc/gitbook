@@ -73,3 +73,6 @@ Use the "**cfg**" command to see the current configuration including the current
 
 
 
+### How to install a bundle with Git clone?
+
+See  [Install with Git](../install-with-git.md) &#x20;
