@@ -20,7 +20,7 @@ After "git clone" the model or bundle is installed and ready to use.
 
 It works as a standard model/bundle but it's a Git repository so it is ready for "commit" and "push" to publish your changes.
 
-
+See also : [Publish with Git](git-publishing.md)
 
 
 
