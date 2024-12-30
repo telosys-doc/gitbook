@@ -1,4 +1,4 @@
-# Bundle of templates
+# Bundle structure
 
 A Telosys project may require a lot of templates, that's why the templates are organized in "bundles".
 
@@ -34,25 +34,9 @@ The "templates.cfg" file is used to launch different types of processing defined
 
 ### How to install a bundle?
 
-Whatever your Telosys tool (CLI or Eclipse), it allows you to install remote bundles from GitHub.
 
-#### :heavy\_check\_mark: Installation from GitHub with Telosys-CLI&#x20;
 
-Use the following commands :
 
-* "**gh**" ("GitHub") to print/change the current GitHub account
-* "**lb**" ("list bundles") to see the bundles already present in the current project
-* "**ib**" ("install bundle") to install new bundle(s) from the remote Git repository
-
-#### :heavy\_check\_mark:Installation from GitHub with Telosys Eclipse plugin
-
-In the project properties / "**Telosys tools**" \
-\- Select "**Templates**" tab\
-\- Choose your GitHub account\
-\- Click "Get available bundles"\
-\- Select the desired bundles\
-\- Click "Download selected bundle(s)" \
-&#x20; with "Install downloaded bundle(s)" checked
 
 #### :heavy\_check\_mark:Installation from any Git remote repository with Git&#x20;
 
