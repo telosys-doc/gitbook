@@ -42,7 +42,7 @@ telosys#>
 
 
 
-### Initialize the Telosys environment&#x20;
+### Initialize the Telosys project folders and files
 
 Once the "home directory" is defined, you can initialize the Telosys projet.
 
