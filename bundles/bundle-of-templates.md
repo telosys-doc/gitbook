@@ -62,15 +62,6 @@ What you can do:
 * delete certain templates (in this case you can only delete the line in "templates.cfg")
 * add new resources (static files) to be copied&#x20;
 
-### How to create a new bundle?
-
-* Create the **bundle folder** in "TelosysTools/templates"\
-  (the folder name is the bundle name)
-* In the new folder :\
-  \- Copy an existing "**templates.cfg**" file and adapt it\
-  \- Create a "**README.md**" file \
-  \- Create (or copy/paste/modify) the bundle "**.vm**" files&#x20;
-
 
 
 
