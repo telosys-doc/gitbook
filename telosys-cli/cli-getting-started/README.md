@@ -2,12 +2,12 @@
 
 To start using Telosys, simply follow these 4 steps:
 
-1. [Project initialization](./#id-1-project-initialization)&#x20;
+1. [Initialize a project ](./#id-1-initialize-a-project)
 2. [Set up a model](./#id-2-set-up-a-model)&#x20;
 3. [Set up a bundle of templates](./#id-3-set-up-a-bundle-of-templates)
-4. [Code generation](./#id-4-generate-your-code)
+4. [Generate your code](./#id-4-generate-your-code)
 
-## 1 - Project initialization
+## 1 - Initialize a project
 
 When Telosys-CLI starts nothing is defined ( no "home directory", no "model", no "bundle", etc...)
 
