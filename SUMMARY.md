@@ -10,7 +10,7 @@
     * [Project initialization](telosys-cli/cli-getting-started/project-initialization.md)
     * [Set up a model](telosys-cli/cli-getting-started/set-up-model.md)
     * [Set up a bundle of templates](telosys-cli/cli-getting-started/set-up-bundle.md)
-    * [Code generation](telosys-cli/cli-getting-started/code-generation.md)
+    * [Generate your code](telosys-cli/cli-getting-started/generate-code.md)
 * [Telosys with VSCode](telosys-with-vscode/README.md)
   * [Extension installation](telosys-with-vscode/extension-installation.md)
   * [VSCode settings](telosys-with-vscode/vscode-settings.md)
