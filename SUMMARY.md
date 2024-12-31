@@ -67,3 +67,4 @@
   * [Eclipse plugin installation](telosys-with-eclipse/eclipse-plugin-installation.md)
   * [Eclipse customization](telosys-with-eclipse/eclipse-configuration.md)
   * [Telosys 3 database model](telosys-with-eclipse/telosys-3-database-model.md)
+* [Code generation](code-generation.md)
