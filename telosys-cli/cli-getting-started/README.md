@@ -2,10 +2,10 @@
 
 To start using Telosys, simply follow these 4 steps:
 
-1. [Project initialization ](project-initialization.md)
-2. [Model creation](set-up-model.md)&#x20;
-3. [Templates installation](set-up-bundle.md)&#x20;
-4. [Code generation](generate-code.md)
+1. [Project initialization](./#id-1-project-initialization)&#x20;
+2. [Set up a model](./#id-2-set-up-a-model)&#x20;
+3. [Set up a bundle of templates](./#id-3-set-up-a-bundle-of-templates)
+4. [Code generation](./#id-4-generate-your-code)
 
 ## 1 - Project initialization
 
@@ -19,7 +19,7 @@ telosys>env
 
 With the command **`h`** you can see that the "home directory" is not yet defined.
 
-### Set the "home directory"
+### 1.1 - Set the "home directory"
 
 When Telosys-CLI starts its current directory is the directory where it has been launched
 
@@ -49,7 +49,7 @@ telosys#>
 
 
 
-### Initialize the Telosys project folders and files
+### 1.2 - Initialize the Telosys project folders and files
 
 Once the "home directory" is defined, you can initialize the Telosys projet.
 
@@ -63,7 +63,7 @@ This command creates the "**TelosysTools**" folder containing all the Telosys fi
 
 
 
-### Configure the project&#x20;
+### 1.3 - Configure the project&#x20;
 
 Each project can be configured, for example, to define project-specific variables or to define the directory where the generated files must be created.
 
@@ -110,3 +110,15 @@ Of course you can create your own templates from scatch, but the simplest way to
 To manage your bundles of templates you can "**Bundle commands**" and "**Template commands**".\
 See "[Bundles management](../../bundles/bundles-management.md)".
 
+
+
+## 4 - Generate your code
+
+Once you have a **valid model** and a least one **bundle of templates**, you are **ready to generate your code**.
+
+To generate your code you can use the following commands:
+
+* **`gen`** to generate code with the current model and the current bundle
+* **`genb`** to generate code in "batch mode" (since ver 4.1.0) with multiple models and/or bundles
+
+See "[Code generation](../../code-generation/)".
