@@ -2,10 +2,10 @@
 
 To start using Telosys, simply follow these 4 steps:
 
-1. [Initialize a project ](./#id-1-initialize-a-project)
-2. [Set up a model](./#id-2-set-up-a-model)&#x20;
-3. [Set up a bundle of templates](./#id-3-set-up-a-bundle-of-templates)
-4. [Generate your code](./#id-4-generate-your-code)
+1. [Initialize a project ](cli-getting-started.md#id-1-initialize-a-project)
+2. [Set up a model](cli-getting-started.md#id-2-set-up-a-model)&#x20;
+3. [Set up a bundle of templates](cli-getting-started.md#id-3-set-up-a-bundle-of-templates)
+4. [Generate your code](cli-getting-started.md#id-4-generate-your-code)
 
 ## 1 - Initialize a project
 
@@ -73,7 +73,7 @@ To print the current configuration, use the **`cfg`** command.
 
 To edit the configuration file with the Telosys-CLI default editor use **`ecfg`** command.
 
-For more information about project configuration see [Configuration & variables](../../configuration-and-variables.md).
+For more information about project configuration see [Configuration & variables](../configuration-and-variables.md).
 
 If you want to try Telosys quickly you can continue with the default configuration.
 
@@ -92,10 +92,10 @@ There are 3 ways to set up a Telosys model :&#x20;
 * **install an existing model from a depot** \
   download and install a Git repository containing the model&#x20;
 
-For more information, see pages "[Model creation](../../models/model-creation.md)" and "[Model installation](../../models/model-installation.md)"
+For more information, see pages "[Model creation](../models/model-creation.md)" and "[Model installation](../models/model-installation.md)"
 
 To manage your model and its entities you can use "**Model commands**" and "**Entity commands**".\
-See "[Model management](../../models/models-management.md)".
+See "[Model management](../models/models-management.md)".
 
 
 
@@ -105,10 +105,10 @@ Once you have a model you need at least one **bundle of templates** to generate 
 
 The templates are organized in "bundles". A **"bundle"** is a set of templates designed to generate a particular kind of targets.
 
-Of course you can create your own templates from scatch, but the simplest way to start is to use existing templates. To do so, see "[Bundles installation](../../bundles/bundles-installation.md)"
+Of course you can create your own templates from scatch, but the simplest way to start is to use existing templates. To do so, see "[Bundles installation](../bundles/bundles-installation.md)"
 
 To manage your bundles of templates you can "**Bundle commands**" and "**Template commands**".\
-See "[Bundles management](../../bundles/bundles-management.md)".
+See "[Bundles management](../bundles/bundles-management.md)".
 
 
 
@@ -121,4 +121,4 @@ To generate your code you can use the following commands:
 * **`gen`** to generate code with the current model and the current bundle
 * **`genb`** to generate code in "batch mode" (since ver 4.1.0) with multiple models and/or bundles
 
-See "[Code generation](../../code-generation/)".
+See "[Code generation](../code-generation/)".
