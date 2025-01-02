@@ -17,7 +17,7 @@ To define your own depots on GitHub see "[Project configuration](../configuratio
 
 ## GitHub Personal Access Token
 
-Telosys uses the GitHub REST API ( [https://docs.github.com/en/rest](https://docs.github.com/en/rest) ) to get the models or bundles available for installation.
+Telosys uses the GitHub REST API ( [https://docs.github.com/en/rest](https://docs.github.com/en/rest) ) to get the models and bundles available for installation.
 
 This API has “rate limits” which can be reached quite quickly if several users share the same external IP address (which is usually the case with a corporate proxy).
 
@@ -27,11 +27,19 @@ With a "Personal Acces Token" the limit increased from 50 to 5000 requests for e
 
 Since version 4.2.0 you can use the command "**ght**" ("GitHub Token") to define (or remove) a "Personal Acces Token" that Telosys will use to call the GitHub API.
 
+Using a Personal Access Token can also give you access to private repositories (depending on your rights).
+
+
+
+
+
 **Step 1 - Define your Personal Acces Token in GitHub**&#x20;
 
 See GitHub documentation : "[Managing your personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)"
 
-Creating a personal access token (classic) is sufficient
+Creating a personal access token (classic) is sufficient.
+
+Copy the token so that you can use it with Telosys later.
 
 **Step 2 - Use your Personal Acces Token with Telosys**
 
