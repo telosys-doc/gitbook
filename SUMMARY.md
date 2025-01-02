@@ -59,6 +59,7 @@
 * [Telosys with Git](telosys-with-git/README.md)
   * [Install with Git](telosys-with-git/install-with-git.md)
   * [Publish with Git](telosys-with-git/publish-with-git.md)
+  * [GitHub usage](telosys-with-git/github-usage.md)
 * [Support the project](support-the-project.md)
 * [How to contribute](how-to-contribute.md)
 * [Sponsors](sponsors.md)
