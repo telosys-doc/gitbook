@@ -47,7 +47,7 @@ What you can do:
 
 ### How to use Git to clone and push a bundle ?
 
-See  [Install with Git](../install-with-git.md)  and  [Publish with Git](../git-publishing.md)
+See  [Install with Git](../telosys-with-git/install-with-git.md)  and  [Publish with Git](../telosys-with-git/publish-with-git.md)
 
 
 

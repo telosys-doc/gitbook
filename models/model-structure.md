@@ -30,5 +30,5 @@ Each ".entity" file defines an entity, see [Entity](entity.md) page for more inf
 
 ### How to use Git to clone and push a model?
 
-See  [Install with Git](../install-with-git.md)  and  [Publish with Git](../git-publishing.md)
+See  [Install with Git](../telosys-with-git/install-with-git.md)  and  [Publish with Git](../telosys-with-git/publish-with-git.md)
 
