@@ -2,6 +2,17 @@
 
 ## GitHub depot configuration
 
+It's possible to define 3 types of depot:
+
+* a GitHub organization:  \
+  &#xNAN;**`github_org`**  + "**`:`** " + _**`organization-name`**_
+* a GitHub user: \
+  &#xNAN;**`github_user`**  + " **`:`**" + _**`user-name`**_
+* the GitHub current user (authenticated by the current personal acces token): \
+  &#xNAN;**`github_current_user`**&#x20;
+
+To define your own depots on GitHub see "[Project configuration](../configuration-and-variables.md)".
+
 
 
 ## GitHub Personal Access Token
