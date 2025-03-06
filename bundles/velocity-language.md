@@ -123,16 +123,7 @@ Examples:
 
 Examples (showing different operators):
 
-| Operator                            | Symbol | Text | Example                |
-| ----------------------------------- | ------ | ---- | ---------------------- |
-| Equals / number                     | ==     | eq   | `#if( $foo == 42 )`    |
-| Equals / string                     | ==     | eq   | `#if( $foo == "bar" )` |
-| Equals / object                     | ==     | eq   | `#if( $foo == $bar )`  |
-| Not Equals                          | !=     | ne   | `#if( $foo != $bar )`  |
-| Greater Than                        | >      | gt   | `#if( $foo > 42 )`     |
-| Less Than                           | <      | lt   | `#if( $foo < 42 )`     |
-| <p>Greater Than <br>or Equal To</p> | >=     | ge   | `#if( $foo >= 42 )`    |
-| <p>Less Than <br>or Equal To</p>    | <=     | le   | `#if( $foo <= 42 )`    |
+<table data-header-hidden><thead><tr><th width="192.20001220703125">Operator</th><th width="119.2000732421875">Symbol</th><th width="95.60009765625">Text</th><th>Example</th></tr></thead><tbody><tr><td>Operator</td><td>Symbol</td><td>Text</td><td>Example</td></tr><tr><td>Equals / number</td><td>==</td><td>eq</td><td><code>#if( $foo == 42 )</code></td></tr><tr><td>Equals / string</td><td>==</td><td>eq</td><td><code>#if( $foo == "bar" )</code></td></tr><tr><td>Equals / object </td><td>==</td><td>eq</td><td><code>#if( $foo == $bar )</code></td></tr><tr><td>Not Equals</td><td>!=</td><td>ne</td><td><code>#if( $foo != $bar )</code></td></tr><tr><td>Greater Than</td><td>></td><td>gt</td><td><code>#if( $foo > 42 )</code></td></tr><tr><td>Less Than</td><td>&#x3C;</td><td>lt</td><td><code>#if( $foo &#x3C; 42 )</code></td></tr><tr><td>Greater Than <br>or Equal To</td><td>>=</td><td>ge</td><td><code>#if( $foo >= 42 )</code></td></tr><tr><td>Less Than <br>or Equal To</td><td>&#x3C;=</td><td>le</td><td><code>#if( $foo &#x3C;= 42 )</code></td></tr></tbody></table>
 
 Note:\
 The == operator can be used to compare numbers, strings, objects of the same class, or objects of different classes. In the last case (when objects are of different classes), the toString() method is called on each object and the resulting Strings are compared.
@@ -141,11 +132,7 @@ The == operator can be used to compare numbers, strings, objects of the same cla
 
 ### Logical operators
 
-| Operator    | Symbol | Text |
-| ----------- | ------ | ---- |
-| Logical AND | &&     |  and |
-| Logical OR  | \|\|   |  or  |
-| Logical NOT | !      | not  |
+<table data-header-hidden><thead><tr><th width="220.53334554036456">Operator</th><th width="165.4000244140625">Symbol</th><th>Text</th></tr></thead><tbody><tr><td>Operator</td><td>Symbol</td><td>Text</td></tr><tr><td>Logical AND</td><td>&#x26;&#x26;</td><td> and</td></tr><tr><td>Logical OR</td><td>||</td><td> or</td></tr><tr><td>Logical NOT</td><td>!</td><td>not</td></tr></tbody></table>
 
 Examples :
 
