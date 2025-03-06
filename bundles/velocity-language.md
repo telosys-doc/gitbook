@@ -36,7 +36,7 @@ Current entity is ${entity.name}
 
 ## Comments
 
-A line starting with **"##"** is a comment. \
+A part of line starting with **"##"** is a single line comment. \
 All lines between "**#\***" and **"\*#"** are a comment block.
 
 ```
@@ -46,6 +46,19 @@ All lines between "**#\***" and **"\*#"** are a comment block.
 This is a multi-lines comment
 with 1 to N lines
 *#
+```
+
+## Unparsed content
+
+All lines between "**#\[\[**" and **"]]#"** are not parsed by Velocity, they are rendered as is.\
+So characters like "#" or "$" can be used anywhere
+
+```
+#[[
+This part is not parsed, it is rendered as text (without Velocity interpretation)
+Blablabla #include blabla
+#set #break #if  $a 
+]]#
 ```
 
 ## Literals
