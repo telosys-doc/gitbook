@@ -11,19 +11,30 @@ For more information about the Velocity Templates Language (VTL) see the officia
 
 A template is a text file mixing fixed parts and dynamic parts based on references to variables and objects. A **reference** to a variable or an object starts with "**$**".&#x20;
 
+⇒  **Shorthand Reference Notation**
+
 Example :&#x20;
 
 * **$foo**  : content of **variable** "_foo_"&#x20;
 * **$customer.address** : get **property** "_address_" in object "_customer_"&#x20;
 * **$person.isVIP()** : call **method** "_isVIP()_" in object "_person_"
 
-In some cases "**Formal Reference Notation**"  with "**${xxx}**" is required to avoid ambiguities.&#x20;
+**⇒  Formal Reference Notation**&#x20;
+
+This notation uses "**{**" and "**}**" to clearly delimit the beginning and end of the reference name.\
+It can be used to avoid ambiguities.&#x20;
 
 Examples :
 
 * **${foo}**
 * **${customer.address}**
 * **${person.isVIP()}**
+
+**⇒  Silent Reference Notation**
+
+Telosys uses the VTL parser in "strict" mode, which means that the VTL "silent notation" using a "**`!`**" character at the beginning of the reference name (e.g.  `$!abc`  or  `$!{abc}` ) has **no effect**. \
+All references must be defined (initialized) before using them. \
+If the reference is not defined an error will occur (even with "!")
 
 Examples:
 
