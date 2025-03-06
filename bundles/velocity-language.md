@@ -11,19 +11,21 @@ For more information about the Velocity Templates Language (VTL) see the officia
 
 A template is a text file mixing fixed parts and dynamic parts based on references to variables and objects. A **reference** to a variable or an object starts with "**$**".&#x20;
 
-Exemple :&#x20;
+Example :&#x20;
 
 * **$foo**  : content of **variable** "_foo_"&#x20;
 * **$customer.address** : get **property** "_address_" in object "_customer_"&#x20;
 * **$person.isVIP()** : call **method** "_isVIP()_" in object "_person_"
 
-In some cases "**Formal Reference Notation**"  with "**${xxx}**" is required to avoid ambiguities. Examples :
+In some cases "**Formal Reference Notation**"  with "**${xxx}**" is required to avoid ambiguities.&#x20;
+
+Examples :
 
 * **${foo}**
 * **${customer.address}**
 * **${person.isVIP()}**
 
-Examples :
+Examples:
 
 ```
 Current entity is ${entity.name}
@@ -41,17 +43,32 @@ All lines between "**#\***" and **"\*#"** are a comment block.
 
 ```
 ## This is a single line comment.
-
+#set($x = 12)## init variable x
 #*
 This is a multi-lines comment
 with 1 to N lines
 *#
 ```
 
+{% hint style="info" %}
+The single-line comment (**##**) removes the "end of line", \
+so you can use it to concatenate multiple lines into one. \
+Example:\
+`aaa`` `**`##`**\
+&#x20;`bb`` `**`##`**\
+&#x20;`cc`\
+Result:\
+`aaa bb cc`
+{% endhint %}
+
+
+
 ## Unparsed content
 
 All lines between "**#\[\[**" and **"]]#"** are not parsed by Velocity, they are rendered as is.\
-So characters like "#" or "$" can be used anywhere
+So characters like "#" or "$" can be used anywhere.
+
+The **#\[\[ do not parse me ]]#** syntax allows to easily use large chunks of uninterpreted and unparsed content in a template.
 
 ```
 #[[
@@ -78,18 +95,26 @@ line 2 $b
 line 3 $c')## 3 lines in the string
 ```
 
-### Unparsed content
+### Numbers literals
 
-The **#\[\[ do not parse me ]]#** syntax allows to easily use large chunks of uninterpreted and unparsed content in a template.
+Same as in all languages:  0 to 9 plus ' . ' &#x20;
+
+Examples:
 
 ```
-#[[
-Unparsed block (all this block will be rendered as is)
-$undefined
-#set($i = 50)
-#foobar #zzz(ee)
-#include("foo.txt")
-]]#
+#set($x = 12)## Integer
+#set($y = 12.34)## Double
+```
+
+### Boolean literals
+
+Just  **true**  and  **false**
+
+Examples:
+
+```
+#set( $b = true )
+#set( $b = false )
 ```
 
 ## Operators&#x20;
