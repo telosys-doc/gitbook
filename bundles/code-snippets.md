@@ -2,7 +2,7 @@
 
 ### Iterate over all entities defined in the model
 
-```
+```velocity
 #foreach( $e in $model.allEntites )
 		...
 #end
@@ -10,7 +10,7 @@
 
 ### Iterate over entity attributes
 
-```
+```velocity
 #foreach( $attribute in $entity.attributes )
 		...
 #end
@@ -26,7 +26,7 @@
 
 ### Iterate over entity links
 
-```
+```velocity
 #foreach( $link in $entity.links )
 		...
 #end
@@ -37,7 +37,7 @@
 
 The function "$fn.fileFromModel(fileName)" returns an instance of "file" located in the current model. If the file exists, its content is loaded and evaluated with "#evaluate" directive.
 
-```
+```velocity
 #set( $file = $fn.fileFromModel("model-init.vm") )
 #if($file.exists())#evaluate($file.loadContent())#end
 ```
@@ -46,7 +46,7 @@ The function "$fn.fileFromModel(fileName)" returns an instance of "file" located
 
 As all Velocity references ( "$xxx" ) are references of Java objects, sometimes it could be useful to know the object's class. To do this, just use "**class.name**" (full name with package) or "**class.simpleName**" (only the class name without package)
 
-```
+```velocity
 #set( $v = 12 )
 $v.class.name 
 $v.class.simpleName 
@@ -64,7 +64,7 @@ $now.class.simpleName
 
 Sometimes it can be useful to make sure you only generate a file once to avoid overwriting manual changes after project bootstrapping. Since Telosys 3.3.0 you can do that with **#cancel** directive.
 
-```
+```velocity
 ##--- NB : do not rewrite the file if it already exists
 #if($target.outputFileExists() )#cancel("File already exists")#end
 
@@ -74,7 +74,7 @@ Sometimes it can be useful to make sure you only generate a file once to avoid o
 
 With Velocity, you can create a "map" of "anything". A map can contain any object, even lists.
 
-```
+```velocity
 ## --- Example 1 :
 #set( $list1 = [ 0, 1, 2 ] )
 #set( $list2 = [ "", "A", "B", "C", "D" ] )
