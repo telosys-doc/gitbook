@@ -106,6 +106,14 @@ line 2 $b
 line 3 $c')## 3 lines in the string
 ```
 
+Escaping quotes in literal strings \
+&#x20; Just double the same type of quotes (single/double quote) used to wrap the string.
+
+```
+#set($txt = "It's a ""literal"" string" )
+#set($txt = 'It''s a "literal" string'  )
+```
+
 ### Numbers literals
 
 Same as in all languages:  0 to 9 plus ' . ' &#x20;
