@@ -9,7 +9,7 @@ Each string value is stored internally in a "_String_" Java object\
 
 Initialization :
 
-```
+```velocity
 #set( $str = "abc" )
 #set( $r = "xx${str}yy" )       ## r : "xxabcyy"
 #set( $r = "xx" + $str + "yy" ) ## r : "xxabcyy"
@@ -17,7 +17,7 @@ Initialization :
 
 String methods usage examples :
 
-```
+```velocity
 length :  $str.length() 
 #set($str2 = $str.replaceFirst("def", "xy" ) )
 #if ( $str.endsWith("ef") ) YES #end
@@ -35,13 +35,13 @@ Each integer value is stored internally in a "Integer" Java object\
 
 Initialization :
 
-```
+```velocity
 #set( $i = 123 )
 ```
 
 Calculations :
 
-```
+```velocity
 #set( $r = $i + 1000 ) ## r = 1123
 #set( $r = $i - 23 )   ## r = 100
 #set( $r = $i * 10 )   ## r = 1230
@@ -59,7 +59,7 @@ Each double value is stored internally in a "Double" Java object\
 
 Initialization :
 
-```
+```velocity
 #set( $d = 123.45 )
 ```
 
@@ -72,7 +72,7 @@ Each boolean value is stored internally in a "Boolean" Java object\
 
 Initialization :
 
-```
+```velocity
 #set( $b = true )
 #set( $b = false )
 #set( $b = $mylist.isEmpty() )
@@ -92,7 +92,7 @@ Even if it's not a real "Java array", this object is often considered as an "_ar
 
 Initialization :
 
-```
+```velocity
 ## 4 numbers from 1 to 4 (with range operator)
 #set( $mylist = [1..4]) 
 
@@ -105,7 +105,7 @@ Initialization :
 
 Print content :
 
-```
+```velocity
 mylist content : $mylist
 
 --- OUTPUT :
@@ -115,7 +115,7 @@ mylist content : [1, 2, 3, A, true, 65.78]
 Print all items with "#foreach"\
 ( "$foreach.count" goes from 1 to length, it's a count not an index ) :
 
-```
+```velocity
 #foreach ( $item in $mylist ) 
  - $foreach.count : $item 
 #end
@@ -131,7 +131,7 @@ Print all items with "#foreach"\
 
 Print a single item by index (the index goes from 0 to length-1)  :
 
-```
+```velocity
 item 0 : $mylist[0]
 --- OUTPUT :
 item 0 : 1 
@@ -151,7 +151,7 @@ Index 6 out of bounds for length 6
 
 Change list content :
 
-```
+```velocity
 #set( $mylist[2] = "CCC" ) ## index starts at 0
 
 #set( $z = $mylist.add("new item") ) 
@@ -163,7 +163,7 @@ Change list content :
 
 Other examples :
 
-```
+```velocity
 isEmpty : $mylist.isEmpty()
 #if ( $mylist.isEmpty() ) list is void #end
 
@@ -188,13 +188,13 @@ The "key-value" pairs are stored internally in a "_LinkedHashMap_" Java object (
 
 Initialization :
 
-```
+```velocity
 #set( $mymap = {"k1" : "v1" , "k2" : "v2"} )
 ```
 
 Print content :
 
-```
+```velocity
 mymap content : $mymap
 --- OUTPUT :
 mymap content : {k1=v1, k2=v2}
@@ -217,7 +217,7 @@ mymap content : {k1=v1, k2=v2}
 
 Get value by key (if the key doesn't exist in the map the error " : no attribute '\[' " occurs)
 
-```
+```velocity
 k1 : $mymap["k1"] 
 k2 : $mymap["k2"]
 k3 : $mymap["k3"] ## error (due to no key "k3")
@@ -225,13 +225,13 @@ k3 : $mymap["k3"] ## error (due to no key "k3")
 
 Get value by key with default value if key not in map (secure, no error):
 
-```
+```velocity
 k1 : $mymap.getOrDefault("k1", "default_value")
 ```
 
 Each map key is also usable as an object's property then it's possible to get its value using the "object dot notation":
 
-```
+```velocity
 k1 : $mymap.k1
 k2 : $mymap.k2
 k3 : $mymap.k3  ## error (due to no key "k3")
@@ -239,32 +239,32 @@ k3 : $mymap.k3  ## error (due to no key "k3")
 
 Set an entry in the map (add or update a key-value pair):
 
-```
+```velocity
 #set( $mymap["k0"] = "v0" )
 ```
 
 Remove an entry by key (error if the key doesn't exist in the map):
 
-```
-#set( $_ = $mymap.remove("k1") )
+```velocity
+#set( $unused = $mymap.remove("k1") )
 ## "#set" is just to avoid to print the return value (here "v1")
 ## NB: error if the key doesn't exist in the map 
 ## key not found => return null => Velocity error
 
 ## workaround with "if exist" before remove:
-#if($mymap.containsKey($key))#set($_=$mymap.remove($key))#end
+#if($mymap.containsKey($key))#set($unused=$mymap.remove($key))#end
 ```
 
 Remove an entry by key and value (secure, no error if no match):
 
-```
-#set( $_ = $mymap.remove("k1", "v1") )
+```velocity
+#set( $unused = $mymap.remove("k1", "v1") )
 ## "#set" is just to avoid to print the return value (boolean)
 ```
 
 Other examples using the Java map methods :
 
-```
+```velocity
 isEmpty : $mymap.isEmpty()
 #if ( $mymap.isEmpty() ) void #end
 
@@ -304,14 +304,14 @@ The values are stored internally in a "_Object \[ ]_ " instance. And therefore i
 
 Initialization :
 
-```
+```velocity
 #set( $array = $mylist.toArray() ) 
 ```
 
 Print all items with "#foreach"\
 ( "$foreach.count" goes from 1 to length, it's a count not an index ) :
 
-```
+```velocity
 #foreach ( $item in $array) 
  $foreach.count : $item 
 #end
@@ -323,7 +323,7 @@ Print all items with "#foreach"\
  4 : item = D 
 ```
 
-```
+```velocity
 #set($last = $array.size() - 1 ) ## last index
 #foreach ( $i in [0..$last] )  ## index 'range'
 // index : $i --> element : $array[$i] 
@@ -338,13 +338,13 @@ Print all items with "#foreach"\
 
 Change value :
 
-```
+```velocity
 #set( $array[2] = "newValue" ) ## index starts at 0
 ```
 
 Other examples :
 
-```
+```velocity
 isEmpty : $array.isEmpty()
 #if ( $array.isEmpty() ) is void #end
 
