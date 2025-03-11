@@ -4,7 +4,7 @@ A directive is a Velocity keyword starting by a "**#**", for example "#set", "#i
 
 Directives can be thought of as "instructions" for handling rendering in a model. They can be used to define variables (#set), apply logical conditions (#if), iterate over collections (#foreach), etc.
 
-```
+```velocity
 #set( $name = "Bob" )
 #foreach( $v in $elements )
  $v
@@ -13,7 +13,7 @@ Directives can be thought of as "instructions" for handling rendering in a model
 
 To avoid misinterpretations the name of the directive can be bracketed with "{" and "}"&#x20;
 
-```
+```velocity
 #if($x)true#{else}false#end
 ```
 
@@ -24,7 +24,7 @@ To avoid misinterpretations the name of the directive can be bracketed with "{" 
 The #set directive is used for setting a value. A value can be assigned to either a simple variable or an object property.\
 "#set" always defines a "global variable" wherever you use it.
 
-```
+```velocity
 #set( $name = "Bob" )
 #set( $customer.name = "Bob")
 #set( $user.level = 3 ) ## number literal
@@ -34,13 +34,13 @@ The #set directive is used for setting a value. A value can be assigned to eithe
 
 You cannot set a variable to "null" explicitly&#x20;
 
-```
+```velocity
 #set( $v = null ) ## causes an error
 ```
 
 NB : if the value to be assigned is null then it will not be assigned!
 
-```
+```velocity
 #set( $v = $o.get("abc") ) 
 ## if get returns null then $v remains unchanged
 ```
@@ -58,7 +58,7 @@ Examples :
 
 Loop with given values :
 
-```
+```velocity
 #foreach ( $item in [1..8] ) ## from 1 to 8
  . item = $item 
 #end
@@ -73,7 +73,7 @@ Loop with given values :
 
 Loop with an object (array, list, collection) :
 
-```
+```velocity
 #foreach( $attribute in $entity.attributes )
  $attribute.type $attribute.name
 #end
@@ -81,7 +81,7 @@ Loop with an object (array, list, collection) :
 
 Map iteration :
 
-```
+```velocity
 #set ( $map = {"banana" : "good", "cream" : "bad"} ) 
 #foreach($key in $map.keySet() )
  $key --> $map.get($key)
@@ -90,7 +90,7 @@ Map iteration :
 
 Break the current iteration :
 
-```
+```velocity
 #foreach ( $item in [1..20] )
 #if ( $item > 3 ) #break #end
  . item = $item 
@@ -99,7 +99,7 @@ Break the current iteration :
 
 "**$foreach.count**"  loop counter ( 1 to N ) :
 
-```
+```velocity
 #foreach ( $item in ["A", "B", "C", "D" ] ) 
  . $foreach.count : $item 
 #end
@@ -107,7 +107,7 @@ Break the current iteration :
 
 "**$foreach.index**"  zero-based index ( 0 to N-1 ) :
 
-```
+```velocity
 #foreach ( $item in ["A", "B", "C", "D" ] ) 
  . $foreach.index : $item 
 #end
@@ -115,7 +115,7 @@ Break the current iteration :
 
 "**$foreach.hasNext**"  ( true if not last item ) :
 
-```
+```velocity
 #foreach( $customer in $customerList )
   $customer.Name#if( $foreach.hasNext ),#end
 #end
@@ -126,7 +126,7 @@ Nested loops  :
 It's possible to access outer loops properties by using "**$foreach.parent**" or "**$foreach.topmost**" \
 (e.g. $foreach.parent.index or $foreach.topmost.hasNext).
 
-```
+```velocity
 #foreach ( $item1 in ["A", "B", "C", "D" ] ) 
 #foreach ( $item2 in [1,2,3 ] )
  . $foreach.index : $item1 / $item2  
@@ -145,7 +145,7 @@ Examples :
 
 **#if / #end :**
 
-```
+```velocity
  #if ( $v == 1 ) equals 1 #end 
 
  #if ( $v == 1 ) 
@@ -155,7 +155,7 @@ Examples :
 
 **#if / #else / #end :**
 
-```
+```velocity
  #if ( $v == 1 ) equals 1 #else not equals 1 #end 
 
  #if ( $v == 1 ) 
@@ -167,7 +167,7 @@ Examples :
 
 **#if / #elseif / #else / #end :**
 
-```
+```velocity
  #if ( $v == 1 ) 
  equals 1 
  #elseif ( $v == 2 ) 
@@ -187,7 +187,7 @@ Any files to which #include refers must be included under "TEMPLATE\_ROOT" ( the
 
 Examples :
 
-```
+```velocity
 ## Include a single file :
 #include( "myfile.txt" )
 #include( "include/myfile.txt" ) 
@@ -211,7 +211,7 @@ Any templates to which #parse refers must be included under "TEMPLATE\_ROOT" ( t
 
 Examples :
 
-```
+```velocity
 #parse("foo.vm")
 #parse($myfile)
 #parse("include/initvar.vm")
@@ -223,14 +223,14 @@ Recursion is permitted (with a condition to stop recursion).
 
 Primary file :
 
-```
+```velocity
 #set( $count = 8 )
 #parse( "foo.vm" )
 ```
 
 "foo.vm" file with recursive "parse" :
 
-```
+```velocity
 #set( $count = $count - 1 )
 #if( $count > 0 )
   #parse( "foo.vm" )
@@ -251,7 +251,7 @@ The resulting output will contain all the content up to the point the #stop dire
 
 Example :
 
-```
+```velocity
 #if ( $v == 12 ) 
 #stop 
 #end 
@@ -269,7 +269,7 @@ Unlike #stop, #break will only stop the innermost, immediate scope, not all of t
 
 Examples :
 
-```
+```velocity
 ## BREAK at template level (stop template rendering)
 #break
 
@@ -301,7 +301,7 @@ The **#evaluate** directive can be used to dynamically evaluate a statement (pie
 
 Examples :
 
-```
+```velocity
 #set($v = 2)
 #set($statement = '#set($r = $v * 10)' )
 #evaluate($statement)
@@ -318,7 +318,7 @@ Velocity "macros" allow you to define a portion of VTL code which will then be r
 
 Example : basic macro (without argument)
 
-```
+```velocity
 #macro( three )
 #set ( $result = "" )
 #foreach ( $i in [1..3] ) ${i}#end
@@ -332,7 +332,7 @@ A Velocimacro can take any number of arguments (0 to N arguments). When the Velo
 
 Example : macro with 2 arguments
 
-```
+```velocity
 #macro( add $a1 $a2 )
 #set ( $r = $a1 + $a2 )
 $a1 + $a2 = $r 
@@ -346,7 +346,7 @@ NB : Macros are not functions, they are designed to render and they cannot retur
 
 Example : "Function like call" getting the result as text (with quotes)
 
-```
+```velocity
 #macro( add3 $a1 $a2 $a3 )
 #set ( $r = $a1 + $a2 + $a3)
 $r## NO EOL
@@ -357,7 +357,21 @@ $r## NO EOL
 result : $result
 ```
 
+**Macro with body content**
 
+It is possible to call a macro and pass it a text (1 to N lines). To do so call the macro with '**@**' between '#' and the macro name ( **#@mymacro()** ) . With this type of call you can add the text to pass after the call using '**#end**' to mark the end of the text. In the macro definition the text can be retrived via the '**$bodyContent**' reference (special reference defined only for macro).
+
+```velocity
+#macro(xml)
+<aaa>
+$bodyContent
+</aaa>
+#end
+## ------------------------
+#@xml()line1
+line2
+line3#end
+```
 
 ### #define
 
@@ -369,7 +383,7 @@ The type of the variable created by #define is org.apache.velocity.runtime.direc
 
 Example :
 
-```
+```velocity
 #define( $block )Hello $who#end
 #set( $who = 'World!' )
 $block
