@@ -38,7 +38,7 @@ If the reference is not defined an error will occur (even with "!")
 
 Examples:
 
-```
+```velocity
 Current entity is ${entity.name}
 
 #foreach( $attrib in $entity.attributes )
@@ -52,7 +52,7 @@ Current entity is ${entity.name}
 A part of line starting with **"##"** is a single line comment. \
 All lines between "**#\***" and **"\*#"** are a comment block.
 
-```
+```velocity
 ## This is a single line comment.
 #set($x = 12)## init variable x
 #*
@@ -95,7 +95,7 @@ Blablabla #include blabla
 
 When using the #set directive, strings that are enclosed in **double quote** characters will be **parsed**. But if the string literal is **enclosed in single quote characters**, it will **not be parsed**. A string literal can contains multiple lines.
 
-```
+```velocity
 #set($s = "abc $i")## 'i' is replaced by its value
 
 #set($s = 'abc $i')## no variable substitution
@@ -109,7 +109,7 @@ line 3 $c')## 3 lines in the string
 Escaping quotes in literal strings \
 &#x20; Just double the same type of quotes (single/double quote) used to wrap the string.
 
-```
+```velocity
 #set($txt = "It's a ""literal"" string" )
 #set($txt = 'It''s a "literal" string'  )
 ```
@@ -120,7 +120,7 @@ Same as in all languages:  0 to 9 plus ' . ' &#x20;
 
 Examples:
 
-```
+```velocity
 #set($x = 12)## Integer
 #set($y = 12.34)## Double
 ```
@@ -131,7 +131,7 @@ Just  **true**  and  **false**
 
 Examples:
 
-```
+```velocity
 #set( $b = true )
 #set( $b = false )
 ```
@@ -142,7 +142,7 @@ Examples:
 
 Examples (showing different operators):
 
-<table data-header-hidden><thead><tr><th width="192.20001220703125">Operator</th><th width="119.2000732421875">Symbol</th><th width="95.60009765625">Text</th><th>Example</th></tr></thead><tbody><tr><td>Operator</td><td>Symbol</td><td>Text</td><td>Example</td></tr><tr><td>Equals / number</td><td>==</td><td>eq</td><td><code>#if( $foo == 42 )</code></td></tr><tr><td>Equals / string</td><td>==</td><td>eq</td><td><code>#if( $foo == "bar" )</code></td></tr><tr><td>Equals / object </td><td>==</td><td>eq</td><td><code>#if( $foo == $bar )</code></td></tr><tr><td>Not Equals</td><td>!=</td><td>ne</td><td><code>#if( $foo != $bar )</code></td></tr><tr><td>Greater Than</td><td>></td><td>gt</td><td><code>#if( $foo > 42 )</code></td></tr><tr><td>Less Than</td><td>&#x3C;</td><td>lt</td><td><code>#if( $foo &#x3C; 42 )</code></td></tr><tr><td>Greater Than <br>or Equal To</td><td>>=</td><td>ge</td><td><code>#if( $foo >= 42 )</code></td></tr><tr><td>Less Than <br>or Equal To</td><td>&#x3C;=</td><td>le</td><td><code>#if( $foo &#x3C;= 42 )</code></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="192.20001220703125">Operator</th><th width="119.2000732421875">Symbol</th><th width="95.60009765625">Text</th><th>Example</th></tr></thead><tbody><tr><td>Operator</td><td>Symbol</td><td>Text</td><td>Example</td></tr><tr><td>Equals / number</td><td><strong>==</strong></td><td>eq</td><td><code>#if( $foo == 42 )</code></td></tr><tr><td>Equals / string</td><td><strong>==</strong></td><td>eq</td><td><code>#if( $foo == "bar" )</code></td></tr><tr><td>Equals / object </td><td><strong>==</strong></td><td>eq</td><td><code>#if( $foo == $bar )</code></td></tr><tr><td>Not Equals</td><td><strong>!=</strong></td><td>ne</td><td><code>#if( $foo != $bar )</code></td></tr><tr><td>Greater Than</td><td><strong>></strong></td><td>gt</td><td><code>#if( $foo > 42 )</code></td></tr><tr><td>Less Than</td><td><strong>&#x3C;</strong></td><td>lt</td><td><code>#if( $foo &#x3C; 42 )</code></td></tr><tr><td>Greater Than <br>or Equal To</td><td><strong>>=</strong></td><td>ge</td><td><code>#if( $foo >= 42 )</code></td></tr><tr><td>Less Than <br>or Equal To</td><td><strong>&#x3C;=</strong></td><td>le</td><td><code>#if( $foo &#x3C;= 42 )</code></td></tr></tbody></table>
 
 Note:\
 The == operator can be used to compare numbers, strings, objects of the same class, or objects of different classes. In the last case (when objects are of different classes), the toString() method is called on each object and the resulting Strings are compared.
@@ -151,11 +151,11 @@ The == operator can be used to compare numbers, strings, objects of the same cla
 
 ### Logical operators
 
-<table data-header-hidden><thead><tr><th width="220.53334554036456">Operator</th><th width="165.4000244140625">Symbol</th><th>Text</th></tr></thead><tbody><tr><td>Operator</td><td>Symbol</td><td>Text</td></tr><tr><td>Logical AND</td><td>&#x26;&#x26;</td><td> and</td></tr><tr><td>Logical OR</td><td>||</td><td> or</td></tr><tr><td>Logical NOT</td><td>!</td><td>not</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="220.53334554036456">Operator</th><th width="165.4000244140625">Symbol</th><th>Text</th></tr></thead><tbody><tr><td>Operator</td><td>Symbol</td><td>Text</td></tr><tr><td>Logical AND</td><td><strong>&#x26;&#x26;</strong></td><td> and</td></tr><tr><td>Logical OR</td><td><strong>||</strong></td><td> or</td></tr><tr><td>Logical NOT</td><td><strong>!</strong></td><td>not</td></tr></tbody></table>
 
 Examples :
 
-```
+```velocity
 #if ( $v > 100 && $v < 200 )
 Between 100 and 200 
 #end 
@@ -176,11 +176,11 @@ Var is not 100 or 101
 
 | Operator       | Symbol        | Example                |
 | -------------- | ------------- | ---------------------- |
-| Addition       | +             | `#set( $r = $a + $b )` |
-| Subtraction    | -             | `#set( $r = $a - $b )` |
-| Multiplication | \*            | `#set( $r = $a * $b )` |
-| Division       | /             | `#set( $r = $a / $b )` |
-| Modulo         | %             | `#set( $r = $a % 10 )` |
+| Addition       | **+**         | `#set( $r = $a + $b )` |
+| Subtraction    | **-**         | `#set( $r = $a - $b )` |
+| Multiplication | **\***        | `#set( $r = $a * $b )` |
+| Division       | **/**         | `#set( $r = $a / $b )` |
+| Modulo         | **%**         | `#set( $r = $a % 10 )` |
 | Increment      | (no operator) | `#set( $a = $a + 1 )`  |
 | Decrement      | (no operator) | `#set( $a = $a - 1 )`  |
 
@@ -195,7 +195,7 @@ Syntax : `[ first .. last ]`
 
 Examples :
 
-```
+```velocity
 ## Range from 1 to 5
 #foreach( $i in [1..5] )
   $i
