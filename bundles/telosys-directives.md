@@ -13,7 +13,7 @@ Otherwise throws an error with the given message.
 
 Examples :
 
-```
+```velocity
  #assertFalse( $flag, "Flag is true (false expected)" ) 
  #assertFalse( $entity.hasCompositePrimaryKey(), "Composite Primary Key not supported" ) 
 ```
@@ -29,7 +29,7 @@ Otherwise throws an error with the given message.
 
 Examples :
 
-```
+```velocity
  #assertTrue( $flag, "Flag is not true!" ) 
  #assertTrue( $entity.hasPrimaryKey(), "Primary Key required!" )
 ```
@@ -45,7 +45,7 @@ This directive has only one argument: a message to indicate why the generation w
 
 Examples :
 
-```
+```velocity
 #if ( $entity.name.startsWith("Abcd") )
 #cancel("No JPA class for this entity")
 #end
@@ -60,7 +60,7 @@ Throws an error if there's no ID/Primary Key defined in the entity.
 
 Examples :
 
-```
+```velocity
  #checkId( $entity) 
 ```
 
@@ -74,7 +74,7 @@ Throws an error with the given message
 
 Examples :
 
-```
+```velocity
  #if( $flag ) 
  #error( "Flag is true!" ) 
  #end 
@@ -97,7 +97,7 @@ Often used to verify that required specific variables have been defined.
 
 Examples :
 
-```
+```velocity
  #using( "var1" ) 
  #using( "var1", "var2" ) 
  #using( "var1", "var2", "foo", "bar" ) 
