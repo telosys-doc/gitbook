@@ -97,6 +97,21 @@ Break the current iteration :
 #end
 ```
 
+**"$foreach" object:**&#x20;
+
+When you are in a "**#foreach**" directive it is possible to use the Velocity object "**$foreach**". \
+It provides information about the current iteration (index, count, etc)
+
+$foreach attributes:
+
+* **`$foreach.index`**: The current iteration index, starting from 0.
+* **`$foreach.count`**: The current iteration count, starting from 1.
+* **`$foreach.hasNext`**: A boolean value that is true if there are more elements to iterate over.
+* **`$foreach.first`**: A boolean value that is true if the current iteration is the first one.
+* **`$foreach.last`**: A boolean value that is true if the current iteration is the last one.
+* **`$foreach.parent`**: same type of object but in the parent loop's context
+* **`$foreach.topmost`**: same type of object but in the topmost (outermost) loop's context
+
 "**$foreach.count**"  loop counter ( 1 to N ) :
 
 ```velocity
