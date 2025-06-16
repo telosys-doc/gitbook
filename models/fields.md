@@ -60,17 +60,17 @@ An attribute is a simple and unitary piece of data such as a string, a number, e
 
 Available neutral types :&#x20;
 
-* **binary**&#x20;
-* **boolean**&#x20;
-* **byte**&#x20;
+* **binary**  (to store a sequence of bytes)
+* **boolean**  (to store "true"/"false" value)
+* **byte**  (8-bit integer, range: -128 to +127)
 * **date**&#x20;
 * **decimal**
-* **double**&#x20;
-* **float**&#x20;
-* **int**&#x20;
-* **long**&#x20;
-* **short**&#x20;
-* **string**&#x20;
+* **double**  (double-precision 64-bit IEEE 754 floating point)
+* **float**  (single-precision 32-bit IEEE 754 floating point)
+* **int**   (32-bit integer , range: -2,147,483,648 to +2,147,483,647)
+* **long**  (64-bit integer, range: -9,223,372,036,854,775,808 to +9,223,372,036,854,775,807)
+* **short** (16-bit integer, range: -32,768 to +32,767)
+* **string** (standard "string" type)
 * **time**&#x20;
 * **timestamp**&#x20;
 
