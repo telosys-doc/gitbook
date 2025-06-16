@@ -63,7 +63,7 @@ Available neutral types :&#x20;
 * **binary**  (to store a sequence of bytes)
 * **boolean**  (to store "true"/"false" value)
 * **byte**  (8-bit integer, range: -128 to +127)
-* **date**  (to store a date with year, month, and day - without time zone)
+* **date**  (to store a date with only year, month and day)
 * **decimal**  (arbitrary precision decimal number, not limited to 32 or 64 bits like float or double)
 * **double**  (double-precision 64-bit IEEE 754 floating point)
 * **float**  (single-precision 32-bit IEEE 754 floating point)
