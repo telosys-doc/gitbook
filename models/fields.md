@@ -63,16 +63,16 @@ Available neutral types :&#x20;
 * **binary**  (to store a sequence of bytes)
 * **boolean**  (to store "true"/"false" value)
 * **byte**  (8-bit integer, range: -128 to +127)
-* **date**&#x20;
-* **decimal**
+* **date**  (to store a date with year, month, and day - without time zone)
+* **decimal**  (arbitrary precision decimal number, not limited to 32 or 64 bits like float or double)
 * **double**  (double-precision 64-bit IEEE 754 floating point)
 * **float**  (single-precision 32-bit IEEE 754 floating point)
 * **int**   (32-bit integer , range: -2,147,483,648 to +2,147,483,647)
 * **long**  (64-bit integer, range: -9,223,372,036,854,775,808 to +9,223,372,036,854,775,807)
 * **short** (16-bit integer, range: -32,768 to +32,767)
 * **string** (standard "string" type)
-* **time**&#x20;
-* **timestamp**&#x20;
+* **time** (to store a time with hour, minute, second, and optionally nanosecond - without time zone)
+* **timestamp** (to store a date and time - without time zone)
 
 
 
