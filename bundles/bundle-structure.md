@@ -1,6 +1,6 @@
 # Bundle structure
 
-A Telosys project may require a lot of templates, that's why the templates are organized in "bundles".
+A Telosys project may require a lot of templates, that's why the templates are organized in "**bundles**".
 
 A "bundle" is just a set of "templates" (and sometimes resources) grouped together in a folder.
 
@@ -19,20 +19,26 @@ Each bundle folder contains:
 * any other useful file for the bundle
 * 0..N subfolders (to organize the different files)
 
-### How it works ?
 
-All code generation is driven by the "**templates.cfg**" file.\
-This file defines the target files to generate, the directory in which to place the result and the templates to use.\
-For example, if a template (".vm" file) is present in the bundle folder but not present in "templates.cfg", it will not be used.
 
-The "templates.cfg" file is used to launch different types of processing defined by the last character of each line:
+### The "templates.cfg" file&#x20;
 
-* **"\*"** : \
-  code generation executed **multiple times** with the same template (1 time for each selected entity)
-* **"1"** : \
-  code generation executed **only once** independently of entities&#x20;
-* **"R"** : \
-  simple **resources files** copy in a destination folder&#x20;
+All code generation is driven by the "**templates.cfg**" file. &#x20;
+
+Each line of this file defines a genaration task with the necessary information:
+
+* the **target file(s)** to generate
+* the **directory** in which to place the result&#x20;
+* the **template** to use
+* the **type of execution**:
+  * **"\*"** :  a code generation executed **multiple times** with the same template \
+    (1 generation for each selected entity)
+  * **"1"** :  a code generation executed **only once** independently of entities&#x20;
+  * **"R"** :  a simple **resources files** copy in a destination folder (no template)
+
+NB:  if a template (".vm" file) is present in the bundle folder but not present in "templates.cfg", it will not be used.
+
+
 
 ### How to customize a bundle?
 
@@ -44,6 +50,8 @@ What you can do:
 * add new templates (.vm files) in the bundle (don't forget to reference them in "templates.cfg")
 * delete certain templates (in this case you can only delete the line in "templates.cfg")
 * add new resources (static files) to be copied&#x20;
+
+
 
 ### How to use Git to clone and push a bundle ?
 
