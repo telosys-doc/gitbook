@@ -44,7 +44,8 @@ NB:  if a template (".vm" file) is present in the bundle folder but not present 
 
 For greater flexibility, variables can be used in the **target file name** and the **target directory name**.
 
-* **${ENT}**  ⇒  current **entity name** (since ver 4.2.0 )
+* **${ENT}**  ⇒  current **entity name** (since ver 4.2.0 )\
+  this variable is required for generation with type "\*" in order to generate a file for each entity
 * _**${BEANNAME}**_ ⇒ same as **${ENT}** deprecated since ver 4.2.0 ⇒ use ${ENT} instead
 * **${BUN}** ⇒ current **bundle name**
 * **${MOD}** ⇒ current **model name**
