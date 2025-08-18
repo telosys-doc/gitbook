@@ -28,8 +28,8 @@ All code generation is driven by the "**templates.cfg**" file. &#x20;
 Each line of this file defines a genaration task with the necessary information:
 
 * the **target file(s)** to generate
-* the **directory** in which to place the result&#x20;
-* the **template** to use
+* the **target directory** in which to place the result&#x20;
+* the **template** to use&#x20;
 * the **type of execution**:
   * **"\*"** :  a code generation executed **multiple times** with the same template \
     (1 generation for each selected entity)
@@ -37,6 +37,22 @@ Each line of this file defines a genaration task with the necessary information:
   * **"R"** :  a simple **resources files** copy in a destination folder (no template)
 
 NB:  if a template (".vm" file) is present in the bundle folder but not present in "templates.cfg", it will not be used.
+
+
+
+### Variables usable in "templates.cfg"&#x20;
+
+For greater flexibility, variables can be used in the **target file name** and the **target directory name**.
+
+* **${ENT}**  ⇒  current **entity name** (since ver 4.2.0 )
+* _**${BEANNAME}**_ ⇒ same as **${ENT}** deprecated since ver 4.2.0 ⇒ use ${ENT} instead
+* **${BUN}** ⇒ current **bundle name**
+* **${MOD}** ⇒ current **model name**
+
+The following suffixes can be added to all of these variables:
+
+* "**\_LC**" ⇒ conversion to "**lower case**".   Examples:  ${ENT\_LC},  ${MOD\_LC}
+* "**\_UC**" ⇒ conversion to "**upper case**".   Examples:  ${ENT\_UC},  ${MOD\_UC}
 
 
 
