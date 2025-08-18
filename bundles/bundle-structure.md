@@ -55,6 +55,12 @@ The following suffixes can be added to all of these variables:
 * "**\_LC**" ⇒ conversion to "**lower case**".   Examples:  ${ENT\_LC},  ${MOD\_LC}
 * "**\_UC**" ⇒ conversion to "**upper case**".   Examples:  ${ENT\_UC},  ${MOD\_UC}
 
+It is also possible to use any variables defined in the **project configuration**:
+
+* **standard predefined variables** \
+  like ${SRC}, ${RES}, ${WEB}, ${TEST\_SRC}, ${TEST\_RES}, ${DOC}, ${TMP}
+* all other **specific variables**
+
 
 
 ### How to customize a bundle?
