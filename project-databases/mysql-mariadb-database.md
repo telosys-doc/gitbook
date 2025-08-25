@@ -36,14 +36,14 @@ Server → **Database** (= **Schema**) → Tables/Objects
 
 #### MariaDB
 
-* Name: **MariaDB Connector/J** - lightweight JDBC driver (Type 4) for Java
+* Name:  **MariaDB Connector/J** - lightweight JDBC driver (Type 4) for Java
 * Download:  [https://mariadb.com/downloads/connectors/connectors-data-access/](https://mariadb.com/downloads/connectors/connectors-data-access/)&#x20;
 * Driver class name:  **org.mariadb.jdbc.Driver**
 
 #### MySQL
 
-* Name: **MySQL Connector/J** - lightweight JDBC driver (Type 4) for Java
+* Name:  **MySQL Connector/J**&#x20;
 * Download:  [https://dev.mysql.com/downloads/connector/j/](https://dev.mysql.com/downloads/connector/j/) &#x20;
-* Dirver class name:  **com.mysql.cj.jdbc.Driver** \
-  (since Connector/J 8.0, old versions used **com.mysql.jdbc.Driver**)
+* Driver class name:  **com.mysql.cj.jdbc.Driver**  (since Connector/J 8.0)\
+  (old versions used **com.mysql.jdbc.Driver**)
 
