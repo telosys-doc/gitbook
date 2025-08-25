@@ -4,6 +4,8 @@
 
 Server (instance) → **Database** → **User=Schema** → Tables/Objects&#x20;
 
+<div align="left"><figure><img src="../.gitbook/assets/image (5).png" alt="" width="301"><figcaption></figcaption></figure></div>
+
 * **Database**: In Oracle, the "database" is the entire system of data files, control files, redo logs, etc. A database is tied to an **instance** (set of processes + memory structures). Usually, one instance ↔ one database, though RAC can have multiple instances for one database.
 *   **Schema**: In Oracle, a schema is essentially **a user account**.
 

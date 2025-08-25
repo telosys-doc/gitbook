@@ -4,6 +4,8 @@
 
 **Database file(s)** (main/temp/attached) → Tables/Objects
 
+<div align="left"><figure><img src="../.gitbook/assets/image (3).png" alt="" width="314"><figcaption></figcaption></figure></div>
+
 * **Database**: SQLite is just a **single-file database**. When you connect, you are in one database. There’s no concept of multiple independent databases inside one connection.
 *   **Schema**:  There is no concept of "schema" in SQLite, but it can be simulated by "attaching" databases.\
     SQLite supports:&#x20;

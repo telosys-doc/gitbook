@@ -12,7 +12,7 @@ This terminal is the ideal place to launch and use Telosys-CLI. So you can run a
 
 The most basic way to use Telosys in VSCode is to launch a standard terminal (predefined in VSCode) to get a shell and to launch Telosys from the command line.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 But you will have to launch Telosys manually and to set the home directory each time you want to use it.
 
@@ -32,11 +32,7 @@ Launch the "command palette" with  \[ Ctrl ]  +  \[ Shift ]  +  \[ P ]
 
 Search "open settings json"&#x20;
 
-<div align="left">
-
-<figure><img src="../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../.gitbook/assets/image (5) (1).png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 Choose the JSON file to edit:\
 "**User Settings**" JSON file (recommanded to be able to use the terminal in any workspace)\
@@ -99,27 +95,15 @@ Example:
 
 After this configuration "Telosys" appears as a new kind of terminal in VSCode&#x20;
 
-<div align="left">
-
-<figure><img src="../.gitbook/assets/image.png" alt="" width="446"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../.gitbook/assets/image (6).png" alt="" width="446"><figcaption></figcaption></figure></div>
 
 so you just have to launch it and it is ready to use in the current workspace
 
-<div align="left">
-
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 Telosys terminal with "**rocket**" icon :&#x20;
 
 ![](<../.gitbook/assets/image (7).png>)&#x20;
 
-<div align="left">
-
-<figure><img src="../.gitbook/assets/image (8).png" alt="" width="263"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../.gitbook/assets/image (8).png" alt="" width="263"><figcaption></figcaption></figure></div>
 
