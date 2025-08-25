@@ -20,7 +20,7 @@ Server → **Database** (= **Schema**) → Tables/Objects
     # JDBC driver 
     driver: org.mariadb.jdbc.Driver
     # URL jdbc:mariadb://<host>:<port>/<database>?<options>
-    url: jdbc:mariadb://nipeoh.h.filess.io:3305/mydatabase
+    url: jdbc:mariadb://myhost:3305/carsdb
     user: john_doe
     password: not_to_reveal
     # Metadata parameters
@@ -37,7 +37,7 @@ Server → **Database** (= **Schema**) → Tables/Objects
     # JDBC driver 
     driver: com.mysql.cj.jdbc.Driver
     # URL jdbc:mysql://<host>:<port>/<database>?<options>
-    url: jdbc:mysql://yght02.h.filess.io:3306/employeesdb_silentitgo
+    url: jdbc:mysql://myhost:3306/employeesdb
     user: john_doe
     password: not_to_reveal
     # Metadata parameters

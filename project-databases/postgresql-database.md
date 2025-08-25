@@ -20,7 +20,7 @@ xxx
     type: POSTGRESQL 
     # JDBC configuration
     driver: org.postgresql.Driver 
-    url: jdbc:postgresql://localhost:5432/mydatabase
+    url: jdbc:postgresql://myhost:5432/mydatabase
     user: john_doe
     password: not_to_reveal
     # Metadata parameters
