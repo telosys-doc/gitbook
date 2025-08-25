@@ -20,6 +20,7 @@
   * [MySQL/MariaDB database](project-databases/mysql-mariadb-database.md)
   * [H2 database](project-databases/h2-database.md)
   * [SQL Server database](project-databases/sql-server-database.md)
+  * [SQLite database](project-databases/sqlite-database.md)
 * [Models and entities](models/README.md)
   * [Model structure](models/model-structure.md)
   * [Entity](models/entity.md)
