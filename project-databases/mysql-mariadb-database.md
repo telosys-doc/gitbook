@@ -11,10 +11,34 @@ Server → **Database** (= **Schema**) → Tables/Objects
   MySQL treats `CREATE DATABASE foo;` and `CREATE SCHEMA foo;` as the same operation.
 * Cross-database queries are allowed within the same server instance (`db1.table1 JOIN db2.table2`)
 
-### Telosys typical configuration for a MySQL/MariaDB database
+### Telosys typical configuration for a MariaDB database
 
 ```yaml
-xxx
+  - id: mariadb
+    name: MariaDB 'cars' database on 'filess'
+    type: MARIADB 
+    # JDBC driver 
+    driver: org.mariadb.jdbc.Driver
+    # URL jdbc:mariadb://<host>:<port>/<database>?<options>
+    url: jdbc:mariadb://nipeoh.h.filess.io:3305/mydatabase
+    user: john_doe
+    password: not_to_reveal
+    # Metadata parameters
+    tableNamePattern: '%'
+    tableTypes: TABLE
 
 
 ```
+
+
+
+### JDBC driver&#x20;
+
+#### MariaDB
+
+* Name: **MariaDB Connector/J** - lightweight JDBC driver (Type 4) for Java
+* Download:  [https://mariadb.com/downloads/connectors/connectors-data-access/](https://mariadb.com/downloads/connectors/connectors-data-access/)&#x20;
+* Driver class name:  **org.mariadb.jdbc.Driver**
+
+#### MySQL
+

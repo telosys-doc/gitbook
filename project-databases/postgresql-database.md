@@ -21,8 +21,8 @@ xxx
     # JDBC configuration
     driver: org.postgresql.Driver 
     url: jdbc:postgresql://localhost:5432/mydatabase
-    user: admin
-    password: 
+    user: john_doe
+    password: not_to_reveal
     # Metadata parameters
     catalog: '!'
     schema: cars
