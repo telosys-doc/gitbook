@@ -1,6 +1,6 @@
 # PostgreSQL database
 
-### PostgreSQL structure
+### Structure
 
 Server (cluster) → **Database** → **Schema** → Tables/Objects&#x20;
 
