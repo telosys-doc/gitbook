@@ -15,7 +15,7 @@ Server → **Database** (= **Schema**) → Tables/Objects
 
 ```yaml
   - id: mariadb
-    name: MariaDB 'cars' database on 'filess'
+    name: MariaDB 'cars' database 
     type: MARIADB 
     # JDBC driver 
     driver: org.mariadb.jdbc.Driver
@@ -26,11 +26,25 @@ Server → **Database** (= **Schema**) → Tables/Objects
     # Metadata parameters
     tableNamePattern: '%'
     tableTypes: TABLE
-
-
 ```
 
+### Telosys typical configuration for a MySQL database
 
+```yaml
+  - id: mysqldb
+    name: MySQL 'employees' database 
+    type: MYSQL 
+    # JDBC driver 
+    driver: com.mysql.cj.jdbc.Driver
+    # URL jdbc:mysql://<host>:<port>/<database>?<options>
+    url: jdbc:mysql://yght02.h.filess.io:3306/employeesdb_silentitgo
+    user: john_doe
+    password: not_to_reveal
+    # Metadata parameters
+    tableNamePattern: '%'
+    tableTypes: TABLE
+
+```
 
 ### JDBC driver&#x20;
 
