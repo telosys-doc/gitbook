@@ -102,4 +102,4 @@ When all checks are OK, you are ready to create a model from the database.
 
 To create a new model from one of the databases defined in "databases.yaml" you just have to use the "nm" (New Model) command.
 
-See "[Model creation](models/model-creation.md)"
+See "[Model creation](../models/model-creation.md)"

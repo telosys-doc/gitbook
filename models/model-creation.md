@@ -49,7 +49,7 @@ You can also "copy/paste" certain files if you have similarities between entitie
 
 If you have a relational database with tables and links based on foreign keys then you have a relationship model.  Telosys is able to build its own model from this  database model.
 
-To do so, you just have to define your database -> see the page "[Project databases](../project-databases.md)"
+To do so, you just have to define your database -> see the page "[Project databases](../project-databases/)"
 
 Once you have define the database and check the configuration with "cdb" command you can create a Telosys model from this database with the "**nm**" command.
 
