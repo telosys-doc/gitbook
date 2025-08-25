@@ -18,7 +18,7 @@ xxx
     type: POSTGRESQL 
     # JDBC configuration
     driver: org.postgresql.Driver 
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://localhost:5432/mydatabase
     user: admin
     password: 
     # Metadata parameters
