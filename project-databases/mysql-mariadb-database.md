@@ -42,3 +42,8 @@ Server → **Database** (= **Schema**) → Tables/Objects
 
 #### MySQL
 
+* Name: **MySQL Connector/J** - lightweight JDBC driver (Type 4) for Java
+* Download:  [https://dev.mysql.com/downloads/connector/j/](https://dev.mysql.com/downloads/connector/j/) &#x20;
+* Dirver class name:  **com.mysql.cj.jdbc.Driver** \
+  (since Connector/J 8.0, old versions used **com.mysql.jdbc.Driver**)
+
