@@ -16,7 +16,7 @@ Server → **Database** (= **Schema**) → Tables/Objects
 * **column name**: \
   in MySQL/MariaDB, column names are **not case-sensitive**, \
   whether the identifiers are in quotes or not.
-* **table name**: \
+* **table name** (file system rules matter):\
   \- on **Linux**: may be case-sensitive only if  `lower_case_table_names=0`\
   \- on **Windows**/**macOS**:  case-insensitive.
 
