@@ -11,6 +11,15 @@ Server → **Database** (= **Schema**) → Tables/Objects
   MySQL treats `CREATE DATABASE foo;` and `CREATE SCHEMA foo;` as the same operation.
 * Cross-database queries are allowed within the same server instance (`db1.table1 JOIN db2.table2`)
 
+### Case conversion rules
+
+* **column name**: \
+  in MySQL/MariaDB, column names are **not case-sensitive**, \
+  whether the identifiers are in quotes or not.
+* **table name**: \
+  \- on **Linux**: may be case-sensitive only if  `lower_case_table_names=0`\
+  \- on **Windows**/**macOS**:  case-insensitive.
+
 ### Telosys typical configuration for a MariaDB database
 
 ```yaml
