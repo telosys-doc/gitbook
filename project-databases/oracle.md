@@ -40,3 +40,13 @@ Server (instance) → **Database** → **User=Schema** → Tables/Objects&#x20;
 
 
 
+### JDBC driver
+
+Download from [https://www.oracle.com/fr/database/technologies/appdev/jdbc-downloads.html](https://www.oracle.com/fr/database/technologies/appdev/jdbc-downloads.html)&#x20;
+
+JAR for Oracle versions 21c, 19c, 18c, and 12.2:
+
+* **ojdbc11.jar** ( JDBC 4.3 / JDK11 and JDK17 )&#x20;
+* **ojdbc10.jar** ( JDBC 4.3 / JDK11 )
+* **ojdbc8.jar** ( JDBC 4.2 / JDK8 and JDK11 )
+
