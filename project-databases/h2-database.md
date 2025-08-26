@@ -58,3 +58,11 @@ H2 can run in **3 main modes**:
     tableTypes: TABLE
 
 ```
+
+
+
+### JDBC driver
+
+The H2 JDBC driver is located in the single JAR provided by H2.
+
+JAR file example:  `h2-2.3.232.jar`
