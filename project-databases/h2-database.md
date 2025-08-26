@@ -38,7 +38,7 @@ H2 can run in **3 main modes**:
     name: my H2 database server with storage in file
     type: H2 
     # JDBC connection 
-    url: jdbc:h2:tcp://localhost:9092/D:/Z/db-data/carsdb
+    url: jdbc:h2:tcp://localhost:9092/D:/Z/db-data/mydatabase
     driver: org.h2.Driver
     user: sa
     password: sa
