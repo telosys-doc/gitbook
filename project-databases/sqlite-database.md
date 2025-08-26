@@ -20,5 +20,22 @@
 ### Telosys typical configuration for a SQLite database
 
 ```yaml
-xxx
+  - id: sqlite
+    name: SQLite DB on 'localhost'
+    type: SQLITE 
+    # JDBC config 
+    driver: org.sqlite.JDBC
+    url: jdbc:sqlite:D:\Z\DB-DATA\SQLite-data\sqlite-db-example.db
+    # user: 
+    # password: 
+    # Metadata parameters
+    tableNamePattern: '%'
+    tableTypes: TABLE
 ```
+
+
+
+### JDBC driver&#x20;
+
+Download from [https://github.com/xerial/sqlite-jdbc](https://github.com/xerial/sqlite-jdbc)&#x20;
+
