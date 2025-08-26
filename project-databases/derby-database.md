@@ -4,6 +4,14 @@
 
 **Database** → **Schema** → Tables/Objects
 
+* **Database**: In Derby, the "database" is basically the connection. \
+  There’s only one database per connection (each connection is tied to a single database).\
+  A **database** is essentially a **directory** on disk.
+* **Schema**: Derby supports schemas, similar to PostgreSQL and SQL Server. \
+  In Derby, a schema is a namespace within a database.\
+  A schema contains tables, views, indexes, triggers, and procedures.\
+  Default schema is the database username, usually `APP`  (in uppercase) &#x20;
+
 
 
 ### Telosys typical configuration for a Derby database
@@ -28,13 +36,19 @@
 
 ### JDBC driver
 
-Download: xxxxx
+Download:  [https://db.apache.org/derby/derby\_downloads.html](https://db.apache.org/derby/derby_downloads.html)&#x20;
 
-JAR file example :  `xxxxxx`
+JAR file example:   **`derbyclient.jar`**   (JDBC client for network server mode)
 
 
 
-### Types of use
+### Server Launch
+
+Just launch  **`bin/startNetworkServer`**  ( default port = 1527 )
+
+
+
+### Derby types of use
 
 Derby is written in Java, so it's possible to connect via **JDBC** with all **JVM languages**:
 
