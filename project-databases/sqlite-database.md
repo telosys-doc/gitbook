@@ -39,6 +39,8 @@
 
 Download from [https://github.com/xerial/sqlite-jdbc](https://github.com/xerial/sqlite-jdbc)&#x20;
 
+JAR file example:  `sqlite-jdbc-3.50.3.0.jar`
+
 
 
 ### Notes
