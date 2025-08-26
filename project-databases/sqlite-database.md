@@ -45,12 +45,17 @@ JAR file example:  `sqlite-jdbc-3.50.3.0.jar`
 
 ### Notes
 
-* Authentication:  \
+* **Authentication**:  \
   By default, SQLite databases are just files (.db or .sqlite) on disk.\
   Anyone who can read/write the file has full access to the database.
-* No "catalog" and "schema"\
+* **No "catalog" and "schema"**\
   There is no concept of schema and catalog in SQLite  \
   When Telosys retrieves the database model, 'catalog' and 'schema' are always 'null'.
-* In-memory database\
-  It's possible to work only "in-memory"  \
-  To do so use JDBC URL like this:  `"jdbc:sqlite::memory:"`\
+*   **In-memory database**\
+    It's possible to work only "in-memory"    \
+    To do so use JDBC URL like this:  `"jdbc:sqlite::memory:"`\
+    NB: \
+    &#x20; \- The database exists only in RAM, not on disk
+
+    &#x20; \- As soon as the **connection** is closed, the entire database (all tables) disappears
+
