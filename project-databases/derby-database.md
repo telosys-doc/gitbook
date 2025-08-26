@@ -69,7 +69,7 @@ Applies to both **table names** and **column names**.
   * Case is **preserved exactly as written**
   * They are **case-sensitive** in SQL requests
 
-
+Default **schema** = **username in uppercase**.
 
 ### Derby types of use
 
