@@ -46,9 +46,9 @@ Download:  [https://db.apache.org/derby/derby\_downloads.html](https://db.apache
 
 JAR files required to connect:
 
-* &#x20;**`derbyclient.jar`**  &#x20;
-* **`derbyshared.jar`**  &#x20;
-* **`derbytools.jar`** &#x20;
+* **`derbytools.jar`**  ( org.apache.derby.jdbc.ClientDriver )&#x20;
+* **`derbyclient.jar`**   ( org.apache.derby.client.ClientAutoloadedDriver )
+* **`derbyshared.jar`**   ( org.apache.derby.shared.common.info.ProductVersionHolder )
 
 
 
