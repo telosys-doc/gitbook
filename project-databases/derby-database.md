@@ -58,6 +58,19 @@ Just launch  **`bin/startNetworkServer`**  ( default port = 1527 )
 
 
 
+### Derby case conversion rules
+
+Applies to both **table names** and **column names**.
+
+* **Unquoted identifiers**
+  * Always **converted to UPPERCASE**
+  * They are not case-sensitive in SQL requests
+* **Quoted identifiers**
+  * Case is **preserved exactly as written**
+  * They are **case-sensitive** in SQL requests
+
+
+
 ### Derby types of use
 
 Derby is written in Java, so it's possible to connect via **JDBC** with all **JVM languages**:
