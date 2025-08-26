@@ -10,6 +10,15 @@
   There’s only one database per connection.
 * **Schema**: H2 supports schemas, similar to PostgreSQL and SQL Server. Default schema is `PUBLIC`. You can create others (`CREATE SCHEMA sales;`). Objects belong to schemas.
 
+### H2 case conversion rules
+
+* **Unquoted identifiers**
+  * Always **converted to UPPERCASE**, following the SQL standard.
+  * Applies to both **table names** and **column names**.
+* **Quoted identifiers**
+  * Case is **preserved exactly as written**
+  * They are **case-sensitive** in SQL requests
+
 ### H2 modes
 
 H2 can run in **3 main modes**:
@@ -42,7 +51,7 @@ H2 can run in **3 main modes**:
     driver: org.h2.Driver
     user: sa
     password: sa
-    # Metadata parameters
+    # Metadata parameters (schema name in UPPER CASE)
     catalog: '!'
     schema: 'CARS'
     tableNamePattern: '%'
