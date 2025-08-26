@@ -15,7 +15,28 @@ Server (instance) → **Database** → **User=Schema** → Tables/Objects&#x20;
 
     It is possible to query another user's objects (cross-schema access) if you have the permissions
 
+### Telosys typical configuration for Oracle database
 
+```
+  - id: oracle
+    name: Oracle database
+    type: oracle 
+    # JDBC driver 
+    driver: oracle.jdbc.OracleDriver
+    # JDBC connection
+    #   url for SID:     jdbc:oracle:thin:@[HOST][:PORT]:SID     (older format)
+    #   url for SERVICE: jdbc:oracle:thin:@[HOST][:PORT]/SERVICE (newer format)
+    url: jdbc:oracle:thin:@localhost:1521/MYDBSERVICE
+    user: SCOTT
+    password: TIGER
+    # Metadata parameters
+    catalog: '!'
+    schema: MYSCHEMA
+    tableNamePattern: '%'
+    tableNameInclude:
+    tableNameExclude:
+    tableTypes: TABLE
+```
 
 
 
