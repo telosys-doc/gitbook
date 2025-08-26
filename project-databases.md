@@ -4,6 +4,8 @@ A Telosys project can define one or more **databases**.&#x20;
 
 Each database can be used to create a **new model** based on its database schema (tables, relations, etc).
 
+Telosys uses JDBC, so it is able to connect to **any database** that provides a **JDBC driver**.
+
 Project databases are defined in the file "<mark style="color:purple;">**TelosysTools/databases.yaml**</mark>".
 
 This YAML file can be edited with any editor or IDE.
@@ -93,6 +95,8 @@ Once a database has been defined in "databases.yaml", it is recommended to test 
   &#xNAN;**`cdb <dbid>`**<mark style="color:purple;">**`-s`**</mark>
 * Get database **catalogs** ->  **`-cat`**\
   &#xNAN;**`cdb <dbid>`**<mark style="color:purple;">**`-cat`**</mark>
+* Get database **information** ->  **`-i`**\
+  &#xNAN;**`cdb <dbid>`**<mark style="color:purple;">**`-i`**</mark>
 
 When all checks are OK, you are ready to create a model from the database.
 
