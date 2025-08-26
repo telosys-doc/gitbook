@@ -44,7 +44,7 @@ H2 can run in **3 main modes**:
     password: sa
     # Metadata parameters
     catalog: '!'
-    schema: '!'
+    schema: 'CARS'
     tableNamePattern: '%'
     tableTypes: TABLE
 
