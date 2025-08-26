@@ -22,6 +22,7 @@
   * [SQL Server database](project-databases/sql-server-database.md)
   * [Oracle database](project-databases/oracle-database.md)
   * [H2 database](project-databases/h2-database.md)
+  * [Derby database](project-databases/derby-database.md)
 * [Models and entities](models/README.md)
   * [Model structure](models/model-structure.md)
   * [Entity](models/entity.md)
