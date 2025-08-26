@@ -10,27 +10,33 @@
 * **Schema**: Derby supports schemas, similar to PostgreSQL and SQL Server. \
   In Derby, a schema is a namespace within a database.\
   A schema contains tables, views, indexes, triggers, and procedures.\
-  Default schema is the database username, usually `APP`  (in uppercase) &#x20;
+  Derby defaults schema = current user name (uppercased), \
+  for example if user = "sa" ⇒ schema is "SA".\
+  If connecting without credentials (no user) the default schema "APP" will be used&#x20;
 
 
 
 ### Telosys typical configuration for a Derby database
 
 ```yaml
-  - id: derbydb
-    name: Derby 
-    type: DERBY
-    # JDBC configuration
-    driver: xxxx 
-    url: xxxxx
-    user: john_doe
-    password: not_to_reveal
+  - id: derby
+    name: my Derby server database
+    type: Derby 
+    # JDBC connection
+    driver: org.apache.derby.jdbc.ClientDriver 
+    url: jdbc:derby://localhost:1527/telosysdb;create=true
+    user: foo
+    password: xxxxx
     # Metadata parameters
-    catalog: '!'
-    schema: xxx
+    schema: '!'
+    # catalog: '!'
     tableNamePattern: '%'
     tableTypes: TABLE
 ```
+
+* "_catalog_" is not required
+* "_schema_" can be a schema name or '!' for all schemas&#x20;
+* if authentication is not enabled then "_user_" and "_password_" can have any value
 
 
 
@@ -38,7 +44,11 @@
 
 Download:  [https://db.apache.org/derby/derby\_downloads.html](https://db.apache.org/derby/derby_downloads.html)&#x20;
 
-JAR file example:   **`derbyclient.jar`**   (JDBC client for network server mode)
+JAR files required to connect:
+
+* &#x20;**`derbyclient.jar`**  &#x20;
+* **`derbyshared.jar`**  &#x20;
+* **`derbytools.jar`** &#x20;
 
 
 
