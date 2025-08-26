@@ -19,11 +19,14 @@ H2 can run in **3 main modes**:
      `jdbc:h2:`**`mem`**`:{database-name}`
    * URL with data storage **in file**: \
      `jdbc:h2:`**`{dir-path}`**`/{database-name}`
-2. **Remote Server mode** (accepting external connections)
-   * URL with data storage **in memory**:\
-     `jdbc:h2:`<mark style="color:red;">**`tcp`**</mark><mark style="color:red;">`://{host}:{port}`</mark>`/`**`mem`**`:{database-name}`
-   * URL with data storage **in file**: \
-     `jdbc:h2:`<mark style="color:red;">**`tcp`**</mark><mark style="color:red;">`://{host}:{port}`</mark>`/`**`{dir-path}`**`/{database-name}`
+2.  **Remote Server mode** (accepting external connections)
+
+    * URL with data storage **in memory**:\
+      `jdbc:h2:`<mark style="color:red;">**`tcp`**</mark><mark style="color:red;">`://{host}:{port}`</mark>`/`**`mem`**`:{database-name}`
+    * URL with data storage **in file**: \
+      `jdbc:h2:`<mark style="color:red;">**`tcp`**</mark><mark style="color:red;">`://{host}:{port}`</mark>`/`**`{dir-path}`**`/{database-name}`
+
+    For "SSL" replace "tcp" by "ssl"
 3. **Mixed mode** (embedded + server at the same time)
 
 
