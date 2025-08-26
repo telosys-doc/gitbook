@@ -51,11 +51,11 @@ JAR file example:  `sqlite-jdbc-3.50.3.0.jar`
 * **No "catalog" and "schema"**\
   There is no concept of schema and catalog in SQLite  \
   When Telosys retrieves the database model, 'catalog' and 'schema' are always 'null'.
-*   **In-memory database**\
-    It's possible to work only "in-memory"    \
-    To do so use JDBC URL like this:  `"jdbc:sqlite::memory:"`\
-    NB: \
-    &#x20; \- The database exists only in RAM, not on disk
-
-    &#x20; \- As soon as the **connection** is closed, the entire database (all tables) disappears
+* **In-memory database**\
+  It's possible to work only "in-memory".\
+  The database exists only in RAM, not on disk.  \
+  To do so use JDBC URL like this:  `"jdbc:sqlite::memory:"`\
+  NB: duration=connexion, as soon as the **connection** is closed, the entire database (all tables) disappears. SQLite supports a mode that allows multiple connections to share the same in-memory database: `"jdbc:sqlite:file:memdb1?mode=memory&cache=shared"`\
+  it will create an in-memory database named "memdb1" (this will not create any files on disk)\
+  But even with this mode a shared in-memory database only exists while **at least one connection to it is still open**. As soon as the last connection closes, SQLite frees the memory, and all tables vanish.
 
