@@ -9,7 +9,14 @@ Server (cluster) → **Database** → **Schema** → Tables/Objects&#x20;
 * **Database**: A physical database (separate catalog). Connections are always made to a specific database. Databases are isolated — you can’t query across them without special tools (like `dblink` or FDWs).
 * **Schema**: A logical namespace _inside a database_. A database can have multiple schemas (e.g., `public`, `sales`, `hr`). Objects (tables, views, etc.) live inside schemas. You can query across schemas in the same database (`sales.orders`, `hr.employees`).
 
+### PostgreSQL case conversion rules
 
+* **Unquoted identifiers**
+  * Always **converted to LOWERCASE**
+  * Applies to both **table names** and **column names**.
+* **Quoted identifiers**
+  * Case is **preserved exactly as written**
+  * They are **case-sensitive** in SQL requests
 
 ### Telosys typical configuration for a PostgreSQL database
 
