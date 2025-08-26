@@ -39,3 +39,16 @@
 
 Download from [https://github.com/xerial/sqlite-jdbc](https://github.com/xerial/sqlite-jdbc)&#x20;
 
+
+
+### Notes
+
+* Authentication:  \
+  By default, SQLite databases are just files (.db or .sqlite) on disk.\
+  Anyone who can read/write the file has full access to the database.
+* No "catalog" and "schema"\
+  There is no concept of schema and catalog in SQLite  \
+  When Telosys retrieves the database model, 'catalog' and 'schema' are always 'null'.
+* In-memory database\
+  It's possible to work only "in-memory"  \
+  To do so use JDBC URL like this:  `"jdbc:sqlite::memory:"`\
