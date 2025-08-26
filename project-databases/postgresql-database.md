@@ -36,3 +36,11 @@ Server (cluster) → **Database** → **Schema** → Tables/Objects&#x20;
     tableTypes: TABLE
 ```
 
+
+
+### JDBC driver
+
+Download: [https://jdbc.postgresql.org/](https://jdbc.postgresql.org/)&#x20;
+
+JAR file example :  `postgresql-42.7.7.jar`
+
