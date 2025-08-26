@@ -14,7 +14,6 @@ Server (cluster) → **Database** → **Schema** → Tables/Objects&#x20;
 ### Telosys typical configuration for a PostgreSQL database
 
 ```yaml
-xxx
   - id: pgcars
     name: PostgreSQL 'cars' schema on 'localhost'
     type: POSTGRESQL 

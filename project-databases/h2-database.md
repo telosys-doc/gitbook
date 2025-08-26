@@ -14,15 +14,35 @@
 
 H2 can run in **3 main modes**:
 
-1. **Embedded**  (in-process, `jdbc:h2:mem:`)
-2. **Server mode** (with external connections)
+1. **Embedded**  (in-process)
+   * URL with data storage **in memory**:\
+     `jdbc:h2:`**`mem`**`:{database-name}`
+   * URL with data storage **in file**: \
+     `jdbc:h2:`**`{dir-path}`**`/{database-name}`
+2. **Remote Server mode** (accepting external connections)
+   * URL with data storage **in memory**:\
+     `jdbc:h2:`<mark style="color:red;">**`tcp`**</mark><mark style="color:red;">`://{host}:{port}`</mark>`/`**`mem`**`:{database-name}`
+   * URL with data storage **in file**: \
+     `jdbc:h2:`<mark style="color:red;">**`tcp`**</mark><mark style="color:red;">`://{host}:{port}`</mark>`/`**`{dir-path}`**`/{database-name}`
 3. **Mixed mode** (embedded + server at the same time)
 
 
 
-### Telosys typical configuration for a H2 database
+### Telosys typical configuration for a H2 database in "server" mode with file storage
 
 ```yaml
-xxx
+  - id: h2-srv
+    name: my H2 database server with storage in file
+    type: H2 
+    # JDBC connection 
+    url: jdbc:h2:tcp://localhost:9092/D:/Z/db-data/carsdb
+    driver: org.h2.Driver
+    user: sa
+    password: sa
+    # Metadata parameters
+    catalog: '!'
+    schema: '!'
+    tableNamePattern: '%'
+    tableTypes: TABLE
 
 ```
