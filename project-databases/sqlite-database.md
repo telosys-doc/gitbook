@@ -21,7 +21,7 @@
 
 ```yaml
   - id: sqlite
-    name: SQLite DB on 'localhost'
+    name: SQLite database 
     type: SQLITE 
     # JDBC config 
     driver: org.sqlite.JDBC
