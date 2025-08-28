@@ -1,4 +1,4 @@
-# Oracle
+# Oracle database
 
 ### Structure
 
@@ -49,4 +49,21 @@ JAR for Oracle versions 21c, 19c, 18c, and 12.2:
 * **ojdbc11.jar** ( JDBC 4.3 / JDK11 and JDK17 )&#x20;
 * **ojdbc10.jar** ( JDBC 4.3 / JDK11 )
 * **ojdbc8.jar** ( JDBC 4.2 / JDK8 and JDK11 )
+
+
+
+### Boolean type
+
+Unlike PostgreSQL or MySQL, **Oracle** has **no native BOOLEAN column type** (only PL/SQL supports it).\
+That’s a very common pain point with Oracle.
+
+The most common approach is to store boolean values in a column of type **NUMBER(1)**\
+This is the simplest, portable, and recommended way.\
+For example it allows to use Hibernate without specific converter.
+
+
+
+
+
+
 
