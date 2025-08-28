@@ -43,6 +43,23 @@ JAR file example:  `sqlite-jdbc-3.50.3.0.jar`
 
 
 
+### Boolean type
+
+SQLite **does not have a native BOOLEAN type**.
+
+It uses dynamic typing: a column can store any value regardless of declared type.\
+Conventionally, booleans are stored as:
+
+* 0 →  false
+* 1 →  true
+
+You can declare a column as BOOLEAN, INTEGER, or NUMERIC; SQLite just treats it as an affinity, not a strict type.
+
+If you use **Hibernate** with **SQLite dialect**, a boolean or Boolean in your entity is usually mapped to INTEGER (or NUMERIC) in the DB.\
+Hibernate automatically persists:  true → 1  and false → 0\
+Reading from the column is automatically converted back to boolean.\
+So no converter is needed for standard 0/1 boolean storage.
+
 ### Notes
 
 * **Authentication**:  \
