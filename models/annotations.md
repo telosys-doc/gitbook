@@ -22,8 +22,9 @@ Scope : **entity**  /  Since : **4.0.0**
 
 ### @AutoIncremented
 
-The attribute is supposed to be auto-incremented (for example for an auto-incremented key)\
-Only applicable to numeric types
+This annotation is a synonym/shortcut for "**@GeneratedValue(IDENTITY)**".\
+The attribute value relies on the database’s auto-increment feature.\
+Only applicable to numeric types.
 
 Scope : **attribute**  /  Since : **2.0.0** &#x20;
 
