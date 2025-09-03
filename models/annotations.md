@@ -199,7 +199,8 @@ Strategies:
 
 > @GeneratedValue( **SEQUENCE**, **sequenceName**  \[, allocationSize \[, initialValue ] ]  )\
 > \- sequenceName = the sequence used to provided the generated value\
-> \- allocationSize (optional) : ORM-level optimization, prefetching/batching in memory (for ORM like JPA/HIbernate)\
+> \- allocationSize (optional) = ORM-level optimization, prefetching/batching in memory (for ORM like JPA/HIbernate)\
+> \- initialValue (optional) = first generated value\
 >
 
 * **TABLE** - simulates a sequence using a special table that stores the next value
@@ -208,6 +209,7 @@ Strategies:
 > \- pkValue = the primary key value used to store the current value in the special table \
 > (must be unique to identify the entity/attribute)\
 > \- allocationSize (optional) : ORM-level optimization, prefetching/batching in memory (for ORM like JPA/HIbernate)\
+> \- initialValue (optional) = first generated value\
 >
 
 ### @Id
