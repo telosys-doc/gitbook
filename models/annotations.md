@@ -185,19 +185,26 @@ Scope : **attribute**  (applicable to **numeric types** only)  /  Since : **3.4.
 
 Strategies:
 
-* **AUTO** - the ORM chooses the most appropriate strategy\
-  `@GeneratedValue(AUTO)`
-* **IDENTITY** - relies on the database’s auto-increment feature (int/long)\
-  `@GeneratedValue(IDENTITY)`
-* **SEQUENCE** - uses a database sequence to generate the value\
-  `@GeneratedValue(SEQUENCE` \
-  &#x20; `[, GeneratorName, SequenceName` \
-  &#x20; `[, AllocationSize ] ])`
-* **TABLE** - simulates a sequence using a special table that stores the next value\
-  `@GeneratedValue(TABLE` \
-  &#x20; `[, GeneratorName, TableName` \
-  &#x20; `[, PkColumnName, PkColumnValue, ValueColumnName` \
-  &#x20; `[, AllocationSize ] ] ])`
+* **AUTO** - the ORM chooses the most appropriate strategy
+
+> @GeneratedValue(**AUTO**)\
+>
+
+* **IDENTITY** - relies on the database’s auto-increment feature (int/long)
+
+> @GeneratedValue(**IDENTITY**)\
+>
+
+* **SEQUENCE** - uses a database sequence to generate the value
+
+> @GeneratedValue( **SEQUENCE**, **sequenceName**  \[, allocationSize \[, initialValue ] ]  )\
+> \- sequenceName = the sequence used to provided the generated value
+
+* **TABLE** - simulates a sequence using a special table that stores the next value
+
+> @GeneratedValue( **TABLE**,  **pkValue**  \[, allocationSize \[, initialValue ] ]  )> \
+> \- pkValue = the primary key value used to store the current value in the special table \
+> (must be unique to identify the entity/attribute)
 
 ### @Id
 
