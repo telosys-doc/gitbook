@@ -179,18 +179,25 @@ Scope : **attribute**  /  Since : **2.0.0**
 
 ### @GeneratedValue(string \[, string, ...])
 
-Defines the generated value strategy ("AUTO", "IDENTITY", SEQUENCE" or "TABLE") for an attribute.
+Defines the generated value strategy ("AUTO", "IDENTITY", SEQUENCE" or "TABLE") for an attribute. This is useful for ORM like JPA, etc.
 
 Scope : **attribute**  /  Since : **3.4.0**
 
-Syntax :
+Strategies:
 
-`@GeneratedValue(AUTO)` \
-`@GeneratedValue(IDENTITY)` \
-`@GeneratedValue(SEQUENCE [, GeneratorName, SequenceName` \
-&#x20; `[, AllocationSize ] ])` \
-`@GeneratedValue(TABLE [, GeneratorName, TableName` \
-&#x20; `[, PkColumnName, PkColumnValue, ValueColumnName [, AllocationSize ] ] ])`
+* **AUTO** - the ORM chooses the most appropriate strategy\
+  `@GeneratedValue(AUTO)`
+* **IDENTITY** - relies on the database’s auto-increment feature (int/long)\
+  `@GeneratedValue(IDENTITY)`
+* **SEQUENCE** - uses a database sequence to generate the value\
+  `@GeneratedValue(SEQUENCE` \
+  &#x20; `[, GeneratorName, SequenceName` \
+  &#x20; `[, AllocationSize ] ])`
+* **TABLE** - simulates a sequence using a special table that stores the next value\
+  `@GeneratedValue(TABLE` \
+  &#x20; `[, GeneratorName, TableName` \
+  &#x20; `[, PkColumnName, PkColumnValue, ValueColumnName` \
+  &#x20; `[, AllocationSize ] ] ])`
 
 ### @Id
 
