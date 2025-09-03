@@ -181,7 +181,7 @@ Scope : **attribute**  /  Since : **2.0.0**
 
 Defines the generated value strategy ("AUTO", "IDENTITY", SEQUENCE" or "TABLE") for an attribute. This is useful for ORM like JPA, etc.
 
-Scope : **attribute**  /  Since : **3.4.0**
+Scope : **attribute**  (applicable to **numeric types** only)  /  Since : **3.4.0** &#x20;
 
 Strategies:
 
