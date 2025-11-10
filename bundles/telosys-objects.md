@@ -31,7 +31,7 @@ Telosys provides a set of predefined objects usable in the templates :
   * [**$values** ](https://www.telosys.org/doc/latest/objects/values.html) (literal values generator for attributes)
   * [**$h2**  ](https://www.telosys.org/doc/latest/objects/h2.html) (utility functions for H2 database)
 * Objects dedicated to code generation of certain target languages :  &#x20;
-  * Java :  [**$java** ](https://www.telosys.org/doc/latest/objects/java.html)  [**$jpa** ](https://www.telosys.org/doc/latest/objects/jpa.html)   [**$jdbc**](https://www.telosys.org/doc/latest/objects/jdbc.html)   [**$beanValidation**](https://www.telosys.org/doc/latest/objects/beanValidation.html)  &#x20;
+  * Java :  [**$java** ](https://www.telosys.org/doc/latest/objects/java.html)   [**$jpa** ](https://www.telosys.org/doc/latest/objects/jpa.html)   [**$jdbc**](https://www.telosys.org/doc/latest/objects/jdbc.html)   &#x20;
   * C#  :  [**$csharp**](https://www.telosys.org/doc/latest/objects/csharp.html) &#x20;
   * PHP :  [**$php** ](https://www.telosys.org/doc/latest/objects/php.html) &#x20;
   * SQL :  [**$sql** ](https://www.telosys.org/doc/latest/objects/sql.html)&#x20;
@@ -39,6 +39,7 @@ Telosys provides a set of predefined objects usable in the templates :
 * Deprecated objects (do not use, just for backward compatibility) : &#x20;
   * ~~**$jdbcFactory**~~  (use **$factory** instead)
   * ~~**$today**~~ (use **$now** instead)
+  * ~~**$beanValidation**~~ (all is now in **$java**)
 
 ## Objects reference documentation
 
