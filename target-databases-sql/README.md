@@ -1,4 +1,4 @@
-# Target databases (SQL)
+# 🎯  Target databases (SQL)
 
 With Telosys you can generate SQL scripts to manage your database (create table, drop table, foreign key definition, etc).
 

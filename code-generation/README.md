@@ -1,4 +1,4 @@
-# Code generation
+# ✨  Code generation
 
 <figure><img src="https://res.cloudinary.com/dhcihuzk8/image/upload/v1735827790/telosys-code-generation-001.png" alt="" width="563"><figcaption></figcaption></figure>
 
