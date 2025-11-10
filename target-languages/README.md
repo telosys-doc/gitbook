@@ -39,8 +39,9 @@ All the pre-configured target languages currently supported by Telosys are defin
 
 For more detailed information, see the automatically generated documentation :&#x20;
 
-* **Latest version (4.1)**&#x20;
-  * [Target languages in Telosys latest version](https://www.telosys.org/doc/latest/languages/)
-* Previous version :&#x20;
-  * [Target languages in Telosys version 4.0](https://www.telosys.org/doc/v400/languages/index.html)
-  * [Target languages in Telosys version 3.3](https://www.telosys.org/doc/v330/languages/index.html)
+* **Latest version**&#x20;
+  * [Telosys 4.3.0 - Target languages](https://www.telosys.org/doc/v430/languages/index.html)
+* Previous versions :&#x20;
+  * [Telosys 4.1.0 - Target languages](https://www.telosys.org/doc/latest/languages/)
+  * [Telosys 4.0.0 - Target languages](https://www.telosys.org/doc/v400/languages/index.html)
+  * [Telosys 3.3.0 - Target languages](https://www.telosys.org/doc/v330/languages/index.html)
