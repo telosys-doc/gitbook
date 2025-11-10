@@ -1,4 +1,4 @@
-# Bundles of templates
+# 📦 Bundles of templates
 
 Telosys code generation is based on "**templates**".&#x20;
 
