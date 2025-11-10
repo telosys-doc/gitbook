@@ -37,11 +37,11 @@ All the pre-configured target languages currently supported by Telosys are defin
 * [Scala](scala.md)
 * [TypeScript](typescript.md)
 
-For more detailed information, see the automatically generated documentation :&#x20;
+For more detailed information, see the auto-generated documentation :&#x20;
 
 * **Latest version**&#x20;
   * [Telosys 4.3.0 - Target languages](https://www.telosys.org/doc/v430/languages/index.html)
 * Previous versions :&#x20;
-  * [Telosys 4.1.0 - Target languages](https://www.telosys.org/doc/latest/languages/)
+  * [Telosys 4.1.0 - Target languages](https://www.telosys.org/doc/v410/languages/)
   * [Telosys 4.0.0 - Target languages](https://www.telosys.org/doc/v400/languages/index.html)
   * [Telosys 3.3.0 - Target languages](https://www.telosys.org/doc/v330/languages/index.html)
