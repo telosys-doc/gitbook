@@ -45,8 +45,9 @@ Telosys provides a set of predefined objects usable in the templates :
 The documentation reference for each object is available here :
 
 * **Latest version** :&#x20;
-  * [Telosys 4.1.0 - objects reference](https://www.telosys.org/doc/v410/objects/index.html)
+  * [Telosys 4.3.0 - objects reference](https://www.telosys.org/doc/v430/objects/index.html)
 * Previous version :&#x20;
+  * [Telosys 4.1.0 - objects reference](https://www.telosys.org/doc/v410/objects/index.html)
   * [Telosys 4.0.0 - objects reference](https://www.telosys.org/doc/v400/objects/index.html)
   * [Telosys 3.3.0 - objects reference](https://www.telosys.org/doc/v330/objects/index.html)
 
