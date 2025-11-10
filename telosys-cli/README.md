@@ -1,3 +1,7 @@
+---
+icon: rectangle-terminal
+---
+
 # Telosys CLI
 
 The **Telosys Command Line Interface** allows you to use all Telosys features with a simple and light Command Line Interface.

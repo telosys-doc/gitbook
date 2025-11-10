@@ -1,3 +1,7 @@
+---
+icon: code-branch
+---
+
 # Telosys with Git
 
 You can use Git to manage your models and bundles of templates.&#x20;

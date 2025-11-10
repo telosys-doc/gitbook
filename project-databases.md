@@ -1,3 +1,7 @@
+---
+icon: database
+---
+
 # Project databases
 
 A Telosys project can define one or more **databases**.&#x20;

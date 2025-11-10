@@ -1,3 +1,7 @@
+---
+icon: laptop-code
+---
+
 # How to contribute
 
 You can contribute to the project in different ways...

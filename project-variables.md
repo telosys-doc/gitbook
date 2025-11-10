@@ -1,3 +1,7 @@
+---
+icon: file-invoice-dollar
+---
+
 # Project variables
 
 Each Telosys project has a set of variables available at "**project level**".&#x20;
@@ -8,7 +12,8 @@ Project variables are defined in the file "**TelosysTools/telosys-tools.cfg**".
 
 Each line has the following syntax :
 
-<pre><code><strong>VARIABLE_NAME = value</strong></code></pre>
+<pre><code><strong>VARIABLE_NAME = value
+</strong></code></pre>
 
 Each line starting with "#" is a comment :
 

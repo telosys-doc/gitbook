@@ -1,3 +1,7 @@
+---
+icon: circle-half-stroke
+---
+
 # Telosys 3 Eclipse plugin
 
 {% hint style="warning" %}

@@ -1,3 +1,7 @@
+---
+icon: vscode
+---
+
 # Telosys with VSCode
 
 

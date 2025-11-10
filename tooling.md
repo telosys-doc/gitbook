@@ -1,3 +1,7 @@
+---
+icon: pen-to-square
+---
+
 # IDE and editors
 
 Extensions or plugins have been developed for some editors or IDEs to facilitate editing of Telosys files.

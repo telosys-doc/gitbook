@@ -1,3 +1,7 @@
+---
+icon: hand-heart
+---
+
 # Support the project
 
 This project took a lot of time and energy, so if you like Telosys you can support us a bit to encourage us to keep improving it.

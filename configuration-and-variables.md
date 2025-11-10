@@ -1,3 +1,7 @@
+---
+icon: gear
+---
+
 # Project configuration
 
 The project configuration is defined in the file **TelosysTools/telosys-tools.cfg**
