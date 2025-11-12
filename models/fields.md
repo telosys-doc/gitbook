@@ -1,4 +1,4 @@
-# Attribute / Link
+# Attribute
 
 ### Syntax
 
@@ -73,20 +73,6 @@ Available neutral types :&#x20;
 * **string** (standard "string" type)
 * **time** (to store a time with hour, minute, second, and optionally nanosecond - without time zone)
 * **timestamp** (to store a date and time - without time zone)
-
-
-
-### Link type
-
-A link is a reference to another entity. It's a relationship with a cardinality (one to many, many to one, etc). So the type is the **referenced entity name**. Of course, the referenced entity must exist in the model (at least the entity file).\
-To reference a **collection** of entities just add "**\[ ]**" after the entity name.&#x20;
-
-Examples :&#x20;
-
-* **Driver** (to reference a single Driver instance, "0..1" cardinality)&#x20;
-* **Driver\[ ]** (to reference a collection of Driver instances, "0..N" cardinality)
-
-
 
 
 
