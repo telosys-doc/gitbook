@@ -56,9 +56,17 @@ Examples of **invalid** attribute names :
 
 ### Attribute type
 
-An attribute is a simple and unitary piece of data such as a string, a number, etc. Its type is defined by a "**neutral type**" independent of any programming language. Each "neutral type" will be converted into the target language type during generation. Telosys offers automatic conversion for most used languages (Java, C#, etc, see [target-languages](../target-languages/ "mention")).
+An attribute is a simple and unitary piece of data such as a string, a number, etc.&#x20;
 
-### Available neutral types&#x20;
+Its type is defined by a "**neutral type**" independent of any programming language.&#x20;
+
+Each "neutral type" will be converted into the target language type during generation.&#x20;
+
+Telosys offers automatic conversion for most used languages (Java, C#, etc, see [target-languages](../target-languages/ "mention")).
+
+
+
+### Available types&#x20;
 
 #### String or text type&#x20;
 
@@ -70,9 +78,9 @@ An attribute is a simple and unitary piece of data such as a string, a number, e
 
 #### Temporal types&#x20;
 
-<table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>date</strong>  </td><td>to store a date with only <strong>year</strong>, <strong>month</strong> and <strong>day</strong></td></tr><tr><td><strong>time</strong> </td><td>to store a time with <strong>hour</strong>, <strong>minute</strong>, <strong>second</strong>, and optionally nanosecond<br>without time zone</td></tr><tr><td><strong>datetime</strong> <br>(since ver 4.3.0)</td><td>to store a date with the time <br><strong>year</strong>, <strong>month, day, hour</strong>, <strong>minute</strong>, <strong>second</strong>, and optionally nanosecond<br>without time zone</td></tr><tr><td><strong>datetimetz</strong> <br>(since ver 4.3.0)</td><td>same as "datetime" but with "Time Zone Offset"</td></tr><tr><td><strong>timetz</strong><br>(since ver 4.3.0)</td><td>same as "time" but with "Time Zone Offset"</td></tr><tr><td><em><strong>timestamp</strong></em> </td><td>synonym for "datetime",  deprecated since ver 4.3.0 </td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>date</strong>  </td><td>to store a date <br><strong>year</strong>, <strong>month</strong> and <strong>day</strong></td></tr><tr><td><strong>time</strong> </td><td>to store a time <br><strong>hour</strong>, <strong>minute</strong>, <strong>second</strong>, and optionally nanosecond<br>without time zone</td></tr><tr><td><strong>datetime</strong> <br>(since ver 4.3.0)</td><td>to store a date with the time <br><strong>year</strong>, <strong>month, day, hour</strong>, <strong>minute</strong>, <strong>second</strong>, and optionally nanosecond<br>without time zone</td></tr><tr><td><strong>datetimetz</strong> <br>(since ver 4.3.0)</td><td>same as "datetime" but with "Time Zone Offset"</td></tr><tr><td><strong>timetz</strong><br>(since ver 4.3.0)</td><td>same as "time" but with "Time Zone Offset"</td></tr><tr><td><em><strong>timestamp</strong></em> </td><td>synonym for "datetime",  deprecated since ver 4.3.0 </td></tr></tbody></table>
 
 #### Other types&#x20;
 
-<table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>boolean</strong>  </td><td>to store "true"/"false" value</td></tr><tr><td><strong>xx</strong></td><td>txxx</td></tr><tr><td><strong>xx</strong></td><td>xx</td></tr><tr><td><strong>binary</strong>  </td><td>to store a sequence of bytes</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>boolean</strong>  </td><td>to store "true"/"false" value</td></tr><tr><td><strong>uuid</strong><br>(since ver 4.3.0)</td><td>"Universally Unique Identifier" <br>(128-bit number used to uniquely identify information)</td></tr><tr><td><strong>binary</strong>  </td><td>to store a sequence of bytes</td></tr></tbody></table>
 
