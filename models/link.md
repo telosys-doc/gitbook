@@ -71,7 +71,17 @@ So we have a "**One-to-Many"** relationship from PurchaseOrder to PurchaseOrderI
 
 ```
 PurchaseOrder {
-  items : PurchaseOrderItem[] ;  // One-to-Many due to "[ ]" (many references)
+  items : PurchaseOrderItem[] ;  
+  // One-to-Many due to "[ ]" (many references)
+  // mappedBy will be inferred from the owning side if possible
+}
+```
+
+```
+PurchaseOrder {
+  items : PurchaseOrderItem[] { @MappedBy(purchaseOrder) } ;
+  // One-to-Many due to "[ ]" (many references)
+  // mappedBy explicitly defined
 }
 ```
 
@@ -91,8 +101,8 @@ In a relational database, a "**join table**" (association table) is required to 
 ```
 @JoinEntity  // marks this entity as a "join entity" (just for relationship)
 EmpSkill { 
-  empId   : int  { @Id @FK(Employee) @DbName(EMP_ID) };
-  skillId : long { @Id @FK(Skill) @DbName(SKILL_ID)};    
+  empId   : int  { @Id @FK(Employee) @DbName(EMP_ID) }; // 1rst Foreign Key
+  skillId : long { @Id @FK(Skill) @DbName(SKILL_ID)};   // 2nd Foreign Key
 }
 ```
 
