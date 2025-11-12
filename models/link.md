@@ -26,9 +26,10 @@ items : PurchaseOrderItem[] ; // link = collection of PurchaseOrderItem
 Example with 2 entities "**Employee**" and "**Department**"&#x20;
 
 * a Department can have many Employees
-* each **Employee** works in **one Department**\
-  so we have a "**Many-to-One"** relationship from Employee to Department\
-  **N employees → 1 department**
+* each **Employee** works in **one Department**
+
+So we have a "**Many-to-One"** relationship from Employee to Department\
+**N employees → 1 department**
 
 ```
 Employee {
@@ -45,7 +46,7 @@ Example with 2 entities "**Employee**" and "**Computer**"
 * each Employee is assigned one Computer&#x20;
 *  each Computer is assigned to one Employee
 
-So we have a "One-To-One" relationship between Employee and Computer
+So we have a "**One-To-One**" relationship between Employee and Computer
 
 ```
 Employee {
