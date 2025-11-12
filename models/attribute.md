@@ -2,11 +2,11 @@
 
 ### Syntax
 
-An attribute or link definition is composed of the following elements :
+An attribute definition is composed of the following elements :
 
 * **name**
 * **":"** (separator)
-* **type** (basic attribute type or referenced entity for a link)
+* **type** (attribute "neutral type" )
 * further information (optional) defined between **"{"** and **"}"**
   * **annotations** (optional) &#x20;
   * **tags** (optional) &#x20;
@@ -27,7 +27,7 @@ name : type {
             tags } ;
 ```
 
-###
+
 
 ### Name
 
@@ -56,7 +56,7 @@ Examples of **invalid** attribute names :
 
 ### Attribute type
 
-An attribute is a simple and unitary piece of data such as a string, a number, etc. Its type is defined by a "**neutral type**" independent of any programming language. Each "neutral type" will be converted into the target language type during generation. Telosys offers automatic conversion for most used languages (Java, C#, etc).
+An attribute is a simple and unitary piece of data such as a string, a number, etc. Its type is defined by a "**neutral type**" independent of any programming language. Each "neutral type" will be converted into the target language type during generation. Telosys offers automatic conversion for most used languages (Java, C#, etc, see [target-languages](../target-languages/ "mention")).
 
 Available neutral types :&#x20;
 
