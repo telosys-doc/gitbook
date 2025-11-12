@@ -130,3 +130,41 @@ Skill {
 
 
 
+### Links and database joins
+
+#### Link based on an explicit Foreign Key&#x20;
+
+When a Foreign Key is explicitly defined (with a name) in the entity (see the @FK annotation), \
+it can be used in the link definition using **@LinkByFK(**_**foreignKeyName**_**)** .
+
+Example
+
+```
+  subjectId : int { @FK(FK_TICKET_SUBJECT, Subject) } ; // the Foreign Key
+  subject   : Subject { @LinkByFK(FK_TICKET_SUBJECT) }; // the link based on FK
+```
+
+#### Link based on model attributes&#x20;
+
+When a foreign key is not explicitly defined in the entity, but all the attributes usable for the link are defined, it is possible to use them directly. To do this, use **@LinkByAttr(**_**attributeName(s)**_**)**
+
+Example
+
+```
+  empId    : int ;  // the attribute (its database column) usable for the link
+  employee : Employee { @LinkByAttr(empId) } ;
+```
+
+
+
+
+
+### Other annotations for links
+
+* **@Insertable(**_**true**_**|**_**false**_**)**  and   **@Updatable(**_**true**_**|**_**false**_**)**
+* **@FetchTypeEager**  and   **@FetchTypeLazy**
+* **@Cascade(**_**type**_**)**
+* **@OrphanRemoval**
+
+See [annotations.md](annotations.md "mention")
+
