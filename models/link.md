@@ -155,7 +155,14 @@ Example
   employee : Employee { @LinkByAttr(empId) } ;
 ```
 
+#### Link based on a join table
 
+&#x20;For a **Many-to-Many** relationship a join table is required, in the model this join table is materialized by a "**join entity**". The link "owning side" is defined with **@LinkByJoinEntity(**_**joinEntityName**_**)**
+
+Example
+
+<pre><code><strong>  skills : Skill[] { @ManyToMany @LinkByJoinEntity(EmpSkill) };
+</strong></code></pre>
 
 
 
