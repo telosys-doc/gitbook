@@ -26,7 +26,7 @@
 * [Models and entities](models/README.md)
   * [Model structure](models/model-structure.md)
   * [Entity](models/entity.md)
-  * [Attribute](models/fields.md)
+  * [Attribute](models/attribute.md)
   * [Link](models/link.md)
   * [Annotations](models/annotations.md)
   * [Tags](models/tags.md)

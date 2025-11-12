@@ -10,6 +10,6 @@ See pages below for more information:
 
 * [Model structure](model-structure.md)&#x20;
 * [Entity](entity.md)
-* [Attribute / Link](fields.md)
+* [Attribute / Link](attribute.md)
 * [Annotations](annotations.md)
 * [Tags](tags.md)
