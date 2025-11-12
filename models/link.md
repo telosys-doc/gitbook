@@ -21,7 +21,7 @@ items : PurchaseOrderItem[] ; // link = collection of PurchaseOrderItem
 
 ### Cardinalities
 
-#### "Many To One" link&#x20;
+#### "Many To One"
 
 Example with 2 entities "**Employee**" and "**Department**"&#x20;
 
@@ -37,9 +37,11 @@ Employee {
 }
 ```
 
+When using a **single reference** to an entity the cardinality is "**Many-to-One**" **by default**.
 
 
-#### "One To One" link&#x20;
+
+#### "One To One"
 
 Example with 2 entities "**Employee**" and "**Computer**"
 
@@ -58,9 +60,14 @@ To indicate that this is a "**one-to-one**" relationship, add the annotation **@
 
 
 
-#### "One To Many" link
+#### "One To Many"
 
+Example with 2 entities "**PurchaseOrder**" and "**PurchaseOrderItem**"
 
+* each PurchaseOrder has many PurchaseOrderItem
+*  each PurchaseOrderItem is assigned to a single PurchaseOrder&#x20;
+
+So we have a "**One-to-Many"** relationship from PurchaseOrder to PurchaseOrderItem&#x20;
 
 ```
 PurchaseOrder {
@@ -70,7 +77,7 @@ PurchaseOrder {
 
 
 
-#### "Many To Many" link
+#### "Many To Many"
 
 
 
