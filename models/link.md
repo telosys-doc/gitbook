@@ -79,11 +79,34 @@ PurchaseOrder {
 
 #### "Many To Many"
 
+Example with 2 entities "**Employee**" and "**Skill**"
 
+* an Employee can have many Skills
+* a Skill can be assigned to several Employees
+
+So we have a "**Many-toMany**" relationship between Employee  and Skill&#x20;
+
+In a relational database, a "**join table**" (association table) is required to represent a Many-to-Many relationship. In the Telosys model, this "join table" is materialized by a "**join entity**" (a special entity that allows the "join table" to be represented in the model).&#x20;
+
+```
+@JoinEntity  // marks this entity as a "join entity" (just for relationship)
+EmpSkill { 
+  empId   : int  { @Id @FK(Employee) @DbName(EMP_ID) };
+  skillId : long { @Id @FK(Skill) @DbName(SKILL_ID)};    
+}
+```
 
 ```
 Employee {
   skills : Skill[] { @ManyToMany @LinkByJoinEntity(EmpSkill) };
+  // use @LinkByJoinEntity on the "owning-side" of the relationship 
+}
+```
+
+```
+Skill {
+  employees : Employee[] { @ManyToMany @MappedBy(skills) @FetchTypeEager }; 
+  // use @MappedBy on the "inverse-side" of the relationship (like with JPA)
 }
 ```
 
