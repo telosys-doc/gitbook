@@ -64,19 +64,15 @@ An attribute is a simple and unitary piece of data such as a string, a number, e
 
 <table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>string</strong> </td><td>standard "string" type</td></tr></tbody></table>
 
-#### Boolean type
-
-<table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>boolean</strong>  </td><td>to store "true"/"false" value</td></tr></tbody></table>
-
 #### Numeric types&#x20;
 
 <table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>byte</strong>  </td><td>8-bit integer<br>range: -128 to +127</td></tr><tr><td><strong>short</strong> </td><td>16-bit integer<br>range: -32,768 to +32,767</td></tr><tr><td><strong>int</strong>   </td><td>32-bit integer <br>range: -2,147,483,648 to +2,147,483,647</td></tr><tr><td><strong>long</strong>  </td><td>64-bit integer<br>range: -9,223,372,036,854,775,808 to +9,223,372,036,854,775,807</td></tr><tr><td><strong>float</strong>  </td><td>single-precision 32-bit IEEE 754 floating point</td></tr><tr><td><strong>double</strong></td><td>double-precision 64-bit IEEE 754 floating point</td></tr><tr><td><strong>decimal</strong>  </td><td>arbitrary precision decimal number,<br>not limited to 32 or 64 bits like float or double</td></tr></tbody></table>
 
 #### Temporal types&#x20;
 
-<table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>date</strong>  </td><td>to store a date with only year, month and day</td></tr><tr><td><strong>time</strong> </td><td>to store a time with hour, minute, second, and optionally nanosecond<br>without time zone</td></tr><tr><td><strong>xx</strong></td><td>xx</td></tr><tr><td><strong>timestamp</strong> </td><td>to store a date and time <br> without time zone</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>date</strong>  </td><td>to store a date with only <strong>year</strong>, <strong>month</strong> and <strong>day</strong></td></tr><tr><td><strong>time</strong> </td><td>to store a time with <strong>hour</strong>, <strong>minute</strong>, <strong>second</strong>, and optionally nanosecond<br>without time zone</td></tr><tr><td><strong>datetime</strong> <br>(since ver 4.3.0)</td><td>to store a date with the time <br><strong>year</strong>, <strong>month, day, hour</strong>, <strong>minute</strong>, <strong>second</strong>, and optionally nanosecond<br>without time zone</td></tr><tr><td><strong>datetimetz</strong> <br>(since ver 4.3.0)</td><td>same as "datetime" but with "Time Zone Offset"</td></tr><tr><td><strong>timetz</strong><br>(since ver 4.3.0)</td><td>same as "time" but with "Time Zone Offset"</td></tr><tr><td><em><strong>timestamp</strong></em> </td><td>synonym for "datetime",  deprecated since ver 4.3.0 </td></tr></tbody></table>
 
 #### Other types&#x20;
 
-<table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>xx</strong></td><td>xxx</td></tr><tr><td><strong>xx</strong></td><td>txxx</td></tr><tr><td><strong>xx</strong></td><td>xx</td></tr><tr><td><strong>binary</strong>  </td><td>to store a sequence of bytes</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>boolean</strong>  </td><td>to store "true"/"false" value</td></tr><tr><td><strong>xx</strong></td><td>txxx</td></tr><tr><td><strong>xx</strong></td><td>xx</td></tr><tr><td><strong>binary</strong>  </td><td>to store a sequence of bytes</td></tr></tbody></table>
 
