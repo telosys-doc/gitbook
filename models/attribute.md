@@ -60,46 +60,23 @@ An attribute is a simple and unitary piece of data such as a string, a number, e
 
 ### Available neutral types&#x20;
 
-####
+#### String or text type&#x20;
 
-<table data-header-hidden><thead><tr><th width="183.5999755859375"></th><th></th></tr></thead><tbody><tr><td><h4>String/text type</h4></td><td></td></tr><tr><td>🔹<strong>string</strong> </td><td>standard "string" type</td></tr><tr><td><h4>Boolean type</h4></td><td></td></tr><tr><td>🔹<strong>boolean</strong>  </td><td>to store "true"/"false" value</td></tr><tr><td><h4>Numeric types</h4></td><td></td></tr><tr><td></td><td></td></tr><tr><td><h4>Temporal types </h4></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody></table>
-
-#### String and text type&#x20;
-
-**string** (standard "string" type)
+<table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>string</strong> </td><td>standard "string" type</td></tr></tbody></table>
 
 #### Boolean type
 
-**boolean**  (to store "true"/"false" value)
+<table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>boolean</strong>  </td><td>to store "true"/"false" value</td></tr></tbody></table>
 
 #### Numeric types&#x20;
 
-* **byte**  (8-bit integer, range: -128 to +127)
-* **short** (16-bit integer, range: -32,768 to +32,767)
-* **int**   (32-bit integer , range: -2,147,483,648 to +2,147,483,647)
-* **long**  (64-bit integer, range: -9,223,372,036,854,775,808 to +9,223,372,036,854,775,807)
-
-
+<table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>byte</strong>  </td><td>8-bit integer<br>range: -128 to +127</td></tr><tr><td><strong>short</strong> </td><td>16-bit integer<br>range: -32,768 to +32,767</td></tr><tr><td><strong>int</strong>   </td><td>32-bit integer <br>range: -2,147,483,648 to +2,147,483,647</td></tr><tr><td><strong>long</strong>  </td><td>64-bit integer<br>range: -9,223,372,036,854,775,808 to +9,223,372,036,854,775,807</td></tr><tr><td><strong>float</strong>  </td><td>single-precision 32-bit IEEE 754 floating point</td></tr><tr><td><strong>double</strong></td><td>double-precision 64-bit IEEE 754 floating point</td></tr><tr><td><strong>decimal</strong>  </td><td>arbitrary precision decimal number,<br>not limited to 32 or 64 bits like float or double</td></tr></tbody></table>
 
 #### Temporal types&#x20;
 
+<table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>date</strong>  </td><td>to store a date with only year, month and day</td></tr><tr><td><strong>time</strong> </td><td>to store a time with hour, minute, second, and optionally nanosecond<br>without time zone</td></tr><tr><td><strong>xx</strong></td><td>xx</td></tr><tr><td><strong>timestamp</strong> </td><td>to store a date and time <br> without time zone</td></tr></tbody></table>
 
+#### Other types&#x20;
 
-
-
-* **binary**  (to store a sequence of bytes)
-*
-*
-* **date**  (to store a date with only year, month and day)
-* **decimal**  (arbitrary precision decimal number, not limited to 32 or 64 bits like float or double)
-* **double**  (double-precision 64-bit IEEE 754 floating point)
-* **float**  (single-precision 32-bit IEEE 754 floating point)
-*
-*
-*
-*
-* **time** (to store a time with hour, minute, second, and optionally nanosecond - without time zone)
-* **timestamp** (to store a date and time - without time zone)
-
-
+<table data-header-hidden><thead><tr><th width="196.39990234375"></th><th></th></tr></thead><tbody><tr><td><strong>xx</strong></td><td>xxx</td></tr><tr><td><strong>xx</strong></td><td>txxx</td></tr><tr><td><strong>xx</strong></td><td>xx</td></tr><tr><td><strong>binary</strong>  </td><td>to store a sequence of bytes</td></tr></tbody></table>
 
