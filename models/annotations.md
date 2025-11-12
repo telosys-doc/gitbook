@@ -386,7 +386,9 @@ Scope : **link**  /  Since : **3.3.0**
 ### @MappedBy(attributeName)
 
 Defines the "mappedBy" attribute for a link.\
-Usable for an "inverse side" relationship.
+Usable for an "**inverse side**" relationship.  \
+Can be used with @OneToMany, @OneToOne, @ManyToMany\
+(not with @ManyToOne, which is always the "owning side")
 
 Scope : **link**  /  Since : **3.3.0**
 
