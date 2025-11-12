@@ -50,13 +50,21 @@ Example with 2 entities "**Employee**" and "**Computer**"
 
 So we have a "**One-To-One**" relationship between Employee and Computer
 
+To indicate that this is a "**one-to-one**" relationship, add the annotation **@OneToOne**
+
 ```
 Employee {
   computer : Computer { @OneToOne } ; // One-to-One due to single ref and "@OneToOne"
+  // Owning-side (with default FK)
 }
 ```
 
-To indicate that this is a "**one-to-one**" relationship, add the annotation **@OneToOne**&#x20;
+```
+Computer {
+  employee : Employee { @OneToOne @MappedBy(computer) } ; 
+  // Inverse-side due to "@MappedBy"
+}
+```
 
 
 
