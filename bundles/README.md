@@ -1,4 +1,8 @@
-# 📦 Bundles of templates
+---
+icon: layer-group
+---
+
+# Bundles of templates
 
 Telosys code generation is based on "**templates**".&#x20;
 

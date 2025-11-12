@@ -1,4 +1,8 @@
-# 🎯  Target languages
+---
+icon: bullseye-arrow
+---
+
+# Target languages
 
 <figure><img src="../.gitbook/assets/telosys-v4-target-languages.png" alt=""><figcaption><p>Telosys 4.0 predefined target languages</p></figcaption></figure>
 
