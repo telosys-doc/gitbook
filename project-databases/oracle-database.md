@@ -9,7 +9,7 @@ Below are examples of typical configurations for **Oracle** database.
 ```yaml
   - id: oracle
     name: Oracle database
-    type: oracle 
+    type: ORACLE
     # JDBC connection
     #   url for SID:     jdbc:oracle:thin:@[HOST][:PORT]:SID     (older format)
     #   url for SERVICE: jdbc:oracle:thin:@[HOST][:PORT]/SERVICE (newer format)
@@ -25,7 +25,7 @@ Below are examples of typical configurations for **Oracle** database.
 ```yaml
   - id: oracle
     name: Oracle database
-    type: oracle 
+    type: ORACLE
     # JDBC driver 
     driver: oracle.jdbc.OracleDriver
     # JDBC connection

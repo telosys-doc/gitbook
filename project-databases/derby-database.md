@@ -9,7 +9,7 @@ Below are examples of typical configurations for a **PostgreSQL** database.
 ```yaml
   - id: derby
     name: my Derby server database
-    type: Derby 
+    type: DERBY
     # JDBC connection 
     url: jdbc:derby://localhost:1527/telosysdb;create=true
     user: foo
@@ -21,7 +21,7 @@ Below are examples of typical configurations for a **PostgreSQL** database.
 ```yaml
   - id: derby
     name: my Derby server database
-    type: Derby 
+    type: DERBY
     # JDBC connection
     driver: org.apache.derby.jdbc.ClientDriver 
     url: jdbc:derby://localhost:1527/telosysdb;create=true
