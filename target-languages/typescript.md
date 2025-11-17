@@ -12,21 +12,25 @@ The information below shows the behavior of the generator when TypeScript is the
 
 The table below describes how **model neutral types** are automatically converted to **TypeScript types**
 
-| Model type | TypeScript type |   |
-| ---------- | --------------- | - |
-| string     | **string**      |   |
-| byte       | **number**      |   |
-| short      | **number**      |   |
-| int        | **number**      |   |
-| long       | **number**      |   |
-| decimal    | **number**      |   |
-| float      | **number**      |   |
-| double     | **number**      |   |
-| boolean    | **boolean**     |   |
-| date       | **Date**        |   |
-| time       | **Date**        |   |
-| timestamp  | **Date**        |   |
-| binary     | **any**         |   |
+| Model type    | TypeScript type |   |
+| ------------- | --------------- | - |
+| string        | **string**      |   |
+| byte          | **number**      |   |
+| short         | **number**      |   |
+| int           | **number**      |   |
+| long          | **number**      |   |
+| decimal       | **number**      |   |
+| float         | **number**      |   |
+| double        | **number**      |   |
+| boolean       | **boolean**     |   |
+| date          | **Date**        |   |
+| time          | **Date**        |   |
+| timetz        | **Date**        |   |
+| datetime      | **Date**        |   |
+| datetimetz    | **Date**        |   |
+| ~~timestamp~~ | **Date**        |   |
+| uuid          | **string**      |   |
+| binary        | **Uint8Array**  |   |
 
 ### Annotations effects
 
