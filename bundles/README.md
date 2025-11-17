@@ -33,13 +33,13 @@ The **Velocity engine** used in Telosys is **version 1.7**
 
 For more information about "**templates**" see :
 
-* [Velocity language](velocity-language.md)
-* [Velocity directives](velocity-directives.md)
-* [Velocity object types](velocity-objects.md)
-* [Telosys directives](telosys-directives.md)
-* [Telosys objects](telosys-objects.md)
-* [Code snippets](code-snippets.md)
+* [velocity-language.md](velocity-language.md "mention")
+* [velocity-directives.md](velocity-directives.md "mention")
+* [velocity-objects.md](velocity-objects.md "mention")
+* [telosys-directives.md](telosys-directives.md "mention")
+* [telosys-variables.md](telosys-variables.md "mention")
+* [telosys-objects.md](telosys-objects.md "mention")
+* [code-snippets.md](code-snippets.md "mention")
 
 
 
-###
