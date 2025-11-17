@@ -8,8 +8,13 @@ A "Telosys model" is a model based on a set of text files written with the Telos
 
 See pages below for more information:
 
-* [Model structure](model-structure.md)&#x20;
-* [Entity](entity.md)
-* [Attribute / Link](attribute.md)
-* [Annotations](annotations.md)
-* [Tags](tags.md)
+* [model-structure.md](model-structure.md "mention")
+* [entity.md](entity.md "mention")
+* [attribute.md](attribute.md "mention")
+* [link.md](link.md "mention")
+* [annotations.md](annotations.md "mention")
+* [tags.md](tags.md "mention")
+* [examples.md](examples.md "mention")
+* [model-creation.md](model-creation.md "mention")
+* [model-installation.md](model-installation.md "mention")
+* [models-management.md](models-management.md "mention")
