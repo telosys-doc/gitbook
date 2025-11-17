@@ -34,10 +34,10 @@ The table below describes how model neutral types are automatically converted to
 | date        | <p><strong>DateOnly?</strong> <br><strong>DateOnly</strong></p>                                                       | <p><br>@NotNull</p>                                       |
 | time        | <p><strong>TimeOnly?</strong><br><strong>TimeOnly</strong></p>                                                        | <p><br>@NotNull</p>                                       |
 | timetz      | <p><strong>TimeOnly?</strong><br><strong>TimeOnly</strong></p>                                                        | <p><br>@NotNull</p>                                       |
-| datetime    | <p>DateTime?<br>DateTime</p>                                                                                          | <p><br>@NotNull</p>                                       |
-| datetimetz  | <p>DateTimeOffset?<br>DateTimeOffset</p>                                                                              | <p><br>@NotNull</p>                                       |
+| datetime    | <p><strong>DateTime?</strong><br><strong>DateTime</strong></p>                                                        | <p><br>@NotNull</p>                                       |
+| datetimetz  | <p><strong>DateTimeOffset?</strong><br><strong>DateTimeOffset</strong></p>                                            | <p><br>@NotNull</p>                                       |
 | _timestamp_ | <p><strong>DateTime?</strong> <br><strong>DateTime</strong></p>                                                       | <p><br>@NotNull</p>                                       |
-| uuid        | <p>Guid?<br>Guid</p>                                                                                                  | <p><br>@NotNull</p>                                       |
+| uuid        | <p><strong>Guid?</strong><br><strong>Guid</strong></p>                                                                | <p><br>@NotNull</p>                                       |
 | binary      | <p><strong>byte[]?</strong><br><strong>byte [ ]</strong></p>                                                          | <p><br>@NotNull</p>                                       |
 
 Remarks:&#x20;
