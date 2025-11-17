@@ -68,28 +68,6 @@ Server (cluster) → **Database** → **Schema** → Tables/Objects&#x20;
   * Case is **preserved exactly as written**
   * They are **case-sensitive** in SQL requests
 
-### Telosys typical configuration for a PostgreSQL database
-
-```yaml
-  - id: pgcars
-    name: PostgreSQL 'cars' schema on 'localhost'
-    type: POSTGRESQL 
-    # JDBC configuration
-    driver: org.postgresql.Driver 
-    url: jdbc:postgresql://myhost:5432/mydatabase
-    user: john_doe
-    password: not_to_reveal
-    # Metadata parameters
-    catalog: '!'
-    schema: cars
-    tableNamePattern: '%'
-    tableTypes: TABLE
-```
-
-###
-
-
-
 ### Schema management&#x20;
 
 ```textile
