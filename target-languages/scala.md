@@ -17,21 +17,25 @@ For a detailed description of type conversion and literal values see the generat
 
 The table below describes how model neutral types are automatically converted to Scala types with potential impact due to attribute annotations.
 
-| Model type | Scala type        |   |
-| ---------- | ----------------- | - |
-| string     | **String**        |   |
-| byte       | **Byte**          |   |
-| short      | **Short**         |   |
-| int        | **Int**           |   |
-| long       | **Long**          |   |
-| decimal    | **BigDecimal**    |   |
-| float      | **Float**         |   |
-| double     | **Double**        |   |
-| boolean    | **Boolean**       |   |
-| date       | **LocalDate**     |   |
-| time       | **LocalTime**     |   |
-| timestamp  | **LocalDateTime** |   |
-| binary     | **Array\[Byte]**  |   |
+| Model type    | Scala type         |   |
+| ------------- | ------------------ | - |
+| string        | **String**         |   |
+| byte          | **Byte**           |   |
+| short         | **Short**          |   |
+| int           | **Int**            |   |
+| long          | **Long**           |   |
+| decimal       | **BigDecimal**     |   |
+| float         | **Float**          |   |
+| double        | **Double**         |   |
+| boolean       | **Boolean**        |   |
+| date          | **LocalDate**      |   |
+| time          | **LocalTime**      |   |
+| timetz        | **OffsetTime**     |   |
+| datetime      | **LocalDateTime**  |   |
+| datetimetz    | **OffsetDateTime** |   |
+| ~~timestamp~~ | **LocalDateTime**  |   |
+| uuid          | **UUID**           |   |
+| binary        | **Array\[Byte]**   |   |
 
 ### Annotations effects
 
@@ -40,12 +44,14 @@ The table below describes how model neutral types are automatically converted to
 * **@NotNull** : no effect
 * **@PrimitiveType**  : no effect
 
+
+
 ## Literal values
 
-### TRUE, FALSE, NULL
+#### TRUE, FALSE, NULL
 
-|        | Scala  literal |
-| ------ | -------------- |
-| TRUE   | **true**       |
-|  FALSE | **false**      |
-|  NULL  | **null**       |
+|        | Scala literal |
+| ------ | ------------- |
+| TRUE   | **true**      |
+|  FALSE | **false**     |
+|  NULL  | **null**      |
