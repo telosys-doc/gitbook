@@ -10,13 +10,13 @@ The target database can be specified using the following directive :
 #set ( $env.database = 'databaseType' )
 ```
 
-In version 4.0 Telosys has the following predefined database types:
+Since version 4.0 Telosys has the following predefined database types:
 
-* POSTGRESQL&#x20;
-* MYSQL&#x20;
-* ORACLE&#x20;
-* SQLSERVER&#x20;
-* ANSISQL  (for standard ANSI-SQL )
+* **POSTGRESQL**&#x20;
+* **MYSQL**&#x20;
+* **ORACLE**&#x20;
+* **SQLSERVER**&#x20;
+* **ANSISQL**  (for standard ANSI-SQL )
 
 The predefined database types are not case sensitive.
 
