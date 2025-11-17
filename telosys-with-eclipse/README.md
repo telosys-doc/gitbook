@@ -8,7 +8,7 @@ icon: circle-half-stroke
 The **Eclipse plugin** only supports **Telosys version 3.3.0**, which is an **old version**.&#x20;
 
 To take advantage of the latest features, it's best to use the \
-most recent version of **Telosys-CLI** with **VS-Code** and the **Telosys extension**.
+most recent version of **Telosys-CLI** with **VS-Code or JetBrains IDE** and the **Telosys extension**.
 {% endhint %}
 
 
