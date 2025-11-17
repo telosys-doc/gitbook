@@ -1,5 +1,55 @@
 # PostgreSQL database
 
+## Telosys database configuration
+
+Below are examples of typical configurations for a PostgreSQL database.
+
+### Since Telosys 4.3
+
+```yaml
+  - id: pgcars
+    name: PostgreSQL 'cars' schema on 'localhost'
+    type: POSTGRESQL 
+    # JDBC configuration
+    driver: org.postgresql.Driver 
+    url: jdbc:postgresql://myhost:5432/mydatabase
+    user: john_doe
+    password: not_to_reveal
+    # Metadata parameters
+    catalog: '!'
+    schema: cars
+    tableNamePattern: '%'
+    tableTypes: TABLE
+```
+
+### Before Telosys 4.3
+
+### Telosys typical configuration for a PostgreSQL database
+
+```yaml
+  - id: pgcars
+    name: PostgreSQL 'cars' schema on 'localhost'
+    type: POSTGRESQL 
+    # JDBC configuration
+    driver: org.postgresql.Driver 
+    url: jdbc:postgresql://myhost:5432/mydatabase
+    user: john_doe
+    password: not_to_reveal
+    # Metadata parameters
+    catalog: '!'
+    schema: cars
+    tableNamePattern: '%'
+    tableTypes: TABLE
+```
+
+### JDBC driver
+
+Download: [https://jdbc.postgresql.org/](https://jdbc.postgresql.org/)&#x20;
+
+JAR file example :  `postgresql-42.7.7.jar`
+
+## Technical information about PostgreSQL
+
 ### Structure
 
 Server (cluster) → **Database** → **Schema** → Tables/Objects&#x20;
@@ -36,11 +86,7 @@ Server (cluster) → **Database** → **Schema** → Tables/Objects&#x20;
     tableTypes: TABLE
 ```
 
-### JDBC driver
-
-Download: [https://jdbc.postgresql.org/](https://jdbc.postgresql.org/)&#x20;
-
-JAR file example :  `postgresql-42.7.7.jar`
+###
 
 
 
