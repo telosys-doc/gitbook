@@ -36,7 +36,10 @@ Below are examples of typical configurations for a **MariaDB** database.
 ### JDBC driver
 
 * Name:  **MariaDB Connector/J** - lightweight JDBC driver (Type 4) for Java
-* Download:  [https://mariadb.com/downloads/connectors/connectors-data-access/](https://mariadb.com/downloads/connectors/connectors-data-access/)&#x20;
+* Download:&#x20;
+  * Web site:  [https://mariadb.com/downloads/connectors/connectors-data-access/](https://mariadb.com/downloads/connectors/connectors-data-access/)&#x20;
+  * MVN Repository: [https://mvnrepository.com/search?q=mariadb](https://mvnrepository.com/search?q=mariadb)&#x20;
+* JAR file example:  `mariadb-java-client-3.5.6.jar`
 * Driver class name:  **org.mariadb.jdbc.Driver**
 
 ## Technical information about MariaDB
