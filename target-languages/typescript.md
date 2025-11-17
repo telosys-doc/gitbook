@@ -8,6 +8,9 @@ To define **TypeScript** as the **target language** in a template file :
 
 The information below shows the behavior of the generator when TypeScript is the current target language.
 
+For a detailed description of type conversion and literal values see the generated documentation:[](https://www.telosys.org/doc/latest/languages/language-scala.html)\
+[https://www.telosys.org/doc/latest/languages/language-typescript.html](https://www.telosys.org/doc/latest/languages/language-typescript.html)
+
 ## Types conversion&#x20;
 
 The table below describes how **model neutral types** are automatically converted to **TypeScript types**
