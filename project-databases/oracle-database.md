@@ -22,7 +22,7 @@ Below are examples of typical configurations for **Oracle** database.
 
 ### Before Telosys 4.3
 
-```
+```yaml
   - id: oracle
     name: Oracle database
     type: oracle 

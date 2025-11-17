@@ -6,7 +6,7 @@ Below are examples of typical configurations for a **MariaDB** database.
 
 ### Since Telosys 4.3
 
-```
+```yaml
   - id: mariadb
     name: MariaDB 'cars' database 
     type: MARIADB 
