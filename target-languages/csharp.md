@@ -20,25 +20,25 @@ The information below shows the behavior of the generator when C# is the current
 
 The table below describes how model neutral types are automatically converted to C# types with potential impact due to attribute annotations.
 
-| Model type  | C# type                                                                                                               | with annotation                                           |
-| ----------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| string      | <p><strong>string?</strong> <br><strong>string</strong><br><strong>String?</strong></p>                               | <p><br>@NotNull</p><p>@ObjectType</p>                     |
-| byte        | <p><strong>sbyte?</strong> <br><strong>sbyte</strong> <br><strong>byte?</strong> <br><strong>SByte?</strong></p>      | <p><br>@NotNull</p><p>@UnsignedType <br>@ObjectType</p>   |
-| short       | <p><strong>short?</strong> </p><p><strong>short</strong><br><strong>ushort?</strong> <br><strong>Int16?</strong></p>  | <p><br>@NotNull</p><p>@UnsignedType</p><p>@ObjectType</p> |
-| int         | <p><strong>int?</strong> </p><p><strong>int</strong><br><strong>uint?</strong> <br><strong>Int32?</strong></p>        | <p><br>@NotNull</p><p>@UnsignedType</p><p>@ObjectType</p> |
-| long        | <p><strong>long?</strong></p><p><strong>long</strong></p><p><strong>ulong?</strong></p><p><strong>Int64?</strong></p> | <p><br>@NotNull</p><p>@UnsignedType</p><p>@ObjectType</p> |
-| decimal     | <p><strong>decimal?</strong></p><p><strong>decimal</strong></p><p><strong>Decimal?</strong></p>                       | <p><br>@NotNull</p><p>@ObjectType</p>                     |
-| float       | <p><strong>float?</strong></p><p><strong>float</strong><br><strong>Single?</strong></p>                               | <p><br>@NotNull</p><p>@ObjectType</p>                     |
-| double      | <p><strong>double?</strong></p><p><strong>double</strong><br><strong>Double?</strong></p>                             | <p><br>@NotNull</p><p>@ObjectType</p>                     |
-| boolean     | <p><strong>bool?</strong></p><p><strong>bool</strong><br><strong>Boolean?</strong></p>                                | <p><br>@NotNull</p><p>@ObjectType</p>                     |
-| date        | <p><strong>DateOnly?</strong> <br><strong>DateOnly</strong></p>                                                       | <p><br>@NotNull</p>                                       |
-| time        | <p><strong>TimeOnly?</strong><br><strong>TimeOnly</strong></p>                                                        | <p><br>@NotNull</p>                                       |
-| timetz      | <p><strong>TimeOnly?</strong><br><strong>TimeOnly</strong></p>                                                        | <p><br>@NotNull</p>                                       |
-| datetime    | <p><strong>DateTime?</strong><br><strong>DateTime</strong></p>                                                        | <p><br>@NotNull</p>                                       |
-| datetimetz  | <p><strong>DateTimeOffset?</strong><br><strong>DateTimeOffset</strong></p>                                            | <p><br>@NotNull</p>                                       |
-| _timestamp_ | <p><strong>DateTime?</strong> <br><strong>DateTime</strong></p>                                                       | <p><br>@NotNull</p>                                       |
-| uuid        | <p><strong>Guid?</strong><br><strong>Guid</strong></p>                                                                | <p><br>@NotNull</p>                                       |
-| binary      | <p><strong>byte[]?</strong><br><strong>byte [ ]</strong></p>                                                          | <p><br>@NotNull</p>                                       |
+| Model type    | C# type                                                                                                               | with annotation                                           |
+| ------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| string        | <p><strong>string?</strong> <br><strong>string</strong><br><strong>String?</strong></p>                               | <p><br>@NotNull</p><p>@ObjectType</p>                     |
+| byte          | <p><strong>sbyte?</strong> <br><strong>sbyte</strong> <br><strong>byte?</strong> <br><strong>SByte?</strong></p>      | <p><br>@NotNull</p><p>@UnsignedType <br>@ObjectType</p>   |
+| short         | <p><strong>short?</strong> </p><p><strong>short</strong><br><strong>ushort?</strong> <br><strong>Int16?</strong></p>  | <p><br>@NotNull</p><p>@UnsignedType</p><p>@ObjectType</p> |
+| int           | <p><strong>int?</strong> </p><p><strong>int</strong><br><strong>uint?</strong> <br><strong>Int32?</strong></p>        | <p><br>@NotNull</p><p>@UnsignedType</p><p>@ObjectType</p> |
+| long          | <p><strong>long?</strong></p><p><strong>long</strong></p><p><strong>ulong?</strong></p><p><strong>Int64?</strong></p> | <p><br>@NotNull</p><p>@UnsignedType</p><p>@ObjectType</p> |
+| decimal       | <p><strong>decimal?</strong></p><p><strong>decimal</strong></p><p><strong>Decimal?</strong></p>                       | <p><br>@NotNull</p><p>@ObjectType</p>                     |
+| float         | <p><strong>float?</strong></p><p><strong>float</strong><br><strong>Single?</strong></p>                               | <p><br>@NotNull</p><p>@ObjectType</p>                     |
+| double        | <p><strong>double?</strong></p><p><strong>double</strong><br><strong>Double?</strong></p>                             | <p><br>@NotNull</p><p>@ObjectType</p>                     |
+| boolean       | <p><strong>bool?</strong></p><p><strong>bool</strong><br><strong>Boolean?</strong></p>                                | <p><br>@NotNull</p><p>@ObjectType</p>                     |
+| date          | <p><strong>DateOnly?</strong> <br><strong>DateOnly</strong></p>                                                       | <p><br>@NotNull</p>                                       |
+| time          | <p><strong>TimeOnly?</strong><br><strong>TimeOnly</strong></p>                                                        | <p><br>@NotNull</p>                                       |
+| timetz        | <p><strong>TimeOnly?</strong><br><strong>TimeOnly</strong></p>                                                        | <p><br>@NotNull</p>                                       |
+| datetime      | <p><strong>DateTime?</strong><br><strong>DateTime</strong></p>                                                        | <p><br>@NotNull</p>                                       |
+| datetimetz    | <p><strong>DateTimeOffset?</strong><br><strong>DateTimeOffset</strong></p>                                            | <p><br>@NotNull</p>                                       |
+| ~~timestamp~~ | <p><strong>DateTime?</strong> <br><strong>DateTime</strong></p>                                                       | <p><br>@NotNull</p>                                       |
+| uuid          | <p><strong>Guid?</strong><br><strong>Guid</strong></p>                                                                | <p><br>@NotNull</p>                                       |
+| binary        | <p><strong>byte[]?</strong><br><strong>byte [ ]</strong></p>                                                          | <p><br>@NotNull</p>                                       |
 
 Remarks:&#x20;
 
