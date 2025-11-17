@@ -39,6 +39,7 @@ Below are examples of typical configurations for a **PostgreSQL** database.
 ### JDBC driver
 
 * Download: [https://jdbc.postgresql.org/](https://jdbc.postgresql.org/)&#x20;
+* MVN Repository: [https://mvnrepository.com/search?q=postgresql](https://mvnrepository.com/search?q=postgresql)&#x20;
 * JAR file example :  `postgresql-42.7.7.jar`    &#x20;
 * Driver class name : **org.postgresql.Driver**&#x20;
 
