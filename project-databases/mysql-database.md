@@ -35,10 +35,12 @@ Below are examples of typical configurations for a **MySQL** database.
 
 ### JDBC driver
 
-* Name:  **MySQL Connector/J**&#x20;
 * Download:&#x20;
-  * Web site: [https://dev.mysql.com/downloads/connector/j/](https://dev.mysql.com/downloads/connector/j/) &#x20;
-  * MVN Repository: [https://mvnrepository.com/search?q=mysql](https://mvnrepository.com/search?q=mysql)&#x20;
+  * Web site: [https://dev.mysql.com/downloads/connector/j/](https://dev.mysql.com/downloads/connector/j/)  \
+    "MySQL Connector/J"
+  * MVN Repository: [https://mvnrepository.com/search?q=mysql](https://mvnrepository.com/search?q=mysql) \
+    "MySQL Connector/J"
+* JAR file example:  `mysql-connector-j-9.5.0.jar`&#x20;
 * Driver class name:  **com.mysql.cj.jdbc.Driver**  (since Connector/J 8.0)\
   (old versions used **com.mysql.jdbc.Driver**)
 
