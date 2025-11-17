@@ -45,7 +45,9 @@ Below are examples of typical configurations for **Oracle** database.
 
 ### JDBC driver
 
-* Download from [https://www.oracle.com/fr/database/technologies/appdev/jdbc-downloads.html](https://www.oracle.com/fr/database/technologies/appdev/jdbc-downloads.html)&#x20;
+* Download:
+  * Web site: [https://www.oracle.com/fr/database/technologies/appdev/jdbc-downloads.html](https://www.oracle.com/fr/database/technologies/appdev/jdbc-downloads.html)&#x20;
+  * MVN Repository: [https://mvnrepository.com/search?q=oracle](https://mvnrepository.com/search?q=oracle)&#x20;
 * JAR for Oracle versions 21c, 19c, 18c, and 12.2:
   * **ojdbc11.jar** ( JDBC 4.3 / JDK11 and JDK17 )&#x20;
   * **ojdbc10.jar** ( JDBC 4.3 / JDK11 )
