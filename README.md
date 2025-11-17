@@ -2,7 +2,13 @@
 
 **Welcome developer friend!**&#x20;
 
-Here you will find everything that can help you to boost your project with Telosys.
+
+
+In this documentation, you will find how to install and configure Telosys-CLI, how to use it with VS-Code or any other JetBrains IDE, how to create and customize your models and of course how to generate your code.
+
+There is also a lot of more detailed information on creating or adapting template bundles to generate any type of code or text (programming languages, SQL, documentation, etc.)
+
+
 
 In addition to this documentation you can also take a look at ...
 
