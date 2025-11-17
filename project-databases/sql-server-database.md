@@ -46,6 +46,7 @@ jdbc:sqlserver://localhost:1433;databaseName=TestDB;encrypt=true;trustServerCert
 ### JDBC driver
 
 * Download:  [https://learn.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server](https://learn.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server)&#x20;
+* MVN Repository: [https://mvnrepository.com/search?q=mssql-jdbc](https://mvnrepository.com/search?q=mssql-jdbc)&#x20;
 * JAR file examples : &#x20;
   * mssql-jdbc-13.2.1.jre8.jar&#x20;
   * mssql-jdbc-13.2.1.jre11.jar
