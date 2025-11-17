@@ -22,24 +22,25 @@ Typed class properties were added in PHP 7.4  ( [https://php.watch/versions/7.4/
 
 So since Telosys version 4.1.0, type conversion was added for the PHP language.
 
-| Model type    | PHP property type                                               | with annotation        |
-| ------------- | --------------------------------------------------------------- | ---------------------- |
-| string        | <p><strong>?string</strong> </p><p><strong>string</strong></p>  | <p></p><p>@NotNull</p> |
-| byte          | <p><strong>?int</strong> <br><strong>int</strong></p>           | <p></p><p>@NotNull</p> |
-| short         | <p><strong>?int</strong> <br><strong>int</strong></p>           | <p><br>@NotNull</p>    |
-| int           | <p><strong>?int</strong> <br><strong>int</strong></p>           | <p><br>@NotNull</p>    |
-| long          | <p><strong>?int</strong> <br><strong>int</strong></p>           | <p></p><p>@NotNull</p> |
-| decimal       | <p><strong>?float</strong> <br><strong>float</strong></p>       | <p></p><p>@NotNull</p> |
-| float         | <p><strong>?float</strong> <br><strong>float</strong></p>       | <p></p><p>@NotNull</p> |
-| double        | <p><strong>?float</strong> <br><strong>float</strong></p>       | <p></p><p>@NotNull</p> |
-| boolean       | <p><strong>?bool</strong> <br><strong>bool</strong></p>         | <p></p><p>@NotNull</p> |
-| date          | <p><strong>?DateTime</strong> <br><strong>DateTime</strong></p> | <p><br>@NotNull</p>    |
-| time          | <p><strong>?DateTime</strong> <br><strong>DateTime</strong></p> | <p><br>@NotNull</p>    |
-| timetz        | <p><strong>?DateTime</strong> <br><strong>DateTime</strong></p> | <p><br>@NotNull</p>    |
-| datetime      | <p><strong>?DateTime</strong> <br><strong>DateTime</strong></p> | <p><br>@NotNull</p>    |
-| datetimetz    | <p><strong>?DateTime</strong> <br><strong>DateTime</strong></p> | <p><br>@NotNull</p>    |
-| ~~timestamp~~ | <p><strong>?DateTime</strong> <br><strong>DateTime</strong></p> | <p><br>@NotNull</p>    |
-| binary        |                                                                 | <p><br></p>            |
+| Model type    | PHP property type                                               | with annotation         |
+| ------------- | --------------------------------------------------------------- | ----------------------- |
+| string        | <p><strong>?string</strong> </p><p><strong>string</strong></p>  | <p></p><p>@NotNull</p>  |
+| byte          | <p><strong>?int</strong> <br><strong>int</strong></p>           | <p></p><p>@NotNull</p>  |
+| short         | <p><strong>?int</strong> <br><strong>int</strong></p>           | <p><br>@NotNull</p>     |
+| int           | <p><strong>?int</strong> <br><strong>int</strong></p>           | <p><br>@NotNull</p>     |
+| long          | <p><strong>?int</strong> <br><strong>int</strong></p>           | <p></p><p>@NotNull</p>  |
+| decimal       | <p><strong>?float</strong> <br><strong>float</strong></p>       | <p></p><p>@NotNull</p>  |
+| float         | <p><strong>?float</strong> <br><strong>float</strong></p>       | <p></p><p>@NotNull</p>  |
+| double        | <p><strong>?float</strong> <br><strong>float</strong></p>       | <p></p><p>@NotNull</p>  |
+| boolean       | <p><strong>?bool</strong> <br><strong>bool</strong></p>         | <p></p><p>@NotNull</p>  |
+| date          | <p><strong>?DateTime</strong> <br><strong>DateTime</strong></p> | <p><br>@NotNull</p>     |
+| time          | <p><strong>?DateTime</strong> <br><strong>DateTime</strong></p> | <p><br>@NotNull</p>     |
+| timetz        | <p><strong>?DateTime</strong> <br><strong>DateTime</strong></p> | <p><br>@NotNull</p>     |
+| datetime      | <p><strong>?DateTime</strong> <br><strong>DateTime</strong></p> | <p><br>@NotNull</p>     |
+| datetimetz    | <p><strong>?DateTime</strong> <br><strong>DateTime</strong></p> | <p><br>@NotNull</p>     |
+| ~~timestamp~~ | <p><strong>?DateTime</strong> <br><strong>DateTime</strong></p> | <p><br>@NotNull</p>     |
+| uuid          | <p><strong>?string</strong> </p><p><strong>string</strong></p>  | <p><br>@NotNull</p>     |
+| binary        | <p><strong>?string</strong> </p><p><strong>string</strong></p>  | <p><br>@NotNull<br></p> |
 
 
 
