@@ -42,6 +42,7 @@ The table below describes how model neutral types are automatically converted to
 | datetime      | <p><strong>LocalDateTime?</strong><br><strong>LocalDateTime</strong></p>             | <p><br>@NotNull</p>                        |
 | datetimetz    | <p><strong>OffsetDateTime?</strong><br><strong>OffsetDateTime</strong></p>           | <p><br>@NotNull</p>                        |
 | ~~timestamp~~ | <p><strong>LocalDateTime?</strong><br><strong>LocalDateTime</strong></p>             | <p><br>@NotNull</p>                        |
+| uuid          | <p><strong>UUID?</strong><br><strong>UUID</strong></p>                               | <p><br>@NotNull</p>                        |
 | binary        | <p><strong>ByteArray?</strong> <br><strong>ByteArray</strong></p>                    | <p><br>@NotNull</p>                        |
 
 
@@ -61,7 +62,7 @@ The table below describes how model neutral types are automatically converted to
 
 ## Literal values
 
-### TRUE, FALSE, NULL
+#### TRUE, FALSE, NULL
 
 |        | Kotlin literal |
 | ------ | -------------- |
