@@ -14,5 +14,34 @@ For a detailed description of type conversion and literal values see the generat
 
 ## Types conversion&#x20;
 
-Python is a dynamically-typed language, there are no types in the source code. \
-Therefore, the type conversion always return a void string.
+Python is a dynamically-typed language, so there are no real types in the source code. \
+But "**type hints**" were introduced in PEP 484 to make Python code easier to understand, maintain, and analyze. Telosys offers an automatic conversion of the model's neutral types into Python type hints.
+
+The table below describes how model neutral types are automatically converted to Python type hints.
+
+| Model type  | Python type hint |
+| ----------- | ---------------- |
+| string      | **str**          |
+| byte        | **int**          |
+| short       | **int**          |
+| int         | **int**          |
+| long        | **int**          |
+| decimal     | **Decimal**      |
+| float       | **float**        |
+| double      | **float**        |
+| boolean     | **bool**         |
+| date        | **date**         |
+| time        | **time**         |
+| timetz      | **time**         |
+| datetime    | **datetime**     |
+| _timestamp_ | **datetime**     |
+| datetimetz  | **datetime**     |
+| uuid        | **UUID**         |
+| binary      | **bytes**        |
+
+### Annotations effects
+
+* **@UnsignedType** : no effect
+* **@ObjectType** : no effect
+* **@NotNull** : no effect
+* **@PrimitiveType**  : no effect
