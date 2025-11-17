@@ -14,6 +14,7 @@ Below are examples of typical configurations for a **PostgreSQL** database.
     url: jdbc:postgresql://myhost:5432/mydatabase
     user: john_doe
     password: not_to_reveal
+    # Metadata parameters
     schema: cars
 ```
 
