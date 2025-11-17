@@ -7,13 +7,33 @@ Below are examples of typical configurations for a **SQL Server** database.
 ### Since Telosys 4.3
 
 ```yaml
-  
+  - id: sqlsrv
+    name: SQL Server database 
+    type: SQLSERVER
+    # JDBC configuration
+    url: jdbc:sqlserver://localhost:1433;databaseName=MyDB
+    user: john_doe
+    password: not_to_reveal
+    # Metadata parameters
+    schema: cars
 ```
 
 ### Before Telosys 4.3
 
 ```yaml
-  
+  - id: sqlsrv
+    name: SQL Server database 
+    type: SQLSERVER
+    # JDBC configuration
+    driver: xxxxx 
+    url: jdbc:sqlserver://localhost:1433;databaseName=MyDB
+    user: john_doe
+    password: not_to_reveal
+    # Metadata parameters
+    catalog: '!'
+    schema: cars
+    tableNamePattern: '%'
+    tableTypes: TABLE    
 ```
 
 ### JDBC driver
