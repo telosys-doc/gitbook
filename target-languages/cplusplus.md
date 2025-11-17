@@ -16,21 +16,7 @@ The information below shows the behavior of the generator when C++ is the curren
 
 The table below describes how model neutral types are automatically converted to C++ types with potential impact due to annotations (@UnsignedType, @NotNull, @PrimitiveType, @ObjectType)
 
-| Model type | C++ type                                                            | with annotation             |
-| ---------- | ------------------------------------------------------------------- | --------------------------- |
-| string     | **string**                                                          |                             |
-| byte       | <p><strong>char</strong></p><p><strong>unsigned char</strong></p>   | <p></p><p>@UnsignedType</p> |
-| short      | <p><strong>short</strong></p><p><strong>unsigned short</strong></p> | <p></p><p>@UnsignedType</p> |
-| int        | <p><strong>int</strong></p><p><strong>unsigned int</strong></p>     | <p></p><p>@UnsignedType</p> |
-| long       | <p><strong>long</strong></p><p><strong>unsigned long</strong></p>   | <p></p><p>@UnsignedType</p> |
-| decimal    | **double**                                                          |                             |
-| float      | **float**                                                           |                             |
-| double     | **double**                                                          |                             |
-| boolean    | **bool**                                                            |                             |
-| date       | **std::tm**                                                         |                             |
-| time       |                                                                     |                             |
-| timestamp  |                                                                     |                             |
-| binary     |                                                                     |                             |
+<table><thead><tr><th width="182.39996337890625">Model type</th><th width="262.9292399088542">C++ type</th><th>with annotation</th></tr></thead><tbody><tr><td>string</td><td><strong>std::string</strong></td><td></td></tr><tr><td>byte</td><td><p><strong>char</strong></p><p><strong>unsigned char</strong></p></td><td><p></p><p>@UnsignedType</p></td></tr><tr><td>short</td><td><p><strong>short</strong></p><p><strong>unsigned short</strong></p></td><td><p></p><p>@UnsignedType</p></td></tr><tr><td>int</td><td><p><strong>int</strong></p><p><strong>unsigned int</strong></p></td><td><p></p><p>@UnsignedType</p></td></tr><tr><td>long</td><td><p><strong>long</strong></p><p><strong>unsigned long</strong></p></td><td><p></p><p>@UnsignedType</p></td></tr><tr><td>decimal</td><td><strong>double</strong></td><td></td></tr><tr><td>float</td><td><strong>float</strong></td><td></td></tr><tr><td>double</td><td><strong>double</strong></td><td></td></tr><tr><td>boolean</td><td><strong>bool</strong></td><td></td></tr><tr><td>date</td><td><strong>std::chrono::year_month_day</strong></td><td></td></tr><tr><td>time</td><td><strong>std::chrono::hh_mm_ss</strong></td><td></td></tr><tr><td>timetz</td><td><strong>std::chrono::hh_mm_ss</strong></td><td></td></tr><tr><td>datetime</td><td><strong>std::chrono::local_time</strong></td><td></td></tr><tr><td>datetimetz</td><td><strong>std::chrono::zoned_time</strong></td><td></td></tr><tr><td><em>timestamp</em></td><td><strong>std::chrono::local_time</strong></td><td></td></tr><tr><td>uuid</td><td><strong>std::string</strong></td><td></td></tr><tr><td>binary</td><td><strong>std::vector</strong></td><td></td></tr></tbody></table>
 
 ### Annotations effects
 
