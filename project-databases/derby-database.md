@@ -1,22 +1,22 @@
 # Derby database
 
-### Structure
+## Telosys database configuration
 
-**Database** → **Schema** → Tables/Objects
+Below are examples of typical configurations for a **PostgreSQL** database.
 
-* **Database**: In Derby, the "database" is basically the connection. \
-  There’s only one database per connection (each connection is tied to a single database).\
-  A **database** is essentially a **directory** on disk.
-* **Schema**: Derby supports schemas, similar to PostgreSQL and SQL Server. \
-  In Derby, a schema is a namespace within a database.\
-  A schema contains tables, views, indexes, triggers, and procedures.\
-  Derby defaults schema = current user name (uppercased), \
-  for example if user = "sa" ⇒ schema is "SA".\
-  If connecting without credentials (no user) the default schema "APP" will be used&#x20;
+### Since Telosys 4.3
 
+```yaml
+  - id: derby
+    name: my Derby server database
+    type: Derby 
+    # JDBC connection 
+    url: jdbc:derby://localhost:1527/telosysdb;create=true
+    user: foo
+    password: xxxxx
+```
 
-
-### Telosys typical configuration for a Derby database
+### Before Telosys 4.3
 
 ```yaml
   - id: derby
@@ -38,25 +38,34 @@
 * "_schema_" can be a schema name or '!' for all schemas&#x20;
 * if authentication is not enabled then "_user_" and "_password_" can have any value
 
-
-
 ### JDBC driver
 
-Download:  [https://db.apache.org/derby/derby\_downloads.html](https://db.apache.org/derby/derby_downloads.html)&#x20;
+* Download:  [https://db.apache.org/derby/derby\_downloads.html](https://db.apache.org/derby/derby_downloads.html)&#x20;
+* JAR files required to connect (these 3 files must be present in the "lib" directory) :
+  * **`derbytools.jar`**  ( org.apache.derby.jdbc.ClientDriver )&#x20;
+  * **`derbyclient.jar`**   ( org.apache.derby.client.ClientAutoloadedDriver )
+  * **`derbyshared.jar`**   ( org.apache.derby.shared.common.info.ProductVersionHolder )
+* Driver class name :  **org.apache.derby.jdbc.ClientDriver**
 
-JAR files required to connect:
+## Technical information about Derby
 
-* **`derbytools.jar`**  ( org.apache.derby.jdbc.ClientDriver )&#x20;
-* **`derbyclient.jar`**   ( org.apache.derby.client.ClientAutoloadedDriver )
-* **`derbyshared.jar`**   ( org.apache.derby.shared.common.info.ProductVersionHolder )
+### Structure
 
+**Database** → **Schema** → Tables/Objects
 
+* **Database**: In Derby, the "database" is basically the connection. \
+  There’s only one database per connection (each connection is tied to a single database).\
+  A **database** is essentially a **directory** on disk.
+* **Schema**: Derby supports schemas, similar to PostgreSQL and SQL Server. \
+  In Derby, a schema is a namespace within a database.\
+  A schema contains tables, views, indexes, triggers, and procedures.\
+  Derby defaults schema = current user name (uppercased), \
+  for example if user = "sa" ⇒ schema is "SA".\
+  If connecting without credentials (no user) the default schema "APP" will be used&#x20;
 
 ### Server Launch
 
 Just launch  **`bin/startNetworkServer`**  ( default port = 1527 )
-
-
 
 ### Derby case conversion rules
 
