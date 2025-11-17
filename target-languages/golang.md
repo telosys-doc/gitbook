@@ -13,21 +13,25 @@ The information below shows the behavior of the generator when Golang is the cur
 
 The table below describes how model neutral types are automatically converted to Golang types with potential impact due to attribute annotations.
 
-| Model type | Go type                                                   | with annotation              |
-| ---------- | --------------------------------------------------------- | ---------------------------- |
-| string     | **string**                                                |                              |
-| byte       | <p><strong>byte</strong> <br><strong>uint8</strong></p>   | <p></p><p>@UnsignedType </p> |
-| short      | <p><strong>int16</strong> <br><strong>uint16</strong></p> | <p></p><p>@UnsignedType</p>  |
-| int        | <p><strong>int32</strong> <br><strong>uint32</strong></p> | <p></p><p>@UnsignedType</p>  |
-| long       | <p><strong>int64</strong><br><strong>uint64</strong></p>  | <p></p><p>@UnsignedType</p>  |
-| decimal    | **float64**                                               |                              |
-| float      | **float32**                                               |                              |
-| double     | **float64**                                               |                              |
-| boolean    | **bool**                                                  |                              |
-| date       | **time.Time**                                             |                              |
-| time       | **time.Time**                                             |                              |
-| timestamp  | **time.Time**                                             |                              |
-| binary     | **\[ ] byte**                                             |                              |
+| Model type    | Go type                                                   | with annotation              |
+| ------------- | --------------------------------------------------------- | ---------------------------- |
+| string        | **string**                                                |                              |
+| byte          | <p><strong>byte</strong> <br><strong>uint8</strong></p>   | <p></p><p>@UnsignedType </p> |
+| short         | <p><strong>int16</strong> <br><strong>uint16</strong></p> | <p></p><p>@UnsignedType</p>  |
+| int           | <p><strong>int32</strong> <br><strong>uint32</strong></p> | <p></p><p>@UnsignedType</p>  |
+| long          | <p><strong>int64</strong><br><strong>uint64</strong></p>  | <p></p><p>@UnsignedType</p>  |
+| decimal       | **float64**                                               |                              |
+| float         | **float32**                                               |                              |
+| double        | **float64**                                               |                              |
+| boolean       | **bool**                                                  |                              |
+| date          | **time.Time**                                             |                              |
+| time          | **time.Time**                                             |                              |
+| timetz        | **time.Time**                                             |                              |
+| datetime      | **time.Time**                                             |                              |
+| datetimetz    | **time.Time**                                             |                              |
+| ~~timestamp~~ | **time.Time**                                             |                              |
+| uuid          | **uuid.UUID**                                             |                              |
+| binary        | **\[ ] byte**                                             |                              |
 
 ### Annotations effects
 
@@ -60,7 +64,7 @@ For more information about Golang types see :
 
 ## Literal values
 
-### TRUE, FALSE, NULL
+#### TRUE, FALSE, NULL
 
 |        | Golang literal |
 | ------ | -------------- |
