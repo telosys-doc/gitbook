@@ -19,6 +19,8 @@ But "**type hints**" were introduced in PEP 484 to make Python code easier to un
 
 The table below describes how model neutral types are automatically converted to Python type hints.
 
+Conversion to Python type hints is supported since Telosys 4.3.0
+
 | Model type  | Python type hint |
 | ----------- | ---------------- |
 | string      | **str**          |
