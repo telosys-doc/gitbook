@@ -13,8 +13,8 @@ Below are examples of typical configurations for a **PostgreSQL** database.
     # JDBC configuration
     url: jdbc:postgresql://myhost:5432/mydatabase
     user: john_doe
-    schema: cars
     password: not_to_reveal
+    schema: cars
 ```
 
 ### Before Telosys 4.3
