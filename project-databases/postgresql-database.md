@@ -2,7 +2,7 @@
 
 ## Telosys database configuration
 
-Below are examples of typical configurations for a PostgreSQL database.
+Below are examples of typical configurations for a **PostgreSQL** database.
 
 ### Since Telosys 4.3
 
@@ -11,20 +11,13 @@ Below are examples of typical configurations for a PostgreSQL database.
     name: PostgreSQL 'cars' schema on 'localhost'
     type: POSTGRESQL 
     # JDBC configuration
-    driver: org.postgresql.Driver 
     url: jdbc:postgresql://myhost:5432/mydatabase
     user: john_doe
-    password: not_to_reveal
-    # Metadata parameters
-    catalog: '!'
     schema: cars
-    tableNamePattern: '%'
-    tableTypes: TABLE
+    password: not_to_reveal
 ```
 
 ### Before Telosys 4.3
-
-### Telosys typical configuration for a PostgreSQL database
 
 ```yaml
   - id: pgcars
