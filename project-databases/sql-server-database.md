@@ -25,7 +25,7 @@ Below are examples of typical configurations for a **SQL Server** database.
     name: SQL Server database 
     type: SQLSERVER
     # JDBC configuration
-    driver: xxxxx 
+    driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
     url: jdbc:sqlserver://localhost:1433;databaseName=MyDB
     user: john_doe
     password: not_to_reveal
@@ -36,11 +36,20 @@ Below are examples of typical configurations for a **SQL Server** database.
     tableTypes: TABLE    
 ```
 
+### Other JDBC URL examples
+
+```
+jdbc:sqlserver://localhost:1433;databaseName=TestDB;encrypt=true;trustServerCertificate=true;
+
+```
+
 ### JDBC driver
 
-* Download: &#x20;
-* JAR file example :  xx
-* Driver class name : **xxxx**
+* Download:  [https://learn.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server](https://learn.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server)&#x20;
+* JAR file examples : &#x20;
+  * mssql-jdbc-13.2.1.jre8.jar&#x20;
+  * mssql-jdbc-13.2.1.jre11.jar
+* Driver class name : **com.microsoft.sqlserver.jdbc.SQLServerDriver**&#x20;
 
 
 
