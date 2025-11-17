@@ -69,3 +69,13 @@ The table below describes how model neutral types are automatically converted to
       ( int,  double,  etc )
 * &#x20;**$attribute.wrapperType** \
   returns the Java wrapper type class associtated with the current type (Integer, Double, etc )
+
+## Literal values
+
+#### TRUE, FALSE, NULL
+
+|        | Java  literal |
+| ------ | ------------- |
+| TRUE   | **true**      |
+|  FALSE | **false**     |
+|  NULL  | **null**      |
