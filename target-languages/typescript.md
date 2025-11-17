@@ -45,3 +45,12 @@ For more information about TypeScript see :
 
 * [https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#object-types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#object-types)
 
+## Literal values
+
+#### TRUE, FALSE, NULL
+
+|        | TypeScript  literal |
+| ------ | ------------------- |
+| TRUE   | **true**            |
+|  FALSE | **false**           |
+|  NULL  | **null**            |
