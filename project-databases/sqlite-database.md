@@ -35,9 +35,8 @@ Below are examples of typical configurations for a **SQLite** database.
 ### JDBC driver&#x20;
 
 * Download from [https://github.com/xerial/sqlite-jdbc](https://github.com/xerial/sqlite-jdbc) &#x20;
-* JAR file example:  `sqlite-jdbc-3.50.3.0.jar`
-
-
+* JAR file example:  `sqlite-jdbc-3.50.3.0.jar` &#x20;
+* Driver class name:  **org.sqlite.JDBC**
 
 ## Technical information about SQLite
 
