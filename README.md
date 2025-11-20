@@ -12,8 +12,9 @@ There is also a lot of more detailed information on creating or adapting templat
 
 In addition to this documentation you can also take a look at ...
 
-* [Twitter](https://twitter.com/telosys)&#x20;
+* [X/Twitter  ( @telosys )](https://x.com/telosys)&#x20;
 * [LinkedIn](https://www.linkedin.com/company/telosys/)
+* [reddit  ( r/telosys )](https://www.reddit.com/r/telosys/)&#x20;
 * [YouTube](https://www.youtube.com/channel/UCX5-ypQygEHMCGXVTTbhfNQ)  ( short presentation : [Introducing Telosys 4.0](https://www.youtube.com/watch?v=nMEZ4tz-E4k) )
 
 For your questions you can use …
