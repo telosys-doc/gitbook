@@ -12,6 +12,8 @@ There is also a lot of more detailed information on creating or adapting templat
 
 In addition to this documentation you can also take a look at ...
 
+* [GitHub](https://github.com/telosys-tools-bricks/telosys-cli)
+* [Bluesky](https://bsky.app/profile/telosys.org)
 * [X/Twitter  ( @telosys )](https://x.com/telosys)&#x20;
 * [LinkedIn](https://www.linkedin.com/company/telosys/)
 * [reddit  ( r/telosys )](https://www.reddit.com/r/telosys/)&#x20;
