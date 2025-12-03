@@ -189,7 +189,11 @@ The "key-value" pairs are stored internally in a "_LinkedHashMap_" Java object (
 Initialization :
 
 ```velocity
+### A map with 2 elements (key-value)
 #set( $mymap = {"k1" : "v1" , "k2" : "v2"} )
+
+### Void map
+#set( $mymap = {} )
 ```
 
 Print content :
