@@ -38,8 +38,7 @@ The table below describes how model neutral types are automatically converted to
 * &#x20;**$attribute.wrapperType** \
   no effect
 
-So, for **C++** you can always use the basic "**$attribute.type**"\
-
+So, for **C++** you can always use the basic "**$attribute.type**"<br>
 
 ## Literal values
 

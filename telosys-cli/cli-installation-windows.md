@@ -52,8 +52,7 @@ Move to the directory where you want to use Telosys\
 
 Launch Telosys-CLI using **`telosys`** command (`telosys.bat`)\
 or **`tt`** command (`tt.bat`)  for older versions (before version 4.2.0)\
-&#x20;  `X:\myproject>`**`telosys`**\
-
+&#x20;  `X:\myproject>`**`telosys`**<br>
 
 ### 5) You can also create a shortcut on your desktop
 

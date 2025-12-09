@@ -69,4 +69,4 @@ Use the "**cfg**" command to see the current configuration including the "depot 
 
 ### How to install a model with Git clone?
 
-See  [Install with Git](../telosys-with-git/install-with-git.md) &#x20;
+See  [Install with Git](../git-with-telosys/git-as-an-external-tool/clone-with-git.md) &#x20;

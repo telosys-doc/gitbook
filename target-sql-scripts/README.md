@@ -2,7 +2,7 @@
 icon: bullseye-arrow
 ---
 
-# Target databases (SQL)
+# Target SQL scripts
 
 With Telosys you can generate SQL scripts to manage your database (create table, drop table, foreign key definition, etc).
 
@@ -25,20 +25,17 @@ In the templates the database configuration has an influence on:&#x20;
 
 * $entity.sqlTableName&#x20;
 * $entity.sqlPrimaryKeyColumns&#x20;
-* $entity.sqlPrimaryKeyColumnsAsString\
-
+* $entity.sqlPrimaryKeyColumnsAsString<br>
 * $attribute.sqlColumnName&#x20;
 * $attribute.sqlColumnType&#x20;
-* $attribute.sqlColumnConstraints\
-
+* $attribute.sqlColumnConstraints<br>
 * $fk.sqlName&#x20;
 * $fk.sqlOriginTableName&#x20;
 * $fk.sqlOriginColumns&#x20;
 * $fk.sqlOriginColumnsAsString&#x20;
 * $fk.sqlReferencedTableName&#x20;
 * $fk.sqlReferencedColumns&#x20;
-* $fk.sqlReferencedColumnsAsString\
-
+* $fk.sqlReferencedColumnsAsString<br>
 * $sql object
 
 

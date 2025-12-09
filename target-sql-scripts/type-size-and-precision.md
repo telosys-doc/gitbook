@@ -81,8 +81,7 @@ This is how the precision value is determined:
    &#x20; \- **`numeric`**  for PostgreSQL \
    &#x20; \- **`NUMBER`&#x20;**&#x20;for Oracle&#x20;
 5. else  precision is mandatory ("%P") and cannot be determined:\
-   an error is thrown\
-
+   an error is thrown<br>
 
 Reminder: "_@DbSize(xx)_" annotation is deprecated (do  not use it)
 

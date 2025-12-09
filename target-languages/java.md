@@ -11,8 +11,7 @@ However, you can define it with the following instruction :
 
 
 The information below shows the behavior of the generator when Java is the current target language. For a detailed description of type conversion, see the generated documentation :   \
-[https://www.telosys.org/doc/latest/languages/language-java.html](https://www.telosys.org/doc/latest/languages/language-java.html) \
-
+[https://www.telosys.org/doc/latest/languages/language-java.html](https://www.telosys.org/doc/latest/languages/language-java.html) <br>
 
 ## Types conversion&#x20;
 
@@ -79,3 +78,4 @@ The table below describes how model neutral types are automatically converted to
 | TRUE   | **true**      |
 |  FALSE | **false**     |
 |  NULL  | **null**      |
+

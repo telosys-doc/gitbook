@@ -13,8 +13,7 @@ A "**?**" is automatically added to the end of the type if the attribute is "**n
 ```
 
 The information below shows the behavior of the generator when C# is the current target language. For a detailed description of type conversion, see the generated documentation :  \
-&#x20;[https://www.telosys.org/doc/latest/languages/language-csharp.html](https://www.telosys.org/doc/latest/languages/language-csharp.html) \
-
+&#x20;[https://www.telosys.org/doc/latest/languages/language-csharp.html](https://www.telosys.org/doc/latest/languages/language-csharp.html) <br>
 
 ## Types conversion&#x20;
 

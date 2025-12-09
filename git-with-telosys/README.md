@@ -2,7 +2,7 @@
 icon: code-branch
 ---
 
-# Telosys with Git
+# Git with Telosys
 
 You can use Git to manage your models and bundles of templates.&#x20;
 
@@ -11,7 +11,7 @@ By default, Telosys uses GitHub to provide sample templates and bundles that can
 For GitHub depots and personal acces token see "[GitHub usage](github-usage.md)".
 
 If you want to use Git repositories on your workstation for templates and bundles, \
-see “[install with Git](install-with-git.md)” and "[publish with Git](publish-with-git.md)".
+see “[install with Git](git-as-an-external-tool/clone-with-git.md)” and "[publish with Git](git-as-an-external-tool/publish-with-git.md)".
 
 
 
