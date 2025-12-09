@@ -10,8 +10,14 @@ By default, Telosys uses **GitHub** to provide templates and bundles that can be
 
 For GitHub depots and personal acces token see  [github-usage.md](github-usage.md "mention").
 
-If you want to use Git repositories on your workstation for templates and bundles, \
-see “[install with Git](git-as-an-external-tool/clone-with-git.md)” and "[publish with Git](git-as-an-external-tool/publish-with-git.md)".
+You can use Git repositories on your workstation to manage your templates and bundles.
+
+You can do this using:&#x20;
+
+* your preferred **Git tools** (Git-CLI, Git-Bash, etc) - see [git-as-an-external-tool](git-as-an-external-tool/ "mention")
+* **Telosys' built-in Git commands** (since version 4.3.0) - see [git-embedded-in-telosys.md](git-embedded-in-telosys.md "mention")
+
+
 
 
 
