@@ -55,6 +55,6 @@ On your workstation, in the **local** directory:
 
 
 And that's all. \
-The remote Git repository contains now all the model/bundle files. \
-The momdel/bundle is now installable by Telosys on any workstation.
+The remote Git repository contains now all the model or bundle files. \
+The model or bundle is now installable by Telosys on any workstation with the commands "im" and "ib".
 
