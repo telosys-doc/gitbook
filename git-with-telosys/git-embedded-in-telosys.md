@@ -80,7 +80,7 @@ After installing or creating a model or bundle you must create its Git repositor
 
 **Check a bundle repository status with "**<mark style="color:red;">**statusb**</mark>**"**
 
-&#x20;**🔹 `git statusb``  `**_**`[bundle-name]`**_
+&#x20;**🔹 `git statusb`` `**_**`[bundle-name]`**_
 
 * Examples:
   * get the status of the current bundle (without parameter)\
@@ -96,7 +96,7 @@ After installing or creating a model or bundle you must create its Git repositor
 
 **Publish a bundle repository status with "**<mark style="color:red;">**pubb**</mark>**"**
 
-&#x20;**🔹 `git pubb``  `**_**`[bundle-name]`**_
+&#x20;**🔹 `git pubb`` `**_**`[bundle-name]`**_
 
 The "pub\[m/b]" command allow to perform several "Git" actions with a single command:
 
@@ -108,7 +108,32 @@ The "pub\[m/b]" command allow to perform several "Git" actions with a single com
 * **git push**  \
   Pushes to the remote repository according with the current "depot" definition
 
-xx
+### Git credentials management&#x20;
+
+Credentials are required for Git remote repository operations, \
+the "**git cred**" commands allows to print, set and remove credentials.
+
+You can define credentials at different levels:
+
+* "**global credentials**" used for both models and bundles (the most frequent case)
+* "**model credentials**" used only for models
+* "**bundle credentials**" used only for bundles
+
+{% hint style="info" %}
+The credentials are encrypted and stored on the workstation.
+{% endhint %}
+
+Show all credentials settings (password or token are not printed)
+
+**🔹 `git cred`**   show **all** credentials (all levels)
+
+**🔹 `git credg`**  show the "**global**" credentials (for both models and bundles)
+
+**🔹 `git credm`**  show the credentials for "**models**"
+
+**🔹 `git credb`**  show the credentials for "**bundles**"
+
+
 
 
 
