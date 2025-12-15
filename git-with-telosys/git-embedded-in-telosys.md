@@ -51,7 +51,7 @@ After installing or creating a model or bundle you must create its Git repositor
 &#x20;**🔹 `git initm`` `**_**`[model-name]`**_
 
 * Examples:&#x20;
-  * init the current model\
+  * init the current model (without parameter)\
     `git initm`
   * init a specific model\
     `git initm pizzas`
@@ -61,7 +61,7 @@ After installing or creating a model or bundle you must create its Git repositor
 &#x20;**🔹 `git initb`` `**_**`[bundle-name]`**_
 
 * Examples:
-  * init the current bundle\
+  * init the current bundle (without parameter)\
     `git initb`
   * init a specific bundle\
     `git initb database-sql-liquibase`
@@ -70,17 +70,45 @@ After installing or creating a model or bundle you must create its Git repositor
 
 **Check a model repository status with "**<mark style="color:red;">**statusm**</mark>**"**
 
-&#x20;**`git statusm`` `**_**`[model-name]`**_
+&#x20;**🔹 `git statusm`` `**_**`[model-name]`**_
 
-* Examples:
-  * x
-  *
+* Examples:&#x20;
+  * get the status of the current model (without parameter)\
+    `git statusm`
+  * get the status of a specific model\
+    `git statusm cars`
 
 **Check a bundle repository status with "**<mark style="color:red;">**statusb**</mark>**"**
 
-**`git statusb``  `**_**`[bundle-name]`**_
+&#x20;**🔹 `git statusb``  `**_**`[bundle-name]`**_
 
 * Examples:
-  * x
-  *
+  * get the status of the current bundle (without parameter)\
+    `git statusb`
+  * get the status of a specific model\
+    `git statusb front-angular`
+
+### Publish all changes to remote repository
+
+**Publish a model repository status with "**<mark style="color:red;">**pubm**</mark>**"**
+
+&#x20;**🔹 `git pubm`` `**_**`[model-name]`**_
+
+**Publish a bundle repository status with "**<mark style="color:red;">**pubb**</mark>**"**
+
+&#x20;**🔹 `git pubb``  `**_**`[bundle-name]`**_
+
+The "pub\[m/b]" command allow to perform several "Git" actions with a single command:
+
+* **git add** \
+  Adds all the changes to the index&#x20;
+* **git commit**  \
+  Creates a new commit containing the current contents of the index\
+  It uses a default message
+* **git push**  \
+  Pushes to the remote repository according with the current "depot" definition
+
+xx
+
+
 
