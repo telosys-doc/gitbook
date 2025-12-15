@@ -105,6 +105,12 @@ With this command you just have to:
 * edit the model or the bundle
 * use "git pub\[m/b]" to publish it on the remote server
 
+{% hint style="info" %}
+Before using the "git pub\[m/b]" command, ensure that the remote repository exists in the "depot".\
+If the remote Git repository does not yet exist, create it.\
+You can do that with the web GUI on GitHub, GitLab, your own server, etc...
+{% endhint %}
+
 **Publish a model repository status with "**<mark style="color:red;">**pubm**</mark>**"**
 
 &#x20;**🔹 `git pubm`` `**_**`[model-name]`**_
