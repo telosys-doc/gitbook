@@ -5,7 +5,7 @@ even if no Git tool is intalled on your workstation.
 
 **Git is embedded in Telosys-CLI** in order to simplify Git usage to **clone**, **init** and **publish** models and bundles repositories.
 
-&#x20;**`git`**  is the command to execute git operations.
+&#x20;  <mark style="color:red;">**`git`**</mark>  is the command to execute git operations.
 
 For help with Git commands, type   **`? git`**   in Telosys-CLI .
 
@@ -24,7 +24,7 @@ This command allows to clone a repository from the current "depot" or from a spe
 
 **Clone a model repository with "**<mark style="color:red;">**clonem**</mark>**"**
 
-**🔹 `git clonem`** _`model-name-in-depot`_` ``|or|`` `_`any-repo-url`_
+**🔹 `git clonem`** _**`model-name-in-depot`**_` ``|or|`` `_**`any-repo-url`**_
 
 * Examples:&#x20;
   * clone by name:\
@@ -34,7 +34,7 @@ This command allows to clone a repository from the current "depot" or from a spe
 
 **Clone a bundle repository with "**<mark style="color:red;">**cloneb**</mark>**"**&#x20;
 
-**🔹 `git cloneb`** _`bundle-name-in-depot`_` ``|or| any-repo-url`
+**🔹 `git cloneb`** _**`bundle-name-in-depot`**_` ``|or|`` `_**`any-repo-url`**_
 
 * Examples:&#x20;
   * clone by name:\
@@ -48,18 +48,23 @@ After installing or creating a model or bundle you must create its Git repositor
 
 **Init a model repository with "**<mark style="color:red;">**initm**</mark>**"**&#x20;
 
-&#x20;**🔹 `git initm`**  _`[model-name]`_
+&#x20;**🔹 `git initm`**  _**`[model-name]`**_
 
-* Examples:
-  * x
-  *
+* Examples:&#x20;
+  * init the current model\
+    `git initm`
+  * init a specific model\
+    `git initm pizzas`
 
 **Init a bundle repository with "**<mark style="color:red;">**initb**</mark>**"**&#x20;
 
-&#x20;**🔹 `git initb`**  _`[bundle-name]`_
+&#x20;**🔹 `git initb`**  _**`[bundle-name]`**_
 
 * Examples:
-  * x
+  * init the current bundle\
+    `git initb`
+  * init a specific bundle\
+    `git initb database-sql-liquibase`
 
 ### Check current status
 
