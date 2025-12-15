@@ -19,11 +19,11 @@ To define your own depots on GitHub see "[Project configuration](../configuratio
 
 Telosys uses the GitHub REST API ( [https://docs.github.com/en/rest](https://docs.github.com/en/rest) ) to get the models and bundles available for installation.
 
-This API has “rate limits” which can be reached quite quickly if several users share the same external IP address (which is usually the case with a corporate proxy).
+This API has “**rate limits**” which can be reached quite quickly if several users share the same external IP address (which is usually the case with a corporate proxy).
 
 To get around this limitation, you can use a "**GitHub Personal Access Token**" (PAT).
 
-With a "Personal Acces Token" the limit increased from 50 to 5000 requests for each user with a token.
+With a "Personal Acces Token" the **limit** increased from 50 to **5000 requests** for each user with a token.
 
 Since version 4.2.0 you can use the command "**ght**" ("GitHub Token") to define (or remove) a "Personal Acces Token" that Telosys will use to call the GitHub API.
 

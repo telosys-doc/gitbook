@@ -68,7 +68,7 @@
 * [Git with Telosys](git-with-telosys/README.md)
   * [GitHub usage](git-with-telosys/github-usage.md)
   * [Git embedded in Telosys](git-with-telosys/git-embedded-in-telosys.md)
-  * [Git as an external tool](git-with-telosys/git-as-an-external-tool.md)
+  * [Git as an external tool](git-with-telosys/git-as-an-external-tool/README.md)
 * [Support the project](support-the-project.md)
 * [How to contribute](how-to-contribute.md)
 * [Sponsors](sponsors.md)
