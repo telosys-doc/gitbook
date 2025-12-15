@@ -53,8 +53,8 @@ After installing or creating a model or bundle you must create its Git repositor
 
 Preliminary note: \
 if you want to define a specific user name and email for the **current repository** \
-`$`` `**`git config`` `**<mark style="color:red;">**`--local`**</mark>**` ``user.name "Your Name"`**\
-`$`` `**`git config`` `**<mark style="color:red;">**`--local`**</mark>**` ``user.email your@email.com`**
+`$`` `**`git config --local  user.name "Your Name"`**\
+`$`` `**`git config --local  user.email your@email.com`**
 
 🔹Add all the files to be committed (usually all files)\
 `$`**`git add .`**

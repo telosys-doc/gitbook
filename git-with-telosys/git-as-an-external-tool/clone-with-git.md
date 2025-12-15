@@ -1,4 +1,4 @@
-# Install with Git
+# Clone with Git
 
 If you plan to customize an existing model or bundle of templates, it may be more efficient to clone the Git repository so that you can then publish the changes more easily.
 
@@ -20,7 +20,7 @@ After "git clone" the model or bundle is installed and ready to use.
 
 It works as a standard model/bundle but it's a Git repository so it is ready for "commit" and "push" to publish your changes.
 
-See also : [Publish with Git](publish-with-git.md)
+See also : [Publish with Git](/broken/pages/aAH24lA3MNXizn2RPiS1)
 
 
 
