@@ -141,7 +141,7 @@ The credentials are encrypted and stored on the workstation.\
 They can be used by all telosys projects.
 {% endhint %}
 
-Show all credentials settings (password or token are not printed, just "set" or "not set")
+To show all credentials settings (password or token are not printed, just "set" or "not set"):
 
 **🔹 `git cred`**   show **all** credentials (all levels)
 
