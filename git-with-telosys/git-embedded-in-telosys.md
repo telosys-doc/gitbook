@@ -27,16 +27,20 @@ This command allows to clone a repository from the current "depot" or from a spe
 **🔹 `git clonem`** _`model-name-in-depot`_` ``|or|`` `_`any-repo-url`_
 
 * Examples:&#x20;
-  * `git clonem cars`      &#x20;
-  * `git clonem https://github.com/telosys-models-v4-3/employees`&#x20;
+  * clone by name:\
+    &#x20;`git clonem cars`      &#x20;
+  * clone by URL:\
+    &#x20;`git clonem https://github.com/telosys-models-v4-3/employees`&#x20;
 
 **Clone a bundle repository with "**<mark style="color:red;">**cloneb**</mark>**"**&#x20;
 
 **🔹 `git cloneb`** _`bundle-name-in-depot`_` ``|or| any-repo-url`
 
 * Examples:&#x20;
-  * git cloneb &#x20;
-  * git cloneb &#x20;
+  * clone by name:\
+    &#x20;`git cloneb front-angular`&#x20;
+  * clone by URL:\
+    `git cloneb https://github.com/telosys-templates-v4-3/java-jpa-entities`
 
 ### Init a new Git repository
 
