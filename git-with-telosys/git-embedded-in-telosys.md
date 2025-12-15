@@ -15,7 +15,8 @@ All git commands are designed to work with **Telosys models and bundles**:
 * Commands ending with "**b**" are for **bundles**
 
 {% hint style="info" %}
-The **remote repository** is defined from the current "**depot**" configuration
+The **remote repository** is defined from the current "**depot**" configuration.\
+To define a specific depot for models or bundles, see  [configuration-and-variables.md](../configuration-and-variables.md "mention")&#x20;
 {% endhint %}
 
 ### Clone an existing Git repository
