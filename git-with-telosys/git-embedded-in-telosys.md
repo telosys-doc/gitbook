@@ -90,15 +90,7 @@ After installing or creating a new model or bundle you can create the Git reposi
 
 ### Publish all changes to remote repository
 
-**Publish a model repository status with "**<mark style="color:red;">**pubm**</mark>**"**
-
-&#x20;**🔹 `git pubm`` `**_**`[model-name]`**_
-
-**Publish a bundle repository status with "**<mark style="color:red;">**pubb**</mark>**"**
-
-&#x20;**🔹 `git pubb`` `**_**`[bundle-name]`**_
-
-The "pub\[m/b]" command allow to perform several "Git" actions with a single command:
+The "**pub\[m/b]**" command allow to perform several "Git" actions with a single command:
 
 * **git add** \
   Adds all the changes to the index&#x20;
@@ -107,6 +99,31 @@ The "pub\[m/b]" command allow to perform several "Git" actions with a single com
   It uses a default message
 * **git push**  \
   Pushes to the remote repository according with the current "depot" definition
+
+With this command you just have to:
+
+* edit the model or the bundle
+* use "git pub\[m/b]" to publish it on the remote server
+
+**Publish a model repository status with "**<mark style="color:red;">**pubm**</mark>**"**
+
+&#x20;**🔹 `git pubm`` `**_**`[model-name]`**_
+
+* Examples:&#x20;
+  * publish the current model (without parameter)\
+    `git pubm`
+  * publish a specific model\
+    `git pubm pizzas`
+
+**Publish a bundle repository status with "**<mark style="color:red;">**pubb**</mark>**"**
+
+&#x20;**🔹 `git pubb`` `**_**`[bundle-name]`**_
+
+* Examples:
+  * publish the current bundle (without parameter)\
+    `git pubb`
+  * publish a specific bundle\
+    `git pubb database-sql-liquibase`
 
 ### Git credentials management&#x20;
 
@@ -124,7 +141,7 @@ The credentials are encrypted and stored on the workstation.\
 They can be used by all telosys projects.
 {% endhint %}
 
-Show all credentials settings (password or token are not printed)
+Show all credentials settings (password or token are not printed, just "set" or "not set")
 
 **🔹 `git cred`**   show **all** credentials (all levels)
 
@@ -134,7 +151,11 @@ Show all credentials settings (password or token are not printed)
 
 **🔹 `git credb`**  show the credentials for "**bundles**"
 
-To set the credentials use **`-set`**  parameter&#x20;
+To set the credentials use **`-set`**  parameter \
+and enter the requested information:
+
+* User name&#x20;
+* Password or personal access token (PAT) &#x20;
 
 To remove the credentials use **`-none`**  parameter
 
