@@ -44,7 +44,7 @@ This command allows to clone a repository from the current "depot" or from a spe
 
 ### Init a new Git repository
 
-After installing or creating a model or bundle you must create its Git repository.
+After installing or creating a new model or bundle you can create the Git repository with "initm" or "initb".
 
 **Init a model repository with "**<mark style="color:red;">**initm**</mark>**"**&#x20;
 
@@ -120,7 +120,8 @@ You can define credentials at different levels:
 * "**bundle credentials**" used only for bundles
 
 {% hint style="info" %}
-The credentials are encrypted and stored on the workstation.
+The credentials are encrypted and stored on the workstation.\
+They can be used by all telosys projects.
 {% endhint %}
 
 Show all credentials settings (password or token are not printed)
@@ -133,7 +134,9 @@ Show all credentials settings (password or token are not printed)
 
 **🔹 `git credb`**  show the credentials for "**bundles**"
 
+To set the credentials use **`-set`**  parameter&#x20;
 
+To remove the credentials use **`-none`**  parameter
 
 
 
