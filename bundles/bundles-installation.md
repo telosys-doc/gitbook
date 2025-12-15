@@ -75,4 +75,4 @@ Use the "**cfg**" command to see the current configuration including the current
 
 ### How to install a bundle with Git clone?
 
-See  [Install with Git](../git-with-telosys/git-as-an-external-tool/clone-with-git.md) &#x20;
+See  [Install with Git](/broken/pages/P37qwNGxA9VBV9yiSFkU) &#x20;

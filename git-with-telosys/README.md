@@ -14,7 +14,7 @@ You can use Git repositories on your workstation to manage your templates and bu
 
 You can do this using:&#x20;
 
-* your preferred **Git tools** (Git-CLI, Git-Bash, etc) - see [git-as-an-external-tool](git-as-an-external-tool/ "mention")
+* your preferred **Git tools** (Git-CLI, Git-Bash, etc) - see [git-as-an-external-tool.md](git-as-an-external-tool.md "mention")
 * **Telosys' built-in Git commands** (since version 4.3.0) - see [git-embedded-in-telosys.md](git-embedded-in-telosys.md "mention")
 
 
