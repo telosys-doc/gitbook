@@ -77,5 +77,8 @@ To avoid that you just have to add it in the IDE dictionary:
 
 
     <figure><img src=".gitbook/assets/JetBrains-IDE-Add-word-in-dict.png" alt=""><figcaption></figcaption></figure>
-*
+
+
+
+
 
