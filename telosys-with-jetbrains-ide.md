@@ -58,7 +58,7 @@ See: [https://telosys.hashnode.dev/telosys-plugin-for-jetbrains-ide](https://tel
 
 
 
-### 4 - IDE customization&#x20;
+### 4 - Tips and tricks for IDE
 
 #### Spelling&#x20;
 
