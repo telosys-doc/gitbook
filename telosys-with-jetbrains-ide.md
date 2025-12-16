@@ -55,3 +55,27 @@ By doing so, Telosys will be launched by default every time a new tab is opened 
 ### 3 - Plugin installation
 
 See: [https://telosys.hashnode.dev/telosys-plugin-for-jetbrains-ide](https://telosys.hashnode.dev/telosys-plugin-for-jetbrains-ide)&#x20;
+
+
+
+### 4 - IDE customization&#x20;
+
+#### Spelling&#x20;
+
+If you have the word "Telosys" in the generated code (in comments for examples) \
+the IDE will consider it as a "typo". \
+To avoid that you just have to add it in the IDE dictionary:
+
+* In the menu:  **Settings** / **Preferences** : search "_spelling_"
+*   Select the dictionary:
+
+    * Application-level = for all projects you open in this IDE
+    * Project-level =  only the current project
+    * ⇒ Select **application-level**
+    * Add the new word \[+]  in "**Accepted words**"
+
+
+
+    <figure><img src=".gitbook/assets/JetBrains-IDE-Add-word-in-dict.png" alt=""><figcaption></figcaption></figure>
+*
+
