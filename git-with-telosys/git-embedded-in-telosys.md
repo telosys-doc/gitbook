@@ -86,7 +86,7 @@ After installing or creating a new model or bundle you can create the Git reposi
 * Examples:
   * get the status of the current bundle (without parameter)\
     `git statusb`
-  * get the status of a specific model\
+  * get the status of a specific bundle \
     `git statusb front-angular`
 
 ### Publish all changes to remote repository
@@ -131,6 +131,39 @@ You can do that with the web GUI on GitHub, GitLab, your own server, etc...
     `git pubb`
   * publish a specific bundle\
     `git pubb database-sql-liquibase`
+
+### Reset from remote repository
+
+The "**reset\[m/b]**" command allows to perform 2 "Git" actions with a single command:
+
+* **git fetch**\
+  Fetch the branch from the remote repository&#x20;
+* **git reset --mixed** \
+  Resets the index but **not the working tree** (changed files are preserved but not marked for commit)
+
+In brief: make the branch match remote, keep changes unstaged, forget old commits.\
+This command is useful in case of "**REJECTED\_NONFASTFORWARD**" error \
+when attempting to push the changes to a remote server with "**git pub\[m/b]**" command.
+
+**Reset a model repository with "**<mark style="color:red;">**resetm**</mark>**"**
+
+&#x20;**🔹 `git resetm`` `**_**`[model-name]`**_
+
+* Examples:&#x20;
+  * reset the current model (without parameter)\
+    `git resetm`
+  * reset a specific model\
+    `git resetm cars`
+
+**Reset a bundle repository with "**<mark style="color:red;">**resetb**</mark>**"**
+
+&#x20;**🔹 `git resetb`` `**_**`[bundle-name]`**_
+
+* Examples:
+  * reset the current bundle (without parameter)\
+    `git resetb`
+  * reset a specific bundle \
+    `git resetb front-angular`
 
 ### Git credentials management&#x20;
 
